@@ -8,7 +8,7 @@ import SermonCard from './components/sermon-card';
 function App() {
     return (
         <div>
-        <SermonCard sermonYouTubeUrl="https://www.youtube.com/embed/uqmaE9JKGtc?wmode=transparent" topic="Ezra 3: First Comes Sacrifice" pastor="Pastor Larry Lee" date="September 27, 2020" />
+        <SermonCard sermonYouTubeUrl="https://www.youtube.com/embed/uqmaE9JKGtc" topic="Ezra 3: First Comes Sacrifice" pastor="Pastor Larry Lee" date="September 27, 2020" />
 
         {/*
         <iframe width="560" height="315" src="https://www.youtube.com/embed/uqmaE9JKGtc" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"></iframe>
