@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
@@ -47,4 +49,11 @@ export default function SermonCard({sermonYouTubeUrl, topic, pastor, date}) {
       </CardActions>
     </Card>
   );
+}
+
+SermonCard.propTypes = {
+  sermonYouTubeUrl: PropTypes.string.isRequired,
+  topic: PropTypes.string.isRequired,
+  pastor: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
 }
