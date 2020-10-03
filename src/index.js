@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import './styles/site.css';
+
 import SermonCard from './components/sermon-card';
 
 function App() {
