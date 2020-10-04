@@ -16,12 +16,12 @@ function App() {
         <SermonCard youtubeVideoID="GA94lEQkKo0" topic="Exodus 4:10-17: Talent" pastor="Pastor Steven Chin" date="September 20, 2020" />
         <SermonCard youtubeVideoID="Q5x9gZWP6tM" topic="Ezra 2: The Remnant" pastor="Pastor Jerry Lin" date="September 13, 2020" />
         
-        <iframe width="560" height="315" src="AYadEf1YjVk" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"></iframe>
+        Li5Pd6IXhE4 10/4/2020
+        AYadEf1YjVk
         R0ikzK-juhI
         uOjAL6YPG3U
-        0m2rEJ8KI64
-
-        <iframe width="560" height="315" src="AlrtccfApe8" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"></iframe>
+        
+        AlrtccfApe8 9/27/2020
         9/20/2020 missing - joint service with Mandarin
         aEijmDl2Qjg
         9/6/2020 missing - joint service with Mandarin
