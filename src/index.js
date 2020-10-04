@@ -9,6 +9,22 @@ function App() {
     return (
         <div>
 
+        {/*
+        10/4/2020
+        0 Beginning
+        10:57 Opening prayer
+        12:35 O Come to the Altar
+        18:02 Psalm 18:2-6, 16-17, 46, 49
+        19:20 Rock of Ages (You will Stand)
+        23:46 Gracefully Broken
+        28:54 The Wonderful Cross
+        34:17 Congregational prayer
+        36:01 Communion
+        44:23 Message
+        1:23:01 Announcements
+        1:24:45 Benediction
+        */}
+
         <SermonCard youtubeVideoID="EWQ__H_85bE" topic="Ezra 4: Rebuilding Opposed" pastor="Pastor Larry Lee" date="October 4, 2020" />
 
         {/*
