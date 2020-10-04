@@ -16,9 +16,15 @@ function App() {
         <SermonCard sermonYouTubeUrl="https://www.youtube.com/embed/7sqGqrruW6w" topic="Ezra 1: Return to Rebuild" pastor="Pastor Larry Lee" date="September 6, 2020" />
         
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/uqmaE9JKGtc" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"></iframe>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/AYadEf1YjVk" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"></iframe>
+        https://youtu.be/R0ikzK-juhI
+        https://youtu.be/uOjAL6YPG3U
+        https://youtu.be/0m2rEJ8KI64
+
         <iframe width="560" height="315" src="https://www.youtube.com/embed/AlrtccfApe8" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"></iframe>
+        9/20/2020 missing - joint service with Mandarin
+        https://youtu.be/aEijmDl2Qjg
+        9/6/2020 missing - joint service with Mandarin
         */}
         </div>
     );
