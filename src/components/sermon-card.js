@@ -16,7 +16,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function SermonCard({sermonYouTubeUrl, topic, pastor, date}) {
+export default function SermonCard({youtubeVideoID, topic, pastor, date}) {
   const classes = useStyles();
 
   return (
@@ -26,7 +26,7 @@ export default function SermonCard({sermonYouTubeUrl, topic, pastor, date}) {
           component="iframe"
           width="560"
           height="315"
-          src={sermonYouTubeUrl}
+          src={"https://www.youtube.com/embed/" + youtubeVideoID}
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
         />
@@ -52,7 +52,7 @@ export default function SermonCard({sermonYouTubeUrl, topic, pastor, date}) {
 }
 
 SermonCard.propTypes = {
-  sermonYouTubeUrl: PropTypes.string.isRequired,
+  youtubeVideoID: PropTypes.string.isRequired,
   topic: PropTypes.string.isRequired,
   pastor: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
