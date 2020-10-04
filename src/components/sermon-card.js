@@ -35,7 +35,7 @@ export default function SermonCard({youtubeVideoID, topic, pastor, date}) {
       </CardActionArea>
       <CardActions>
         <Button size="small" color="primary">
-          Seek
+          Seek to
         </Button>
         <Button size="small" color="primary">
           Other sermons
