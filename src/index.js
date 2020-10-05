@@ -6,6 +6,13 @@ import './styles/site.css';
 import SermonCard from './components/sermon-card';
 
 function App() {
+    const sermons = [
+        { youtubeVideoID: "EWQ__H_85bE", topic: "Ezra 4: Rebuilding Opposed", pastor: "Pastor Larry Lee", date: "2020-10-04" },
+        { youtubeVideoID: "uqmaE9JKGtc", topic: "Ezra 3: First Comes Sacrifice", pastor: "Pastor Larry Lee", date: "2020-09-27" },
+        { youtubeVideoID: "GA94lEQkKo0", topic: "Exodus 4:10-17: Talent", pastor: "Pastor Steven Chin", date: "2020-09-20" },
+        { youtubeVideoID: "Q5x9gZWP6tM", topic: "Ezra 2: The Remnant", pastor: "Pastor Jerry Lin", date: "2020-09-13" },
+    ];
+
     return (
         <div>
 
@@ -25,7 +32,7 @@ function App() {
         1:24:45 Benediction
         */}
 
-        <SermonCard youtubeVideoID="EWQ__H_85bE" topic="Ezra 4: Rebuilding Opposed" pastor="Pastor Larry Lee" date="2020-10-04" />
+        <SermonCard sermons={sermons} youtubeVideoID="EWQ__H_85bE" topic="Ezra 4: Rebuilding Opposed" pastor="Pastor Larry Lee" date="2020-10-04" />
 
         {/*
         <SermonCard youtubeVideoID="uqmaE9JKGtc" topic="Ezra 3: First Comes Sacrifice" pastor="Pastor Larry Lee" date="September 27, 2020" />
