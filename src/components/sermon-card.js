@@ -17,8 +17,14 @@ const useStyles = makeStyles({
   },
 });
 
-export default function SermonCard({youtubeVideoID, topic, pastor, date, sermons}) {
+export default function SermonCard({sermons}) {
   const classes = useStyles();
+
+  const sermonToShow = sermons[1];
+  const youtubeVideoID = sermonToShow.youtubeVideoID;
+  const topic = sermonToShow.topic;
+  const pastor = sermonToShow.pastor;
+  const date = sermonToShow.date;
 
   const dateDisplay = new Date(date + "T07:00:00Z")
     .toLocaleDateString('en-us', {year: 'numeric', month: 'long', day: 'numeric'});
@@ -49,10 +55,6 @@ export default function SermonCard({youtubeVideoID, topic, pastor, date, sermons
 }
 
 SermonCard.propTypes = {
-  youtubeVideoID: PropTypes.string.isRequired,
-  topic: PropTypes.string.isRequired,
-  pastor: PropTypes.string.isRequired,
-  date: PropTypes.string.isRequired,
   sermons: PropTypes.arrayOf(PropTypes.shape({
     youtubeVideoID: PropTypes.string.isRequired,
     topic: PropTypes.string.isRequired,

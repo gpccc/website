@@ -32,7 +32,7 @@ function App() {
         1:24:45 Benediction
         */}
 
-        <SermonCard sermons={sermons} youtubeVideoID="EWQ__H_85bE" topic="Ezra 4: Rebuilding Opposed" pastor="Pastor Larry Lee" date="2020-10-04" />
+        <SermonCard sermons={sermons} />
 
         {/*
         <SermonCard youtubeVideoID="uqmaE9JKGtc" topic="Ezra 3: First Comes Sacrifice" pastor="Pastor Larry Lee" date="September 27, 2020" />
