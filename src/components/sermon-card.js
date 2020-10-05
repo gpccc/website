@@ -20,6 +20,9 @@ const useStyles = makeStyles({
 export default function SermonCard({youtubeVideoID, topic, pastor, date}) {
   const classes = useStyles();
 
+  const dateDisplay = new Date(date + "T07:00:00Z")
+    .toLocaleDateString('en-us', {year: 'numeric', month: 'long', day: 'numeric'});
+
   return (
     <Card className={classes.root}>
       <CardActionArea>
@@ -29,7 +32,7 @@ export default function SermonCard({youtubeVideoID, topic, pastor, date}) {
             {topic}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            {pastor} &middot; {date}
+            {pastor} &middot; {dateDisplay}
           </Typography>
         </CardContent>
       </CardActionArea>
