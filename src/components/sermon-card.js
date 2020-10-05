@@ -9,7 +9,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
-import CardYouTube from './card-youtube'
+import YouTubeCard from './youtube-card';
 
 const useStyles = makeStyles({
   root: {
@@ -26,7 +26,7 @@ export default function SermonCard({youtubeVideoID, topic, pastor, date}) {
   return (
     <Card className={classes.root}>
       <CardActionArea>
-        <CardYouTube videoID={youtubeVideoID} />
+        <YouTubeCard videoID={youtubeVideoID} />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
             {topic}
@@ -37,10 +37,10 @@ export default function SermonCard({youtubeVideoID, topic, pastor, date}) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary" onClick={() => {CardYouTube.seekTo(0, 12, 35)}}>
+        <Button size="small" color="primary" onClick={() => {YouTubeCard.seekTo(0, 12, 35)}}>
           Seek to
         </Button>
-        <Button size="small" color="primary" onClick={() => {CardYouTube.loadAndPlayVideo("Q5x9gZWP6tM")}}>
+        <Button size="small" color="primary" onClick={() => {YouTubeCard.loadAndPlayVideo("Q5x9gZWP6tM")}}>
           Other sermons
         </Button>
       </CardActions>
