@@ -34,10 +34,10 @@ export default function SermonCard({youtubeVideoID, topic, pastor, date}) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
+        <Button size="small" color="primary" onClick={() => {CardYouTube.seekTo(0, 12, 35)}}>
           Seek to
         </Button>
-        <Button size="small" color="primary">
+        <Button size="small" color="primary" onClick={() => {CardYouTube.loadAndPlayVideo("Q5x9gZWP6tM")}}>
           Other sermons
         </Button>
       </CardActions>
