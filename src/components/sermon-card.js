@@ -47,7 +47,7 @@ export default function SermonCard({sermons}) {
           Seek to
         </Button>
         <Button size="small" color="primary" onClick={() => {YouTubeCard.loadAndPlayVideo("Q5x9gZWP6tM")}}>
-          Other sermons
+          Recent sermons
         </Button>
       </CardActions>
     </Card>
