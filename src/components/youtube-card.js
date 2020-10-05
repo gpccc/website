@@ -11,7 +11,6 @@ export default class YouTubeCard extends React.Component {
 
     const iframe = document.getElementById(ID);
 
-    // https://stackoverflow.com/questions/7443578/youtube-iframe-api-how-do-i-control-an-iframe-player-thats-already-in-the-html
     iframe.contentWindow.postMessage(JSON.stringify({
       "event": "command",
       "func": "seekTo",
