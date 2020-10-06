@@ -9,6 +9,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
+import SermonSelect from './sermon-select';
 import YouTubeCard from './youtube-card';
 
 const useStyles = makeStyles({
@@ -49,6 +50,7 @@ export default function SermonCard({sermons}) {
         <Button size="small" color="primary" onClick={() => {YouTubeCard.loadAndPlayVideo("Q5x9gZWP6tM")}}>
           Recent sermons
         </Button>
+        <SermonSelect />
       </CardActions>
     </Card>
   );
