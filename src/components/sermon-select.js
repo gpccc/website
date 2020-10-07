@@ -164,7 +164,7 @@ export default function SermonSelect() {
           disableCloseOnSelect
           disablePortal
           renderTags={() => null}
-          noOptionsText="No labels"
+          noOptionsText="No matching sermons"
           renderOption={(option, { selected }) => (
             <React.Fragment>
               <DoneIcon
