@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import { fade, makeStyles } from '@material-ui/core/styles';
 import Popper from '@material-ui/core/Popper';
 import DoneIcon from '@material-ui/icons/Done';
 import Autocomplete from '@material-ui/lab/Autocomplete';
@@ -50,9 +50,21 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 600,
   },
   inputBase: {
-    /* With <input type="hidden">, the input box is not rendered. Yay! */
-    /* Bad side effect though: sermon list doesn't close when clicked outside the list. :( */
-    display: 'block',
+    padding: 10,
+    width: '100%',
+    borderBottom: '1px solid #dfe2e5',
+    '& input': {
+      borderRadius: 4,
+      backgroundColor: theme.palette.common.white,
+      padding: 8,
+      transition: theme.transitions.create(['border-color', 'box-shadow']),
+      border: '1px solid #ced4da',
+      fontSize: 14,
+      '&:focus': {
+        boxShadow: `${fade(theme.palette.primary.main, 0.25)} 0 0 0 0.2rem`,
+        borderColor: theme.palette.primary.main,
+      },
+    },
   },
   paper: {
     boxShadow: 'none',
@@ -177,7 +189,7 @@ export default function SermonSelect() {
           renderInput={(params) => (
             <InputBase
               ref={params.InputProps.ref}
-              inputProps={{...params.inputProps, type: 'hidden'}}
+              inputProps={params.inputProps}
               autoFocus
               className={classes.inputBase}
             />
