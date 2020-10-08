@@ -11,6 +11,7 @@ import Typography from '@material-ui/core/Typography';
 
 import SermonSelect from './sermon-select';
 import YouTubeCard from './youtube-card';
+import SeekToMenu from './seek-to-menu';
 
 const useStyles = makeStyles({
   root: {
@@ -44,9 +45,7 @@ export default function SermonCard({sermons}) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary" onClick={() => {YouTubeCard.seekTo(0, 12, 35)}}>
-          Seek to
-        </Button>
+        <SeekToMenu />
         <Button size="small" color="primary" onClick={() => {YouTubeCard.loadAndPlayVideo("Q5x9gZWP6tM")}}>
           Recent sermons
         </Button>
