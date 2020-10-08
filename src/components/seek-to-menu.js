@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -18,7 +20,7 @@ const seekPoints = [
     {time: "01:24:45", label: "Benediction"},
 ];
 
-export default function SeekToMenu() {
+export default function SeekToMenu({onSeekTo}) {
     const [anchorEl, setAnchorEl] = React.useState(null);
 
     const handleClick = (event) => {
@@ -27,7 +29,7 @@ export default function SeekToMenu() {
 
     const handleMenuItemClick = (event, index) => {
         setAnchorEl(null);
-        console.info('seek point', seekPoints[index])
+        onSeekTo(seekPoints[index]);
     };
       
     const handleClose = () => {
@@ -57,4 +59,8 @@ export default function SeekToMenu() {
             </Menu>
         </div>
     );
+}
+
+SeekToMenu.propTypes = {
+    onSeekTo: PropTypes.func.isRequired,
 }
