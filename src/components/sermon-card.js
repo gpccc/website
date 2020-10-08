@@ -19,6 +19,21 @@ const useStyles = makeStyles({
   },
 });
 
+const seekPoints = [
+  {time: "00:00:00", label: "Beginning"},
+  {time: "00:10:57", label: "Opening prayer"},
+  {time: "00:12:35", label: "O Come to the Altar"},
+  {time: "00:18:02", label: "Psalm 18:2-6, 16-17, 46, 49"},
+  {time: "00:19:20", label: "Rock of Ages (You will Stand)"},
+  {time: "00:23:46", label: "Gracefully Broken"},
+  {time: "00:28:54", label: "The Wonderful Cross"},
+  {time: "00:34:17", label: "Congregational prayer"},
+  {time: "00:36:01", label: "Communion"},
+  {time: "00:44:23", label: "Message"},
+  {time: "01:23:01", label: "Announcements"},
+  {time: "01:24:45", label: "Benediction"},
+];
+
 export default function SermonCard({sermons}) {
   const classes = useStyles();
 
@@ -45,7 +60,7 @@ export default function SermonCard({sermons}) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <SeekToMenu onSeekTo={(seekPoint) => {
+        <SeekToMenu seekPoints={seekPoints} onSeekTo={(seekPoint) => {
           const time = seekPoint.time.split(":");
           if (time.length !== 3) {
             return;
