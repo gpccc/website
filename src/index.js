@@ -16,29 +16,9 @@ function App() {
     return (
         <div>
 
-        {/*
-        10/4/2020
-        0 Beginning
-        10:57 Opening prayer
-        12:35 O Come to the Altar
-        18:02 Psalm 18:2-6, 16-17, 46, 49
-        19:20 Rock of Ages (You will Stand)
-        23:46 Gracefully Broken
-        28:54 The Wonderful Cross
-        34:17 Congregational prayer
-        36:01 Communion
-        44:23 Message
-        1:23:01 Announcements
-        1:24:45 Benediction
-        */}
-
         <SermonCard sermons={sermons} />
 
         {/*
-        <SermonCard youtubeVideoID="uqmaE9JKGtc" topic="Ezra 3: First Comes Sacrifice" pastor="Pastor Larry Lee" date="September 27, 2020" />
-        <SermonCard youtubeVideoID="GA94lEQkKo0" topic="Exodus 4:10-17: Talent" pastor="Pastor Steven Chin" date="September 20, 2020" />
-        <SermonCard youtubeVideoID="Q5x9gZWP6tM" topic="Ezra 2: The Remnant" pastor="Pastor Jerry Lin" date="September 13, 2020" />
-        
         Li5Pd6IXhE4 10/4/2020
         AYadEf1YjVk
         R0ikzK-juhI
