@@ -22,7 +22,7 @@ const useStyles = makeStyles({
 export default function SermonCard({sermons}) {
   const classes = useStyles();
 
-  const sermonToShow = sermons[1];
+  const sermonToShow = sermons[0];
   const youtubeVideoID = sermonToShow.youtubeVideoID;
   const topic = sermonToShow.topic;
   const pastor = sermonToShow.pastor;
