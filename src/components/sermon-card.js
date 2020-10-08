@@ -46,6 +46,23 @@ export default function SermonCard({sermons}) {
   const dateDisplay = new Date(date + "T07:00:00Z")
     .toLocaleDateString('en-us', {year: 'numeric', month: 'long', day: 'numeric'});
 
+  const onSeekTo = (seekPoint) => {
+    const time = seekPoint.time.split(":");
+    if (time.length !== 3) {
+      return;
+    }
+
+    const hour = +time[0];
+    const minute = +time[1];
+    const second = +time[2];
+
+    if (hour < 0 || minute < 0 || minute > 59 || second < 0 || second > 59) {
+      return;
+    }
+
+    YouTubeCard.seekTo(hour, minute, second);
+  };
+
   return (
     <Card className={classes.root}>
       <CardActionArea>
@@ -60,22 +77,7 @@ export default function SermonCard({sermons}) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <SeekToMenu seekPoints={seekPoints} onSeekTo={(seekPoint) => {
-          const time = seekPoint.time.split(":");
-          if (time.length !== 3) {
-            return;
-          }
-
-          const hour = +time[0];
-          const minute = +time[1];
-          const second = +time[2];
-
-          if (hour < 0 || minute < 0 || minute > 59 || second < 0 || second > 59) {
-            return;
-          }
-
-          YouTubeCard.seekTo(hour, minute, second);
-        }}/>
+        <SeekToMenu seekPoints={seekPoints} onSeekTo={onSeekTo}/>
         <Button size="small" color="primary" onClick={() => {YouTubeCard.loadAndPlayVideo("Q5x9gZWP6tM")}}>
           Recent sermons
         </Button>
