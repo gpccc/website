@@ -43,6 +43,8 @@ export default function SermonCard({sermons}) {
     const time = TimeUtils.parse(seekPoint.time);
     if (time.valid) {
       YouTubeCard.seekTo(time.hour, time.minute, time.second);
+    } else {
+      showSnackbar('Unable to seek to ' + seekPoint.label)
     }
   };
 
