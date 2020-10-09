@@ -23,7 +23,7 @@ export default function SeekToMenu({seekPoints, onSeekTo}) {
 
     return (
         <div>
-            <Button size="small" color="primary" aria-controls="seek-to-menu" aria-haspopup="true" onClick={handleClick}>
+            <Button size="small" color="primary" aria-controls="seek-to-menu" aria-haspopup="true" onClick={handleClick} disabled={seekPoints.length === 0}>
                 Seek to
             </Button>
             <Menu
