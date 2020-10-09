@@ -7,7 +7,7 @@ import SermonCard from './components/sermon-card';
 
 function App() {
     const sermons = [
-        { youtubeVideoID: "EWQ__H_85bE", topic: "Ezra 4: Rebuilding Opposed", pastor: "Pastor Larry Lee", date: "2020-10-04", seekPoints: [
+        { youtubeVideoID: "EWQ__H_85bE", topic: "Ezra 4: Rebuilding Opposed", pastor: "Pastor Larry Lee", date: "2020-10-04", duration: "01:25:45", seekPoints: [
             {time: "00:00:00", label: "Beginning"},
             {time: "00:10:57", label: "Opening prayer"},
             {time: "00:12:35", label: "O Come to the Altar"},
@@ -21,9 +21,9 @@ function App() {
             {time: "01:23:01", label: "Announcements"},
             {time: "01:24:45", label: "Benediction"},
         ]},
-        { youtubeVideoID: "uqmaE9JKGtc", topic: "Ezra 3: First Comes Sacrifice", pastor: "Pastor Larry Lee", date: "2020-09-27", seekPoints: []},
-        { youtubeVideoID: "GA94lEQkKo0", topic: "Exodus 4:10-17: Talent", pastor: "Pastor Steven Chin", date: "2020-09-20", seekPoints: [] },
-        { youtubeVideoID: "Q5x9gZWP6tM", topic: "Ezra 2: The Remnant", pastor: "Pastor Jerry Lin", date: "2020-09-13", seekPoints: [] },
+        { youtubeVideoID: "uqmaE9JKGtc", topic: "Ezra 3: First Comes Sacrifice", pastor: "Pastor Larry Lee", date: "2020-09-27", duration: "01:28:35", seekPoints: []},
+        { youtubeVideoID: "GA94lEQkKo0", topic: "Exodus 4:10-17: Talent", pastor: "Pastor Steven Chin", date: "2020-09-20", duration: "01:23:41", seekPoints: [] },
+        { youtubeVideoID: "Q5x9gZWP6tM", topic: "Ezra 2: The Remnant", pastor: "Pastor Jerry Lin", date: "2020-09-13", duration: "01:24:50", seekPoints: [] },
     ];
 
     return (
