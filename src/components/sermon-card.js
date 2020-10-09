@@ -6,12 +6,13 @@ import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
 import SermonSelect from './sermon-select';
 import YouTubeCard from './youtube-card';
+
 import SeekToMenu from './seek-to-menu';
+import RecentSermonsMenu from './recent-sermons-menu';
 
 const useStyles = makeStyles({
   root: {
@@ -78,9 +79,11 @@ export default function SermonCard({sermons}) {
       </CardActionArea>
       <CardActions>
         <SeekToMenu seekPoints={seekPoints} onSeekTo={onSeekTo}/>
-        <Button size="small" color="primary" onClick={() => {YouTubeCard.loadAndPlayVideo("Q5x9gZWP6tM")}}>
-          Recent sermons
-        </Button>
+        <RecentSermonsMenu
+          sermons={sermons}
+          onSermonSelect={(sermon) => {YouTubeCard.loadAndPlayVideo(sermon.youtubeVideoID)}}
+          onOlderSermonsSelect={() => alert('Older sermons selected...')}
+        />
         <SermonSelect />
       </CardActions>
     </Card>
