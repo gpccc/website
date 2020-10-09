@@ -8,7 +8,6 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 
-import SermonSelect from './sermon-select';
 import YouTubeCard from './youtube-card';
 
 import SeekToMenu from './seek-to-menu';
@@ -89,7 +88,6 @@ export default function SermonCard({sermons}) {
           onSermonSelect={onSermonSelect}
           onOlderSermonsSelect={() => console.info('Older sermons selected...')}
         />
-        <SermonSelect />
       </CardActions>
     </Card>
   );
