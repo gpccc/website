@@ -9,12 +9,14 @@ import ListItemText from '@material-ui/core/ListItemText';
 
 export default function RecentSermonsMenu({sermons, onSermonSelect, onOlderSermonsSelect}) {
     const [anchorEl, setAnchorEl] = React.useState(null);
+    const [selectedIndex, setSelectedIndex] = React.useState(0);
 
     const handleClick = (event) => {
         setAnchorEl(event.currentTarget);
     };
 
     const handleSermonMenuItemClick = (index) => {
+        setSelectedIndex(index);
         setAnchorEl(null);
         onSermonSelect(sermons[index]);
     };
@@ -41,7 +43,7 @@ export default function RecentSermonsMenu({sermons, onSermonSelect, onOlderSermo
                 onClose={handleClose}
             >
                 {sermons.map((sermon, index) => (
-                    <MenuItem key={"YT" + sermon.youtubeVideoID} onClick={() => handleSermonMenuItemClick(index)}>
+                    <MenuItem key={"YT" + sermon.youtubeVideoID} selected={index === selectedIndex} onClick={() => handleSermonMenuItemClick(index)}>
                         <ListItemText primary={sermon.topic} secondary={sermon.pastor + " · " + sermon.date} />
                     </MenuItem>
                 ))}
