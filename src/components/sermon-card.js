@@ -13,6 +13,8 @@ import YouTubeCard from './youtube-card';
 import SeekToMenu from './seek-to-menu';
 import RecentSermonsMenu from './recent-sermons-menu';
 
+import AppSnackbar from './app-snack-bar';
+
 const useStyles = makeStyles({
   root: {
     maxWidth: 345,
@@ -37,6 +39,9 @@ const seekPoints = [
 export default function SermonCard({sermons}) {
   const classes = useStyles();
   const [sermonToShow, setSermonToShow] = React.useState(sermons[0]);
+
+  const [snackbarData, setSnackbarData] = React.useState("");
+  const showSnackbar = msg => setSnackbarData({ msg, date: new Date() });
 
   const youtubeVideoID = sermonToShow.youtubeVideoID;
   const topic = sermonToShow.topic;
@@ -69,6 +74,7 @@ export default function SermonCard({sermons}) {
   }
 
   return (
+    <div>
     <Card className={classes.root}>
       <CardActionArea>
         <YouTubeCard videoID={youtubeVideoID} />
@@ -86,10 +92,12 @@ export default function SermonCard({sermons}) {
         <RecentSermonsMenu
           sermons={sermons}
           onSermonSelect={onSermonSelect}
-          onOlderSermonsSelect={() => console.info('Older sermons selected...')}
+          onOlderSermonsSelect={() => showSnackbar('TODO: Display a page listing all worship services')}
         />
       </CardActions>
     </Card>
+    {snackbarData && <AppSnackbar msg={snackbarData.msg} key={snackbarData.date} />}
+    </div>
   );
 }
 
