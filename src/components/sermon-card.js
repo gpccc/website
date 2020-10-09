@@ -21,21 +21,6 @@ const useStyles = makeStyles({
   },
 });
 
-const seekPoints = [
-  {time: "00:00:00", label: "Beginning"},
-  {time: "00:10:57", label: "Opening prayer"},
-  {time: "00:12:35", label: "O Come to the Altar"},
-  {time: "00:18:02", label: "Psalm 18:2-6, 16-17, 46, 49"},
-  {time: "00:19:20", label: "Rock of Ages (You will Stand)"},
-  {time: "00:23:46", label: "Gracefully Broken"},
-  {time: "00:28:54", label: "The Wonderful Cross"},
-  {time: "00:34:17", label: "Congregational prayer"},
-  {time: "00:36:01", label: "Communion"},
-  {time: "00:44:23", label: "Message"},
-  {time: "01:23:01", label: "Announcements"},
-  {time: "01:24:45", label: "Benediction"},
-];
-
 export default function SermonCard({sermons}) {
   const classes = useStyles();
   const [sermonToShow, setSermonToShow] = React.useState(sermons[0]);
@@ -47,6 +32,7 @@ export default function SermonCard({sermons}) {
   const topic = sermonToShow.topic;
   const pastor = sermonToShow.pastor;
   const date = sermonToShow.date;
+  const seekPoints = sermonToShow.seekPoints;
 
   const dateDisplay = new Date(date + "T07:00:00Z")
     .toLocaleDateString('en-us', {year: 'numeric', month: 'long', day: 'numeric'});
@@ -107,5 +93,9 @@ SermonCard.propTypes = {
     topic: PropTypes.string.isRequired,
     pastor: PropTypes.string.isRequired,
     date: PropTypes.string.isRequired,
+    seekPoints: PropTypes.arrayOf(PropTypes.shape({
+      time: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+    })).isRequired,
   })).isRequired,
 }
