@@ -47,7 +47,7 @@ export default function RecentSermonsMenu({sermons, onSermonSelect, onOlderSermo
                     </MenuItem>
                 ))}
 
-                <MenuItem key="OlderSermons" onClick={() => handleOlderSermonsItemClick()}>
+                <MenuItem key="OlderSermons" onClick={() => handleOlderSermonsItemClick()} disableRipple style={{backgroundColor: 'transparent'}}>
                     {/* <ListItem button={true} size="small" color="primary">Older sermons</ListItem> */}
                     {/* <ListItemText color="textPrimary">Older sermons</ListItemText> */}
                     <Button size="small" color="primary">Older sermons</Button>
