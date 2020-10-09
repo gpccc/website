@@ -15,6 +15,8 @@ import RecentSermonsMenu from './recent-sermons-menu';
 
 import AppSnackbar from './app-snack-bar';
 
+import TimeUtils from '../modules/time-utils';
+
 const useStyles = makeStyles({
   root: {
     maxWidth: 345,
@@ -38,20 +40,10 @@ export default function SermonCard({sermons}) {
     .toLocaleDateString('en-us', {year: 'numeric', month: 'long', day: 'numeric'});
 
   const onSeekTo = (seekPoint) => {
-    const time = seekPoint.time.split(":");
-    if (time.length !== 3) {
-      return;
+    const time = TimeUtils.parse(seekPoint.time);
+    if (time.valid) {
+      YouTubeCard.seekTo(time.hour, time.minute, time.second);
     }
-
-    const hour = +time[0];
-    const minute = +time[1];
-    const second = +time[2];
-
-    if (hour < 0 || minute < 0 || minute > 59 || second < 0 || second > 59) {
-      return;
-    }
-
-    YouTubeCard.seekTo(hour, minute, second);
   };
 
   const onSermonSelect = (sermon) => {
