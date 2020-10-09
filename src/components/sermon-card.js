@@ -37,8 +37,8 @@ const seekPoints = [
 
 export default function SermonCard({sermons}) {
   const classes = useStyles();
+  const [sermonToShow, setSermonToShow] = React.useState(sermons[0]);
 
-  const sermonToShow = sermons[0];
   const youtubeVideoID = sermonToShow.youtubeVideoID;
   const topic = sermonToShow.topic;
   const pastor = sermonToShow.pastor;
@@ -64,6 +64,11 @@ export default function SermonCard({sermons}) {
     YouTubeCard.seekTo(hour, minute, second);
   };
 
+  const onSermonSelect = (sermon) => {
+    setSermonToShow(sermon);
+    YouTubeCard.loadAndPlayVideo(sermon.youtubeVideoID);
+  }
+
   return (
     <Card className={classes.root}>
       <CardActionArea>
@@ -81,8 +86,8 @@ export default function SermonCard({sermons}) {
         <SeekToMenu seekPoints={seekPoints} onSeekTo={onSeekTo}/>
         <RecentSermonsMenu
           sermons={sermons}
-          onSermonSelect={(sermon) => {YouTubeCard.loadAndPlayVideo(sermon.youtubeVideoID)}}
-          onOlderSermonsSelect={() => alert('Older sermons selected...')}
+          onSermonSelect={onSermonSelect}
+          onOlderSermonsSelect={() => console.info('Older sermons selected...')}
         />
         <SermonSelect />
       </CardActions>
