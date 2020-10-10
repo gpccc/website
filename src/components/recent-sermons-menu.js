@@ -38,7 +38,7 @@ export default function RecentSermonsMenu({sermons, onSermonSelect, onOlderSermo
     return (
         <div>
             <Button size="small" color="primary" aria-controls="recent-sermons-menu" aria-haspopup="true" onClick={handleClick}>
-                Recent sermons
+                Recent services
             </Button>
             <Menu
                 id="recent-sermons-menu"
@@ -54,7 +54,7 @@ export default function RecentSermonsMenu({sermons, onSermonSelect, onOlderSermo
                 ))}
 
                 <MenuItem key="OlderSermons" onClick={() => handleOlderSermonsItemClick()} disableRipple style={{backgroundColor: 'transparent'}}>
-                    <Button size="small" color="primary" style={{paddingLeft: 0}}>Older sermons</Button>
+                    <Button size="small" color="primary" style={{paddingLeft: 0}}>Older services</Button>
                 </MenuItem>
             </Menu>
         </div>
