@@ -25,16 +25,16 @@ const useStyles = makeStyles({
 
 export default function ServiceCard({services}) {
   const classes = useStyles();
-  const [sermonToShow, setSermonToShow] = React.useState(services[0]);
+  const [serviceToShow, setServiceToShow] = React.useState(services[0]);
 
   const [snackbarData, setSnackbarData] = React.useState("");
   const showSnackbar = msg => setSnackbarData({ msg, date: new Date() });
 
-  const youtubeVideoID = sermonToShow.youtubeVideoID;
-  const topic = sermonToShow.topic;
-  const pastor = sermonToShow.pastor;
-  const date = sermonToShow.date;
-  const seekPoints = sermonToShow.seekPoints;
+  const youtubeVideoID = serviceToShow.youtubeVideoID;
+  const topic = serviceToShow.topic;
+  const pastor = serviceToShow.pastor;
+  const date = serviceToShow.date;
+  const seekPoints = serviceToShow.seekPoints;
 
   const dateDisplay = TimeUtils.longDateDisplay(date, 'long');
 
@@ -47,8 +47,8 @@ export default function ServiceCard({services}) {
     }
   };
 
-  const onSermonSelect = (service) => {
-    setSermonToShow(service);
+  const onServiceSelect = (service) => {
+    setServiceToShow(service);
     YouTubePlayer.loadAndPlayVideo(service.youtubeVideoID);
   }
 
@@ -70,7 +70,7 @@ export default function ServiceCard({services}) {
         <SeekToMenu seekPoints={seekPoints} onSeekTo={onSeekTo}/>
         <RecentServicesMenu
           services={services}
-          onServiceSelect={onSermonSelect}
+          onServiceSelect={onServiceSelect}
           onOlderServicesSelect={() => showSnackbar('TODO: Go to a page listing all worship services')}
         />
       </CardActions>
