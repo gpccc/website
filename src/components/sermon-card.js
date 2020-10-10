@@ -71,7 +71,7 @@ export default function SermonCard({sermons}) {
         <RecentSermonsMenu
           sermons={sermons}
           onSermonSelect={onSermonSelect}
-          onOlderSermonsSelect={() => showSnackbar('TODO: Display a page listing all worship services')}
+          onOlderSermonsSelect={() => showSnackbar('TODO: Go to a page listing all worship services')}
         />
       </CardActions>
     </Card>
