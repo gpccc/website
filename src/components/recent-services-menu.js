@@ -9,7 +9,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 
 import TimeUtils from '../modules/time-utils';
 
-export default function RecentServicesMenu({services, onSermonSelect, onOlderSermonsSelect}) {
+export default function RecentServicesMenu({services, onServiceSelect, onOlderServicesSelect}) {
     const [anchorEl, setAnchorEl] = React.useState(null);
     const [selectedIndex, setSelectedIndex] = React.useState(0);
 
@@ -17,23 +17,23 @@ export default function RecentServicesMenu({services, onSermonSelect, onOlderSer
         setAnchorEl(event.currentTarget);
     };
 
-    const handleSermonMenuItemClick = (index) => {
+    const handleServiceMenuItemClick = (index) => {
         setSelectedIndex(index);
         setAnchorEl(null);
-        onSermonSelect(services[index]);
+        onServiceSelect(services[index]);
     };
 
-    const handleOlderSermonsItemClick = () => {
+    const handleOlderServicesItemClick = () => {
         setAnchorEl(null);
-        onOlderSermonsSelect();
+        onOlderServicesSelect();
     };
       
     const handleClose = () => {
         setAnchorEl(null);
     };
 
-    const maxSermonsToShow = 4;
-    const sermonsToShow = services.length <= maxSermonsToShow ? services : services.slice(0, maxSermonsToShow);
+    const maxServicesToShow = 4;
+    const servicesToShow = services.length <= maxServicesToShow ? services : services.slice(0, maxServicesToShow);
 
     return (
         <div>
@@ -47,13 +47,13 @@ export default function RecentServicesMenu({services, onSermonSelect, onOlderSer
                 open={Boolean(anchorEl)}
                 onClose={handleClose}
             >
-                {sermonsToShow.map((service, index) => (
-                    <MenuItem key={"YT" + service.youtubeVideoID} selected={index === selectedIndex} onClick={() => handleSermonMenuItemClick(index)}>
+                {servicesToShow.map((service, index) => (
+                    <MenuItem key={"YT" + service.youtubeVideoID} selected={index === selectedIndex} onClick={() => handleServiceMenuItemClick(index)}>
                         <ListItemText primary={service.topic} secondary={service.pastor + " · " + TimeUtils.shortDateDisplay(service.date)} />
                     </MenuItem>
                 ))}
 
-                <MenuItem key="OlderSermons" onClick={() => handleOlderSermonsItemClick()} disableRipple style={{backgroundColor: 'transparent'}}>
+                <MenuItem key="OlderServices" onClick={() => handleOlderServicesItemClick()} disableRipple style={{backgroundColor: 'transparent'}}>
                     <Button size="small" color="primary" style={{paddingLeft: 0}}>Older services</Button>
                 </MenuItem>
             </Menu>
@@ -68,6 +68,6 @@ RecentServicesMenu.propTypes = {
         pastor: PropTypes.string.isRequired,
         date: PropTypes.string.isRequired,
       })).isRequired,
-    onSermonSelect: PropTypes.func.isRequired,
-    onOlderSermonsSelect: PropTypes.func.isRequired,
+    onServiceSelect: PropTypes.func.isRequired,
+    onOlderServicesSelect: PropTypes.func.isRequired,
 }

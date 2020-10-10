@@ -70,8 +70,8 @@ export default function ServiceCard({services}) {
         <SeekToMenu seekPoints={seekPoints} onSeekTo={onSeekTo}/>
         <RecentServicesMenu
           services={services}
-          onSermonSelect={onSermonSelect}
-          onOlderSermonsSelect={() => showSnackbar('TODO: Go to a page listing all worship services')}
+          onServiceSelect={onSermonSelect}
+          onOlderServicesSelect={() => showSnackbar('TODO: Go to a page listing all worship services')}
         />
       </CardActions>
     </Card>
