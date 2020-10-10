@@ -9,6 +9,7 @@ import SermonCard from './components/sermon-card';
 
 function App() {
     const sermons = [
+        { youtubeVideoID: "gvSIj2PaVGM", topic: "Ezra 5: Rebuilding Resumes", pastor: "Pastor Jerry Lin", date: "2020-10-11", duration: "00:00:00", seekPoints: [] },
         { youtubeVideoID: "EWQ__H_85bE", topic: "Ezra 4: Rebuilding Opposed", pastor: "Pastor Larry Lee", date: "2020-10-04", duration: "01:25:45", seekPoints: [
             {time: "00:00:00", label: "Beginning", type: SeekPointType.BEGINNING},
             {time: "00:10:57", label: "Opening prayer", type: SeekPointType.PRAYER},
