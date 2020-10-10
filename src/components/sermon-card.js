@@ -8,7 +8,7 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 
-import YouTubeCard from './youtube-card';
+import YouTubePlayer from './youtube-player';
 
 import SeekToMenu from './seek-to-menu';
 import RecentSermonsMenu from './recent-sermons-menu';
@@ -42,7 +42,7 @@ export default function SermonCard({sermons}) {
   const onSeekTo = (seekPoint) => {
     const time = TimeUtils.parse(seekPoint.time);
     if (time.valid) {
-      YouTubeCard.seekTo(time.hour, time.minute, time.second);
+      YouTubePlayer.seekTo(time.hour, time.minute, time.second);
     } else {
       showSnackbar('Unable to seek to ' + seekPoint.label)
     }
@@ -50,14 +50,14 @@ export default function SermonCard({sermons}) {
 
   const onSermonSelect = (sermon) => {
     setSermonToShow(sermon);
-    YouTubeCard.loadAndPlayVideo(sermon.youtubeVideoID);
+    YouTubePlayer.loadAndPlayVideo(sermon.youtubeVideoID);
   }
 
   return (
     <div>
     <Card className={classes.root}>
       <CardActionArea>
-        <YouTubeCard videoID={youtubeVideoID} />
+        <YouTubePlayer videoID={youtubeVideoID} />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
             {topic}

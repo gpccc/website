@@ -5,7 +5,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 
 const ID = "youtubeFrame";
 
-export default class YouTubeCard extends React.Component {
+export default class YouTubePlayer extends React.Component {
   static seekTo(hour, minute, second) {
     const seconds = ((60 * hour) + minute) * 60 + second;
 
@@ -47,6 +47,6 @@ export default class YouTubeCard extends React.Component {
   }
 }
 
-YouTubeCard.propTypes = {
+YouTubePlayer.propTypes = {
   videoID: PropTypes.string.isRequired,
 }
