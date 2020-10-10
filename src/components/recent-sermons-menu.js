@@ -32,6 +32,9 @@ export default function RecentSermonsMenu({sermons, onSermonSelect, onOlderSermo
         setAnchorEl(null);
     };
 
+    const maxSermonsToShow = 4;
+    const sermonsToShow = sermons.length <= maxSermonsToShow ? sermons : sermons.slice(0, maxSermonsToShow);
+
     return (
         <div>
             <Button size="small" color="primary" aria-controls="recent-sermons-menu" aria-haspopup="true" onClick={handleClick}>
@@ -44,7 +47,7 @@ export default function RecentSermonsMenu({sermons, onSermonSelect, onOlderSermo
                 open={Boolean(anchorEl)}
                 onClose={handleClose}
             >
-                {sermons.map((sermon, index) => (
+                {sermonsToShow.map((sermon, index) => (
                     <MenuItem key={"YT" + sermon.youtubeVideoID} selected={index === selectedIndex} onClick={() => handleSermonMenuItemClick(index)}>
                         <ListItemText primary={sermon.topic} secondary={sermon.pastor + " · " + TimeUtils.shortDateDisplay(sermon.date)} />
                     </MenuItem>
