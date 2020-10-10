@@ -1,5 +1,6 @@
 const DateTimeUtils = {
     parse: parse,
+    dateTimeDisplay: dateTimeDisplay,
     shortDateDisplay: shortDateDisplay,
     longDateDisplay: longDateDisplay,
 };
@@ -23,7 +24,14 @@ function parse(hhmmss) {
     return { valid: true, hour, minute, second };
 }
 
-function shortDateDisplay (datetime) {
+function dateTimeDisplay(datetime) {
+    // datetime format: yyyy-mm-ddThh:mm:ssZ
+    const date = new Date(datetime)
+        .toLocaleDateString('en-us', {month: 'long', day: 'numeric', hour: 'numeric', minute: '2-digit'});
+    return date;
+}
+
+function shortDateDisplay(datetime) {
     return dateDisplay(datetime, 'short');
 }
 
