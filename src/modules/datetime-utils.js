@@ -1,4 +1,4 @@
-const TimeUtils = {
+const DateTimeUtils = {
     parse: parse,
     shortDateDisplay: shortDateDisplay,
     longDateDisplay: longDateDisplay,
@@ -38,4 +38,4 @@ function dateDisplay(yyyymmdd, longOrShortMonth) {
 }
 
 
-export default TimeUtils;
+export default DateTimeUtils;

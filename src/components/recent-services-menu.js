@@ -7,7 +7,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 
 import ListItemText from '@material-ui/core/ListItemText';
 
-import TimeUtils from '../modules/time-utils';
+import DateTimeUtils from '../modules/datetime-utils';
 
 export default function RecentServicesMenu({services, onServiceSelect, onOlderServicesSelect}) {
     const [anchorEl, setAnchorEl] = React.useState(null);
@@ -49,7 +49,7 @@ export default function RecentServicesMenu({services, onServiceSelect, onOlderSe
             >
                 {servicesToShow.map((service, index) => (
                     <MenuItem key={"YT" + service.youtubeVideoID} selected={index === selectedIndex} onClick={() => handleServiceMenuItemClick(index)}>
-                        <ListItemText primary={service.topic} secondary={service.pastor + " · " + TimeUtils.shortDateDisplay(service.date)} />
+                        <ListItemText primary={service.topic} secondary={service.pastor + " · " + DateTimeUtils.shortDateDisplay(service.date)} />
                     </MenuItem>
                 ))}
 

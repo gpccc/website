@@ -15,7 +15,7 @@ import RecentServicesMenu from './recent-services-menu';
 
 import AppSnackbar from './app-snack-bar';
 
-import TimeUtils from '../modules/time-utils';
+import DateTimeUtils from '../modules/datetime-utils';
 
 const useStyles = makeStyles({
   root: {
@@ -36,10 +36,10 @@ export default function ServiceCard({services}) {
   const date = serviceToShow.date;
   const seekPoints = serviceToShow.seekPoints;
 
-  const dateDisplay = TimeUtils.longDateDisplay(date, 'long');
+  const dateDisplay = DateTimeUtils.longDateDisplay(date, 'long');
 
   const onSeekTo = (seekPoint) => {
-    const time = TimeUtils.parse(seekPoint.time);
+    const time = DateTimeUtils.parse(seekPoint.time);
     if (time.valid) {
       YouTubePlayer.seekTo(time.hour, time.minute, time.second);
     } else {
