@@ -1,5 +1,6 @@
 const TimeUtils = {
     parse: parse,
+    shortDateDisplay: shortDateDisplay,
     longDateDisplay: longDateDisplay,
 };
 
@@ -20,6 +21,10 @@ function parse(hhmmss) {
     }
 
     return { valid: true, hour, minute, second };
+}
+
+function shortDateDisplay (yyyymmdd) {
+    return dateDisplay(yyyymmdd, 'short');
 }
 
 function longDateDisplay(yyyymmdd) {
