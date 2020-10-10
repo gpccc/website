@@ -9,8 +9,8 @@ import ServiceCard from './components/service-card';
 
 function App() {
     const services = [
-        { youtubeVideoID: "gvSIj2PaVGM", topic: "Ezra 5: Rebuilding Resumes", pastor: "Pastor Jerry Lin", date: "2020-10-11", duration: "00:00:00", seekPoints: [] },
-        { youtubeVideoID: "EWQ__H_85bE", topic: "Ezra 4: Rebuilding Opposed", pastor: "Pastor Larry Lee", date: "2020-10-04", duration: "01:25:45", seekPoints: [
+        { youtubeVideoID: "gvSIj2PaVGM", topic: "Ezra 5: Rebuilding Resumes", pastor: "Pastor Jerry Lin", date: "2020-10-11T16:30:00Z", duration: "00:00:00", seekPoints: [] },
+        { youtubeVideoID: "EWQ__H_85bE", topic: "Ezra 4: Rebuilding Opposed", pastor: "Pastor Larry Lee", date: "2020-10-04T16:30:00Z", duration: "01:25:45", seekPoints: [
             {time: "00:00:00", label: "Beginning", type: SeekPointType.BEGINNING},
             {time: "00:10:57", label: "Opening prayer", type: SeekPointType.PRAYER},
             {time: "00:12:35", label: "O Come to the Altar", type: SeekPointType.PRAISE_SONG},
@@ -24,7 +24,7 @@ function App() {
             {time: "01:23:01", label: "Announcements", type: SeekPointType.ANNOUNCEMENTS},
             {time: "01:24:45", label: "Benediction", type: SeekPointType.BENEDICTION},
         ]},
-        { youtubeVideoID: "uqmaE9JKGtc", topic: "Ezra 3: First Comes Sacrifice", pastor: "Pastor Larry Lee", date: "2020-09-27", duration: "01:28:35", seekPoints: [
+        { youtubeVideoID: "uqmaE9JKGtc", topic: "Ezra 3: First Comes Sacrifice", pastor: "Pastor Larry Lee", date: "2020-09-27T16:30:00Z", duration: "01:28:35", seekPoints: [
             {time: "00:00:00", label: "Beginning", type: SeekPointType.BEGINNING},
             {time: "00:10:36", label: "Opening prayer", type: SeekPointType.PRAYER},
             {time: "00:11:38", label: "O Praise the Name", type: SeekPointType.PRAISE_SONG},
@@ -38,7 +38,7 @@ function App() {
             {time: "01:22:17", label: "Announcements", type: SeekPointType.ANNOUNCEMENTS},
             {time: "01:22:49", label: "Benediction", type: SeekPointType.BENEDICTION},
         ]},
-        { youtubeVideoID: "GA94lEQkKo0", topic: "Exodus 4:10-17: Talent", pastor: "Pastor Steven Chin", date: "2020-09-20", duration: "01:23:41", seekPoints: [
+        { youtubeVideoID: "GA94lEQkKo0", topic: "Exodus 4:10-17: Talent", pastor: "Pastor Steven Chin", date: "2020-09-20T16:30:00Z", duration: "01:23:41", seekPoints: [
             {time: "00:00:00", label: "Beginning", type: SeekPointType.BEGINNING},
             {time: "00:09:57", label: "Opening prayer", type: SeekPointType.PRAYER},
             {time: "00:11:04", label: "Who You Say I Am", type: SeekPointType.PRAISE_SONG},
@@ -52,7 +52,7 @@ function App() {
             {time: "01:18:38", label: "Announcements", type: SeekPointType.ANNOUNCEMENTS},
             {time: "01:21:56", label: "Closing prayer", type: SeekPointType.PRAYER},
         ]},
-        { youtubeVideoID: "Q5x9gZWP6tM", topic: "Ezra 2: The Remnant", pastor: "Pastor Jerry Lin", date: "2020-09-13", duration: "01:24:50", seekPoints: [] },
+        { youtubeVideoID: "Q5x9gZWP6tM", topic: "Ezra 2: The Remnant", pastor: "Pastor Jerry Lin", date: "2020-09-13T16:30:00Z", duration: "01:24:50", seekPoints: [] },
     ];
 
     return (
