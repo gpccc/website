@@ -11,7 +11,7 @@ import Typography from '@material-ui/core/Typography';
 import YouTubePlayer from './youtube-player';
 
 import SeekToMenu from './seek-to-menu';
-import RecentSermonsMenu from './recent-sermons-menu';
+import RecentServicesMenu from './recent-services-menu';
 
 import AppSnackbar from './app-snack-bar';
 
@@ -68,7 +68,7 @@ export default function SermonCard({services}) {
       </CardActionArea>
       <CardActions>
         <SeekToMenu seekPoints={seekPoints} onSeekTo={onSeekTo}/>
-        <RecentSermonsMenu
+        <RecentServicesMenu
           services={services}
           onSermonSelect={onSermonSelect}
           onOlderSermonsSelect={() => showSnackbar('TODO: Go to a page listing all worship services')}

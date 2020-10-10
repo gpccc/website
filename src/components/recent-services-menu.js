@@ -9,7 +9,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 
 import TimeUtils from '../modules/time-utils';
 
-export default function RecentSermonsMenu({services, onSermonSelect, onOlderSermonsSelect}) {
+export default function RecentServicesMenu({services, onSermonSelect, onOlderSermonsSelect}) {
     const [anchorEl, setAnchorEl] = React.useState(null);
     const [selectedIndex, setSelectedIndex] = React.useState(0);
 
@@ -61,7 +61,7 @@ export default function RecentSermonsMenu({services, onSermonSelect, onOlderSerm
     );
 }
 
-RecentSermonsMenu.propTypes = {
+RecentServicesMenu.propTypes = {
     services: PropTypes.arrayOf(PropTypes.shape({
         youtubeVideoID: PropTypes.string.isRequired,
         topic: PropTypes.string.isRequired,
