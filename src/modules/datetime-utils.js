@@ -1,8 +1,8 @@
 const DateTimeUtils = {
     parse: parse,
     dateTimeDisplay: dateTimeDisplay,
-    shortDateDisplay: shortDateDisplay,
-    longDateDisplay: longDateDisplay,
+    shortMonthDateDisplay: shortMonthDateDisplay,
+    longMonthDateDisplay: longMonthDateDisplay,
 };
 
 function parse(hhmmss) {
@@ -31,11 +31,11 @@ function dateTimeDisplay(datetime) {
     return date;
 }
 
-function shortDateDisplay(datetime) {
+function shortMonthDateDisplay(datetime) {
     return dateDisplay(datetime, 'short');
 }
 
-function longDateDisplay(datetime) {
+function longMonthDateDisplay(datetime) {
     return dateDisplay(datetime, 'long');
 }
 

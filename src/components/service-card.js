@@ -36,7 +36,7 @@ export default function ServiceCard({services}) {
   const date = serviceToShow.date;
   const seekPoints = serviceToShow.seekPoints;
 
-  const dateDisplay = DateTimeUtils.longDateDisplay(date, 'long');
+  const dateDisplay = DateTimeUtils.longMonthDateDisplay(date);
 
   const onSeekTo = (seekPoint) => {
     const time = DateTimeUtils.parse(seekPoint.time);
