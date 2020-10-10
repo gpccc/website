@@ -57,6 +57,7 @@ export default function ServiceCard({services}) {
     <Card className={classes.root}>
       <CardActionArea>
         <YouTubePlayer videoID={youtubeVideoID} />
+      </CardActionArea>
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
             {topic}
@@ -65,7 +66,6 @@ export default function ServiceCard({services}) {
             {pastor} &middot; {dateDisplay}
           </Typography>
         </CardContent>
-      </CardActionArea>
       <CardActions>
         <SeekToMenu seekPoints={seekPoints} onSeekTo={onSeekTo}/>
         <RecentServicesMenu
