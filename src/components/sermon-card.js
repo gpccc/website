@@ -23,9 +23,9 @@ const useStyles = makeStyles({
   },
 });
 
-export default function SermonCard({sermons}) {
+export default function SermonCard({services}) {
   const classes = useStyles();
-  const [sermonToShow, setSermonToShow] = React.useState(sermons[0]);
+  const [sermonToShow, setSermonToShow] = React.useState(services[0]);
 
   const [snackbarData, setSnackbarData] = React.useState("");
   const showSnackbar = msg => setSnackbarData({ msg, date: new Date() });
@@ -47,9 +47,9 @@ export default function SermonCard({sermons}) {
     }
   };
 
-  const onSermonSelect = (sermon) => {
-    setSermonToShow(sermon);
-    YouTubePlayer.loadAndPlayVideo(sermon.youtubeVideoID);
+  const onSermonSelect = (service) => {
+    setSermonToShow(service);
+    YouTubePlayer.loadAndPlayVideo(service.youtubeVideoID);
   }
 
   return (
@@ -69,7 +69,7 @@ export default function SermonCard({sermons}) {
       <CardActions>
         <SeekToMenu seekPoints={seekPoints} onSeekTo={onSeekTo}/>
         <RecentSermonsMenu
-          sermons={sermons}
+          services={services}
           onSermonSelect={onSermonSelect}
           onOlderSermonsSelect={() => showSnackbar('TODO: Go to a page listing all worship services')}
         />
@@ -81,7 +81,7 @@ export default function SermonCard({sermons}) {
 }
 
 SermonCard.propTypes = {
-  sermons: PropTypes.arrayOf(PropTypes.shape({
+  services: PropTypes.arrayOf(PropTypes.shape({
     youtubeVideoID: PropTypes.string.isRequired,
     topic: PropTypes.string.isRequired,
     pastor: PropTypes.string.isRequired,

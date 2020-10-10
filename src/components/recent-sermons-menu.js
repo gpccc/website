@@ -9,7 +9,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 
 import TimeUtils from '../modules/time-utils';
 
-export default function RecentSermonsMenu({sermons, onSermonSelect, onOlderSermonsSelect}) {
+export default function RecentSermonsMenu({services, onSermonSelect, onOlderSermonsSelect}) {
     const [anchorEl, setAnchorEl] = React.useState(null);
     const [selectedIndex, setSelectedIndex] = React.useState(0);
 
@@ -20,7 +20,7 @@ export default function RecentSermonsMenu({sermons, onSermonSelect, onOlderSermo
     const handleSermonMenuItemClick = (index) => {
         setSelectedIndex(index);
         setAnchorEl(null);
-        onSermonSelect(sermons[index]);
+        onSermonSelect(services[index]);
     };
 
     const handleOlderSermonsItemClick = () => {
@@ -33,23 +33,23 @@ export default function RecentSermonsMenu({sermons, onSermonSelect, onOlderSermo
     };
 
     const maxSermonsToShow = 4;
-    const sermonsToShow = sermons.length <= maxSermonsToShow ? sermons : sermons.slice(0, maxSermonsToShow);
+    const sermonsToShow = services.length <= maxSermonsToShow ? services : services.slice(0, maxSermonsToShow);
 
     return (
         <div>
-            <Button size="small" color="primary" aria-controls="recent-sermons-menu" aria-haspopup="true" onClick={handleClick}>
+            <Button size="small" color="primary" aria-controls="recent-services-menu" aria-haspopup="true" onClick={handleClick}>
                 Recent services
             </Button>
             <Menu
-                id="recent-sermons-menu"
+                id="recent-services-menu"
                 anchorEl={anchorEl}
                 keepMounted
                 open={Boolean(anchorEl)}
                 onClose={handleClose}
             >
-                {sermonsToShow.map((sermon, index) => (
-                    <MenuItem key={"YT" + sermon.youtubeVideoID} selected={index === selectedIndex} onClick={() => handleSermonMenuItemClick(index)}>
-                        <ListItemText primary={sermon.topic} secondary={sermon.pastor + " · " + TimeUtils.shortDateDisplay(sermon.date)} />
+                {sermonsToShow.map((service, index) => (
+                    <MenuItem key={"YT" + service.youtubeVideoID} selected={index === selectedIndex} onClick={() => handleSermonMenuItemClick(index)}>
+                        <ListItemText primary={service.topic} secondary={service.pastor + " · " + TimeUtils.shortDateDisplay(service.date)} />
                     </MenuItem>
                 ))}
 
@@ -62,7 +62,7 @@ export default function RecentSermonsMenu({sermons, onSermonSelect, onOlderSermo
 }
 
 RecentSermonsMenu.propTypes = {
-    sermons: PropTypes.arrayOf(PropTypes.shape({
+    services: PropTypes.arrayOf(PropTypes.shape({
         youtubeVideoID: PropTypes.string.isRequired,
         topic: PropTypes.string.isRequired,
         pastor: PropTypes.string.isRequired,

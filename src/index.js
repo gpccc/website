@@ -8,7 +8,7 @@ import SeekPointType from './constants/seek-point-type';
 import SermonCard from './components/sermon-card';
 
 function App() {
-    const sermons = [
+    const services = [
         { youtubeVideoID: "gvSIj2PaVGM", topic: "Ezra 5: Rebuilding Resumes", pastor: "Pastor Jerry Lin", date: "2020-10-11", duration: "00:00:00", seekPoints: [] },
         { youtubeVideoID: "EWQ__H_85bE", topic: "Ezra 4: Rebuilding Opposed", pastor: "Pastor Larry Lee", date: "2020-10-04", duration: "01:25:45", seekPoints: [
             {time: "00:00:00", label: "Beginning", type: SeekPointType.BEGINNING},
@@ -58,7 +58,7 @@ function App() {
     return (
         <div>
 
-        <SermonCard sermons={sermons} />
+        <SermonCard services={services} />
 
         {/*
         Li5Pd6IXhE4 10/4/2020
