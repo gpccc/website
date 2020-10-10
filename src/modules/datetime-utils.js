@@ -23,19 +23,25 @@ function parse(hhmmss) {
     return { valid: true, hour, minute, second };
 }
 
-function shortDateDisplay (yyyymmdd) {
-    return dateDisplay(yyyymmdd, 'short');
+function shortDateDisplay (datetime) {
+    return dateDisplay(datetime, 'short');
 }
 
-function longDateDisplay(yyyymmdd) {
-    return dateDisplay(yyyymmdd, 'long');
+function longDateDisplay(datetime) {
+    return dateDisplay(datetime, 'long');
 }
 
-function dateDisplay(yyyymmdd, longOrShortMonth) {
-    const date = new Date(yyyymmdd + "T07:00:00Z")
+function dateDisplay(datetime, longOrShortMonth) {
+    // datetime format: yyyy-mm-dd or yyyy-mm-ddThh:mm:ssZ
+
+    var reJustDate = /^\d{4}[-/]\d{1,2}[-/]\d{1,2}$/;
+    if (reJustDate.exec(datetime)) {
+        datetime += "T07:00:00Z";
+    }
+
+    const date = new Date(datetime)
         .toLocaleDateString('en-us', {year: 'numeric', month: longOrShortMonth, day: 'numeric'});
     return date;
 }
-
 
 export default DateTimeUtils;
