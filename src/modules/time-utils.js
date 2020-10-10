@@ -1,5 +1,6 @@
 const TimeUtils = {
     parse: parse,
+    longDateDisplay: longDateDisplay,
 };
 
 function parse(hhmmss) {
@@ -20,5 +21,16 @@ function parse(hhmmss) {
 
     return { valid: true, hour, minute, second };
 }
+
+function longDateDisplay(yyyymmdd) {
+    return dateDisplay(yyyymmdd, 'long');
+}
+
+function dateDisplay(yyyymmdd, longOrShortMonth) {
+    const date = new Date(yyyymmdd + "T07:00:00Z")
+        .toLocaleDateString('en-us', {year: 'numeric', month: longOrShortMonth, day: 'numeric'});
+    return date;
+}
+
 
 export default TimeUtils;

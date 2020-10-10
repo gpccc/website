@@ -36,8 +36,7 @@ export default function SermonCard({sermons}) {
   const date = sermonToShow.date;
   const seekPoints = sermonToShow.seekPoints;
 
-  const dateDisplay = new Date(date + "T07:00:00Z")
-    .toLocaleDateString('en-us', {year: 'numeric', month: 'long', day: 'numeric'});
+  const dateDisplay = TimeUtils.longDateDisplay(date, 'long');
 
   const onSeekTo = (seekPoint) => {
     const time = TimeUtils.parse(seekPoint.time);
