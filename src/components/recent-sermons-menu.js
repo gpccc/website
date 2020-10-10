@@ -7,6 +7,8 @@ import MenuItem from '@material-ui/core/MenuItem';
 
 import ListItemText from '@material-ui/core/ListItemText';
 
+import TimeUtils from '../modules/time-utils';
+
 export default function RecentSermonsMenu({sermons, onSermonSelect, onOlderSermonsSelect}) {
     const [anchorEl, setAnchorEl] = React.useState(null);
     const [selectedIndex, setSelectedIndex] = React.useState(0);
@@ -44,7 +46,7 @@ export default function RecentSermonsMenu({sermons, onSermonSelect, onOlderSermo
             >
                 {sermons.map((sermon, index) => (
                     <MenuItem key={"YT" + sermon.youtubeVideoID} selected={index === selectedIndex} onClick={() => handleSermonMenuItemClick(index)}>
-                        <ListItemText primary={sermon.topic} secondary={sermon.pastor + " · " + sermon.date} />
+                        <ListItemText primary={sermon.topic} secondary={sermon.pastor + " · " + TimeUtils.shortDateDisplay(sermon.date)} />
                     </MenuItem>
                 ))}
 
