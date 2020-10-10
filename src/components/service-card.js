@@ -23,7 +23,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function SermonCard({services}) {
+export default function ServiceCard({services}) {
   const classes = useStyles();
   const [sermonToShow, setSermonToShow] = React.useState(services[0]);
 
@@ -80,7 +80,7 @@ export default function SermonCard({services}) {
   );
 }
 
-SermonCard.propTypes = {
+ServiceCard.propTypes = {
   services: PropTypes.arrayOf(PropTypes.shape({
     youtubeVideoID: PropTypes.string.isRequired,
     topic: PropTypes.string.isRequired,

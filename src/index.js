@@ -5,7 +5,7 @@ import './styles/site.css';
 
 import SeekPointType from './constants/seek-point-type';
 
-import SermonCard from './components/sermon-card';
+import ServiceCard from './components/service-card';
 
 function App() {
     const services = [
@@ -58,7 +58,7 @@ function App() {
     return (
         <div>
 
-        <SermonCard services={services} />
+        <ServiceCard services={services} />
 
         {/*
         Li5Pd6IXhE4 10/4/2020
