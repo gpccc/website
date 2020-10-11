@@ -16,7 +16,7 @@ import GroupIcon from '@material-ui/icons/Group';
 import MessageIcon from '@material-ui/icons/Message';
 import MovieIcon from '@material-ui/icons/Movie';
 import AnnouncementIcon from '@material-ui/icons/Announcement';
-import CardGiftcard from '@material-ui/icons/CardGiftcard';
+import CardGiftcardIcon from '@material-ui/icons/CardGiftcard';
 import CakeIcon from '@material-ui/icons/Cake';
 
 import SeekPointType from '../constants/seek-point-type';
@@ -64,7 +64,7 @@ export default function SeekToMenu({seekPoints, onSeekTo}) {
                             {seekPoint.type===SeekPointType.MESSAGE && <MessageIcon fontSize="small" />}
                             {seekPoint.type===SeekPointType.VIDEO && <MovieIcon fontSize="small" />}
                             {seekPoint.type===SeekPointType.ANNOUNCEMENTS && <AnnouncementIcon fontSize="small" />}
-                            {seekPoint.type===SeekPointType.BENEDICTION && <CardGiftcard fontSize="small" />}
+                            {seekPoint.type===SeekPointType.BENEDICTION && <CardGiftcardIcon fontSize="small" />}
                             {seekPoint.type===SeekPointType.BIRTHDAY && <CakeIcon fontSize="small" />}
                         </ListItemIcon>
                         <ListItemText primary={seekPoint.label} />
