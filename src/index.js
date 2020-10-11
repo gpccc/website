@@ -5,13 +5,18 @@ import './styles/site.css';
 
 import englishServices from './constants/english-services';
 
+import AppSnackbar from './components/app-snack-bar';
 import ServiceCard from './components/service-card';
 
 function App() {
+  const [snackbarData, setSnackbarData] = React.useState("");
+  const showSnackbar = msg => setSnackbarData({ msg, date: new Date() });
+
     return (
         <div>
 
-          <ServiceCard services={englishServices} />
+          <ServiceCard services={englishServices} showSnackbar={showSnackbar} />
+          {snackbarData && <AppSnackbar msg={snackbarData.msg} key={snackbarData.date} />}
 
         {/*
         Li5Pd6IXhE4 10/4/2020

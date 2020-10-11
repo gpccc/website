@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 
 import Card from '@material-ui/core/Card';
 
-import AppSnackbar from './app-snack-bar';
 import ServicePlayer  from './service-player';
 
 import { makeStyles } from '@material-ui/core/styles';
@@ -14,19 +13,13 @@ const useStyles = makeStyles({
   },
 });
 
-export default function ServiceCard({services}) {
+export default function ServiceCard({services, showSnackbar}) {
   const classes = useStyles();
 
-  const [snackbarData, setSnackbarData] = React.useState("");
-  const showSnackbar = msg => setSnackbarData({ msg, date: new Date() });
-
   return (
-    <div>
     <Card className={classes.root}>
       <ServicePlayer services={services} showSnackbar={showSnackbar} />
     </Card>
-    {snackbarData && <AppSnackbar msg={snackbarData.msg} key={snackbarData.date} />}
-    </div>
   );
 }
 
@@ -41,4 +34,5 @@ ServiceCard.propTypes = {
       label: PropTypes.string.isRequired,
     })).isRequired,
   })).isRequired,
+  showSnackbar: PropTypes.func.isRequired,
 };
