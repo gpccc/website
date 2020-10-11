@@ -8,6 +8,7 @@ const SeekPointType = {
     VIDEO: 'Video',
     ANNOUNCEMENTS: 'Announcements',
     BENEDICTION: 'Benediction',
+    BIRTHDAY: 'Birthday',
 };
 
 export default SeekPointType;
