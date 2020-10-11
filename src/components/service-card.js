@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { makeStyles } from '@material-ui/core/styles';
+import Box from '@material-ui/core/Box';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
@@ -16,6 +17,8 @@ import RecentServicesMenu from './recent-services-menu';
 import AppSnackbar from './app-snack-bar';
 
 import DateTimeUtils from '../modules/datetime-utils';
+
+import LiveStreamState from '../constants/live-stream-state';
 
 const useStyles = makeStyles({
   root: {
@@ -35,8 +38,28 @@ export default function ServiceCard({services}) {
   const pastor = serviceToShow.pastor;
   const date = serviceToShow.date;
   const seekPoints = serviceToShow.seekPoints;
+  const liveStreamState = getLiveStreamState(date);
 
-  const dateDisplay = DateTimeUtils.longMonthDateDisplay(date);
+  function getLiveStreamState(serviceStartDateTime){
+    const serviceStartTime = new Date(serviceStartDateTime);
+  
+    const serviceEndTime = new Date(serviceStartDateTime);
+    serviceEndTime.setMinutes(serviceEndTime.getMinutes() + 60+20);
+  
+    const nowTime  = new Date();
+  
+    const willBeLive = nowTime < serviceStartTime;
+    const liveNow = serviceStartTime <= nowTime && nowTime <= serviceEndTime;
+  
+    let state = LiveStreamState.NOT_APPLICABLE;
+    if (willBeLive) {
+      state = LiveStreamState.WILL_BE_LIVE;
+    } else if (liveNow) {
+      state = LiveStreamState.LIVE_NOW;
+    }
+
+    return state;
+  }
 
   const onSeekTo = (seekPoint) => {
     const time = DateTimeUtils.parse(seekPoint.time);
@@ -50,7 +73,7 @@ export default function ServiceCard({services}) {
   const onServiceSelect = (service) => {
     setServiceToShow(service);
     YouTubePlayer.loadAndPlayVideo(service.youtubeVideoID);
-  }
+  };
 
   return (
     <div>
@@ -58,12 +81,18 @@ export default function ServiceCard({services}) {
       <CardActionArea>
         <YouTubePlayer videoID={youtubeVideoID} />
       </CardActionArea>
-        <CardContent>
+      <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
             {topic}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            {pastor} &middot; {dateDisplay}
+            {pastor} &middot; {
+              liveStreamState===LiveStreamState.WILL_BE_LIVE
+              ? <Box color="secondary.main" component="span">Live {DateTimeUtils.dateTimeDisplay(date)}</Box>
+              : liveStreamState===LiveStreamState.LIVE_NOW
+                ? <Box color="secondary.main" component="span">Live now</Box>
+                : DateTimeUtils.longMonthDateDisplay(date)
+            }
           </Typography>
         </CardContent>
       <CardActions>
