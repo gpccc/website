@@ -5,6 +5,7 @@ const SeekPointType = {
     PRAYER: 'Prayer',
     COMMUNION: 'Communion',
     MESSAGE: 'Message',
+    VIDEO: 'Video',
     ANNOUNCEMENTS: 'Announcements',
     BENEDICTION: 'Benediction',
 };

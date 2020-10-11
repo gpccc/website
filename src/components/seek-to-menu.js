@@ -14,6 +14,7 @@ import MusicNoteIcon from '@material-ui/icons/MusicNote';
 import TelegramIcon from '@material-ui/icons/Telegram';
 import GroupIcon from '@material-ui/icons/Group';
 import MessageIcon from '@material-ui/icons/Message';
+import MovieIcon from '@material-ui/icons/Movie';
 import AnnouncementIcon from '@material-ui/icons/Announcement';
 import CardGiftcard from '@material-ui/icons/CardGiftcard';
 
@@ -60,6 +61,7 @@ export default function SeekToMenu({seekPoints, onSeekTo}) {
                             {seekPoint.type===SeekPointType.PRAYER && <TelegramIcon fontSize="small" />}
                             {seekPoint.type===SeekPointType.COMMUNION && <GroupIcon fontSize="small" />}
                             {seekPoint.type===SeekPointType.MESSAGE && <MessageIcon fontSize="small" />}
+                            {seekPoint.type===SeekPointType.VIDEO && <MovieIcon fontSize="small" />}
                             {seekPoint.type===SeekPointType.ANNOUNCEMENTS && <AnnouncementIcon fontSize="small" />}
                             {seekPoint.type===SeekPointType.BENEDICTION && <CardGiftcard fontSize="small" />}
                         </ListItemIcon>
