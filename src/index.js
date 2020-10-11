@@ -9,7 +9,24 @@ import ServiceCard from './components/service-card';
 
 function App() {
     const services = [
-        { youtubeVideoID: "gvSIj2PaVGM", topic: "Ezra 5: Rebuilding Resumes", pastor: "Pastor Jerry Lin", date: "2020-10-11T16:30:00Z", duration: "00:00:00", seekPoints: [] },
+        { youtubeVideoID: "gvSIj2PaVGM", topic: "Ezra 5: Rebuilding Resumes", pastor: "Pastor Jerry Lin", date: "2020-10-11T16:30:00Z", duration: "01:22:55", seekPoints: [
+            {time: "00:00:10", label: "Beginning", type: SeekPointType.BEGINNING},
+            {time: "00:10:52", label: "Opening prayer", type: SeekPointType.PRAYER},
+            {time: "00:12:20", label: "Job 1:20-21", type: SeekPointType.BIBLE_VERSE}, 
+            {time: "00:13:37", label: "Blessed Be Your Name", type: SeekPointType.PRAISE_SONG},
+            {time: "00:17:19", label: "Job 42:1-5; Psalm 30:4-5", type: SeekPointType.BIBLE_VERSE},
+            {time: "00:18:32", label: "Your Love Never Fails", type: SeekPointType.PRAISE_SONG},
+            {time: "00:23:34", label: "King of Kings", type: SeekPointType.PRAISE_SONG},
+            {time: "00:28:04", label: "Gracefully Broken", type: SeekPointType.PRAISE_SONG},
+            {time: "00:33:28", label: "Congregational prayer", type: SeekPointType.PRAYER},
+            {time: "00:36:42", label: "Message", type: SeekPointType.MESSAGE},
+            {time: "01:07:01", label: "Closing prayer", type: SeekPointType.PRAYER},
+            {time: "01:08:20", label: "Lord, I Need You", type: SeekPointType.PRAISE_SONG},
+            {time: "01:12:45", label: "Youth Praise Night", type: SeekPointType.VIDEO},
+            {time: "01:16:12", label: "Announcements", type: SeekPointType.ANNOUNCEMENTS},
+            {time: "01:18:55", label: "Benediction", type: SeekPointType.BENEDICTION},
+            {time: "01:19:30", label: "Pastor Larry's birthday", type: SeekPointType.BIRTHDAY},
+        ]},
         { youtubeVideoID: "EWQ__H_85bE", topic: "Ezra 4: Rebuilding Opposed", pastor: "Pastor Larry Lee", date: "2020-10-04T16:30:00Z", duration: "01:25:45", seekPoints: [
             {time: "00:00:00", label: "Beginning", type: SeekPointType.BEGINNING},
             {time: "00:10:57", label: "Opening prayer", type: SeekPointType.PRAYER},
