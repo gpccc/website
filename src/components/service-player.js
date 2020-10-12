@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Box from '@material-ui/core/Box';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
@@ -9,12 +8,12 @@ import Typography from '@material-ui/core/Typography';
 
 import YouTubePlayer from './youtube-player';
 
+import ServiceDateDisplay from './service-date-display';
+
 import SeekToMenu from './seek-to-menu';
 import RecentServicesMenu from './recent-services-menu';
 
 import DateTimeUtils from '../modules/datetime-utils';
-
-import LiveStreamState from '../constants/live-stream-state';
 
 export default function ServicePlayer({playerID, services, showSnackbar}) {
   const [serviceToShow, setServiceToShow] = React.useState(services[0]);
@@ -24,28 +23,6 @@ export default function ServicePlayer({playerID, services, showSnackbar}) {
   const pastor = serviceToShow.pastor;
   const date = serviceToShow.date;
   const seekPoints = serviceToShow.seekPoints;
-  const liveStreamState = getLiveStreamState(date);
-
-  function getLiveStreamState(serviceStartDateTime) {
-    const serviceStartTime = new Date(serviceStartDateTime);
-  
-    const serviceEndTime = new Date(serviceStartDateTime);
-    serviceEndTime.setMinutes(serviceEndTime.getMinutes() + 60+20);
-  
-    const nowTime  = new Date();
-  
-    const willBeLive = nowTime < serviceStartTime;
-    const liveNow = serviceStartTime <= nowTime && nowTime <= serviceEndTime;
-  
-    let state = LiveStreamState.NOT_APPLICABLE;
-    if (willBeLive) {
-      state = LiveStreamState.WILL_BE_LIVE;
-    } else if (liveNow) {
-      state = LiveStreamState.LIVE_NOW;
-    }
-
-    return state;
-  }
 
   const onSeekTo = (seekPoint) => {
     const time = DateTimeUtils.parse(seekPoint.time);
@@ -71,13 +48,7 @@ export default function ServicePlayer({playerID, services, showSnackbar}) {
           {topic}
         </Typography>
         <Typography variant="body2" color="textSecondary" component="p">
-          {pastor} &middot; {
-            liveStreamState===LiveStreamState.WILL_BE_LIVE
-            ? <Box color="secondary.main" component="span">Live {DateTimeUtils.monthDayHourMinuteDisplay(date)}</Box>
-            : liveStreamState===LiveStreamState.LIVE_NOW
-              ? <Box color="secondary.main" component="span">Live now</Box>
-              : DateTimeUtils.longServiceDateDisplay(date)
-          }
+          {pastor} &middot; <ServiceDateDisplay serviceStartDateTime={date} />
         </Typography>
       </CardContent>
       <CardActions>
