@@ -18,7 +18,7 @@ const useStyles = makeStyles(theme => ({
   tab: {
     lineHeight: 'normal',
     [theme.breakpoints.up("sm")]: {
-      minWidth: 112,
+      minWidth: 'inherit',
     }
   },
 }));
