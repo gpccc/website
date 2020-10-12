@@ -1,8 +1,8 @@
 const DateTimeUtils = {
     parse: parse,
-    dateTimeDisplay: dateTimeDisplay,
-    shortMonthDateDisplay: shortMonthDateDisplay,
-    longMonthDateDisplay: longMonthDateDisplay,
+    monthDayHourMinuteDisplay: monthDayHourMinuteDisplay,
+    shortServiceDateDisplay: shortServiceDateDisplay,
+    longServiceDateDisplay: longServiceDateDisplay,
 };
 
 function parse(hhmmss) {
@@ -24,22 +24,22 @@ function parse(hhmmss) {
     return { valid: true, hour, minute, second };
 }
 
-function dateTimeDisplay(datetime) {
+function monthDayHourMinuteDisplay(datetime) {
     // datetime format: yyyy-mm-ddThh:mm:ssZ
     const date = new Date(datetime)
         .toLocaleDateString('en-us', {month: 'long', day: 'numeric', hour: 'numeric', minute: '2-digit'});
     return date;
 }
 
-function shortMonthDateDisplay(datetime) {
+function shortServiceDateDisplay(datetime) {
     return dateDisplay(datetime, 'short');
 }
 
-function longMonthDateDisplay(datetime) {
+function longServiceDateDisplay(datetime) {
     return dateDisplay(datetime, 'long');
 }
 
-function dateDisplay(datetime, longOrShortMonth) {
+function dateDisplay(datetime, longOrShort) {
     // datetime format: yyyy-mm-dd or yyyy-mm-ddThh:mm:ssZ
 
     var reJustDate = /^\d{4}[-/]\d{1,2}[-/]\d{1,2}$/;
@@ -48,7 +48,7 @@ function dateDisplay(datetime, longOrShortMonth) {
     }
 
     const date = new Date(datetime)
-        .toLocaleDateString('en-us', {year: 'numeric', month: longOrShortMonth, day: 'numeric'});
+        .toLocaleDateString('en-us', {year: 'numeric', month: longOrShort, day: 'numeric'});
     return date;
 }
 

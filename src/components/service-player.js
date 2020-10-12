@@ -73,10 +73,10 @@ export default function ServicePlayer({playerID, services, showSnackbar}) {
         <Typography variant="body2" color="textSecondary" component="p">
           {pastor} &middot; {
             liveStreamState===LiveStreamState.WILL_BE_LIVE
-            ? <Box color="secondary.main" component="span">Live {DateTimeUtils.dateTimeDisplay(date)}</Box>
+            ? <Box color="secondary.main" component="span">Live {DateTimeUtils.monthDayHourMinuteDisplay(date)}</Box>
             : liveStreamState===LiveStreamState.LIVE_NOW
               ? <Box color="secondary.main" component="span">Live now</Box>
-              : DateTimeUtils.longMonthDateDisplay(date)
+              : DateTimeUtils.longServiceDateDisplay(date)
           }
         </Typography>
       </CardContent>
