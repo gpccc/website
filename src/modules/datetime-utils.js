@@ -47,9 +47,14 @@ function dateDisplay(datetime, longOrShort) {
         datetime += "T07:00:00Z";
     }
 
-    const date = new Date(datetime)
-        .toLocaleDateString('en-us', {year: 'numeric', month: longOrShort, day: 'numeric'});
-    return date;
+    const date = new Date(datetime);
+    const notSunday = date.getDay() !== 0;
+
+    const dateDisplay = notSunday
+        ? date.toLocaleDateString('en-us', {weekday: longOrShort, year: 'numeric', month: longOrShort, day: 'numeric'})
+        : date.toLocaleDateString('en-us', {year: 'numeric', month: longOrShort, day: 'numeric'})
+
+    return dateDisplay;
 }
 
 export default DateTimeUtils;
