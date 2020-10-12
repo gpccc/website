@@ -11,11 +11,16 @@ import ServicePlayer  from './service-player';
 
 import { makeStyles } from '@material-ui/core/styles';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   root: {
     maxWidth: 345,
   },
-});
+  tab: {
+    [theme.breakpoints.up("sm")]: {
+      minWidth: 112,
+    }
+  },
+}));
 
 function TabPanel(props) {
   const { activeTabValue, tabValue, services, showSnackbar, ...other } = props;
@@ -44,9 +49,9 @@ export default function ServiceCard({services, showSnackbar}) {
 
   const tabs = () => (
     <Tabs value={activeTabValue} onChange={handleChange} aria-label="Worship services">
-      <Tab label="Cantonese" value="cantonese" id="cantonese-tab" aria-controls="cantonese-tabpanel" />
-      <Tab label="English" value="english" id="english-tab" aria-controls="english-tabpanel" />
-      <Tab label="Mandarin" value="mandarin" id="mandarin-tab" aria-controls="mandarin-tabpanel" />
+      <Tab className={classes.tab} label="Cantonese" value="cantonese" id="cantonese-tab" aria-controls="cantonese-tabpanel" />
+      <Tab className={classes.tab} label="English" value="english" id="english-tab" aria-controls="english-tabpanel" />
+      <Tab className={classes.tab} label="Mandarin" value="mandarin" id="mandarin-tab" aria-controls="mandarin-tabpanel" />
     </Tabs>
   );
 
