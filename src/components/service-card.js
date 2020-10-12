@@ -16,6 +16,7 @@ const useStyles = makeStyles(theme => ({
     maxWidth: 345,
   },
   tab: {
+    lineHeight: 'normal',
     [theme.breakpoints.up("sm")]: {
       minWidth: 112,
     }
@@ -48,10 +49,10 @@ export default function ServiceCard({services, showSnackbar}) {
   };
 
   const tabs = () => (
-    <Tabs value={activeTabValue} onChange={handleChange} aria-label="Worship services">
-      <Tab className={classes.tab} label="Cantonese" value="cantonese" id="cantonese-tab" aria-controls="cantonese-tabpanel" />
-      <Tab className={classes.tab} label="English" value="english" id="english-tab" aria-controls="english-tabpanel" />
-      <Tab className={classes.tab} label="Mandarin" value="mandarin" id="mandarin-tab" aria-controls="mandarin-tabpanel" />
+    <Tabs value={activeTabValue} onChange={handleChange} variant="fullWidth" aria-label="Worship services">
+      <Tab className={classes.tab} label="Cantonese service" value="cantonese" id="cantonese-tab" aria-controls="cantonese-tabpanel" />
+      <Tab className={classes.tab} label="English service" value="english" id="english-tab" aria-controls="english-tabpanel" />
+      <Tab className={classes.tab} label="Mandarin service" value="mandarin" id="mandarin-tab" aria-controls="mandarin-tabpanel" />
     </Tabs>
   );
 
