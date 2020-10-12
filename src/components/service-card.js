@@ -28,7 +28,7 @@ function TabPanel(props) {
       aria-labelledby={`${tabValue}-tab`}
       {...other}
     >
-      <ServicePlayer services={services} showSnackbar={showSnackbar} />
+      <ServicePlayer playerID={tabValue} services={services} showSnackbar={showSnackbar} />
     </div>
   );
 }

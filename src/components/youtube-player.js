@@ -3,34 +3,33 @@ import PropTypes from 'prop-types';
 
 import CardMedia from '@material-ui/core/CardMedia';
 
-const ID = "youtubeFrame";
-
 export default class YouTubePlayer extends React.Component {
-  static seekTo(hour, minute, second) {
+  static seekTo(playerID, hour, minute, second) {
     const seconds = ((60 * hour) + minute) * 60 + second;
 
-    const iframe = document.getElementById(ID);
+    const iframe = document.getElementById(playerID);
 
     iframe.contentWindow.postMessage(JSON.stringify({
       "event": "command",
       "func": "seekTo",
       "args": [seconds, true],
-      "id": ID
+      "id": playerID
     }), "*");
   }
 
-  static loadAndPlayVideo(videoID) {
-    const iframe = document.getElementById(ID);
+  static loadAndPlayVideo(playerID, videoID) {
+    const iframe = document.getElementById(playerID);
 
     iframe.contentWindow.postMessage(JSON.stringify({
       "event": "command",
       "func": "loadVideoById",
       "args": [videoID],
-      "id": ID
+      "id": playerID
     }), "*");
   }
 
   render() {
+    const playerID = this.props.playerID;
     const videoID = this.props.videoID;
 
     return (
@@ -40,7 +39,7 @@ export default class YouTubePlayer extends React.Component {
         height="315"
         src={"https://www.youtube.com/embed/" + videoID + "?enablejsapi=1"}
         frameBorder="0"
-        id={ID}
+        id={playerID}
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
       />
     );
@@ -48,5 +47,6 @@ export default class YouTubePlayer extends React.Component {
 }
 
 YouTubePlayer.propTypes = {
+  playerID: PropTypes.string.isRequired,
   videoID: PropTypes.string.isRequired,
 }

@@ -16,7 +16,7 @@ import DateTimeUtils from '../modules/datetime-utils';
 
 import LiveStreamState from '../constants/live-stream-state';
 
-export default function ServicePlayer({services, showSnackbar}) {
+export default function ServicePlayer({playerID, services, showSnackbar}) {
   const [serviceToShow, setServiceToShow] = React.useState(services[0]);
 
   const youtubeVideoID = serviceToShow.youtubeVideoID;
@@ -50,7 +50,7 @@ export default function ServicePlayer({services, showSnackbar}) {
   const onSeekTo = (seekPoint) => {
     const time = DateTimeUtils.parse(seekPoint.time);
     if (time.valid) {
-      YouTubePlayer.seekTo(time.hour, time.minute, time.second);
+      YouTubePlayer.seekTo(playerID, time.hour, time.minute, time.second);
     } else {
       showSnackbar('Unable to seek to ' + seekPoint.label);
     }
@@ -58,13 +58,13 @@ export default function ServicePlayer({services, showSnackbar}) {
 
   const onServiceSelect = (service) => {
     setServiceToShow(service);
-    YouTubePlayer.loadAndPlayVideo(service.youtubeVideoID);
+    YouTubePlayer.loadAndPlayVideo(playerID, service.youtubeVideoID);
   };
 
   return (
     <div>
       <CardActionArea>
-        <YouTubePlayer videoID={youtubeVideoID} />
+        <YouTubePlayer playerID={playerID} videoID={youtubeVideoID} />
       </CardActionArea>
       <CardContent>
         <Typography gutterBottom variant="h5" component="h2">
@@ -93,6 +93,7 @@ export default function ServicePlayer({services, showSnackbar}) {
 }
 
 ServicePlayer.propTypes = {
+  playerID: PropTypes.string.isRequired, 
   services: PropTypes.arrayOf(PropTypes.shape({
     youtubeVideoID: PropTypes.string.isRequired,
     topic: PropTypes.string.isRequired,
