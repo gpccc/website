@@ -33,7 +33,7 @@ export default function ServiceDateDisplay({serviceStartDateTime}) {
 
   return (
     liveStreamState===LiveStreamState.WILL_BE_LIVE
-    ? <Box color="secondary.main" component="span">Live {DateTimeUtils.monthDayHourMinuteDisplay(serviceStartDateTime)}</Box>
+    ? <Box color="secondary.main" component="span">Live {DateTimeUtils.humanMMDDHHMMDisplay(serviceStartDateTime)}</Box>
     : liveStreamState===LiveStreamState.LIVE_NOW
         ? <Box color="secondary.main" component="span">Live now</Box>
         : DateTimeUtils.longServiceDateDisplay(serviceStartDateTime)

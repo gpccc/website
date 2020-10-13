@@ -1,6 +1,6 @@
 const DateTimeUtils = {
     parse: parse,
-    monthDayHourMinuteDisplay: monthDayHourMinuteDisplay,
+    humanMMDDHHMMDisplay: humanMMDDHHMMDisplay,
     shortServiceDateDisplay: shortServiceDateDisplay,
     longServiceDateDisplay: longServiceDateDisplay,
 };
@@ -24,11 +24,29 @@ function parse(hhmmss) {
     return { valid: true, hour, minute, second };
 }
 
-function monthDayHourMinuteDisplay(datetime) {
+function humanMMDDHHMMDisplay(datetime) {
     // datetime format: yyyy-mm-ddThh:mm:ssZ
-    const date = new Date(datetime)
-        .toLocaleDateString('en-us', {month: 'long', day: 'numeric', hour: 'numeric', minute: '2-digit'});
-    return date;
+    const date = new Date(datetime);
+
+    const today = new Date();
+    let tomorrow = new Date(today);
+    tomorrow.setDate(today.getDate()+1);
+
+    const isToday = isSameDay(date, today);
+    const isTomorrow = isSameDay(date, tomorrow);
+
+    const dateDisplay =
+        (isToday || isTomorrow)
+        ? (isToday ? "today" : "tomorrow") + ", " + date.toLocaleTimeString('en-us', {hour: 'numeric', minute: '2-digit'})
+        : date.toLocaleDateString('en-us', {month: 'long', day: 'numeric', hour: 'numeric', minute: '2-digit'});
+    return dateDisplay;
+}
+
+function isSameDay(day1, day2) {
+    const date1 = new Date(day1.getFullYear(), day1.getMonth(), day1.getDate());
+    const date2 = new Date(day2.getFullYear(), day2.getMonth(), day2.getDate());
+
+    return (date1.getTime() === date2.getTime());
 }
 
 function shortServiceDateDisplay(datetime) {
