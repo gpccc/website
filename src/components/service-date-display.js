@@ -5,36 +5,22 @@ import Box from '@material-ui/core/Box';
 
 import DateTimeUtils from '../modules/datetime-utils';
 
-import LiveStreamState from '../constants/live-stream-state';
+const serviceDurationInSeconds = (60+20)*60;
 
 export default function ServiceDateDisplay({serviceStartDateTime}) {
-  function getLiveStreamState(serviceStartDateTime) {
-    const serviceStartTime = new Date(serviceStartDateTime);
-  
-    const serviceEndTime = new Date(serviceStartDateTime);
-    serviceEndTime.setMinutes(serviceEndTime.getMinutes() + 60+20);
-  
-    const nowTime  = new Date();
-  
-    const willBeLive = nowTime < serviceStartTime;
-    const liveNow = serviceStartTime <= nowTime && nowTime <= serviceEndTime;
-  
-    let state = LiveStreamState.NOT_APPLICABLE;
-    if (willBeLive) {
-      state = LiveStreamState.WILL_BE_LIVE;
-    } else if (liveNow) {
-      state = LiveStreamState.LIVE_NOW;
-    }
+  function getSecondsElapsedSince(sinceDateTime) {
+    const sinceTime = new Date(sinceDateTime).getTime();
+    const nowTime  = new Date().getTime();
 
-    return state;
+    const secondsElapsed = (nowTime - sinceTime) / 1000;
+    return Math.round(secondsElapsed);
   }
 
-  const liveStreamState = getLiveStreamState(serviceStartDateTime);
-
+  const secondsElapsedSince = getSecondsElapsedSince(serviceStartDateTime);
   return (
-    liveStreamState===LiveStreamState.WILL_BE_LIVE
+    secondsElapsedSince < 0
     ? <Box color="secondary.main" component="span">Live {DateTimeUtils.humanMMDDHHMMDisplay(serviceStartDateTime)}</Box>
-    : liveStreamState===LiveStreamState.LIVE_NOW
+    : secondsElapsedSince <= serviceDurationInSeconds
         ? <Box color="secondary.main" component="span">Live now</Box>
         : DateTimeUtils.longServiceDateDisplay(serviceStartDateTime)
   );
