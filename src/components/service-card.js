@@ -43,6 +43,8 @@ export default function ServiceCard({services, showSnackbar}) {
   const classes = useStyles();
 
   const [activeTabValue, setActiveTabValue] = React.useState("english");
+  const [isPlayingVideo, setIsPlayingVideo] = React.useState(false);
+  const [isMuted, setIsMuted] = React.useState(false);
 
   const handleChange = (event, newValue) => {
       setActiveTabValue(newValue);
@@ -50,9 +52,9 @@ export default function ServiceCard({services, showSnackbar}) {
 
   const tabs = () => (
     <Tabs value={activeTabValue} onChange={handleChange} variant="fullWidth" aria-label="Worship services">
-      <Tab className={classes.tab} label="Cantonese service" value="cantonese" id="cantonese-tab" aria-controls="cantonese-tabpanel" />
-      <Tab className={classes.tab} label="English service" value="english" id="english-tab" aria-controls="english-tabpanel" />
-      <Tab className={classes.tab} label="Mandarin service" value="mandarin" id="mandarin-tab" aria-controls="mandarin-tabpanel" />
+      <Tab className={classes.tab} label={"Cantonese service" + (isPlayingVideo && !isMuted ? " 🔊" : "")} value="cantonese" id="cantonese-tab" aria-controls="cantonese-tabpanel" />
+      <Tab className={classes.tab} label={"English service" + (isPlayingVideo && !isMuted ? " 🔊" : "")} value="english" id="english-tab" aria-controls="english-tabpanel" />
+      <Tab className={classes.tab} label={"Mandarin service"  + (isPlayingVideo && !isMuted ? " 🔊" : "")} value="mandarin" id="mandarin-tab" aria-controls="mandarin-tabpanel" />
     </Tabs>
   );
 
