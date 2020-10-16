@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom';
 
 import './styles/site.css';
 
-import englishServices from './constants/english-services';
-
 import AppSnackbar from './components/app-snack-bar';
 import ServiceCard from './components/service-card';
 
@@ -15,7 +13,7 @@ function App() {
     return (
         <div>
 
-          <ServiceCard services={englishServices} showSnackbar={showSnackbar} />
+          <ServiceCard showSnackbar={showSnackbar} />
           {snackbarData && <AppSnackbar msg={snackbarData.msg} key={snackbarData.date} />}
 
         {/*

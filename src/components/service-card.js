@@ -11,6 +11,8 @@ import ServicePlayer  from './service-player';
 
 import { makeStyles } from '@material-ui/core/styles';
 
+import englishServices from '../constants/english-services';
+
 const useStyles = makeStyles(theme => ({
   root: {
     maxWidth: 345,
@@ -39,7 +41,7 @@ function TabPanel(props) {
   );
 }
 
-export default function ServiceCard({services, showSnackbar}) {
+export default function ServiceCard({showSnackbar}) {
   const classes = useStyles();
 
   const [activeTabValue, setActiveTabValue] = React.useState("english");
@@ -61,9 +63,9 @@ export default function ServiceCard({services, showSnackbar}) {
   return (
     <Card className={classes.root}>
       <CardHeader component={tabs} />
-      <TabPanel activeTabValue={activeTabValue} tabValue="cantonese" services={services} showSnackbar={showSnackbar} />
-      <TabPanel activeTabValue={activeTabValue} tabValue="english" services={services} showSnackbar={showSnackbar} />
-      <TabPanel activeTabValue={activeTabValue} tabValue="mandarin" services={services} showSnackbar={showSnackbar} />
+      <TabPanel activeTabValue={activeTabValue} tabValue="cantonese" services={englishServices} showSnackbar={showSnackbar} />
+      <TabPanel activeTabValue={activeTabValue} tabValue="english" services={englishServices} showSnackbar={showSnackbar} />
+      <TabPanel activeTabValue={activeTabValue} tabValue="mandarin" services={englishServices} showSnackbar={showSnackbar} />
     </Card>
   );
 }
@@ -71,11 +73,6 @@ export default function ServiceCard({services, showSnackbar}) {
 TabPanel.propTypes = {
   activeTabValue: PropTypes.string.isRequired,
   tabValue: PropTypes.string.isRequired,
-  services: PropTypes.array.isRequired,
-  showSnackbar: PropTypes.func.isRequired,
-};
-
-ServiceCard.propTypes = {
   services: PropTypes.arrayOf(PropTypes.shape({
     youtubeVideoID: PropTypes.string.isRequired,
     topic: PropTypes.string.isRequired,
@@ -86,5 +83,9 @@ ServiceCard.propTypes = {
       label: PropTypes.string.isRequired,
     })).isRequired,
   })).isRequired,
+  showSnackbar: PropTypes.func.isRequired,
+};
+
+ServiceCard.propTypes = {
   showSnackbar: PropTypes.func.isRequired,
 };
