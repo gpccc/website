@@ -42,7 +42,7 @@ const cantoneseServices = [
     { youtubeVideoID: "R0ikzK-juhI", topic: "Message topic TBD*", pastor: "Pastor Peter Liu", date: "2020-09-20T18:10:00Z", duration: "01:40:39", seekPoints: [
         {time: "00:00:00", label: "Beginning", type: SeekPointType.BEGINNING},
         {time: "00:10:04", label: "Bible verse", type: SeekPointType.BIBLE_VERSE},
-        {time: "00:11:33", label: "Opening prayer", type: SeekPointType.BIBLE_VERSE},
+        {time: "00:11:33", label: "Opening prayer", type: SeekPointType.PRAYER},
         {time: "00:13:10", label: "Jesus, My Everything", type: SeekPointType.PRAISE_SONG},
         {time: "00:17:50", label: "Praise song 2", type: SeekPointType.PRAISE_SONG},
         {time: "00:22:02", label: "Praise song 3", type: SeekPointType.PRAISE_SONG},
