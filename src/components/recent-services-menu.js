@@ -9,7 +9,24 @@ import ListItemText from '@material-ui/core/ListItemText';
 
 import DateTimeUtils from '../modules/datetime-utils';
 
-import { NUM_RECENT_SERVICES_TO_SHOW } from '../constants/service-constants';
+import { NUM_RECENT_SERVICES_TO_SHOW, SERVICE_DURATION_IN_SECONDS } from '../constants/service-constants';
+
+function getServicesToShow(services) {
+    let numPastServices = 0;
+    let numStreamingServices = 0;
+
+    services.forEach((service) => {
+        let secondsElapsedSince = DateTimeUtils.getSecondsElapsedSince(service.date);
+        if (secondsElapsedSince <= SERVICE_DURATION_IN_SECONDS) {
+            numStreamingServices += 1;
+        } else {
+            numPastServices += 1;
+        }
+    });
+
+    const numServicesToShow = numStreamingServices + Math.min(numPastServices, NUM_RECENT_SERVICES_TO_SHOW);
+    return services.slice(0, numServicesToShow);
+}
 
 export default function RecentServicesMenu({services, onServiceSelect, onOlderServicesSelect}) {
     const [anchorEl, setAnchorEl] = React.useState(null);
@@ -34,7 +51,7 @@ export default function RecentServicesMenu({services, onServiceSelect, onOlderSe
         setAnchorEl(null);
     };
 
-    const servicesToShow = services.length <= NUM_RECENT_SERVICES_TO_SHOW ? services : services.slice(0, NUM_RECENT_SERVICES_TO_SHOW);
+    const servicesToShow = getServicesToShow(services);
 
     return (
         <div>
