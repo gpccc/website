@@ -23,7 +23,6 @@ export default function ServiceDateDisplay({serviceStartDateTime}) {
         setTimerID(noTimerID);
       }
   
-      // let secondsElapsedSince = getSecondsElapsedSince(serviceStartDateTime);
       if (secondsElapsedSince <= serviceDurationInSeconds) {
         if (secondsElapsedSince < 0) {
           secondsElapsedSince = Math.abs(secondsElapsedSince);
