@@ -58,7 +58,7 @@ function replaceJointServices(targetServices, sourceServices) {
 
     const jointService = findService(target.youtubeVideoID, sourceServices);
     if (jointService === undefined) {
-      console.error('Cannot find YouTube video ID', target.youtubeVideoID, 'in', sourceServices)
+      console.error('Cannot find YouTube video ID', target.youtubeVideoID, 'in', sourceServices);
       return;
     }
 
@@ -70,8 +70,8 @@ export default function ServiceCard({showSnackbar}) {
   const classes = useStyles();
 
   const [activeTabValue, setActiveTabValue] = React.useState("english");
-  const [isPlayingVideo, setIsPlayingVideo] = React.useState(false);
-  const [isMuted, setIsMuted] = React.useState(false);
+  const [isPlayingVideo] = React.useState(false);
+  const [isMuted] = React.useState(false);
 
   const handleChange = (event, newValue) => {
       setActiveTabValue(newValue);
