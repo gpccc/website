@@ -5,7 +5,7 @@ import Box from '@material-ui/core/Box';
 
 import DateTimeUtils from '../modules/datetime-utils';
 
-const serviceDurationInSeconds = (60+20)*60;
+import { SERVICE_DURATION_IN_SECONDS } from '../constants/service-constants'
 
 export default function ServiceDateDisplay({serviceStartDateTime}) {
   const noTimerID = -1;
@@ -23,11 +23,11 @@ export default function ServiceDateDisplay({serviceStartDateTime}) {
         setTimerID(noTimerID);
       }
   
-      if (secondsElapsedSince <= serviceDurationInSeconds) {
+      if (secondsElapsedSince <= SERVICE_DURATION_IN_SECONDS) {
         if (secondsElapsedSince < 0) {
           secondsElapsedSince = Math.abs(secondsElapsedSince);
         } else {
-          secondsElapsedSince = serviceDurationInSeconds - secondsElapsedSince;
+          secondsElapsedSince = SERVICE_DURATION_IN_SECONDS - secondsElapsedSince;
           if (secondsElapsedSince == 0) {
             secondsElapsedSince += 1;
           }
@@ -50,7 +50,7 @@ export default function ServiceDateDisplay({serviceStartDateTime}) {
   return (
     secondsElapsedSince < 0
     ? <Box color="secondary.main" component="span">Live {DateTimeUtils.humanMMDDHHMMDisplay(serviceStartDateTime)}</Box>
-    : secondsElapsedSince <= serviceDurationInSeconds
+    : secondsElapsedSince <= SERVICE_DURATION_IN_SECONDS
         ? <Box color="secondary.main" component="span">Live now</Box>
         : DateTimeUtils.longServiceDateDisplay(serviceStartDateTime)
   );
