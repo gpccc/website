@@ -11,7 +11,9 @@ import ServicePlayer  from './service-player';
 
 import { makeStyles } from '@material-ui/core/styles';
 
+import cantoneseServices from '../constants/cantonese-services';
 import englishServices from '../constants/english-services';
+import mandarinServices from '../constants/mandarin-services';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -63,9 +65,9 @@ export default function ServiceCard({showSnackbar}) {
   return (
     <Card className={classes.root}>
       <CardHeader component={tabs} />
-      <TabPanel activeTabValue={activeTabValue} tabValue="cantonese" services={englishServices} showSnackbar={showSnackbar} />
+      <TabPanel activeTabValue={activeTabValue} tabValue="cantonese" services={cantoneseServices} showSnackbar={showSnackbar} />
       <TabPanel activeTabValue={activeTabValue} tabValue="english" services={englishServices} showSnackbar={showSnackbar} />
-      <TabPanel activeTabValue={activeTabValue} tabValue="mandarin" services={englishServices} showSnackbar={showSnackbar} />
+      <TabPanel activeTabValue={activeTabValue} tabValue="mandarin" services={mandarinServices} showSnackbar={showSnackbar} />
     </Card>
   );
 }
