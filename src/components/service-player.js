@@ -56,7 +56,7 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
           <span>
           &nbsp;
           <Tooltip title={(isCantoneseService ? "Cantonese" : "English") + " service combined with Mandarin service"} arrow>
-          <span>🛈</span>
+          <span>ⓘ</span>
           </Tooltip>
           </span>
           }
