@@ -1,0 +1,1 @@
+export const JOINT_SERVICE = '(joint service)';
