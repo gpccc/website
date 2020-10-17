@@ -9,6 +9,8 @@ import ListItemText from '@material-ui/core/ListItemText';
 
 import DateTimeUtils from '../modules/datetime-utils';
 
+import { NUM_RECENT_SERVICES_TO_SHOW } from '../constants/service-constants';
+
 export default function RecentServicesMenu({services, onServiceSelect, onOlderServicesSelect}) {
     const [anchorEl, setAnchorEl] = React.useState(null);
     const [selectedIndex, setSelectedIndex] = React.useState(0);
@@ -32,8 +34,7 @@ export default function RecentServicesMenu({services, onServiceSelect, onOlderSe
         setAnchorEl(null);
     };
 
-    const maxServicesToShow = 4;
-    const servicesToShow = services.length <= maxServicesToShow ? services : services.slice(0, maxServicesToShow);
+    const servicesToShow = services.length <= NUM_RECENT_SERVICES_TO_SHOW ? services : services.slice(0, NUM_RECENT_SERVICES_TO_SHOW);
 
     return (
         <div>
