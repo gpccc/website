@@ -1,6 +1,7 @@
 import SeekPointType from './seek-point-type';
 
 const mandarinServices = [
+    { youtubeVideoID: "7RsjtD3EdeI", topic: "Message topic TBD", pastor: "Pastor Chien Chen", date: "2020-10-18T18:10:00Z", duration: "00:00:00", seekPoints: [] },
     { youtubeVideoID: "wFXd4V9iNFw", topic: "Message topic TBD", pastor: "Pastor Weizhong Sun", date: "2020-10-11T18:10:00Z", duration: "01:41:35", seekPoints: [
         {time: "00:00:20", label: "Beginning", type: SeekPointType.BEGINNING},
         {time: "00:10:25", label: "Opening prayer", type: SeekPointType.PRAYER},

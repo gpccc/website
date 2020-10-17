@@ -1,6 +1,7 @@
 import SeekPointType from './seek-point-type';
 
 const englishServices = [
+    { youtubeVideoID: "MjQnqIH8qmM", topic: "Ezra 6: Temple Filled with Joy", pastor: "Pastor Larry Lee", date: "2020-10-18T16:30:00Z", duration: "00:00:00", seekPoints: [] },
     { youtubeVideoID: "gvSIj2PaVGM", topic: "Ezra 5: Rebuilding Resumes", pastor: "Pastor Jerry Lin", date: "2020-10-11T16:30:00Z", duration: "01:22:55", seekPoints: [
         {time: "00:00:10", label: "Beginning", type: SeekPointType.BEGINNING},
         {time: "00:10:52", label: "Opening prayer", type: SeekPointType.PRAYER},
