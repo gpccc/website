@@ -46,15 +46,7 @@ export default function ServiceDateDisplay({serviceStartDateTime}) {
     },
   );
   
-  function getSecondsElapsedSince(sinceDateTime) {
-    const sinceTime = new Date(sinceDateTime).getTime();
-    const nowTime  = new Date().getTime();
-
-    const secondsElapsed = (nowTime - sinceTime) / 1000;
-    return Math.round(secondsElapsed);
-  }
-
-  let secondsElapsedSince = getSecondsElapsedSince(serviceStartDateTime);
+  let secondsElapsedSince = DateTimeUtils.getSecondsElapsedSince(serviceStartDateTime);
   return (
     secondsElapsedSince < 0
     ? <Box color="secondary.main" component="span">Live {DateTimeUtils.humanMMDDHHMMDisplay(serviceStartDateTime)}</Box>

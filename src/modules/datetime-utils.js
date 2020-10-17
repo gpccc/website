@@ -1,9 +1,19 @@
 const DateTimeUtils = {
+    getSecondsElapsedSince: getSecondsElapsedSince,
     parse: parse,
     humanMMDDHHMMDisplay: humanMMDDHHMMDisplay,
     shortServiceDateDisplay: shortServiceDateDisplay,
     longServiceDateDisplay: longServiceDateDisplay,
 };
+
+function getSecondsElapsedSince(sinceDateTime) {
+    const sinceTime = new Date(sinceDateTime).getTime();
+    const nowTime  = new Date().getTime();
+
+    const secondsElapsed = (nowTime - sinceTime) / 1000;
+    return Math.round(secondsElapsed);
+  }
+
 
 function parse(hhmmss) {
     const invalidTime = {valid: false, hour: 0, minute: 0, second: 0};
