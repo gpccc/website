@@ -46,13 +46,13 @@ function TabPanel(props) {
 }
 
 function findService(youtubeVideoID, services) {
-  const service = services.find(s => s.youtubeVideoID === youtubeVideoID && s.topic !== JOINT_SERVICE);
+  const service = services.find(s => s.youtubeVideoID === youtubeVideoID && s.message !== JOINT_SERVICE);
   return service;
 }
 
 function replaceJointServices(targetServices, sourceServices) {
   targetServices.forEach((target, i) => {
-    if (target.topic !== JOINT_SERVICE) {
+    if (target.message !== JOINT_SERVICE) {
       return;
     }
 
@@ -103,7 +103,7 @@ TabPanel.propTypes = {
   tabValue: PropTypes.string.isRequired,
   services: PropTypes.arrayOf(PropTypes.shape({
     youtubeVideoID: PropTypes.string.isRequired,
-    topic: PropTypes.string.isRequired,
+    message: PropTypes.string.isRequired,
     pastor: PropTypes.string.isRequired,
     date: PropTypes.string.isRequired,
     seekPoints: PropTypes.arrayOf(PropTypes.shape({

@@ -19,7 +19,7 @@ export default function ServicePlayer({playerID, services, showSnackbar}) {
   const [serviceToShow, setServiceToShow] = React.useState(services[0]);
 
   const youtubeVideoID = serviceToShow.youtubeVideoID;
-  const topic = serviceToShow.topic;
+  const message = serviceToShow.message;
   const pastor = serviceToShow.pastor;
   const date = serviceToShow.date;
   const seekPoints = serviceToShow.seekPoints;
@@ -45,7 +45,7 @@ export default function ServicePlayer({playerID, services, showSnackbar}) {
       </CardActionArea>
       <CardContent>
         <Typography gutterBottom variant="body1" component="p">
-          {topic}
+          {message}
         </Typography>
         <Typography variant="body2" color="textSecondary" component="p">
           {pastor} &middot; <ServiceDateDisplay serviceStartDateTime={date} />
@@ -67,7 +67,7 @@ ServicePlayer.propTypes = {
   playerID: PropTypes.string.isRequired, 
   services: PropTypes.arrayOf(PropTypes.shape({
     youtubeVideoID: PropTypes.string.isRequired,
-    topic: PropTypes.string.isRequired,
+    message: PropTypes.string.isRequired,
     pastor: PropTypes.string.isRequired,
     date: PropTypes.string.isRequired,
     seekPoints: PropTypes.arrayOf(PropTypes.shape({
