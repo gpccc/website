@@ -11,6 +11,8 @@ import ServicePlayer  from './service-player';
 
 import { makeStyles } from '@material-ui/core/styles';
 
+import { JOINT_SERVICE } from '../constants/sentinels'
+
 import cantoneseServices from '../constants/cantonese-services';
 import englishServices from '../constants/english-services';
 import mandarinServices from '../constants/mandarin-services';
@@ -43,6 +45,27 @@ function TabPanel(props) {
   );
 }
 
+function findService(youtubeVideoID, services) {
+  const service = services.find(s => s.youtubeVideoID === youtubeVideoID && s.topic !== JOINT_SERVICE);
+  return service;
+}
+
+function replaceJointServices(targetServices, sourceServices) {
+  targetServices.forEach((target, i) => {
+    if (target.topic !== JOINT_SERVICE) {
+      return;
+    }
+
+    const jointService = findService(target.youtubeVideoID, sourceServices);
+    if (jointService === undefined) {
+      console.error('Cannot find YouTube video ID', target.youtubeVideoID, 'in', sourceServices)
+      return;
+    }
+
+    targetServices[i] = jointService;
+  });
+}
+
 export default function ServiceCard({showSnackbar}) {
   const classes = useStyles();
 
@@ -61,6 +84,9 @@ export default function ServiceCard({showSnackbar}) {
       <Tab className={classes.tab} label={"Mandarin service"  + (isPlayingVideo && !isMuted ? " 🔊" : "")} value="mandarin" id="mandarin-tab" aria-controls="mandarin-tabpanel" />
     </Tabs>
   );
+
+  replaceJointServices(cantoneseServices, mandarinServices);
+  replaceJointServices(englishServices, mandarinServices);
 
   return (
     <Card className={classes.root}>
