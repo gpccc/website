@@ -11,7 +11,7 @@ import ServicePlayer  from './service-player';
 
 import { makeStyles } from '@material-ui/core/styles';
 
-import { JOINT_SERVICE } from '../constants/sentinels'
+import { JOINT_SERVICE } from '../constants/service-constants'
 
 import cantoneseServices from '../constants/cantonese-services';
 import englishServices from '../constants/english-services';

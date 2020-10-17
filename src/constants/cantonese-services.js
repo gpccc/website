@@ -1,6 +1,6 @@
 import SeekPointType from './seek-point-type';
 
-import { JOINT_SERVICE } from './sentinels'
+import { JOINT_SERVICE } from './service-constants'
 
 const cantoneseServices = [
     { youtubeVideoID: "Rl4hT1wifFQ", message: "(blank message title)", pastor: "Pastor Semson Nip", date: "2020-10-11T18:10:00Z", duration: "01:26:05", seekPoints: [
