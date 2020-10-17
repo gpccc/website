@@ -44,7 +44,7 @@ export default function ServicePlayer({playerID, services, showSnackbar}) {
         <YouTubePlayer playerID={playerID} videoID={youtubeVideoID} />
       </CardActionArea>
       <CardContent>
-        <Typography gutterBottom variant="h5" component="h2">
+        <Typography gutterBottom variant="body1" component="p">
           {topic}
         </Typography>
         <Typography variant="body2" color="textSecondary" component="p">
