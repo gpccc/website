@@ -6,6 +6,8 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 
+import Tooltip from '@material-ui/core/Tooltip';
+
 import YouTubePlayer from './youtube-player';
 
 import ServiceDateDisplay from './service-date-display';
@@ -15,7 +17,7 @@ import RecentServicesMenu from './recent-services-menu';
 
 import DateTimeUtils from '../modules/datetime-utils';
 
-export default function ServicePlayer({playerID, services, showSnackbar}) {
+export default function ServicePlayer({playerID, services, isServiceCombinedWithMandarin, showSnackbar}) {
   const [serviceToShow, setServiceToShow] = React.useState(services[0]);
 
   const youtubeVideoID = serviceToShow.youtubeVideoID;
@@ -23,6 +25,10 @@ export default function ServicePlayer({playerID, services, showSnackbar}) {
   const pastor = serviceToShow.pastor;
   const date = serviceToShow.date;
   const seekPoints = serviceToShow.seekPoints;
+
+  const isCantoneseService = (playerID === "cantonese");
+  const isCombinedService = isServiceCombinedWithMandarin(youtubeVideoID);
+  const showCombinedServiceTooltip = (isCombinedService && (isCantoneseService || playerID === "english"));
 
   const onSeekTo = (seekPoint) => {
     const time = DateTimeUtils.parse(seekPoint.time);
@@ -46,7 +52,15 @@ export default function ServicePlayer({playerID, services, showSnackbar}) {
       <CardContent>
         <Typography gutterBottom variant="body1" component="p">
           {message}
-        </Typography>
+          {showCombinedServiceTooltip &&
+          <span>
+          &nbsp;
+          <Tooltip title={(isCantoneseService ? "Cantonese" : "English") + " service combined with Mandarin service"} arrow>
+          <span>🛈</span>
+          </Tooltip>
+          </span>
+          }
+          </Typography>
         <Typography variant="body2" color="textSecondary" component="p">
           {pastor} &middot; <ServiceDateDisplay serviceStartDateTime={date} />
         </Typography>
@@ -75,5 +89,6 @@ ServicePlayer.propTypes = {
       label: PropTypes.string.isRequired,
     })).isRequired,
   })).isRequired,
+  isServiceCombinedWithMandarin: PropTypes.func.isRequired,
   showSnackbar: PropTypes.func.isRequired,
 };

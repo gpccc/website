@@ -40,7 +40,7 @@ function TabPanel(props) {
       aria-labelledby={`${tabValue}-tab`}
       {...other}
     >
-      <ServicePlayer playerID={tabValue} services={services} showSnackbar={showSnackbar} />
+      <ServicePlayer playerID={tabValue} services={services} showSnackbar={showSnackbar} isServiceCombinedWithMandarin={isServiceCombinedWithMandarin} />
     </div>
   );
 }
@@ -64,6 +64,10 @@ function replaceJointServices(targetServices, sourceServices) {
 
     targetServices[i] = jointService;
   });
+}
+
+function isServiceCombinedWithMandarin(youtubeVideoID) {
+  return mandarinServices.some((service) => service.youtubeVideoID === youtubeVideoID);
 }
 
 export default function ServiceCard({showSnackbar}) {
