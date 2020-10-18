@@ -8,6 +8,9 @@ import Typography from '@material-ui/core/Typography';
 
 import Tooltip from '@material-ui/core/Tooltip';
 
+import IconButton from '@material-ui/core/IconButton';
+import InfoOutlinedIcon from '@material-ui/icons/InfoOutlined';
+
 import YouTubePlayer from './youtube-player';
 
 import ServiceDateDisplay from './service-date-display';
@@ -56,7 +59,9 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
           <span>
           &nbsp;
           <Tooltip title={(isCantoneseService ? "Cantonese" : "English") + " service combined with Mandarin service"} arrow>
-          <span>ⓘ</span>
+            <IconButton aria-label="info" size="small">
+              <InfoOutlinedIcon />
+            </IconButton>
           </Tooltip>
           </span>
           }
