@@ -1,7 +1,21 @@
 import SeekPointType from './seek-point-type';
 
 const englishServices = [
-    { youtubeVideoID: "MjQnqIH8qmM", message: "Ezra 6: Temple Filled with Joy", pastor: "Pastor Larry Lee", date: "2020-10-18T16:30:00Z", duration: "00:00:00", seekPoints: [] },
+    { youtubeVideoID: "MjQnqIH8qmM", message: "Ezra 6: Temple Filled with Joy", pastor: "Pastor Larry Lee", date: "2020-10-18T16:30:00Z", duration: "01:26:10", seekPoints: [
+        {time: "00:11:22", label: "Opening prayer", type: SeekPointType.PRAYER},
+        {time: "00:11:58", label: "Psalm 103:1-5, 8, 14-17, 22", type: SeekPointType.BIBLE_VERSE},
+        {time: "00:13:17", label: "10,000 Reasons", type: SeekPointType.PRAISE_SONG},
+        {time: "00:17:49", label: "Great Things", type: SeekPointType.PRAISE_SONG},
+        {time: "00:22:16", label: "King of Kings", type: SeekPointType.PRAISE_SONG},
+        {time: "00:26:43", label: "Nobody Loves Me Like You", type: SeekPointType.PRAISE_SONG},
+        {time: "00:31:22", label: "Congregational prayer", type: SeekPointType.PRAYER}, 
+        {time: "00:34:13", label: "Temple Filled with Joy", type: SeekPointType.MESSAGE},
+        {time: "01:11:21", label: "Closing prayer", type: SeekPointType.PRAYER},
+        {time: "01:12:20", label: "Way Maker", type: SeekPointType.PRAISE_SONG},
+        {time: "01:19:13", label: "Announcements", type: SeekPointType.ANNOUNCEMENTS},
+        {time: "01:20:29", label: "Benediction", type: SeekPointType.BENEDICTION},
+        {time: "01:21:38", label: "Great Things", type: SeekPointType.PRAISE_SONG},
+    ]},
     { youtubeVideoID: "gvSIj2PaVGM", message: "Ezra 5: Rebuilding Resumes", pastor: "Pastor Jerry Lin", date: "2020-10-11T16:30:00Z", duration: "01:22:55", seekPoints: [
         {time: "00:00:10", label: "Beginning", type: SeekPointType.BEGINNING},
         {time: "00:10:52", label: "Opening prayer", type: SeekPointType.PRAYER},
