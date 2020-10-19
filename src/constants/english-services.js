@@ -76,7 +76,6 @@ const englishServices = [
         {time: "01:18:38", label: "Announcements", type: SeekPointType.ANNOUNCEMENTS},
         {time: "01:21:56", label: "Closing prayer", type: SeekPointType.PRAYER},
     ]},
-    { youtubeVideoID: "Q5x9gZWP6tM", message: "Ezra 2: The Remnant", pastor: "Pastor Jerry Lin", date: "2020-09-13T16:30:00Z", duration: "01:24:50", seekPoints: [] },
 ];
 
 export default englishServices;
