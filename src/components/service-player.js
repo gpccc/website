@@ -58,7 +58,7 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
           {showCombinedServiceTooltip &&
           <span>
           &nbsp;
-          <Tooltip title={(isCantoneseService ? "Cantonese" : "English") + " service combined with Mandarin service"} arrow>
+          <Tooltip title={(isCantoneseService ? "Cantonese" : "English") + " service combined with Mandarin service"} arrow enterTouchDelay="25">
             <IconButton aria-label="info" size="small">
               <InfoOutlinedIcon />
             </IconButton>
