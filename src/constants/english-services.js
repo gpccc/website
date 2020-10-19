@@ -17,7 +17,6 @@ const englishServices = [
         {time: "01:21:38", label: "Great Things", type: SeekPointType.PRAISE_SONG},
     ]},
     { youtubeVideoID: "gvSIj2PaVGM", message: "Ezra 5: Rebuilding Resumes", pastor: "Pastor Jerry Lin", date: "2020-10-11T16:30:00Z", duration: "01:22:55", seekPoints: [
-        {time: "00:00:10", label: "Beginning", type: SeekPointType.BEGINNING},
         {time: "00:10:52", label: "Opening prayer", type: SeekPointType.PRAYER},
         {time: "00:12:20", label: "Job 1:20-21", type: SeekPointType.BIBLE_VERSE}, 
         {time: "00:13:37", label: "Blessed Be Your Name", type: SeekPointType.PRAISE_SONG},
@@ -35,7 +34,6 @@ const englishServices = [
         {time: "01:19:30", label: "Pastor Larry's birthday", type: SeekPointType.BIRTHDAY},
     ]},
     { youtubeVideoID: "EWQ__H_85bE", message: "Ezra 4: Rebuilding Opposed", pastor: "Pastor Larry Lee", date: "2020-10-04T16:30:00Z", duration: "01:25:45", seekPoints: [
-        {time: "00:00:00", label: "Beginning", type: SeekPointType.BEGINNING},
         {time: "00:10:57", label: "Opening prayer", type: SeekPointType.PRAYER},
         {time: "00:12:35", label: "O Come to the Altar", type: SeekPointType.PRAISE_SONG},
         {time: "00:18:02", label: "Psalm 18:2-6, 16-17, 46, 49", type: SeekPointType.BIBLE_VERSE},
@@ -49,7 +47,6 @@ const englishServices = [
         {time: "01:24:45", label: "Benediction", type: SeekPointType.BENEDICTION},
     ]},
     { youtubeVideoID: "uqmaE9JKGtc", message: "Ezra 3: First Comes Sacrifice", pastor: "Pastor Larry Lee", date: "2020-09-27T16:30:00Z", duration: "01:28:35", seekPoints: [
-        {time: "00:00:00", label: "Beginning", type: SeekPointType.BEGINNING},
         {time: "00:10:36", label: "Opening prayer", type: SeekPointType.PRAYER},
         {time: "00:11:38", label: "O Praise the Name", type: SeekPointType.PRAISE_SONG},
         {time: "00:16:10", label: "Center", type: SeekPointType.PRAISE_SONG},
@@ -63,7 +60,6 @@ const englishServices = [
         {time: "01:22:49", label: "Benediction", type: SeekPointType.BENEDICTION},
     ]},
     { youtubeVideoID: "GA94lEQkKo0", message: "Exodus 4:10-17: Talent", pastor: "Pastor Steven Chin", date: "2020-09-20T16:30:00Z", duration: "01:23:41", seekPoints: [
-        {time: "00:00:00", label: "Beginning", type: SeekPointType.BEGINNING},
         {time: "00:09:57", label: "Opening prayer", type: SeekPointType.PRAYER},
         {time: "00:11:04", label: "Who You Say I Am", type: SeekPointType.PRAISE_SONG},
         {time: "00:15:34", label: "Luke 23:32-43", type: SeekPointType.BIBLE_VERSE},
