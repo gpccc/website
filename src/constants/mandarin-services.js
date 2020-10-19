@@ -1,7 +1,24 @@
 import SeekPointType from './seek-point-type';
 
 const mandarinServices = [
-    { youtubeVideoID: "7RsjtD3EdeI", message: "(blank message title)", pastor: "Pastor Chien Chen", date: "2020-10-18T18:10:00Z", duration: "00:00:00", seekPoints: [] },
+    { youtubeVideoID: "7RsjtD3EdeI", message: "(blank message title)", pastor: "Pastor Chien Chen", date: "2020-10-18T18:10:00Z", duration: "01:42:25", seekPoints: [
+        {time: "00:10:00", label: "Opening prayer", type: SeekPointType.PRAYER},
+        {time: "00:11:32", label: "Bible verse?", type: SeekPointType.BIBLE_VERSE},
+        {time: "00:13:10", label: "Praise song 1", type: SeekPointType.PRAISE_SONG},
+        {time: "00:19:28", label: "Bible verse?", type: SeekPointType.BIBLE_VERSE},
+        {time: "00:19:49", label: "Praise song 2", type: SeekPointType.PRAISE_SONG},
+        {time: "00:24:39", label: "Praise song 3", type: SeekPointType.PRAISE_SONG},
+        {time: "00:28:19", label: "Bible verse?", type: SeekPointType.BIBLE_VERSE},
+        {time: "00:28:50", label: "Praise the Lord, O My Soul", type: SeekPointType.PRAISE_SONG},
+        {time: "00:33:18", label: "Congregational prayer", type: SeekPointType.PRAYER},
+        {time: "00:38:52", label: "Message", type: SeekPointType.MESSAGE},
+        {time: "01:17:40", label: "Respond song?", type: SeekPointType.PRAISE_SONG},
+        {time: "01:23:00", label: "Closing prayer", type: SeekPointType.PRAYER},
+        {time: "01:23:47", label: "Baptism of who?", type: SeekPointType.ANNOUNCEMENTS},
+        {time: "01:28:30", label: "Induction of new members", type: SeekPointType.ANNOUNCEMENTS},
+        {time: "01:33:15", label: "Announcements", type: SeekPointType.ANNOUNCEMENTS},
+        {time: "01:40:42", label: "Benediction", type: SeekPointType.BENEDICTION},
+    ]},
     { youtubeVideoID: "wFXd4V9iNFw", message: "(blank message title)", pastor: "Pastor Weizhong Sun", date: "2020-10-11T18:10:00Z", duration: "01:41:35", seekPoints: [
         {time: "00:00:20", label: "Beginning", type: SeekPointType.BEGINNING},
         {time: "00:10:25", label: "Opening prayer", type: SeekPointType.PRAYER},
