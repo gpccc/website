@@ -3,6 +3,19 @@ import SeekPointType from './seek-point-type';
 import { JOINT_SERVICE } from './service-constants'
 
 const cantoneseServices = [
+    { youtubeVideoID: "ntyMUdXntLU", message: "(blank message title)", pastor: "Elder Albert Wong", date: "2020-10-18T18:10:00Z", duration: "01:29:14", seekPoints: [
+        {time: "00:08:00", label: "Beginning", type: SeekPointType.BEGINNING},
+        {time: "00:08:11", label: "Shine Jesus Shine", type: SeekPointType.PRAISE_SONG},
+        {time: "00:12:26", label: "Praise song 2", type: SeekPointType.PRAISE_SONG},
+        {time: "00:16:58", label: "Bible verse?", type: SeekPointType.BIBLE_VERSE},
+        {time: "00:17:45", label: "Praise song 3", type: SeekPointType.PRAISE_SONG},
+        {time: "00:21:25", label: "Congregational prayer", type: SeekPointType.PRAYER},
+        {time: "00:27:27", label: "Message", type: SeekPointType.MESSAGE},
+        {time: "01:18:11", label: "Closing prayer", type: SeekPointType.PRAYER},
+        {time: "01:18:53", label: "Respond song", type: SeekPointType.PRAISE_SONG},
+        {time: "01:21:38", label: "Announcements", type: SeekPointType.ANNOUNCEMENTS},
+        {time: "01:28:26", label: "Benediction", type: SeekPointType.BENEDICTION},
+    ]},
     { youtubeVideoID: "Rl4hT1wifFQ", message: "(blank message title)", pastor: "Pastor Semson Nip", date: "2020-10-11T18:10:00Z", duration: "01:26:05", seekPoints: [
         {time: "00:00:20", label: "Beginning", type: SeekPointType.BEGINNING},
         {time: "00:08:00", label: "Opening prayer?", type: SeekPointType.PRAYER},
