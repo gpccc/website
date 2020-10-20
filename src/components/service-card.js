@@ -30,7 +30,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 function TabPanel(props) {
-  const { activeTabValue, tabValue, services, showSnackbar, ...other } = props;
+  const { activeTabValue, tabValue, services, showSnackbar, youTubeIframeAPIReady, ...other } = props;
 
   return (
     <div
@@ -40,7 +40,7 @@ function TabPanel(props) {
       aria-labelledby={`${tabValue}-tab`}
       {...other}
     >
-      <ServicePlayer playerID={tabValue} services={services} showSnackbar={showSnackbar} isServiceCombinedWithMandarin={isServiceCombinedWithMandarin} />
+      <ServicePlayer playerID={tabValue} services={services} showSnackbar={showSnackbar} isServiceCombinedWithMandarin={isServiceCombinedWithMandarin} youTubeIframeAPIReady={youTubeIframeAPIReady} />
     </div>
   );
 }
@@ -73,6 +73,8 @@ function isServiceCombinedWithMandarin(youtubeVideoID) {
 export default function ServiceCard({showSnackbar}) {
   const classes = useStyles();
 
+  const [youTubeIframeAPIReady, setYouTubeIframeAPIReady] = React.useState(false);
+
   const [activeTabValue, setActiveTabValue] = React.useState("english");
   const [isPlayingVideo] = React.useState(false);
   const [isMuted] = React.useState(false);
@@ -89,15 +91,29 @@ export default function ServiceCard({showSnackbar}) {
     </Tabs>
   );
 
+  if (!youTubeIframeAPIReady) {
+    if (window.YT) {
+      setYouTubeIframeAPIReady(true);
+    } else {
+      const tag = document.createElement('script');
+      tag.src = 'https://www.youtube.com/iframe_api';
+
+      window.onYouTubeIframeAPIReady = () => setYouTubeIframeAPIReady(true);
+
+      const firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    }
+  }
+
   replaceJointServices(cantoneseServices, mandarinServices);
   replaceJointServices(englishServices, mandarinServices);
 
   return (
     <Card className={classes.root}>
       <CardHeader component={tabs} />
-      <TabPanel activeTabValue={activeTabValue} tabValue="cantonese" services={cantoneseServices} showSnackbar={showSnackbar} />
-      <TabPanel activeTabValue={activeTabValue} tabValue="english" services={englishServices} showSnackbar={showSnackbar} />
-      <TabPanel activeTabValue={activeTabValue} tabValue="mandarin" services={mandarinServices} showSnackbar={showSnackbar} />
+      <TabPanel activeTabValue={activeTabValue} tabValue="cantonese" services={cantoneseServices} showSnackbar={showSnackbar} youTubeIframeAPIReady={youTubeIframeAPIReady} />
+      <TabPanel activeTabValue={activeTabValue} tabValue="english" services={englishServices} showSnackbar={showSnackbar} youTubeIframeAPIReady={youTubeIframeAPIReady} />
+      <TabPanel activeTabValue={activeTabValue} tabValue="mandarin" services={mandarinServices} showSnackbar={showSnackbar} youTubeIframeAPIReady={youTubeIframeAPIReady} />
     </Card>
   );
 }
@@ -116,6 +132,7 @@ TabPanel.propTypes = {
     })).isRequired,
   })).isRequired,
   showSnackbar: PropTypes.func.isRequired,
+  youTubeIframeAPIReady: PropTypes.bool.isRequired,
 };
 
 ServiceCard.propTypes = {
