@@ -6,6 +6,9 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 
+import Box from '@material-ui/core/Box';
+import CircularProgress from '@material-ui/core/CircularProgress';
+
 import Tooltip from '@material-ui/core/Tooltip';
 
 import IconButton from '@material-ui/core/IconButton';
@@ -20,7 +23,7 @@ import RecentServicesMenu from './recent-services-menu';
 
 import DateTimeUtils from '../modules/datetime-utils';
 
-export default function ServicePlayer({playerID, services, isServiceCombinedWithMandarin, showSnackbar}) {
+export default function ServicePlayer({playerID, services, isServiceCombinedWithMandarin, showSnackbar, youTubeIframeAPIReady}) {
   const [serviceToShow, setServiceToShow] = React.useState(services[0]);
 
   const youtubeVideoID = serviceToShow.youtubeVideoID;
@@ -46,6 +49,14 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
     setServiceToShow(service);
     YouTubePlayer.loadAndPlayVideo(playerID, service.youtubeVideoID);
   };
+
+  if (!youTubeIframeAPIReady) {
+    return (
+      <Box display="flex" justifyContent="center" my={4}>
+        <CircularProgress />
+      </Box>
+    );
+  }
 
   return (
     <div>
@@ -96,4 +107,5 @@ ServicePlayer.propTypes = {
   })).isRequired,
   isServiceCombinedWithMandarin: PropTypes.func.isRequired,
   showSnackbar: PropTypes.func.isRequired,
+  youTubeIframeAPIReady: PropTypes.bool.isRequired,
 };
