@@ -59,7 +59,7 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
   );
 
   const onPlayerStateChange = event => {
-    const playing = event.data === YT.PlayerState.PLAYING;
+    const playing = event.data === window.YT.PlayerState.PLAYING;
     console.info('onPlayerStateChange', playing ? "playing" : "NOT playiing");
   }
 
