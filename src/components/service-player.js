@@ -65,16 +65,21 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
 
   const onSeekTo = (seekPoint) => {
     const time = DateTimeUtils.parse(seekPoint.time);
-    if (time.valid) {
-      YouTubePlayer.seekTo(playerID, time.hour, time.minute, time.second);
+    if (time.valid && youTubePlayerRef.current) {
+      const seconds = ((60 * time.hour) + time.minute) * 60 + time.second;
+      youTubePlayerRef.current.seekTo(seconds, true /* allowSeekAhead */);
     } else {
       showSnackbar('Unable to seek to ' + seekPoint.label);
     }
   };
 
   const onServiceSelect = (service) => {
-    setServiceToShow(service);
-    YouTubePlayer.loadAndPlayVideo(playerID, service.youtubeVideoID);
+    if (youTubePlayerRef.current) {
+      setServiceToShow(service);
+      youTubePlayerRef.current.cueVideoById(service.youtubeVideoID);
+    } else {
+      showSnackbar('Unable to load service ' + service.message);
+    }
   };
 
   return (
