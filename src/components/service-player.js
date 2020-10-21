@@ -24,7 +24,16 @@ import RecentServicesMenu from './recent-services-menu';
 import DateTimeUtils from '../modules/datetime-utils';
 
 export default function ServicePlayer({playerID, services, isServiceCombinedWithMandarin, showSnackbar, youTubeIframeAPIReady}) {
+  if (!youTubeIframeAPIReady) {
+    return (
+      <Box display="flex" justifyContent="center" my={4}>
+        <CircularProgress />
+      </Box>
+    );
+  }
+
   const [serviceToShow, setServiceToShow] = React.useState(services[0]);
+  const youTubePlayerRef = React.useRef(null);
 
   const youtubeVideoID = serviceToShow.youtubeVideoID;
   const message = serviceToShow.message;
@@ -35,6 +44,24 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
   const isCantoneseService = (playerID === "cantonese");
   const isCombinedService = isServiceCombinedWithMandarin(youtubeVideoID);
   const showCombinedServiceTooltip = (isCombinedService && (isCantoneseService || playerID === "english"));
+
+  React.useEffect(
+    () => {
+      if (!youTubePlayerRef.current) {
+        const youtubePlayer = new window.YT.Player(playerID, {
+          events: {
+            'onStateChange': onPlayerStateChange
+          },
+        });
+        youTubePlayerRef.current = youtubePlayer;
+      }
+    }
+  );
+
+  const onPlayerStateChange = event => {
+    const playing = event.data === YT.PlayerState.PLAYING;
+    console.info('onPlayerStateChange', playing ? "playing" : "NOT playiing");
+  }
 
   const onSeekTo = (seekPoint) => {
     const time = DateTimeUtils.parse(seekPoint.time);
@@ -49,14 +76,6 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
     setServiceToShow(service);
     YouTubePlayer.loadAndPlayVideo(playerID, service.youtubeVideoID);
   };
-
-  if (!youTubeIframeAPIReady) {
-    return (
-      <Box display="flex" justifyContent="center" my={4}>
-        <CircularProgress />
-      </Box>
-    );
-  }
 
   return (
     <div>
@@ -82,7 +101,7 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
         </Typography>
       </CardContent>
       <CardActions>
-        <SeekToMenu seekPoints={seekPoints} onSeekTo={onSeekTo}/>
+        <SeekToMenu seekPoints={seekPoints} onSeekTo={onSeekTo} />
         <RecentServicesMenu
           services={services}
           onServiceSelect={onServiceSelect}
