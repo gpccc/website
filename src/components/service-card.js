@@ -7,6 +7,8 @@ import CardHeader from '@material-ui/core/CardHeader';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 
+import ReactResizeDetector from 'react-resize-detector';
+
 import ServicePlayer  from './service-player';
 
 import { makeStyles } from '@material-ui/core/styles';
@@ -30,7 +32,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 function TabPanel(props) {
-  const { activeTabValue, tabValue, services, showSnackbar, youTubeIframeAPIReady, ...other } = props;
+  const { activeTabValue, tabValue, services, showSnackbar, youTubeIframeAPIReady, cardWidth, cardHeight, ...other } = props;
 
   return (
     <div
@@ -109,12 +111,15 @@ export default function ServiceCard({showSnackbar}) {
   replaceJointServices(englishServices, mandarinServices);
 
   return (
-    <Card className={classes.root}>
-      <CardHeader component={tabs} />
-      <TabPanel activeTabValue={activeTabValue} tabValue="cantonese" services={cantoneseServices} showSnackbar={showSnackbar} youTubeIframeAPIReady={youTubeIframeAPIReady} />
-      <TabPanel activeTabValue={activeTabValue} tabValue="english" services={englishServices} showSnackbar={showSnackbar} youTubeIframeAPIReady={youTubeIframeAPIReady} />
-      <TabPanel activeTabValue={activeTabValue} tabValue="mandarin" services={mandarinServices} showSnackbar={showSnackbar} youTubeIframeAPIReady={youTubeIframeAPIReady} />
-    </Card>
+    <ReactResizeDetector>
+      {({width, height, targetRef}) =>
+      <Card className={classes.root} ref={targetRef}>
+        <CardHeader component={tabs} />
+        <TabPanel activeTabValue={activeTabValue} tabValue="cantonese" services={cantoneseServices} showSnackbar={showSnackbar} youTubeIframeAPIReady={youTubeIframeAPIReady} cardWidth={width} cardHeight={height} />
+        <TabPanel activeTabValue={activeTabValue} tabValue="english" services={englishServices} showSnackbar={showSnackbar} youTubeIframeAPIReady={youTubeIframeAPIReady} cardWidth={width} cardHeight={height} />
+        <TabPanel activeTabValue={activeTabValue} tabValue="mandarin" services={mandarinServices} showSnackbar={showSnackbar} youTubeIframeAPIReady={youTubeIframeAPIReady} cardWidth={width} cardHeight={height} />
+      </Card>}
+    </ReactResizeDetector>
   );
 }
 
@@ -133,6 +138,8 @@ TabPanel.propTypes = {
   })).isRequired,
   showSnackbar: PropTypes.func.isRequired,
   youTubeIframeAPIReady: PropTypes.bool.isRequired,
+  cardWidth: PropTypes.number,
+  cardHeight: PropTypes.number,
 };
 
 ServiceCard.propTypes = {
