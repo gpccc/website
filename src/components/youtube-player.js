@@ -6,10 +6,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 export default function YouTubePlayer({playerID, videoID}) {
   return (
     <CardMedia
-      component="iframe"
-      width="560"
-      height="315"
-      src={"https://www.youtube.com/embed/" + videoID + "?enablejsapi=1"}
+      component="div"
       frameBorder="0"
       id={playerID}
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"

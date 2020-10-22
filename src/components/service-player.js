@@ -49,6 +49,9 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
     () => {
       if (!youTubePlayerRef.current) {
         const youtubePlayer = new window.YT.Player(playerID, {
+          width: 560,
+          height: 315,
+          videoId: youtubeVideoID,
           events: {
             'onStateChange': onPlayerStateChange
           },
@@ -60,7 +63,7 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
 
   const onPlayerStateChange = event => {
     const playing = event.data === window.YT.PlayerState.PLAYING;
-    console.info('onPlayerStateChange', playing ? "playing" : "NOT playiing");
+    console.info(playerID, playing ? "playing" : "NOT playiing");
   }
 
   const onSeekTo = (seekPoint) => {
@@ -100,7 +103,7 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
           </Tooltip>
           </span>
           }
-          </Typography>
+        </Typography>
         <Typography variant="body2" color="textSecondary" component="p">
           {pastor} &middot; <ServiceDateDisplay serviceStartDateTime={date} />
         </Typography>
@@ -118,7 +121,7 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
 }
 
 ServicePlayer.propTypes = {
-  playerID: PropTypes.string.isRequired, 
+  playerID: PropTypes.string.isRequired,
   services: PropTypes.arrayOf(PropTypes.shape({
     youtubeVideoID: PropTypes.string.isRequired,
     message: PropTypes.string.isRequired,
