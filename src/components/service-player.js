@@ -88,7 +88,7 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
   return (
     <div>
       <CardActionArea>
-        <YouTubePlayer playerID={playerID} videoID={youtubeVideoID} />
+        <YouTubePlayer playerID={playerID} />
       </CardActionArea>
       <CardContent>
         <Typography gutterBottom variant="body1" component="p">

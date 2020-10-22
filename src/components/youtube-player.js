@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import CardMedia from '@material-ui/core/CardMedia';
 
-export default function YouTubePlayer({playerID, videoID}) {
+export default function YouTubePlayer({playerID}) {
   return (
     <CardMedia
       component="div"
@@ -16,5 +16,4 @@ export default function YouTubePlayer({playerID, videoID}) {
 
 YouTubePlayer.propTypes = {
   playerID: PropTypes.string.isRequired,
-  videoID: PropTypes.string.isRequired,
 }
