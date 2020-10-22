@@ -11,6 +11,7 @@ function App() {
   const showSnackbar = msg => setSnackbarData({ msg, date: new Date() });
 
     return (
+        <React.StrictMode>
         <div>
 
           <ServiceCard showSnackbar={showSnackbar} />
@@ -28,6 +29,7 @@ function App() {
         9/6/2020 missing - joint service with Mandarin
         */}
         </div>
+        </React.StrictMode>
     );
 }
 
