@@ -13,7 +13,7 @@ import ServicePlayer  from './service-player';
 
 import { makeStyles } from '@material-ui/core/styles';
 
-import { JOINT_SERVICE } from '../constants/service-constants'
+import { JOINT_SERVICE, SERVICE_CARD_MAX_WIDTH } from '../constants/service-constants'
 
 import cantoneseServices from '../constants/cantonese-services';
 import englishServices from '../constants/english-services';
@@ -21,7 +21,7 @@ import mandarinServices from '../constants/mandarin-services';
 
 const useStyles = makeStyles(theme => ({
   root: {
-    maxWidth: 345,
+    maxWidth: SERVICE_CARD_MAX_WIDTH,
   },
   tab: {
     lineHeight: 'normal',
