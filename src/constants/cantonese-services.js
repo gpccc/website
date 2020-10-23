@@ -2,6 +2,7 @@ import SeekPointType from './seek-point-type';
 
 import { JOINT_SERVICE } from './service-constants'
 
+// ntyMUdXntLU 1280x720
 const cantoneseServices = [
     { youtubeVideoID: "ntyMUdXntLU", message: "(blank message title)", pastor: "Elder Albert Wong", date: "2020-10-18T18:10:00Z", duration: "01:29:14", seekPoints: [
         {time: "00:08:00", label: "Beginning", type: SeekPointType.BEGINNING},
