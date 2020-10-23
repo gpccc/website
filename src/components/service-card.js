@@ -32,7 +32,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 function TabPanel(props) {
-  const { activeTabValue, tabValue, services, showSnackbar, youTubeIframeAPIReady, cardWidth, cardHeight, ...other } = props;
+  const { activeTabValue, tabValue, services, showSnackbar, youTubeIframeAPIReady, cardWidth, ...other } = props;
 
   return (
     <div
@@ -111,13 +111,13 @@ export default function ServiceCard({showSnackbar}) {
   replaceJointServices(englishServices, mandarinServices);
 
   return (
-    <ReactResizeDetector>
-      {({width, height, targetRef}) =>
+    <ReactResizeDetector handleHeight={false}>
+      {({width, targetRef}) =>
       <Card className={classes.root} ref={targetRef}>
         <CardHeader component={tabs} />
-        <TabPanel activeTabValue={activeTabValue} tabValue="cantonese" services={cantoneseServices} showSnackbar={showSnackbar} youTubeIframeAPIReady={youTubeIframeAPIReady} cardWidth={width} cardHeight={height} />
-        <TabPanel activeTabValue={activeTabValue} tabValue="english" services={englishServices} showSnackbar={showSnackbar} youTubeIframeAPIReady={youTubeIframeAPIReady} cardWidth={width} cardHeight={height} />
-        <TabPanel activeTabValue={activeTabValue} tabValue="mandarin" services={mandarinServices} showSnackbar={showSnackbar} youTubeIframeAPIReady={youTubeIframeAPIReady} cardWidth={width} cardHeight={height} />
+        <TabPanel activeTabValue={activeTabValue} tabValue="cantonese" services={cantoneseServices} showSnackbar={showSnackbar} youTubeIframeAPIReady={youTubeIframeAPIReady} cardWidth={width} />
+        <TabPanel activeTabValue={activeTabValue} tabValue="english" services={englishServices} showSnackbar={showSnackbar} youTubeIframeAPIReady={youTubeIframeAPIReady} cardWidth={width} />
+        <TabPanel activeTabValue={activeTabValue} tabValue="mandarin" services={mandarinServices} showSnackbar={showSnackbar} youTubeIframeAPIReady={youTubeIframeAPIReady} cardWidth={width} />
       </Card>}
     </ReactResizeDetector>
   );
@@ -139,7 +139,6 @@ TabPanel.propTypes = {
   showSnackbar: PropTypes.func.isRequired,
   youTubeIframeAPIReady: PropTypes.bool.isRequired,
   cardWidth: PropTypes.number,
-  cardHeight: PropTypes.number,
 };
 
 ServiceCard.propTypes = {
