@@ -58,7 +58,7 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
         });
         youTubePlayerRef.current = youtubePlayer;
       }
-    }
+    }, [youTubePlayerRef]
   );
 
   const onPlayerStateChange = event => {
