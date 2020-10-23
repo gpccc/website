@@ -42,7 +42,11 @@ function TabPanel(props) {
       aria-labelledby={`${tabValue}-tab`}
       {...other}
     >
-      <ServicePlayer playerID={tabValue} services={services} showSnackbar={showSnackbar} isServiceCombinedWithMandarin={isServiceCombinedWithMandarin} youTubeIframeAPIReady={youTubeIframeAPIReady} />
+      <ServicePlayer playerID={tabValue} services={services} showSnackbar={showSnackbar}
+        isServiceCombinedWithMandarin={isServiceCombinedWithMandarin}
+        youTubeIframeAPIReady={youTubeIframeAPIReady}
+        cardWidth={cardWidth}
+        />
     </div>
   );
 }

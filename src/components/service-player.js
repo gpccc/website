@@ -29,7 +29,7 @@ const calcYouTubePlayerHeight = (playerWidth) => (
   playerWidth * SERVICE_VIDEO_HEIGHT / SERVICE_VIDEO_WIDTH
 );
 
-export default function ServicePlayer({playerID, services, isServiceCombinedWithMandarin, showSnackbar, youTubeIframeAPIReady}) {
+export default function ServicePlayer({playerID, services, isServiceCombinedWithMandarin, showSnackbar, youTubeIframeAPIReady, cardWidth}) {
   if (!youTubeIframeAPIReady) {
     return (
       <Box display="flex" justifyContent="center" my={4}>
@@ -141,4 +141,5 @@ ServicePlayer.propTypes = {
   isServiceCombinedWithMandarin: PropTypes.func.isRequired,
   showSnackbar: PropTypes.func.isRequired,
   youTubeIframeAPIReady: PropTypes.bool.isRequired,
+  cardWidth: PropTypes.number,
 };
