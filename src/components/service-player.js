@@ -23,7 +23,7 @@ import RecentServicesMenu from './recent-services-menu';
 
 import DateTimeUtils from '../modules/datetime-utils';
 
-import { SERVICE_VIDEO_WIDTH, SERVICE_VIDEO_HEIGHT } from '../constants/service-constants'
+import { SERVICE_CARD_MAX_WIDTH, SERVICE_VIDEO_WIDTH, SERVICE_VIDEO_HEIGHT } from '../constants/service-constants'
 
 const calcYouTubePlayerHeight = (playerWidth) => (
   playerWidth * SERVICE_VIDEO_HEIGHT / SERVICE_VIDEO_WIDTH
@@ -54,9 +54,12 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
   React.useEffect(
     () => {
       if (!youTubePlayerRef.current) {
+        const width = cardWidth || SERVICE_CARD_MAX_WIDTH;
+        const height = calcYouTubePlayerHeight(cardWidth);
+
         const youtubePlayer = new window.YT.Player(playerID, {
-          width: 560,
-          height: 315,
+          width,
+          height,
           videoId: youtubeVideoID,
           events: {
             'onStateChange': onPlayerStateChange
