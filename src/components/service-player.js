@@ -81,7 +81,7 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
     onPlayPause(playerID, playing);
   }
 
-  const onPlayerReady = event => {
+  const onPlayerReady = () => {
     setYouTubePlayerReady(true);
   }
 
