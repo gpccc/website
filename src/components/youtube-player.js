@@ -9,7 +9,7 @@ export default function YouTubePlayer({playerID}) {
       component="div"
       frameBorder="0"
       id={playerID}
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"
     />
   );
 }
