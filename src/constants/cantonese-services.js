@@ -4,6 +4,7 @@ import { JOINT_SERVICE } from './service-constants'
 
 // ntyMUdXntLU 1280x720
 const cantoneseServices = [
+    { youtubeVideoID: "ILegX4omHvc", message: "(blank message title)", pastor: "Pastor Semson Nip", date: "2020-10-25T18:10:00Z", duration: "00:00:00", seekPoints: []},
     { youtubeVideoID: "ntyMUdXntLU", message: "(blank message title)", pastor: "Elder Albert Wong", date: "2020-10-18T18:10:00Z", duration: "01:29:14", seekPoints: [
         {time: "00:08:00", label: "Beginning", type: SeekPointType.BEGINNING},
         {time: "00:08:11", label: "Shine Jesus Shine", type: SeekPointType.PRAISE_SONG},
