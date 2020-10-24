@@ -39,6 +39,8 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
   }
 
   const [serviceToShow, setServiceToShow] = React.useState(services[0]);
+  const [youTubePlayerReady, setYouTubePlayerReady] = React.useState(false);
+
   const youTubePlayerRef = React.useRef(null);
 
   const youtubeVideoID = serviceToShow.youtubeVideoID;
@@ -64,6 +66,7 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
           playerVars: { origin: window.location.origin },
           events: {
             'onStateChange': onPlayerStateChange,
+            'onReady': onPlayerReady,
           },
         });
         youTubePlayerRef.current = youtubePlayer;
@@ -76,6 +79,10 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
   const onPlayerStateChange = event => {
     const playing = event.data === window.YT.PlayerState.PLAYING;
     onPlayPause(playerID, playing);
+  }
+
+  const onPlayerReady = event => {
+    setYouTubePlayerReady(true);
   }
 
   const onSeekTo = (seekPoint) => {
@@ -133,11 +140,12 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
         </Typography>
       </CardContent>
       <CardActions>
-        <SeekToMenu seekPoints={seekPoints} onSeekTo={onSeekTo} />
+        <SeekToMenu seekPoints={seekPoints} onSeekTo={onSeekTo} youTubePlayerReady={youTubePlayerReady} />
         <RecentServicesMenu
           services={services}
           onServiceSelect={onServiceSelect}
           onOlderServicesSelect={() => showSnackbar('TODO: Go to a page listing all worship services')}
+          youTubePlayerReady={youTubePlayerReady}
         />
       </CardActions>
     </div>
