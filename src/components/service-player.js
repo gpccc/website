@@ -68,7 +68,7 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
         });
         youTubePlayerRef.current = youtubePlayer;
       } else {
-        youTubePlayerRef.current.setSize(width, height)
+        youTubePlayerRef.current.setSize(width, height);
       }
     }, [youTubePlayerRef, cardWidth]
   );

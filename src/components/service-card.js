@@ -93,15 +93,15 @@ export default function ServiceCard({showSnackbar}) {
   
   const handlePlayPauseChange = (service, isPlaying) => {
       if (service === "cantonese") {
-        setPlayingCantoneseVideo(isPlaying)
+        setPlayingCantoneseVideo(isPlaying);
       }
       else if (service === "english") {
-        setPlayingEnglishVideo(isPlaying)
+        setPlayingEnglishVideo(isPlaying);
       }
       else if (service === "mandarin") {
-        setPlayingMandarinVideo(isPlaying)
+        setPlayingMandarinVideo(isPlaying);
       }
-  }
+  };
 
   const tabs = () => (
     <Tabs value={activeTabValue} onChange={handleChange} variant="fullWidth" aria-label="Worship services">
