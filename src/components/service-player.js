@@ -81,8 +81,20 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
   const onSeekTo = (seekPoint) => {
     const time = DateTimeUtils.parse(seekPoint.time);
     if (time.valid && youTubePlayerRef.current) {
+      const playerState = youTubePlayerRef.current.getPlayerState();
+
       const seconds = ((60 * time.hour) + time.minute) * 60 + time.second;
       youTubePlayerRef.current.seekTo(seconds, true /* allowSeekAhead */);
+
+      // If a video is cued, then the first seekTo call starts the video
+      // playing from the beginning. Wait one second and call seekTo again
+      // to go to the time point.
+      if (playerState === window.YT.PlayerState.CUED) {
+        const timer = setTimeout(() => {
+          window.clearTimeout(timer);
+          youTubePlayerRef.current.seekTo(seconds, true);
+        }, 1000);
+      }
     } else {
       showSnackbar('Unable to seek to ' + seekPoint.label);
     }
