@@ -28,7 +28,7 @@ function getServicesToShow(services) {
     return services.slice(0, numServicesToShow);
 }
 
-export default function RecentServicesMenu({services, onServiceSelect, onOlderServicesSelect}) {
+export default function RecentServicesMenu({services, onServiceSelect, onOlderServicesSelect, youTubePlayerReady}) {
     const [anchorEl, setAnchorEl] = React.useState(null);
     const [selectedIndex, setSelectedIndex] = React.useState(0);
 
@@ -55,7 +55,7 @@ export default function RecentServicesMenu({services, onServiceSelect, onOlderSe
 
     return (
         <div>
-            <Button size="small" color="primary" aria-controls="recent-services-menu" aria-haspopup="true" onClick={handleClick}>
+            <Button size="small" color="primary" aria-controls="recent-services-menu" aria-haspopup="true" onClick={handleClick} disabled={!youTubePlayerReady}>
                 Recent services
             </Button>
             <Menu
@@ -88,4 +88,5 @@ RecentServicesMenu.propTypes = {
       })).isRequired,
     onServiceSelect: PropTypes.func.isRequired,
     onOlderServicesSelect: PropTypes.func.isRequired,
+    youTubePlayerReady: PropTypes.bool.isRequired,
 }
