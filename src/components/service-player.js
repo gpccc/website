@@ -61,8 +61,9 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
           width,
           height,
           videoId: youtubeVideoID,
+          playerVars: { origin: window.location.origin },
           events: {
-            'onStateChange': onPlayerStateChange
+            'onStateChange': onPlayerStateChange,
           },
         });
         youTubePlayerRef.current = youtubePlayer;
