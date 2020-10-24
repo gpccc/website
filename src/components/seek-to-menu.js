@@ -23,7 +23,7 @@ import GroupAddIcon from '@material-ui/icons/GroupAdd'
 
 import SeekPointType from '../constants/seek-point-type';
 
-export default function SeekToMenu({seekPoints, onSeekTo}) {
+export default function SeekToMenu({seekPoints, onSeekTo, youTubePlayerReady}) {
     const [anchorEl, setAnchorEl] = React.useState(null);
 
     const handleClick = (event) => {
@@ -41,7 +41,7 @@ export default function SeekToMenu({seekPoints, onSeekTo}) {
 
     return (
         <div>
-            <Button size="small" color="primary" aria-controls="seek-to-menu" aria-haspopup="true" onClick={handleClick} disabled={seekPoints.length === 0}>
+            <Button size="small" color="primary" aria-controls="seek-to-menu" aria-haspopup="true" onClick={handleClick} disabled={seekPoints.length===0 || !youTubePlayerReady}>
                 Seek to
             </Button>
             <Menu
@@ -85,4 +85,5 @@ SeekToMenu.propTypes = {
         label: PropTypes.string.isRequired,
     })).isRequired,
     onSeekTo: PropTypes.func.isRequired,
+    youTubePlayerReady: PropTypes.bool.isRequired,
 }
