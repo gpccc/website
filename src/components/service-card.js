@@ -32,7 +32,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 function TabPanel(props) {
-  const { activeTabValue, tabValue, services, showSnackbar, youTubeIframeAPIReady, cardWidth, ...other } = props;
+  const { activeTabValue, tabValue, services, showSnackbar, youTubeIframeAPIReady, onPlayPause, cardWidth, ...other } = props;
 
   return (
     <div
@@ -45,6 +45,7 @@ function TabPanel(props) {
       <ServicePlayer playerID={tabValue} services={services} showSnackbar={showSnackbar}
         isServiceCombinedWithMandarin={isServiceCombinedWithMandarin}
         youTubeIframeAPIReady={youTubeIframeAPIReady}
+        onPlayPause={onPlayPause}
         cardWidth={cardWidth}
         />
     </div>
@@ -82,17 +83,31 @@ export default function ServiceCard({showSnackbar}) {
   const [youTubeIframeAPIReady, setYouTubeIframeAPIReady] = React.useState(false);
 
   const [activeTabValue, setActiveTabValue] = React.useState("english");
-  const [isPlayingVideo] = React.useState(false);
+  const [isPlayingCantoneseVideo, setPlayingCantoneseVideo] = React.useState(false);
+  const [isPlayingEnglishVideo, setPlayingEnglishVideo] = React.useState(false);
+  const [isPlayingMandarinVideo, setPlayingMandarinVideo] = React.useState(false);
 
   const handleChange = (event, newValue) => {
       setActiveTabValue(newValue);
   };
+  
+  const handlePlayPauseChange = (service, isPlaying) => {
+      if (service === "cantonese") {
+        setPlayingCantoneseVideo(isPlaying)
+      }
+      else if (service === "english") {
+        setPlayingEnglishVideo(isPlaying)
+      }
+      else if (service === "mandarin") {
+        setPlayingMandarinVideo(isPlaying)
+      }
+  }
 
   const tabs = () => (
     <Tabs value={activeTabValue} onChange={handleChange} variant="fullWidth" aria-label="Worship services">
-      <Tab className={classes.tab} label={"Cantonese service" + (isPlayingVideo ? " ▶" : "")} value="cantonese" id="cantonese-tab" aria-controls="cantonese-tabpanel" />
-      <Tab className={classes.tab} label={"English service" + (isPlayingVideo ? " ▶" : "")} value="english" id="english-tab" aria-controls="english-tabpanel" />
-      <Tab className={classes.tab} label={"Mandarin service"  + (isPlayingVideo ? " ▶" : "")} value="mandarin" id="mandarin-tab" aria-controls="mandarin-tabpanel" />
+      <Tab className={classes.tab} label={"Cantonese service" + (isPlayingCantoneseVideo ? " ▶" : "")} value="cantonese" id="cantonese-tab" aria-controls="cantonese-tabpanel" />
+      <Tab className={classes.tab} label={"English service" + (isPlayingEnglishVideo ? " ▶" : "")} value="english" id="english-tab" aria-controls="english-tabpanel" />
+      <Tab className={classes.tab} label={"Mandarin service"  + (isPlayingMandarinVideo ? " ▶" : "")} value="mandarin" id="mandarin-tab" aria-controls="mandarin-tabpanel" />
     </Tabs>
   );
 
@@ -118,9 +133,9 @@ export default function ServiceCard({showSnackbar}) {
       {({width, targetRef}) =>
       <Card className={classes.root} ref={targetRef}>
         <CardHeader component={tabs} />
-        <TabPanel activeTabValue={activeTabValue} tabValue="cantonese" services={cantoneseServices} showSnackbar={showSnackbar} youTubeIframeAPIReady={youTubeIframeAPIReady} cardWidth={width} />
-        <TabPanel activeTabValue={activeTabValue} tabValue="english" services={englishServices} showSnackbar={showSnackbar} youTubeIframeAPIReady={youTubeIframeAPIReady} cardWidth={width} />
-        <TabPanel activeTabValue={activeTabValue} tabValue="mandarin" services={mandarinServices} showSnackbar={showSnackbar} youTubeIframeAPIReady={youTubeIframeAPIReady} cardWidth={width} />
+        <TabPanel activeTabValue={activeTabValue} tabValue="cantonese" services={cantoneseServices} showSnackbar={showSnackbar} youTubeIframeAPIReady={youTubeIframeAPIReady} onPlayPause={handlePlayPauseChange} cardWidth={width} />
+        <TabPanel activeTabValue={activeTabValue} tabValue="english" services={englishServices} showSnackbar={showSnackbar} youTubeIframeAPIReady={youTubeIframeAPIReady} onPlayPause={handlePlayPauseChange} cardWidth={width} />
+        <TabPanel activeTabValue={activeTabValue} tabValue="mandarin" services={mandarinServices} showSnackbar={showSnackbar} youTubeIframeAPIReady={youTubeIframeAPIReady} onPlayPause={handlePlayPauseChange} cardWidth={width} />
       </Card>}
     </ReactResizeDetector>
   );
@@ -141,6 +156,7 @@ TabPanel.propTypes = {
   })).isRequired,
   showSnackbar: PropTypes.func.isRequired,
   youTubeIframeAPIReady: PropTypes.bool.isRequired,
+  onPlayPause: PropTypes.func.isRequired,
   cardWidth: PropTypes.number,
 };
 

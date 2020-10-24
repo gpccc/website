@@ -29,7 +29,7 @@ const calcYouTubePlayerHeight = (playerWidth) => (
   playerWidth * SERVICE_VIDEO_HEIGHT / SERVICE_VIDEO_WIDTH
 );
 
-export default function ServicePlayer({playerID, services, isServiceCombinedWithMandarin, showSnackbar, youTubeIframeAPIReady, cardWidth}) {
+export default function ServicePlayer({playerID, services, isServiceCombinedWithMandarin, showSnackbar, youTubeIframeAPIReady, onPlayPause, cardWidth}) {
   if (!youTubeIframeAPIReady) {
     return (
       <Box display="flex" justifyContent="center" my={4}>
@@ -74,7 +74,7 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
 
   const onPlayerStateChange = event => {
     const playing = event.data === window.YT.PlayerState.PLAYING;
-    console.info(playerID, playing ? "playing" : "NOT playiing");
+    onPlayPause(playerID, playing);
   }
 
   const onSeekTo = (seekPoint) => {
@@ -146,5 +146,6 @@ ServicePlayer.propTypes = {
   isServiceCombinedWithMandarin: PropTypes.func.isRequired,
   showSnackbar: PropTypes.func.isRequired,
   youTubeIframeAPIReady: PropTypes.bool.isRequired,
+  onPlayPause: PropTypes.func.isRequired,
   cardWidth: PropTypes.number,
 };
