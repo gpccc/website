@@ -2,6 +2,7 @@ import SeekPointType from './seek-point-type';
 
 // 7RsjtD3EdeI 1280x720
 const mandarinServices = [
+    { youtubeVideoID: "4nUAo8aJNZU", message: "(blank message title)", pastor: "Pastor Peter Liu", date: "2020-10-25T18:10:00Z", duration: "00:00:00", seekPoints: []},
     { youtubeVideoID: "7RsjtD3EdeI", message: "(blank message title)", pastor: "Pastor Chien Chen", date: "2020-10-18T18:10:00Z", duration: "01:42:25", seekPoints: [
         {time: "00:10:00", label: "Opening prayer", type: SeekPointType.PRAYER},
         {time: "00:11:32", label: "Bible verse?", type: SeekPointType.BIBLE_VERSE},

@@ -2,6 +2,7 @@ import SeekPointType from './seek-point-type';
 
 // MjQnqIH8qmM 1280x720
 const englishServices = [
+    { youtubeVideoID: "dkLZnTDGVWw", message: "Ezra 7: The Sovereignty of God", pastor: "Pastor Jerry Lin", date: "2020-10-25T16:30:00Z", duration: "00:00:00", seekPoints: []},
     { youtubeVideoID: "MjQnqIH8qmM", message: "Ezra 6: Temple Filled with Joy", pastor: "Pastor Larry Lee", date: "2020-10-18T16:30:00Z", duration: "01:26:10", seekPoints: [
         {time: "00:11:22", label: "Opening prayer", type: SeekPointType.PRAYER},
         {time: "00:11:58", label: "Psalm 103:1-5, 8, 14-17, 22", type: SeekPointType.BIBLE_VERSE},
