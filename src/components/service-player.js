@@ -53,10 +53,10 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
 
   React.useEffect(
     () => {
-      if (!youTubePlayerRef.current) {
-        const width = cardWidth || SERVICE_CARD_MAX_WIDTH;
-        const height = calcYouTubePlayerHeight(cardWidth);
+      const width = cardWidth || SERVICE_CARD_MAX_WIDTH;
+      const height = calcYouTubePlayerHeight(width);
 
+      if (!youTubePlayerRef.current) {
         const youtubePlayer = new window.YT.Player(playerID, {
           width,
           height,
@@ -66,8 +66,10 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
           },
         });
         youTubePlayerRef.current = youtubePlayer;
+      } else {
+        youTubePlayerRef.current.setSize(width, height)
       }
-    }, [youTubePlayerRef]
+    }, [youTubePlayerRef, cardWidth]
   );
 
   const onPlayerStateChange = event => {
