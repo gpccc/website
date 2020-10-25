@@ -2,7 +2,20 @@ import SeekPointType from './seek-point-type';
 
 // MjQnqIH8qmM 1280x720
 const englishServices = [
-    { youtubeVideoID: "dkLZnTDGVWw", message: "Ezra 7: The Sovereignty of God", pastor: "Pastor Jerry Lin", date: "2020-10-25T16:30:00Z", duration: "00:00:00", seekPoints: []},
+    { youtubeVideoID: "dkLZnTDGVWw", message: "Ezra 7: The Sovereignty of God", pastor: "Pastor Jerry Lin", date: "2020-10-25T16:30:00Z", duration: "01:19:16", seekPoints: [
+        {time: "00:00:58", label: "Opening prayer", type: SeekPointType.PRAYER},
+        {time: "00:03:48", label: "Our God", type: SeekPointType.PRAISE_SONG},
+        {time: "00:08:21", label: "John 15:9-13", type: SeekPointType.BIBLE_VERSE},
+        {time: "00:09:12", label: "Lay Me Down", type: SeekPointType.PRAISE_SONG},
+        {time: "00:14:35", label: "King of My Heart", type: SeekPointType.PRAISE_SONG},
+        {time: "00:19:16", label: "Speak, O Lord", type: SeekPointType.PRAISE_SONG},
+        {time: "00:22:53", label: "Congregational prayer", type: SeekPointType.PRAYER}, 
+        {time: "00:27:03", label: "The Sovereignty of God", type: SeekPointType.MESSAGE},
+        {time: "01:09:07", label: "Closing prayer", type: SeekPointType.PRAYER},
+        {time: "01:10:43", label: "Jesus, Thank You", type: SeekPointType.PRAISE_SONG},
+        {time: "01:15:34", label: "Announcements", type: SeekPointType.ANNOUNCEMENTS},
+        {time: "01:18:12", label: "Benediction", type: SeekPointType.BENEDICTION},
+    ]},
     { youtubeVideoID: "MjQnqIH8qmM", message: "Ezra 6: Temple Filled with Joy", pastor: "Pastor Larry Lee", date: "2020-10-18T16:30:00Z", duration: "01:26:10", seekPoints: [
         {time: "00:11:22", label: "Opening prayer", type: SeekPointType.PRAYER},
         {time: "00:11:58", label: "Psalm 103:1-5, 8, 14-17, 22", type: SeekPointType.BIBLE_VERSE},
