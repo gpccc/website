@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import './i18n';
+
 import './styles/site.css';
 
 import AppSnackbar from './components/app-snack-bar';
