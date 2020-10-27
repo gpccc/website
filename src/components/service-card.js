@@ -9,6 +9,8 @@ import Tab from '@material-ui/core/Tab';
 
 import ReactResizeDetector from 'react-resize-detector';
 
+import { useTranslation } from 'react-i18next';
+
 import ServicePlayer  from './service-player';
 
 import { makeStyles } from '@material-ui/core/styles';
@@ -103,13 +105,16 @@ export default function ServiceCard({showSnackbar}) {
       }
   };
 
-  const tabs = () => (
+  const tabs = () => {
+    const { t } = useTranslation();
+
+    return (
     <Tabs value={activeTabValue} onChange={handleChange} variant="fullWidth" aria-label="Worship services">
-      <Tab className={classes.tab} label={"Cantonese service" + (isPlayingCantoneseVideo ? " ▶" : "")} value="cantonese" id="cantonese-tab" aria-controls="cantonese-tabpanel" />
-      <Tab className={classes.tab} label={"English service" + (isPlayingEnglishVideo ? " ▶" : "")} value="english" id="english-tab" aria-controls="english-tabpanel" />
-      <Tab className={classes.tab} label={"Mandarin service"  + (isPlayingMandarinVideo ? " ▶" : "")} value="mandarin" id="mandarin-tab" aria-controls="mandarin-tabpanel" />
+      <Tab className={classes.tab} label={t("Cantonese service") + (isPlayingCantoneseVideo ? " ▶" : "")} value="cantonese" id="cantonese-tab" aria-controls="cantonese-tabpanel" />
+      <Tab className={classes.tab} label={t("English service") + (isPlayingEnglishVideo ? " ▶" : "")} value="english" id="english-tab" aria-controls="english-tabpanel" />
+      <Tab className={classes.tab} label={t("Mandarin service")  + (isPlayingMandarinVideo ? " ▶" : "")} value="mandarin" id="mandarin-tab" aria-controls="mandarin-tabpanel" />
     </Tabs>
-  );
+  )};
 
   if (!youTubeIframeAPIReady) {
     if (window.YT) {
