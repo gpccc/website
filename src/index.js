@@ -5,6 +5,7 @@ import './i18n';
 
 import './styles/site.css';
 
+import ElevateAppBar from './components/elevate-app-bar.js';
 import AppSnackbar from './components/app-snack-bar';
 import ServiceCard from './components/service-card';
 
@@ -14,10 +15,10 @@ function App() {
 
     return (
         <React.StrictMode>
-        <div>
+        <ElevateAppBar>
           <ServiceCard showSnackbar={showSnackbar} />
           {snackbarData && <AppSnackbar msg={snackbarData.msg} key={snackbarData.date} />}
-        </div>
+        </ElevateAppBar>
         </React.StrictMode>
     );
 }
