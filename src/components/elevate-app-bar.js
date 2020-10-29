@@ -8,9 +8,17 @@ import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import Box from '@material-ui/core/Box';
 import Container from '@material-ui/core/Container';
 
+import { makeStyles } from '@material-ui/core/styles';
+
 import { useTranslation } from 'react-i18next';
 
 import LanguageMenu from './language-menu';
+
+const useStyles = makeStyles((theme) => ({
+  title: {
+    flexGrow: 1,
+  },
+}));
 
 function ElevationScroll(props) {
   const { children } = props;
@@ -29,6 +37,7 @@ ElevationScroll.propTypes = {
 };
 
 export default function ElevateAppBar(props) {
+  const classes = useStyles();
   const { t } = useTranslation();
 
   return (
@@ -37,7 +46,7 @@ export default function ElevateAppBar(props) {
       <ElevationScroll {...props}>
         <AppBar>
           <Toolbar variant="dense">
-            <Typography variant="h6">{t("GP full name")}</Typography>
+            <Typography variant="h6" className={classes.title}>{t("GP full name")}</Typography>
             <LanguageMenu />
           </Toolbar>
         </AppBar>
