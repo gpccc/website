@@ -74,7 +74,7 @@ export default function LanguageMenu() {
         open={open}
         onClose={handleClose}>
         {languages.map((language, index) => (
-            <MenuItem key={index} onClick={() => handleLanguageClick(language.code)}>{language.desc}</MenuItem>
+            <MenuItem key={index} selected={activeLanguage===language.code} onClick={() => handleLanguageClick(language.code)}>{language.desc}</MenuItem>
         ))}
     </Menu>
     </div>
