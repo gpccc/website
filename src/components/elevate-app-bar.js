@@ -10,6 +10,8 @@ import Container from '@material-ui/core/Container';
 
 import { useTranslation } from 'react-i18next';
 
+import LanguageMenu from './language-menu';
+
 function ElevationScroll(props) {
   const { children } = props;
   const trigger = useScrollTrigger({
@@ -36,6 +38,7 @@ export default function ElevateAppBar(props) {
         <AppBar>
           <Toolbar variant="dense">
             <Typography variant="h6">{t("GP full name")}</Typography>
+            <LanguageMenu />
           </Toolbar>
         </AppBar>
       </ElevationScroll>
