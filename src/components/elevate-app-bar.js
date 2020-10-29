@@ -14,7 +14,7 @@ import { useTranslation } from 'react-i18next';
 
 import LanguageMenu from './language-menu';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   title: {
     flexGrow: 1,
   },
