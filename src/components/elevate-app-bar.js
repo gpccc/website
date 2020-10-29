@@ -34,7 +34,7 @@ export default function ElevateAppBar(props) {
       <CssBaseline />
       <ElevationScroll {...props}>
         <AppBar>
-          <Toolbar>
+          <Toolbar variant="dense">
             <Typography variant="h6">{t("GP full name")}</Typography>
           </Toolbar>
         </AppBar>
