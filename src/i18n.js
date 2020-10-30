@@ -44,6 +44,14 @@ i18n
             'Pastor Weizhong Sun': 'Pastor Weizhong Sun',
             'Pastor Semson Nip': 'Pastor Semson Nip',
             'Elder Albert Wong': 'Elder Albert Wong',
+
+            'Recent services': 'Recent services',
+            'Older services': 'Older services',
+            'Unable to seek to': 'Unable to seek to',
+            'Unable to load service': 'Unable to load service',
+            'TODO: Go to a page listing all worship services': 'TODO: Go to a page listing all worship services',
+            'Cantonese service combined with Mandarin service': 'Cantonese service combined with Mandarin service',
+            'English service combined with Mandarin service': 'English service combined with Mandarin service',
           }
         },
         zh: {
@@ -73,6 +81,14 @@ i18n
             'Pastor Weizhong Sun': '孫偉中牧師',
             'Pastor Semson Nip': '聶深信牧師',
             'Elder Albert Wong': '王Albert長老',
+
+            'Recent services': '最近講道',
+            'Older services': '較舊講道',
+            'Unable to seek to': '無法追踪',
+            'Unable to load service': '無法加載服務',
+            'TODO: Go to a page listing all worship services': '待辦事項：轉到列出所有敬拜服務的頁面',
+            'Cantonese service combined with Mandarin service': '粵語服務與普通話服務相結合',
+            'English service combined with Mandarin service': '英語服務結合普通話服務',
           }
         },
         zf: {
@@ -102,6 +118,14 @@ i18n
             'Pastor Weizhong Sun': '孙伟中牧师',
             'Pastor Semson Nip': '聂深信牧师',
             'Elder Albert Wong': '王Albert长老',
+
+            'Recent services': '最近讲道',
+            'Older services': '较旧讲道',
+            'Unable to seek to': '无法追踪',
+            'Unable to load service': '无法加载服务',
+            'TODO: Go to a page listing all worship services': '待办事项：转到列出所有敬拜服务的页面',
+            'Cantonese service combined with Mandarin service': '粤语服务与国语服务相结合',
+            'English service combined with Mandarin service': '英语服务结合普通话服务',
           }
         },
     },
