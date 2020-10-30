@@ -59,6 +59,11 @@ i18n
             'Live Sacrifice': 'Live Sacrifice',
             'Your Words': 'Your Words',
 
+            'You Are Worthy of Glory/You Are Great': 'You Are Worthy of Glory/You Are Great',
+            "Worker's Prayer": "Worker's Prayer",
+            'Praise the Lord, O My Soul': 'Praise the Lord, O My Soul',
+            'He Hides My Spirit': 'He Hides My Spirit',
+
             'Great is Your Faithfulness': 'Great is Your Faithfulness',
             'Everlasting God': 'Everlasting God',
             'Crown of Life': 'Crown of Life',
@@ -107,6 +112,11 @@ i18n
             'Live Sacrifice': '獻上活祭',
             'Your Words': '祢的話',
 
+            'You Are Worthy of Glory/You Are Great': '你真配得榮耀/你真偉大',
+            "Worker's Prayer": "工人的禱告",
+            'Praise the Lord, O My Soul': '我的心，你要稱頌耶和華',
+            'He Hides My Spirit': '祂藏我靈',
+
             'Great is Your Faithfulness': '祢信實何廣大',
             'Everlasting God': '永恆的主',
             'Crown of Life': '生命的冠冕',
@@ -154,6 +164,11 @@ i18n
             'Recognize You': '认定祢',
             'Live Sacrifice': '献上活祭',
             'Your Words': '祢的话',
+
+            'You Are Worthy of Glory/You Are Great': '你真配得荣耀/你真伟大',
+            "Worker's Prayer": "工人的祷告",
+            'Praise the Lord, O My Soul': '我的心，你要称颂耶和华',
+            'He Hides My Spirit': '祂藏我灵',
 
             'Great is Your Faithfulness': '祢信实何广大',
             'Everlasting God': '永恒的主',
