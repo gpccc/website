@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ButtonBase from '@material-ui/core/ButtonBase';
+import Button from '@material-ui/core/Button';
 import LanguageIcon from '@material-ui/icons/Translate';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
@@ -49,16 +49,17 @@ export default function LanguageMenu() {
 
     return (
     <div>
-    <ButtonBase
+    <Button
         aria-label="Change language"
         aria-controls="language-menu"
         aria-haspopup="true"
-        edge="start"
+        color="inherit"
+        variant="text"
         onClick={handleOpen}>
         <LanguageIcon />
-        <span>{getLanguageDesc(activeLanguage)}</span>
+        {getLanguageDesc(activeLanguage)}
         <ExpandMoreIcon />
-    </ButtonBase>
+    </Button>
     <Menu
         id="language-menu"
         anchorEl={anchorEl}
