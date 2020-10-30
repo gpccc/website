@@ -52,6 +52,12 @@ i18n
             'TODO: Go to a page listing all worship services': 'TODO: Go to a page listing all worship services',
             'Cantonese service combined with Mandarin service': 'Cantonese service combined with Mandarin service',
             'English service combined with Mandarin service': 'English service combined with Mandarin service',
+
+            'Jesus Christ is Lord': 'Jesus Christ is Lord',
+            'Jesus, the Name Above All Names': 'Jesus, the Name Above All Names',
+            'Recognize You': 'Recognize You',
+            'Live Sacrifice': 'Live Sacrifice',
+            'Your Words': 'Your Words',
           }
         },
         zh: {
@@ -89,6 +95,12 @@ i18n
             'TODO: Go to a page listing all worship services': '待辦事項：轉到列出所有敬拜服務的頁面',
             'Cantonese service combined with Mandarin service': '粵語服務與普通話服務相結合',
             'English service combined with Mandarin service': '英語服務結合普通話服務',
+
+            'Jesus Christ is Lord': '耶穌基督是主',
+            'Jesus, the Name Above All Names': '耶穌，萬名之上的名',
+            'Recognize You': '認定祢',
+            'Live Sacrifice': '獻上活祭',
+            'Your Words': '祢的話',
           }
         },
         zf: {
@@ -126,6 +138,12 @@ i18n
             'TODO: Go to a page listing all worship services': '待办事项：转到列出所有敬拜服务的页面',
             'Cantonese service combined with Mandarin service': '粤语服务与国语服务相结合',
             'English service combined with Mandarin service': '英语服务结合普通话服务',
+
+            'Jesus Christ is Lord': '耶稣基督是主',
+            'Jesus, the Name Above All Names': '耶稣，万名之上的名',
+            'Recognize You': '认定祢',
+            'Live Sacrifice': '献上活祭',
+            'Your Words': '祢的话',
           }
         },
     },
