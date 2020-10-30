@@ -73,8 +73,9 @@ export default function RecentServicesMenu({services, onServiceSelect, onOlderSe
                 ))}
 
                 <Divider />
-                <MenuItem key="OlderServices" onClick={() => handleOlderServicesItemClick()} disableRipple style={{backgroundColor: 'transparent'}}>
-                    <Button size="small" color="primary" style={{paddingLeft: 0}}>Older services</Button>
+
+                <MenuItem key="OlderServices" onClick={() => handleOlderServicesItemClick()}>
+                    Older services
                 </MenuItem>
             </Menu>
         </div>
