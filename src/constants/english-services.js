@@ -46,7 +46,7 @@ const englishServices = [
         {time: "01:12:45", label: "Youth Praise Night", type: SeekPointType.VIDEO},
         {time: "01:16:12", label: "Announcements", type: SeekPointType.ANNOUNCEMENTS},
         {time: "01:18:55", label: "Benediction", type: SeekPointType.BENEDICTION},
-        {time: "01:19:30", label: "Pastor Larry's birthday", type: SeekPointType.BIRTHDAY},
+        {time: "01:19:30", label: "Happy birthday, Pastor Larry", type: SeekPointType.BIRTHDAY},
     ]},
     { youtubeVideoID: "EWQ__H_85bE", message: "Ezra 4: Rebuilding Opposed", pastor: "Pastor Larry Lee", date: "2020-10-04T16:30:00Z", duration: "01:25:45", seekPoints: [
         {time: "00:10:57", label: "Opening prayer", type: SeekPointType.PRAYER},
