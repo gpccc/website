@@ -68,6 +68,11 @@ i18n
             'Everlasting God': 'Everlasting God',
             'Crown of Life': 'Crown of Life',
             'Thank God': 'Thank God',
+
+            'Shine Jesus Shine': 'Shine Jesus Shine',
+            'The Living Water of Life Fills Me': 'The Living Water of Life Fills Me',
+            'Light and Salt': 'Light and Salt',
+            'Determined to Spread Your Love': 'Determined to Spread Your Love',
           }
         },
         zh: {
@@ -121,6 +126,11 @@ i18n
             'Everlasting God': '永恆的主',
             'Crown of Life': '生命的冠冕',
             'Thank God': '感谢神',
+
+            'Shine Jesus Shine': '真光普照',
+            'The Living Water of Life Fills Me': '生命活水充满我',
+            'Light and Salt': '光和鹽',
+            'Determined to Spread Your Love': '立志傳揚祢的愛',
           }
         },
         zf: {
@@ -174,6 +184,11 @@ i18n
             'Everlasting God': '永恒的主',
             'Crown of Life': '生命的冠冕',
             'Thank God': '感谢神',
+
+            'Shine Jesus Shine': '真光普照',
+            'The Living Water of Life Fills Me': '生命活水充满我',
+            'Light and Salt': '光和盐',
+            'Determined to Spread Your Love': '立志传扬祢的爱',
           }
         },
     },
