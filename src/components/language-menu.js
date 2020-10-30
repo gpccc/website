@@ -3,6 +3,7 @@ import React from 'react';
 import Button from '@material-ui/core/Button';
 import LanguageIcon from '@material-ui/icons/Translate';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import Box from '@material-ui/core/Box';
 
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -65,7 +66,7 @@ export default function LanguageMenu() {
         variant="text"
         onClick={handleOpen}>
         <LanguageIcon />
-        {getLanguageDesc(activeLanguage)}
+        <Box ml={1} mr={0.5}>{getLanguageDesc(activeLanguage)}</Box>
         <ExpandMoreIcon />
     </Button>
     <Menu
