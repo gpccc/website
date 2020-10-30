@@ -35,6 +35,15 @@ i18n
             'Announcements': 'Announcements',
             'Benediction': 'Benediction',
             'Happy birthday, Pastor Larry': 'Happy birthday, Pastor Larry',
+
+            'Pastor Jerry Lin': 'Pastor Jerry Lin',
+            'Pastor Larry Lee': 'Pastor Larry Lee',
+            'Rev. Steven Chin': 'Rev. Steven Chin',
+            'Pastor Peter Liu': 'Pastor Peter Liu',
+            'Pastor Chien Chen': 'Pastor Chien Chen',
+            'Pastor Weizhong Sun': 'Pastor Weizhong Sun',
+            'Pastor Semson Nip': 'Pastor Semson Nip',
+            'Elder Albert Wong': 'Elder Albert Wong',
           }
         },
         zh: {
@@ -55,6 +64,15 @@ i18n
             'Announcements': '報告',
             'Benediction': '祝禱',
             'Happy birthday, Pastor Larry': '李長橋牧師，生日快樂',
+
+            'Pastor Jerry Lin': '林聖智牧師',
+            'Pastor Larry Lee': '李長橋牧師',
+            'Rev. Steven Chin': '陳卓明牧師',
+            'Pastor Peter Liu': '劉書華牧師',
+            'Pastor Chien Chen': 'Chien Chen牧師',
+            'Pastor Weizhong Sun': '孫偉中牧師',
+            'Pastor Semson Nip': '聶深信牧師',
+            'Elder Albert Wong': '王Albert長老',
           }
         },
         zf: {
@@ -75,6 +93,15 @@ i18n
             'Announcements': '报告',
             'Benediction': '祝祷',
             'Happy birthday, Pastor Larry': '李長橋牧师，生日快乐',
+
+            'Pastor Jerry Lin': '林圣智牧师',
+            'Pastor Larry Lee': '李长桥牧师',
+            'Rev. Steven Chin': '陈卓明牧师',
+            'Pastor Peter Liu': '刘书华牧师',
+            'Pastor Chien Chen': 'Chien Chen牧师',
+            'Pastor Weizhong Sun': '孙伟中牧师',
+            'Pastor Semson Nip': '聂深信牧师',
+            'Elder Albert Wong': '王Albert长老',
           }
         },
     },
