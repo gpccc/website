@@ -7,6 +7,8 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 
+import i18n from '../i18n';
+
 const languages = [
     { code: 'zf', desc: '中文 (正体字/繁体字)' },
     { code: 'zh', desc: '中文 (正體字/繁體字)' },
@@ -46,6 +48,12 @@ export default function LanguageMenu() {
     const handleClose = () => {
         setAnchorEl(null);
     };
+
+    React.useEffect(
+        () => {
+            i18n.changeLanguage(activeLanguage);
+        }, [activeLanguage]
+    );
 
     return (
     <div>
