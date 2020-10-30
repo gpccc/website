@@ -24,6 +24,7 @@ i18n
             'Cantonese service': 'Cantonese service',
             'English service': 'English service',
             'Mandarin service': 'Mandarin service',
+            'Seek to': 'Seek to',
           }
         },
         zh: {
@@ -33,6 +34,7 @@ i18n
             'Cantonese service': '粵語崇拜', // TODO: Cantonese worship
             'English service': '英語崇拜', // TODO: English worship
             'Mandarin service': '華語崇拜', // TODO: Chinese worship
+            'Seek to': '尋求',
           }
         },
         zf: {
@@ -42,6 +44,7 @@ i18n
             'Cantonese service': '粤语崇拜', // TODO: Cantonese worship
             'English service': '英语崇拜', // TODO: English worship
             'Mandarin service': '华语崇拜', // TODO: Chinese worship
+            'Seek to': '寻求',
           }
         },
     },

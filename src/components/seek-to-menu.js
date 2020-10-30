@@ -21,9 +21,13 @@ import CakeIcon from '@material-ui/icons/Cake';
 import PoolIcon from '@material-ui/icons/Pool'
 import GroupAddIcon from '@material-ui/icons/GroupAdd'
 
+import { useTranslation } from 'react-i18next';
+
 import SeekPointType from '../constants/seek-point-type';
 
 export default function SeekToMenu({seekPoints, onSeekTo, youTubePlayerReady}) {
+    const { t } = useTranslation();
+
     const [anchorEl, setAnchorEl] = React.useState(null);
 
     const handleClick = (event) => {
@@ -42,7 +46,7 @@ export default function SeekToMenu({seekPoints, onSeekTo, youTubePlayerReady}) {
     return (
         <div>
             <Button size="small" color="primary" aria-controls="seek-to-menu" aria-haspopup="true" onClick={handleClick} disabled={seekPoints.length===0 || !youTubePlayerReady}>
-                Seek to
+                {t('Seek to')}
             </Button>
             <Menu
                 id="seek-to-menu"
@@ -71,7 +75,7 @@ export default function SeekToMenu({seekPoints, onSeekTo, youTubePlayerReady}) {
                             {seekPoint.type===SeekPointType.BAPTISM && <PoolIcon fontSize="small" />}
                             {seekPoint.type===SeekPointType.NEW_MEMBERS && <GroupAddIcon fontSize="small" />}
                         </ListItemIcon>
-                        <ListItemText primary={seekPoint.label} />
+                        <ListItemText primary={t(seekPoint.label)} />
                     </MenuItem>
                 ))}
             </Menu>
