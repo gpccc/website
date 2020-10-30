@@ -25,6 +25,16 @@ i18n
             'English service': 'English service',
             'Mandarin service': 'Mandarin service',
             'Seek to': 'Seek to',
+            'Opening prayer': 'Opening prayer',
+            'Communion': 'Communion',
+            'Congregational prayer': 'Congregational prayer',
+            'Baptism of Yong Wang': 'Baptism of Yong Wang',
+            'Missions at GPCCC': 'Missions at GPCCC',
+            'Youth Praise Night': 'Youth Praise Night',
+            'Closing prayer': 'Closing prayer',
+            'Announcements': 'Announcements',
+            'Benediction': 'Benediction',
+            'Happy birthday, Pastor Larry': 'Happy birthday, Pastor Larry',
           }
         },
         zh: {
@@ -35,6 +45,16 @@ i18n
             'English service': '英語崇拜', // TODO: English worship
             'Mandarin service': '華語崇拜', // TODO: Chinese worship
             'Seek to': '尋求',
+            'Opening prayer': '宣召',
+            'Communion': '聖餐',
+            'Congregational prayer': '公禱',
+            'Baptism of Yong Wang': '王勇的洗禮',
+            'Missions at GPCCC': 'GPCCC的任務',
+            'Youth Praise Night': '青年讚美之夜',
+            'Closing prayer': '閉幕祈禱',
+            'Announcements': '報告',
+            'Benediction': '祝禱',
+            'Happy birthday, Pastor Larry': '李長橋牧師，生日快樂',
           }
         },
         zf: {
@@ -45,6 +65,16 @@ i18n
             'English service': '英语崇拜', // TODO: English worship
             'Mandarin service': '华语崇拜', // TODO: Chinese worship
             'Seek to': '寻求',
+            'Opening prayer': '宣召',
+            'Communion': '圣餐',
+            'Congregational prayer': '公祷',
+            'Missions at GPCCC': 'GPCCC的任务',
+            'Baptism of Yong Wang': '王勇的洗礼',
+            'Youth Praise Night': '青年赞美之夜',
+            'Closing prayer': '闭幕祈祷',
+            'Announcements': '报告',
+            'Benediction': '祝祷',
+            'Happy birthday, Pastor Larry': '李長橋牧师，生日快乐',
           }
         },
     },
