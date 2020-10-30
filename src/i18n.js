@@ -20,6 +20,7 @@ i18n
         en: {
           translation: {
             'GP full name': 'Greater Phoenix Chinese Christian Church',
+            'GP short name': 'GPCCC',
             'Cantonese service': 'Cantonese service',
             'English service': 'English service',
             'Mandarin service': 'Mandarin service',
@@ -28,6 +29,7 @@ i18n
         zh: {
           translation: {
             'GP full name': '鳳凰城華人基督教會',
+            'GP short name': '鳳凰城華人基督教會',
             'Cantonese service': '粵語崇拜', // TODO: Cantonese worship
             'English service': '英語崇拜', // TODO: English worship
             'Mandarin service': '華語崇拜', // TODO: Chinese worship
@@ -36,6 +38,7 @@ i18n
         zf: {
           translation: {
             'GP full name': '凤凰城华人基督教会',
+            'GP short name': '凤凰城华人基督教会',
             'Cantonese service': '粤语崇拜', // TODO: Cantonese worship
             'English service': '英语崇拜', // TODO: English worship
             'Mandarin service': '华语崇拜', // TODO: Chinese worship

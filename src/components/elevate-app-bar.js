@@ -14,9 +14,21 @@ import { useTranslation } from 'react-i18next';
 
 import LanguageMenu from './language-menu';
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
+  },
+  sectionDesktop: {
+    display: 'none',
+    [theme.breakpoints.up('md')]: {
+      display: 'flex',
+    },
+  },
+  sectionMobile: {
+    display: 'flex',
+    [theme.breakpoints.up('md')]: {
+      display: 'none',
+    },
   },
 }));
 
@@ -46,7 +58,8 @@ export default function ElevateAppBar(props) {
       <ElevationScroll {...props}>
         <AppBar>
           <Toolbar variant="dense">
-            <Typography variant="h6" className={classes.title}>{t("GP full name")}</Typography>
+            <Typography variant="h6" className={`${classes.title} ${classes.sectionDesktop}`}>{t("GP full name")}</Typography>
+            <Typography variant="h6" className={`${classes.title} ${classes.sectionMobile}`}>{t("GP short name")}</Typography>
             <LanguageMenu />
           </Toolbar>
         </AppBar>
