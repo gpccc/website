@@ -14,6 +14,8 @@ import Tooltip from '@material-ui/core/Tooltip';
 import IconButton from '@material-ui/core/IconButton';
 import InfoOutlinedIcon from '@material-ui/icons/InfoOutlined';
 
+import { useTranslation } from 'react-i18next';
+
 import YouTubePlayer from './youtube-player';
 
 import ServiceDateDisplay from './service-date-display';
@@ -38,6 +40,8 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
     );
   }
 
+  const { t } = useTranslation();
+
   const [serviceToShow, setServiceToShow] = React.useState(services[0]);
   const [youTubePlayerReady, setYouTubePlayerReady] = React.useState(false);
 
@@ -45,7 +49,7 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
 
   const youtubeVideoID = serviceToShow.youtubeVideoID;
   const message = serviceToShow.message;
-  const pastor = serviceToShow.pastor;
+  const pastor = t(serviceToShow.pastor);
   const date = serviceToShow.date;
   const seekPoints = serviceToShow.seekPoints;
 

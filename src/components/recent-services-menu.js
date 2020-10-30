@@ -8,6 +8,8 @@ import Divider from '@material-ui/core/Divider';
 
 import ListItemText from '@material-ui/core/ListItemText';
 
+import { useTranslation } from 'react-i18next';
+
 import DateTimeUtils from '../modules/datetime-utils';
 
 import { NUM_RECENT_SERVICES_TO_SHOW, SERVICE_DURATION_IN_SECONDS } from '../constants/service-constants';
@@ -30,6 +32,8 @@ function getServicesToShow(services) {
 }
 
 export default function RecentServicesMenu({services, onServiceSelect, onOlderServicesSelect, youTubePlayerReady}) {
+    const { t } = useTranslation();
+
     const [anchorEl, setAnchorEl] = React.useState(null);
     const [selectedIndex, setSelectedIndex] = React.useState(0);
 
@@ -68,7 +72,7 @@ export default function RecentServicesMenu({services, onServiceSelect, onOlderSe
             >
                 {servicesToShow.map((service, index) => (
                     <MenuItem key={"YT" + service.youtubeVideoID} selected={index === selectedIndex} onClick={() => handleServiceMenuItemClick(index)}>
-                        <ListItemText primary={service.message} secondary={service.pastor + " · " + DateTimeUtils.shortServiceDateDisplay(service.date)} />
+                        <ListItemText primary={service.message} secondary={t(service.pastor) + " · " + DateTimeUtils.shortServiceDateDisplay(service.date)} />
                     </MenuItem>
                 ))}
 
