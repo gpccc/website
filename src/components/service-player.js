@@ -107,7 +107,7 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
         }, 1000);
       }
     } else {
-      showSnackbar('Unable to seek to ' + seekPoint.label);
+      showSnackbar(t('Unable to seek to') + ' ' + t(seekPoint.label));
     }
   };
 
@@ -116,7 +116,7 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
       setServiceToShow(service);
       youTubePlayerRef.current.cueVideoById(service.youtubeVideoID);
     } else {
-      showSnackbar('Unable to load service ' + service.message);
+      showSnackbar(t('Unable to load service') + ' ' + t(service.message));
     }
   };
 
@@ -131,7 +131,7 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
           {showCombinedServiceTooltip &&
           <span>
           &nbsp;
-          <Tooltip title={(isCantoneseService ? "Cantonese" : "English") + " service combined with Mandarin service"} arrow enterTouchDelay={25}>
+          <Tooltip title={t((isCantoneseService ? "Cantonese" : "English") + " service combined with Mandarin service")} arrow enterTouchDelay={25}>
             <IconButton aria-label="info" size="small">
               <InfoOutlinedIcon />
             </IconButton>
@@ -148,7 +148,7 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
         <RecentServicesMenu
           services={services}
           onServiceSelect={onServiceSelect}
-          onOlderServicesSelect={() => showSnackbar('TODO: Go to a page listing all worship services')}
+          onOlderServicesSelect={() => showSnackbar(t('TODO: Go to a page listing all worship services'))}
           youTubePlayerReady={youTubePlayerReady}
         />
       </CardActions>
