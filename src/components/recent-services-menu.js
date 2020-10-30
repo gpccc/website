@@ -61,7 +61,7 @@ export default function RecentServicesMenu({services, onServiceSelect, onOlderSe
     return (
         <div>
             <Button size="small" color="primary" aria-controls="recent-services-menu" aria-haspopup="true" onClick={handleClick} disabled={!youTubePlayerReady}>
-                Recent services
+                {t('Recent services')}
             </Button>
             <Menu
                 id="recent-services-menu"
@@ -79,7 +79,7 @@ export default function RecentServicesMenu({services, onServiceSelect, onOlderSe
                 <Divider />
 
                 <MenuItem key="OlderServices" onClick={() => handleOlderServicesItemClick()}>
-                    Older services
+                    {t('Older services')}
                 </MenuItem>
             </Menu>
         </div>
