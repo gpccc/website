@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
+import Divider from '@material-ui/core/Divider';
 
 import ListItemText from '@material-ui/core/ListItemText';
 
@@ -71,6 +72,7 @@ export default function RecentServicesMenu({services, onServiceSelect, onOlderSe
                     </MenuItem>
                 ))}
 
+                <Divider />
                 <MenuItem key="OlderServices" onClick={() => handleOlderServicesItemClick()} disableRipple style={{backgroundColor: 'transparent'}}>
                     <Button size="small" color="primary" style={{paddingLeft: 0}}>Older services</Button>
                 </MenuItem>
