@@ -58,6 +58,11 @@ i18n
             'Recognize You': 'Recognize You',
             'Live Sacrifice': 'Live Sacrifice',
             'Your Words': 'Your Words',
+
+            'Great is Your Faithfulness': 'Great is Your Faithfulness',
+            'Everlasting God': 'Everlasting God',
+            'Crown of Life': 'Crown of Life',
+            'Thank God': 'Thank God',
           }
         },
         zh: {
@@ -101,6 +106,11 @@ i18n
             'Recognize You': '認定祢',
             'Live Sacrifice': '獻上活祭',
             'Your Words': '祢的話',
+
+            'Great is Your Faithfulness': '祢信實何廣大',
+            'Everlasting God': '永恆的主',
+            'Crown of Life': '生命的冠冕',
+            'Thank God': '感谢神',
           }
         },
         zf: {
@@ -144,6 +154,11 @@ i18n
             'Recognize You': '认定祢',
             'Live Sacrifice': '献上活祭',
             'Your Words': '祢的话',
+
+            'Great is Your Faithfulness': '祢信实何广大',
+            'Everlasting God': '永恒的主',
+            'Crown of Life': '生命的冠冕',
+            'Thank God': '感谢神',
           }
         },
     },
