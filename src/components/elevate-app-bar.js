@@ -68,7 +68,7 @@ export default function ElevateAppBar(props) {
       <Container>
         {props.children}
         <Box my={2}>
-        <p><b>(filler text to turn on scrolling)</b></p>
+        <p><b>(filler text to test scrolling)</b></p>
         <p><b>OUR BELIEF</b></p>
         <p><b>We believe</b> the Scriptures of the Old and New Testaments to be verbally inspired by God, being inerrant in the original text and it is the foundation of and the supreme authority for Christian faith, service, and life.</p>
         <p><b>We believe</b> in the one and only, never changing, absolutely holy God, who exists eternally as Father, Son, and Holy Spirit. He is the object of our worship and the subject of our praise.</p>
