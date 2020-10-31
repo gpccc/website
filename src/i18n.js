@@ -100,6 +100,10 @@ i18n
             'Raise Hands in Praise': 'Raise Hands in Praise',
             'Bloom for You': 'Bloom for You',
             'Thank My Lord': 'Thank My Lord',
+
+            'Open the Sky': 'Open the Sky',
+            'Sing with Gladness': 'Sing with Gladness',
+            'The Resurrected Lord': 'The Resurrected Lord',
           }
         },
         zh: {
@@ -185,6 +189,10 @@ i18n
             'Raise Hands in Praise': '舉手讚頌',
             'Bloom for You': '為祢綻放馨香',
             'Thank My Lord': '谢谢我主',
+
+            'Open the Sky': '將天敞開',
+            'Sing with Gladness': '高聲頌讚主',
+            'The Resurrected Lord': '復活的主',
           }
         },
         zf: {
@@ -270,6 +278,10 @@ i18n
             'Raise Hands in Praise': '举手赞颂',
             'Bloom for You': '为祢绽放馨香',
             'Thank My Lord': '谢谢我主',
+
+            'Open the Sky': '将天敞开',
+            'Sing with Gladness': '高声颂讚主',
+            'The Resurrected Lord': '复活的主',
           }
         },
     },
