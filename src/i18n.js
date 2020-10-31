@@ -53,6 +53,8 @@ i18n
             'Cantonese service combined with Mandarin service': 'Cantonese service combined with Mandarin service',
             'English service combined with Mandarin service': 'English service combined with Mandarin service',
 
+            'Sermon': 'Sermon',
+
             // English praise songs
             'Our God': 'Our God',
             'Lay Me Down': 'Lay Me Down',
@@ -172,6 +174,8 @@ i18n
             'Cantonese service combined with Mandarin service': '粵語服務與普通話服務相結合',
             'English service combined with Mandarin service': '英語服務結合普通話服務',
 
+            'Sermon': '講道',
+
             // English praise songs
             'Our God': '我們的神',
             'Lay Me Down': '放下我',
@@ -290,6 +294,8 @@ i18n
             'TODO: Go to a page listing all worship services': '待办事项：转到列出所有敬拜服务的页面',
             'Cantonese service combined with Mandarin service': '粤语服务与国语服务相结合',
             'English service combined with Mandarin service': '英语服务结合普通话服务',
+
+            'Sermon': '讲道',
 
             // English praise songs
             'Our God': '我们的神', // found Chinese version
