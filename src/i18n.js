@@ -76,6 +76,11 @@ i18n
             'Rivers of the Holy Spirit': 'Rivers of the Holy Spirit',
             'Precious Cross': 'Precious Cross',
 
+            'Jesus, My Everything': 'Jesus, My Everything',
+            'Let the Love of Jesus Surround You': 'Let the Love of Jesus Surround You',
+            'Make Me a Blesssing': 'Make Me a Blesssing',
+            'Send Me': 'Send Me',
+
             // Cantonese praise songs
             'Great is Your Faithfulness': 'Great is Your Faithfulness',
             'Everlasting God': 'Everlasting God',
@@ -151,6 +156,11 @@ i18n
             'Rivers of the Holy Spirit': '聖靈的江河',
             'Precious Cross': '寶貴十架',
 
+            'Jesus, My Everything': '你是何等榮美',
+            'Let the Love of Jesus Surround You': '讓神兒子的愛圍繞你',
+            'Make Me a Blesssing': '藉我赐恩福',
+            'Send Me': '差遣我',
+
             // Cantonese praise songs
             'Great is Your Faithfulness': '祢信實何廣大',
             'Everlasting God': '永恆的主',
@@ -225,6 +235,11 @@ i18n
             'Jesus Loves You': '耶稣爱你',
             'Rivers of the Holy Spirit': '圣灵的江河',
             'Precious Cross': '宝贵十架',
+
+            'Jesus, My Everything': '你是何等荣美',
+            'Let the Love of Jesus Surround You': '让神儿子的爱围绕你',
+            'Make Me a Blesssing': '借我赐恩福',
+            'Send Me': '差遣我',
 
             // Cantonese praise songs
             'Great is Your Faithfulness': '祢信实何广大',
