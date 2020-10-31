@@ -71,6 +71,11 @@ i18n
             'Amazing Grace': 'Amazing Grace',
             'Unity From the Heart': 'Unity From the Heart',
 
+            'My God, My Father, My Rock': 'My God, My Father, My Rock',
+            'Jesus Loves You': 'Jesus Loves You',
+            'Rivers of the Holy Spirit': 'Rivers of the Holy Spirit',
+            'Precious Cross': 'Precious Cross',
+
             // Cantonese praise songs
             'Great is Your Faithfulness': 'Great is Your Faithfulness',
             'Everlasting God': 'Everlasting God',
@@ -141,6 +146,11 @@ i18n
             'Amazing Grace': '奇異恩典',
             'Unity From the Heart': '從心合一',
 
+            'My God, My Father, My Rock': '我的神，我的父，我的磐石',
+            'Jesus Loves You': '耶穌愛你',
+            'Rivers of the Holy Spirit': '聖靈的江河',
+            'Precious Cross': '寶貴十架',
+
             // Cantonese praise songs
             'Great is Your Faithfulness': '祢信實何廣大',
             'Everlasting God': '永恆的主',
@@ -210,6 +220,11 @@ i18n
             'Fill Me': '充满我',
             'Amazing Grace': '奇异恩典',
             'Unity From the Heart': '从心合一',
+
+            'My God, My Father, My Rock': '我的神，我的父，我的磐石',
+            'Jesus Loves You': '耶稣爱你',
+            'Rivers of the Holy Spirit': '圣灵的江河',
+            'Precious Cross': '宝贵十架',
 
             // Cantonese praise songs
             'Great is Your Faithfulness': '祢信实何广大',
