@@ -80,6 +80,9 @@ i18n
             'Better': 'Better',
             'Forever': 'Forever',
 
+            'Who You Say I Am': 'Who You Say I Am',
+            'Broken Vessels / Majesty': 'Broken Vessels / Majesty',
+
             // Mandarin praise songs
             'Jesus Christ is Lord': 'Jesus Christ is Lord',
             'Jesus, the Name Above All Names': 'Jesus, the Name Above All Names',
@@ -196,6 +199,9 @@ i18n
             'Better': '更好',
             'Forever': '永遠',
 
+            'Who You Say I Am': '名分祢已賜給我',
+            'Broken Vessels / Majesty': '破碎器皿 / 威嚴',
+
             // Mandarin praise songs
             'Jesus Christ is Lord': '耶穌基督是主',
             'Jesus, the Name Above All Names': '耶穌，萬名之上的名',
@@ -311,6 +317,9 @@ i18n
             'Center': '中央',
             'Better': '更好',
             'Forever': '永远',
+
+            'Who You Say I Am': '名分祢已賜給我', // found Chinese version
+            'Broken Vessels / Majesty': '破碎器皿 / 威严', // found Chinese version - Broken Vessels, but not Majesty
 
             // Mandarin praise songs
             'Jesus Christ is Lord': '耶稣基督是主',
