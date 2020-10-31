@@ -127,7 +127,7 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
       </CardActionArea>
       <CardContent>
         <Typography gutterBottom variant="body1" component="p">
-          {message}
+          {t(message)}
           {showCombinedServiceTooltip &&
           <span>
           &nbsp;
