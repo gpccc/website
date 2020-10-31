@@ -55,6 +55,14 @@ i18n
 
             'Sermon': 'Sermon',
 
+            // English sermons
+            'The Sovereignty of God (Ezra 7)': 'The Sovereignty of God (Ezra 7)',
+            'Temple Filled with Joy (Ezra 6)': 'Temple Filled with Joy (Ezra 6)',
+            'Rebuilding Resumes (Ezra 5)': 'Rebuilding Resumes (Ezra 5)',
+            'Rebuilding Opposed (Ezra 4)': 'Rebuilding Opposed (Ezra 4)',
+            'First Comes Sacrifice (Ezra 3)': 'First Comes Sacrifice (Ezra 3)',
+            'Talent (Exodus 4:10-17)': 'Talent (Exodus 4:10-17)',
+
             // English praise songs
             'Our God': 'Our God',
             'Lay Me Down': 'Lay Me Down',
@@ -176,6 +184,14 @@ i18n
 
             'Sermon': '講道',
 
+            // English sermons
+            'The Sovereignty of God (Ezra 7)': '上帝的主權 (以斯拉記 7)',
+            'Temple Filled with Joy (Ezra 6)': '充滿喜悅的神殿 (以斯拉記 6)',
+            'Rebuilding Resumes (Ezra 5)': '重建簡歷 (以斯拉記 5)',
+            'Rebuilding Opposed (Ezra 4)': '反對重建 (以斯拉記 4)',
+            'First Comes Sacrifice (Ezra 3)': '先來獻祭 (以斯拉記 3)',
+            'Talent (Exodus 4:10-17)': '天賦 (出埃及记 4:10-17)',
+
             // English praise songs
             'Our God': '我們的神',
             'Lay Me Down': '放下我',
@@ -296,6 +312,14 @@ i18n
             'English service combined with Mandarin service': '英语服务结合普通话服务',
 
             'Sermon': '讲道',
+
+            // English sermons
+            'The Sovereignty of God (Ezra 7)': '上帝的主权 (以斯拉记 7)',
+            'Temple Filled with Joy (Ezra 6)': '充满喜悦的神殿 (以斯拉記 6)',
+            'Rebuilding Resumes (Ezra 5)': '重建简历 (以斯拉記 5)',
+            'Rebuilding Opposed (Ezra 4)': '反对重建 (以斯拉記 4)',
+            'First Comes Sacrifice (Ezra 3)': '先来献祭 (以斯拉記 3)',
+            'Talent (Exodus 4:10-17)': '天赋 (出埃及记 4:10-17)',
 
             // English praise songs
             'Our God': '我们的神', // found Chinese version
