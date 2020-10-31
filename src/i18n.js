@@ -53,6 +53,13 @@ i18n
             'Cantonese service combined with Mandarin service': 'Cantonese service combined with Mandarin service',
             'English service combined with Mandarin service': 'English service combined with Mandarin service',
 
+            // English praise songs
+            'Our God': 'Our God',
+            'Lay Me Down': 'Lay Me Down',
+            'King of My Heart': 'King of My Heart',
+            'Speak, O Lord': 'Speak, O Lord',
+            'Jesus, Thank You': 'Jesus, Thank You',
+
             // Mandarin praise songs
             'Jesus Christ is Lord': 'Jesus Christ is Lord',
             'Jesus, the Name Above All Names': 'Jesus, the Name Above All Names',
@@ -142,6 +149,13 @@ i18n
             'Cantonese service combined with Mandarin service': '粵語服務與普通話服務相結合',
             'English service combined with Mandarin service': '英語服務結合普通話服務',
 
+            // English praise songs
+            'Our God': '我們的神',
+            'Lay Me Down': '放下我',
+            'King of My Heart': '我心中的王',
+            'Speak, O Lord': '主請說',
+            'Jesus, Thank You': '感謝,耶穌',
+
             // Mandarin praise songs
             'Jesus Christ is Lord': '耶穌基督是主',
             'Jesus, the Name Above All Names': '耶穌，萬名之上的名',
@@ -230,6 +244,13 @@ i18n
             'TODO: Go to a page listing all worship services': '待办事项：转到列出所有敬拜服务的页面',
             'Cantonese service combined with Mandarin service': '粤语服务与国语服务相结合',
             'English service combined with Mandarin service': '英语服务结合普通话服务',
+
+            // English praise songs
+            'Our God': '我们的神', // found Chinese version
+            'Lay Me Down': '放下我', 
+            'King of My Heart': '我心中的王', // found Chinese version
+            'Speak, O Lord': '主请说', // found Chinese version
+            'Jesus, Thank You': '感谢,耶稣', // found Chinese version
 
             // Mandarin praise songs
             'Jesus Christ is Lord': '耶稣基督是主',
