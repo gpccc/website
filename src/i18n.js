@@ -71,6 +71,10 @@ i18n
             'Gracefully Broken': 'Gracefully Broken',
             'Lord, I Need You': 'Lord, I Need You',
 
+            'O Come to the Altar': 'O Come to the Altar',
+            'Rock of Ages (You will Stand)': 'Rock of Ages (You will Stand)',
+            'The Wonderful Cross': 'The Wonderful Cross',
+
             // Mandarin praise songs
             'Jesus Christ is Lord': 'Jesus Christ is Lord',
             'Jesus, the Name Above All Names': 'Jesus, the Name Above All Names',
@@ -178,6 +182,10 @@ i18n
             'Gracefully Broken': '優雅地打破',
             'Lord, I Need You': '主啊,我需要祢',
 
+            'O Come to the Altar': '來到祭壇前',
+            'Rock of Ages (You will Stand)': '歷代搖滾 (您將站立)',
+            'The Wonderful Cross': '奇妙的十字架',
+
             // Mandarin praise songs
             'Jesus Christ is Lord': '耶穌基督是主',
             'Jesus, the Name Above All Names': '耶穌，萬名之上的名',
@@ -284,6 +292,10 @@ i18n
             'Your Love Never Fails': '你的爱永不止息',
             'Gracefully Broken': '优雅地打破',
             'Lord, I Need You': '主啊,我需要祢', // found Chinese version
+
+            'O Come to the Altar': '来到祭坛前', // found Chinese version
+            'Rock of Ages (You will Stand)': '历代摇滚 (您将站立)',
+            'The Wonderful Cross': '奇妙的十字架',
 
             // Mandarin praise songs
             'Jesus Christ is Lord': '耶稣基督是主',
