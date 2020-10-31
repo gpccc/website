@@ -75,6 +75,11 @@ i18n
             'Rock of Ages (You will Stand)': 'Rock of Ages (You will Stand)',
             'The Wonderful Cross': 'The Wonderful Cross',
 
+            'O Praise the Name': 'O Praise the Name',
+            'Center': 'Center',
+            'Better': 'Better',
+            'Forever': 'Forever',
+
             // Mandarin praise songs
             'Jesus Christ is Lord': 'Jesus Christ is Lord',
             'Jesus, the Name Above All Names': 'Jesus, the Name Above All Names',
@@ -186,6 +191,11 @@ i18n
             'Rock of Ages (You will Stand)': '歷代搖滾 (您將站立)',
             'The Wonderful Cross': '奇妙的十字架',
 
+            'O Praise the Name': '讚美祂名',
+            'Center': '中央',
+            'Better': '更好',
+            'Forever': '永遠',
+
             // Mandarin praise songs
             'Jesus Christ is Lord': '耶穌基督是主',
             'Jesus, the Name Above All Names': '耶穌，萬名之上的名',
@@ -296,6 +306,11 @@ i18n
             'O Come to the Altar': '来到祭坛前', // found Chinese version
             'Rock of Ages (You will Stand)': '历代摇滚 (您将站立)',
             'The Wonderful Cross': '奇妙的十字架',
+
+            'O Praise the Name': '赞美祂名', // found Chinese version
+            'Center': '中央',
+            'Better': '更好',
+            'Forever': '永远',
 
             // Mandarin praise songs
             'Jesus Christ is Lord': '耶稣基督是主',
