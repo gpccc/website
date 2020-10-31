@@ -66,6 +66,11 @@ i18n
             'Nobody Loves Me Like You': 'Nobody Loves Me Like You',
             'Way Maker': 'Way Maker',
 
+            'Blessed Be Your Name': 'Blessed Be Your Name',
+            'Your Love Never Fails': 'Your Love Never Fails',
+            'Gracefully Broken': 'Gracefully Broken',
+            'Lord, I Need You': 'Lord, I Need You',
+
             // Mandarin praise songs
             'Jesus Christ is Lord': 'Jesus Christ is Lord',
             'Jesus, the Name Above All Names': 'Jesus, the Name Above All Names',
@@ -168,6 +173,11 @@ i18n
             'Nobody Loves Me Like You': '沒有人像你一樣愛我',
             'Way Maker': '開路者',
 
+            'Blessed Be Your Name': '稱頌主聖名',
+            'Your Love Never Fails': '你的愛永不止息',
+            'Gracefully Broken': '優雅地打破',
+            'Lord, I Need You': '主啊,我需要祢',
+
             // Mandarin praise songs
             'Jesus Christ is Lord': '耶穌基督是主',
             'Jesus, the Name Above All Names': '耶穌，萬名之上的名',
@@ -269,6 +279,11 @@ i18n
             'King of Kings': '万王之王', // found Chinese version
             'Nobody Loves Me Like You': '没有人像你一样爱我',
             'Way Maker': '开路者', // found Chinese version
+
+            'Blessed Be Your Name': '称颂主圣名', // found Chinese version
+            'Your Love Never Fails': '你的爱永不止息',
+            'Gracefully Broken': '优雅地打破',
+            'Lord, I Need You': '主啊,我需要祢', // found Chinese version
 
             // Mandarin praise songs
             'Jesus Christ is Lord': '耶稣基督是主',
