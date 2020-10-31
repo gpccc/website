@@ -53,6 +53,7 @@ i18n
             'Cantonese service combined with Mandarin service': 'Cantonese service combined with Mandarin service',
             'English service combined with Mandarin service': 'English service combined with Mandarin service',
 
+            // Mandarin praise songs
             'Jesus Christ is Lord': 'Jesus Christ is Lord',
             'Jesus, the Name Above All Names': 'Jesus, the Name Above All Names',
             'Recognize You': 'Recognize You',
@@ -64,6 +65,13 @@ i18n
             'Praise the Lord, O My Soul': 'Praise the Lord, O My Soul',
             'He Hides My Spirit': 'He Hides My Spirit',
 
+            'Worship the Lord': 'Worship the Lord',
+            'Come Sing Loudly': 'Come Sing Loudly',
+            'Fill Me': 'Fill Me',
+            'Amazing Grace': 'Amazing Grace',
+            'Unity From the Heart': 'Unity From the Heart',
+
+            // Cantonese praise songs
             'Great is Your Faithfulness': 'Great is Your Faithfulness',
             'Everlasting God': 'Everlasting God',
             'Crown of Life': 'Crown of Life',
@@ -111,6 +119,7 @@ i18n
             'Cantonese service combined with Mandarin service': '粵語服務與普通話服務相結合',
             'English service combined with Mandarin service': '英語服務結合普通話服務',
 
+            // Mandarin praise songs
             'Jesus Christ is Lord': '耶穌基督是主',
             'Jesus, the Name Above All Names': '耶穌，萬名之上的名',
             'Recognize You': '認定祢',
@@ -122,6 +131,13 @@ i18n
             'Praise the Lord, O My Soul': '我的心，你要稱頌耶和華',
             'He Hides My Spirit': '祂藏我靈',
 
+            'Worship the Lord': '敬拜主',
+            'Come Sing Loudly': '來高聲唱',
+            'Fill Me': '充满我',
+            'Amazing Grace': '奇異恩典',
+            'Unity From the Heart': '從心合一',
+
+            // Cantonese praise songs
             'Great is Your Faithfulness': '祢信實何廣大',
             'Everlasting God': '永恆的主',
             'Crown of Life': '生命的冠冕',
@@ -169,6 +185,7 @@ i18n
             'Cantonese service combined with Mandarin service': '粤语服务与国语服务相结合',
             'English service combined with Mandarin service': '英语服务结合普通话服务',
 
+            // Mandarin praise songs
             'Jesus Christ is Lord': '耶稣基督是主',
             'Jesus, the Name Above All Names': '耶稣，万名之上的名',
             'Recognize You': '认定祢',
@@ -180,6 +197,13 @@ i18n
             'Praise the Lord, O My Soul': '我的心，你要称颂耶和华',
             'He Hides My Spirit': '祂藏我灵',
 
+            'Worship the Lord': '敬拜主',
+            'Come Sing Loudly': '来高声唱',
+            'Fill Me': '充满我',
+            'Amazing Grace': '奇异恩典',
+            'Unity From the Heart': '从心合一',
+
+            // Cantonese praise songs
             'Great is Your Faithfulness': '祢信实何广大',
             'Everlasting God': '永恒的主',
             'Crown of Life': '生命的冠冕',
