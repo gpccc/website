@@ -2,7 +2,7 @@ import SeekPointType from './seek-point-type';
 
 // 7RsjtD3EdeI 1280x720
 const mandarinServices = [
-    { youtubeVideoID: "4nUAo8aJNZU", message: "(blank message title)", pastor: "Pastor Peter Liu", date: "2020-10-25T18:10:00Z", duration: "01:24:35", seekPoints: [
+    { youtubeVideoID: "4nUAo8aJNZU", message: "(blank message title)", pastor: "Rev. Peter Liu", date: "2020-10-25T18:10:00Z", duration: "01:24:35", seekPoints: [
         {time: "00:09:53", label: "Opening prayer", type: SeekPointType.PRAYER},
         {time: "00:10:45", label: "Bible verse", type: SeekPointType.BIBLE_VERSE},
         {time: "00:11:28", label: "Jesus Christ is Lord", type: SeekPointType.PRAISE_SONG},
@@ -32,7 +32,7 @@ const mandarinServices = [
         {time: "01:33:15", label: "Announcements", type: SeekPointType.ANNOUNCEMENTS},
         {time: "01:40:42", label: "Benediction", type: SeekPointType.BENEDICTION},
     ]},
-    { youtubeVideoID: "wFXd4V9iNFw", message: "(blank message title)", pastor: "Pastor Weizhong Sun", date: "2020-10-11T18:10:00Z", duration: "01:41:35", seekPoints: [
+    { youtubeVideoID: "wFXd4V9iNFw", message: "(blank message title)", pastor: "Rev. Weizhong Sun", date: "2020-10-11T18:10:00Z", duration: "01:41:35", seekPoints: [
         {time: "00:10:25", label: "Opening prayer", type: SeekPointType.PRAYER},
         {time: "00:12:33", label: "Worship the Lord", type: SeekPointType.PRAISE_SONG},
         {time: "00:16:18", label: "Come Sing Loudly", type: SeekPointType.PRAISE_SONG},
@@ -47,7 +47,7 @@ const mandarinServices = [
         {time: "01:36:34", label: "Youth Praise Night", type: SeekPointType.VIDEO},
         {time: "01:40:06", label: "Benediction", type: SeekPointType.BENEDICTION},
     ]},
-    { youtubeVideoID: "Li5Pd6IXhE4", message: "(blank message title)", pastor: "Pastor Peter Liu", date: "2020-10-04T18:10:00Z", duration: "01:35:33", seekPoints: [
+    { youtubeVideoID: "Li5Pd6IXhE4", message: "(blank message title)", pastor: "Rev. Peter Liu", date: "2020-10-04T18:10:00Z", duration: "01:35:33", seekPoints: [
         {time: "00:09:55", label: "Opening prayer", type: SeekPointType.PRAYER},
         {time: "00:11:22", label: "My God, My Father, My Rock", type: SeekPointType.PRAISE_SONG},
         {time: "00:16:54", label: "Congregational prayer?", type: SeekPointType.PRAYER},
@@ -76,7 +76,7 @@ const mandarinServices = [
         {time: "01:26:47", label: "Announcements", type: SeekPointType.ANNOUNCEMENTS},
         {time: "01:30:06", label: "Benediction", type: SeekPointType.BENEDICTION},
     ]},
-    { youtubeVideoID: "R0ikzK-juhI", message: "(blank message title)", pastor: "Pastor Peter Liu", date: "2020-09-20T18:10:00Z", duration: "01:40:39", seekPoints: [
+    { youtubeVideoID: "R0ikzK-juhI", message: "(blank message title)", pastor: "Rev. Peter Liu", date: "2020-09-20T18:10:00Z", duration: "01:40:39", seekPoints: [
         {time: "00:10:04", label: "Bible verse", type: SeekPointType.BIBLE_VERSE},
         {time: "00:11:33", label: "Opening prayer", type: SeekPointType.PRAYER},
         {time: "00:13:10", label: "Jesus, My Everything", type: SeekPointType.PRAISE_SONG},

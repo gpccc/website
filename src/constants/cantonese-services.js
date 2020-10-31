@@ -4,7 +4,7 @@ import { JOINT_SERVICE } from './service-constants'
 
 // ntyMUdXntLU 1280x720
 const cantoneseServices = [
-    { youtubeVideoID: "ILegX4omHvc", message: "(blank message title)", pastor: "Pastor Semson Nip", date: "2020-10-25T18:10:00Z", duration: "01:21:15", seekPoints: [
+    { youtubeVideoID: "ILegX4omHvc", message: "(blank message title)", pastor: "Rev. Semson Nip", date: "2020-10-25T18:10:00Z", duration: "01:21:15", seekPoints: [
         {time: "00:10:00", label: "Opening prayer", type: SeekPointType.PRAYER},
         {time: "00:10:42", label: "Bible verse", type: SeekPointType.BIBLE_VERSE},
         {time: "00:11:43", label: "Great is Your Faithfulness", type: SeekPointType.PRAISE_SONG},
@@ -30,7 +30,7 @@ const cantoneseServices = [
         {time: "01:21:38", label: "Announcements", type: SeekPointType.ANNOUNCEMENTS},
         {time: "01:28:26", label: "Benediction", type: SeekPointType.BENEDICTION},
     ]},
-    { youtubeVideoID: "Rl4hT1wifFQ", message: "(blank message title)", pastor: "Pastor Semson Nip", date: "2020-10-11T18:10:00Z", duration: "01:26:05", seekPoints: [
+    { youtubeVideoID: "Rl4hT1wifFQ", message: "(blank message title)", pastor: "Rev. Semson Nip", date: "2020-10-11T18:10:00Z", duration: "01:26:05", seekPoints: [
         {time: "00:08:00", label: "Opening prayer?", type: SeekPointType.PRAYER},
         {time: "00:09:02", label: "Raise Hands in Praise", type: SeekPointType.PRAISE_SONG},
         {time: "00:13:27", label: "Bloom for You", type: SeekPointType.PRAISE_SONG},
@@ -42,7 +42,7 @@ const cantoneseServices = [
         {time: "01:25:00", label: "Benediction", type: SeekPointType.BENEDICTION},
     ]},
     { youtubeVideoID: "Li5Pd6IXhE4", message: JOINT_SERVICE, pastor: "", date: "", duration: "", seekPoints: [] },
-    { youtubeVideoID: "AlrtccfApe8", message: "(blank message title)", pastor: "Pastor Semson Nip", date: "2020-09-27T18:10:00Z", duration: "01:22:19", seekPoints: [
+    { youtubeVideoID: "AlrtccfApe8", message: "(blank message title)", pastor: "Rev. Semson Nip", date: "2020-09-27T18:10:00Z", duration: "01:22:19", seekPoints: [
         {time: "00:08:00", label: "Opening prayer?", type: SeekPointType.PRAYER},
         {time: "00:08:41", label: "Open the Sky", type: SeekPointType.PRAISE_SONG},
         {time: "00:12:51", label: "Sing with Gladness", type: SeekPointType.PRAISE_SONG},
