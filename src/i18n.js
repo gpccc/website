@@ -66,6 +66,9 @@ i18n
             'First Comes Sacrifice (Ezra 3)': 'First Comes Sacrifice (Ezra 3)',
             'Talent (Exodus 4:10-17)': 'Talent (Exodus 4:10-17)',
 
+            // Mandarin sermons
+            'Truth Will Set Us Free (John 18:28-40)': 'Truth Will Set Us Free (John 18:28-40)',
+
             // English praise songs
             'Our God': 'Our God',
             'Lay Me Down': 'Lay Me Down',
@@ -198,6 +201,9 @@ i18n
             'First Comes Sacrifice (Ezra 3)': '先來獻祭 (以斯拉記 3)',
             'Talent (Exodus 4:10-17)': '天賦 (出埃及记 4:10-17)',
 
+            // Mandarin sermons
+            'Truth Will Set Us Free (John 18:28-40)': '真理必叫我们得以自由 (约翰福音 18:28-40)',
+
             // English praise songs
             'Our God': '我們的神',
             'Lay Me Down': '放下我',
@@ -329,6 +335,9 @@ i18n
             'Rebuilding Opposed (Ezra 4)': '反对重建 (以斯拉記 4)',
             'First Comes Sacrifice (Ezra 3)': '先来献祭 (以斯拉記 3)',
             'Talent (Exodus 4:10-17)': '天赋 (出埃及记 4:10-17)',
+
+            // Mandarin sermons
+            'Truth Will Set Us Free (John 18:28-40)': '真理必叫我們得以自由 (约翰福音 18:28-40)',
 
             // English praise songs
             'Our God': '我们的神', // found Chinese version
