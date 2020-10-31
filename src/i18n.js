@@ -60,6 +60,12 @@ i18n
             'Speak, O Lord': 'Speak, O Lord',
             'Jesus, Thank You': 'Jesus, Thank You',
 
+            '10,000 Reasons': '10,000 Reasons',
+            'Great Things': 'Great Things',
+            'King of Kings': 'King of Kings',
+            'Nobody Loves Me Like You': 'Nobody Loves Me Like You',
+            'Way Maker': 'Way Maker',
+
             // Mandarin praise songs
             'Jesus Christ is Lord': 'Jesus Christ is Lord',
             'Jesus, the Name Above All Names': 'Jesus, the Name Above All Names',
@@ -156,6 +162,12 @@ i18n
             'Speak, O Lord': '主請說',
             'Jesus, Thank You': '感謝,耶穌',
 
+            '10,000 Reasons': '我的靈讚美袮',
+            'Great Things': '偉大的事情',
+            'King of Kings': '萬王之王',
+            'Nobody Loves Me Like You': '沒有人像你一樣愛我',
+            'Way Maker': '開路者',
+
             // Mandarin praise songs
             'Jesus Christ is Lord': '耶穌基督是主',
             'Jesus, the Name Above All Names': '耶穌，萬名之上的名',
@@ -251,6 +263,12 @@ i18n
             'King of My Heart': '我心中的王', // found Chinese version
             'Speak, O Lord': '主请说', // found Chinese version
             'Jesus, Thank You': '感谢,耶稣', // found Chinese version
+
+            '10,000 Reasons': '我的灵赞美祢', // found Chinese version
+            'Great Things': '伟大的事情',
+            'King of Kings': '万王之王', // found Chinese version
+            'Nobody Loves Me Like You': '没有人像你一样爱我',
+            'Way Maker': '开路者', // found Chinese version
 
             // Mandarin praise songs
             'Jesus Christ is Lord': '耶稣基督是主',
