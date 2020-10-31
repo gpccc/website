@@ -81,6 +81,10 @@ i18n
             'The Living Water of Life Fills Me': 'The Living Water of Life Fills Me',
             'Light and Salt': 'Light and Salt',
             'Determined to Spread Your Love': 'Determined to Spread Your Love',
+
+            'Raise Hands in Praise': 'Raise Hands in Praise',
+            'Bloom for You': 'Bloom for You',
+            'Thank My Lord': 'Thank My Lord',
           }
         },
         zh: {
@@ -147,6 +151,10 @@ i18n
             'The Living Water of Life Fills Me': '生命活水充满我',
             'Light and Salt': '光和鹽',
             'Determined to Spread Your Love': '立志傳揚祢的愛',
+
+            'Raise Hands in Praise': '舉手讚頌',
+            'Bloom for You': '為祢綻放馨香',
+            'Thank My Lord': '谢谢我主',
           }
         },
         zf: {
@@ -213,6 +221,10 @@ i18n
             'The Living Water of Life Fills Me': '生命活水充满我',
             'Light and Salt': '光和盐',
             'Determined to Spread Your Love': '立志传扬祢的爱',
+
+            'Raise Hands in Praise': '举手赞颂',
+            'Bloom for You': '为祢绽放馨香',
+            'Thank My Lord': '谢谢我主',
           }
         },
     },
