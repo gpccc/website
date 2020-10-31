@@ -384,6 +384,7 @@ i18n
     lng: 'en',
     fallbackLng: 'en',
     debug: true,
+    keySeparator: false,
     nsSeparator: '|',
 
     interpolation: {
