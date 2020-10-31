@@ -76,6 +76,11 @@ i18n
             'Rivers of the Holy Spirit': 'Rivers of the Holy Spirit',
             'Precious Cross': 'Precious Cross',
 
+            'Crown Him with Many Crowns': 'Crown Him with Many Crowns',
+            'Be My Vision': 'Be My Vision',
+            'Love Each Other': 'Love Each Other',
+            "I'd Go for You": "I'd Go for You",
+
             'Jesus, My Everything': 'Jesus, My Everything',
             'Let the Love of Jesus Surround You': 'Let the Love of Jesus Surround You',
             'Make Me a Blesssing': 'Make Me a Blesssing',
@@ -156,6 +161,11 @@ i18n
             'Rivers of the Holy Spirit': '聖靈的江河',
             'Precious Cross': '寶貴十架',
 
+            'Crown Him with Many Crowns': '來擁戴主為王',
+            'Be My Vision': '成為我異象',
+            'Love Each Other': '彼此相愛',
+            "I'd Go for You": "我願為祢去",
+
             'Jesus, My Everything': '你是何等榮美',
             'Let the Love of Jesus Surround You': '讓神兒子的愛圍繞你',
             'Make Me a Blesssing': '藉我赐恩福',
@@ -235,6 +245,11 @@ i18n
             'Jesus Loves You': '耶稣爱你',
             'Rivers of the Holy Spirit': '圣灵的江河',
             'Precious Cross': '宝贵十架',
+
+            'Crown Him with Many Crowns': '来拥戴主为王',
+            'Be My Vision': '成为我异象',
+            'Love Each Other': '彼此相爱',
+            "I'd Go for You": "我愿为祢去",
 
             'Jesus, My Everything': '你是何等荣美',
             'Let the Love of Jesus Surround You': '让神儿子的爱围绕你',
