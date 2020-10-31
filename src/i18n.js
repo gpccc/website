@@ -55,6 +55,9 @@ i18n
 
             'Sermon': 'Sermon',
 
+            // Cantonese sermons
+            'Day New Day (2 Corinthians 4:16-18)': 'Day New Day (2 Corinthians 4:16-18)',
+
             // English sermons
             'The Sovereignty of God (Ezra 7)': 'The Sovereignty of God (Ezra 7)',
             'Temple Filled with Joy (Ezra 6)': 'Temple Filled with Joy (Ezra 6)',
@@ -184,6 +187,9 @@ i18n
 
             'Sermon': '講道',
 
+            // Cantonese sermons
+            'Day New Day (2 Corinthians 4:16-18)': '一天新似一天 (哥林多后书 4:16-18)',
+
             // English sermons
             'The Sovereignty of God (Ezra 7)': '上帝的主權 (以斯拉記 7)',
             'Temple Filled with Joy (Ezra 6)': '充滿喜悅的神殿 (以斯拉記 6)',
@@ -312,6 +318,9 @@ i18n
             'English service combined with Mandarin service': '英语服务结合普通话服务',
 
             'Sermon': '讲道',
+
+            // Cantonese sermons
+            'Day New Day (2 Corinthians 4:16-18)': '一天新似一天 (哥林多後書 4:16-18)',
 
             // English sermons
             'The Sovereignty of God (Ezra 7)': '上帝的主权 (以斯拉记 7)',

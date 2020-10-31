@@ -4,7 +4,7 @@ import { JOINT_SERVICE } from './service-constants'
 
 // ntyMUdXntLU 1280x720
 const cantoneseServices = [
-    { youtubeVideoID: "ILegX4omHvc", message: "(blank message title)", pastor: "Rev. Semson Nip", date: "2020-10-25T18:10:00Z", duration: "01:21:15", seekPoints: [
+    { youtubeVideoID: "ILegX4omHvc", message: "Day New Day (2 Corinthians 4:16-18)", pastor: "Rev. Semson Nip", date: "2020-10-25T18:10:00Z", duration: "01:21:15", seekPoints: [
         {time: "00:10:00", label: "Opening prayer", type: SeekPointType.PRAYER},
         {time: "00:10:42", label: "Bible verse", type: SeekPointType.BIBLE_VERSE},
         {time: "00:11:43", label: "Great is Your Faithfulness", type: SeekPointType.PRAISE_SONG},
