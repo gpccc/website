@@ -2,6 +2,8 @@ import SeekPointType from './seek-point-type';
 
 // 7RsjtD3EdeI 1280x720
 const mandarinServices = [
+    { youtubeVideoID: "m9YoDp3xFSQ", message: "(blank sermon title)", pastor: "Rev. Semson Nip", date: "2020-11-01T18:10:00Z", duration: "00:00:00", seekPoints: [
+    ]},
     { youtubeVideoID: "4nUAo8aJNZU", message: "Truth Will Set Us Free (John 18:28-40)", pastor: "Rev. Peter Liu", date: "2020-10-25T18:10:00Z", duration: "01:24:35", seekPoints: [
         {time: "00:09:53", label: "Opening prayer", type: SeekPointType.PRAYER},
         {time: "00:10:45", label: "Bible verse", type: SeekPointType.BIBLE_VERSE},
