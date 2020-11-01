@@ -30,7 +30,7 @@ const cantoneseServices = [
         {time: "01:21:38", label: "Announcements", type: SeekPointType.ANNOUNCEMENTS},
         {time: "01:28:26", label: "Benediction", type: SeekPointType.BENEDICTION},
     ]},
-    { youtubeVideoID: "Rl4hT1wifFQ", message: "(blank message title)", pastor: "Rev. Semson Nip", date: "2020-10-11T18:10:00Z", duration: "01:26:05", seekPoints: [
+    { youtubeVideoID: "Rl4hT1wifFQ", message: "Scent of Christ (2 Corinthians 2:14-17)", pastor: "Rev. Semson Nip", date: "2020-10-11T18:10:00Z", duration: "01:26:05", seekPoints: [
         {time: "00:08:00", label: "Opening prayer?", type: SeekPointType.PRAYER},
         {time: "00:09:02", label: "Raise Hands in Praise", type: SeekPointType.PRAISE_SONG},
         {time: "00:13:27", label: "Bloom for You", type: SeekPointType.PRAISE_SONG},
