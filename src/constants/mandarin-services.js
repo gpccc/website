@@ -14,7 +14,7 @@ const mandarinServices = [
         {time: "00:30:36", label: "Sermon", type: SeekPointType.MESSAGE},
         {time: "01:23:45", label: "Closing prayer", type: SeekPointType.BENEDICTION},
     ]},
-    { youtubeVideoID: "7RsjtD3EdeI", message: "(blank message title)", pastor: "Pastor Chien Chen", date: "2020-10-18T18:10:00Z", duration: "01:42:25", seekPoints: [
+    { youtubeVideoID: "7RsjtD3EdeI", message: "King of Power and Grace (John 18:12-27)", pastor: "Pastor Chien Chen", date: "2020-10-18T18:10:00Z", duration: "01:42:25", seekPoints: [
         {time: "00:10:00", label: "Opening prayer", type: SeekPointType.PRAYER},
         {time: "00:11:32", label: "Bible verse?", type: SeekPointType.BIBLE_VERSE},
         {time: "00:13:10", label: "You Are Worthy of Glory/You Are Great", type: SeekPointType.PRAISE_SONG},

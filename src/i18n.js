@@ -69,6 +69,7 @@ i18n
 
             // Mandarin sermons
             'Truth Will Set Us Free (John 18:28-40)': 'Truth Will Set Us Free (John 18:28-40)',
+            'King of Power and Grace (John 18:12-27)': 'King of Power and Grace (John 18:12-27)',
 
             // English praise songs
             'Our God': 'Our God',
@@ -205,6 +206,7 @@ i18n
 
             // Mandarin sermons
             'Truth Will Set Us Free (John 18:28-40)': '真理必叫我们得以自由 (约翰福音 18:28-40)',
+            'King of Power and Grace (John 18:12-27)': '權能恩典的主 (约翰福音 18:12-27)',
 
             // English praise songs
             'Our God': '我們的神',
@@ -341,6 +343,7 @@ i18n
 
             // Mandarin sermons
             'Truth Will Set Us Free (John 18:28-40)': '真理必叫我們得以自由 (约翰福音 18:28-40)',
+            'King of Power and Grace (John 18:12-27)': '权能恩典的主 (约翰福音 18:12-27)',
 
             // English praise songs
             'Our God': '我们的神', // found Chinese version
