@@ -7,7 +7,7 @@ const englishServices = [
         {time: "00:09:49", label: "1 Chronicles 16:23-31", type: SeekPointType.BIBLE_VERSE},
         {time: "00:11:17", label: "How Great is Our God", type: SeekPointType.PRAISE_SONG},
         {time: "00:15:57", label: "Son of God", type: SeekPointType.PRAISE_SONG},
-        {time: "00:21:02", label: "Lord I Need You", type: SeekPointType.PRAISE_SONG},
+        {time: "00:21:02", label: "Lord, I Need You", type: SeekPointType.PRAISE_SONG},
         {time: "00:24:50", label: "Prayer", type: SeekPointType.PRAYER},
         {time: "00:26:02", label: "Give Us Clean Hands", type: SeekPointType.PRAISE_SONG},
         {time: "00:30:07", label: "Communion", type: SeekPointType.COMMUNION},

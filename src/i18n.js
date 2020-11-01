@@ -54,6 +54,8 @@ i18n
             'English service combined with Mandarin service': 'English service combined with Mandarin service',
 
             'Sermon': 'Sermon',
+            'Beginning': 'Beginning',
+            'Prayer': 'Prayer',
 
             // Cantonese sermons
             '一天新似一天 (林后4:16-18)': 'Day New Day (2 Corinthians 4:16-18)',
@@ -78,7 +80,14 @@ i18n
             '我是真葡萄树 (约15:1-10)': 'I Am the Real Vine (John 15:1-10)',
             '愿你们平安 (约20:19-21)': 'Wish You Peace (John 20:19-21)',
 
+            // English sermons
+            '1 Chronicles 16:23-31': '1 Chronicles 16:23-31',
+
             // English praise songs
+            'How Great is Our God': 'How Great is Our God',
+            'Son of God': 'Son of God',
+            'Give Us Clean Hands': 'Give Us Clean Hands',
+
             'Our God': 'Our God',
             'Lay Me Down': 'Lay Me Down',
             'King of My Heart': 'King of My Heart',
@@ -198,6 +207,8 @@ i18n
             'English service combined with Mandarin service': '英語服務結合普通話服務',
 
             'Sermon': '講道',
+            'Beginning': '開始',
+            'Prayer': '禱告',
 
             // Cantonese sermons
             '一天新似一天 (林后4:16-18)': '一天新似一天 (哥林多後書 4:16-18)',
@@ -222,7 +233,14 @@ i18n
             '我是真葡萄树 (约15:1-10)': '我是真葡萄樹 (约翰福音 15:1-10)',
             '愿你们平安 (约20:19-21)': '願你們平安 (约翰福音 20:19-21)',
 
+            // English Bible verses
+            '1 Chronicles 16:23-31': '歷代誌上 16:23-31',
+
             // English praise songs
+            'How Great is Our God': '我神真偉大',
+            'Son of God': '神之子',
+            'Give Us Clean Hands': '給我們乾淨的手',
+
             'Our God': '我們的神',
             'Lay Me Down': '放下我',
             'King of My Heart': '我心中的王',
@@ -342,6 +360,8 @@ i18n
             'English service combined with Mandarin service': '英语服务结合普通话服务',
 
             'Sermon': '讲道',
+            'Beginning': '开始',
+            'Prayer': '祷告',
 
             // Cantonese sermons
             '一天新似一天 (林后4:16-18)': '一天新似一天 (哥林多後書 4:16-18)',
@@ -366,7 +386,14 @@ i18n
             '我是真葡萄树 (约15:1-10)': '我是真葡萄树 (约翰福音 15:1-10)',
             '愿你们平安 (约20:19-21)': '愿你们平安 (约翰福音 20:19-21)',
 
+            // English Bible verses
+            '1 Chronicles 16:23-31': '历代志上 16:23-31',
+
             // English praise songs
+            'How Great is Our God': '我神真伟大', // found Chinese version
+            'Son of God': '神之子',
+            'Give Us Clean Hands': '给我们干净的手',
+
             'Our God': '我们的神', // found Chinese version
             'Lay Me Down': '放下我', 
             'King of My Heart': '我心中的王', // found Chinese version
