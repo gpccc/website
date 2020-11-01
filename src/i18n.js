@@ -74,6 +74,7 @@ i18n
             'King of Power and Grace (John 18:12-27)': 'King of Power and Grace (John 18:12-27)',
             'Prayer of Unity (John 17:20-26)': 'Prayer of Unity (John 17:20-26)',
             'The Work of the Holy Spirit (John 16:1-15)': 'The Work of the Holy Spirit (John 16:1-15)',
+            'I Am the Real Vine (John 15:1-10)': 'I Am the Real Vine (John 15:1-10)',
 
             // English praise songs
             'Our God': 'Our God',
@@ -215,6 +216,7 @@ i18n
             'King of Power and Grace (John 18:12-27)': '權能恩典的主 (约翰福音 18:12-27)',
             'Prayer of Unity (John 17:20-26)': '合一的祈禱 (约翰福音 17:20-26)',
             'The Work of the Holy Spirit (John 16:1-15)': '圣灵的工作 (约翰福音 16:1-15)',
+            'I Am the Real Vine (John 15:1-10)': '我是真葡萄樹 (约翰福音 15:1-10)',
 
             // English praise songs
             'Our God': '我們的神',
@@ -357,6 +359,7 @@ i18n
             'King of Power and Grace (John 18:12-27)': '权能恩典的主 (约翰福音 18:12-27)',
             'Prayer of Unity (John 17:20-26)': '合一的祈祷 (约翰福音 17:20-26)',
             'The Work of the Holy Spirit (John 16:1-15)': '聖靈的工作 (约翰福音 16:1-15)',
+            'I Am the Real Vine (John 15:1-10)': '我是真葡萄树 (约翰福音 15:1-10)',
 
             // English praise songs
             'Our God': '我们的神', // found Chinese version

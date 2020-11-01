@@ -60,7 +60,7 @@ const mandarinServices = [
         {time: "01:30:06", label: "Announcements", type: SeekPointType.ANNOUNCEMENTS},
         {time: "01:34:02", label: "Benediction", type: SeekPointType.BENEDICTION},
     ]},
-    { youtubeVideoID: "AYadEf1YjVk", message: "(blank message title)", pastor: "Pastor Chien Chen", date: "2020-09-27T18:10:00Z", duration: "01:31:15", seekPoints: [
+    { youtubeVideoID: "AYadEf1YjVk", message: "I Am the Real Vine (John 15:1-10)", pastor: "Pastor Chien Chen", date: "2020-09-27T18:10:00Z", duration: "01:31:15", seekPoints: [
         {time: "00:10:02", label: "Opening prayer", type: SeekPointType.PRAYER},
         {time: "00:11:46", label: "Bible verse?", type: SeekPointType.BIBLE_VERSE},
         {time: "00:12:51", label: "Crown Him with Many Crowns", type: SeekPointType.PRAISE_SONG},
