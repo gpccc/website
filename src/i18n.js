@@ -59,7 +59,7 @@ i18n
             'Day New Day (2 Corinthians 4:16-18)': 'Day New Day (2 Corinthians 4:16-18)',
             'Not me, but the Holy Spirit! (2 Corinthians 3:1-11)': 'Not me, but the Holy Spirit! (2 Cor 3:1-11)',
             'Scent of Christ (2 Corinthians 2:14-17)': 'Scent of Christ (2 Corinthians 2:14-17)',
-            'Look Forward to the Future (2 Corinthians 1:8-11)': 'Look Forward to the Future (2 Cor 1:8-11)',
+            '指望将来 (林后1:8-11)': 'Look Forward to the Future (2 Cor 1:8-11)',
 
             // English sermons
             'Send Us Ministers (Ezra 8)': 'Send Us Ministers (Ezra 8)',
@@ -156,9 +156,9 @@ i18n
             'Bloom for You': 'Bloom for You',
             'Thank My Lord': 'Thank My Lord',
 
-            'Open the Sky': 'Open the Sky',
-            'Sing with Gladness': 'Sing with Gladness',
-            'The Resurrected Lord': 'The Resurrected Lord',
+            '将天敞开': 'Open the Sky',
+            '高声颂讚主': 'Sing with Gladness',
+            '复活的主': 'The Resurrected Lord',
           }
         },
         zh: {
@@ -203,7 +203,7 @@ i18n
             'Day New Day (2 Corinthians 4:16-18)': '一天新似一天 (哥林多後書 4:16-18)',
             'Not me, but the Holy Spirit! (2 Corinthians 3:1-11)': '不是我，是聖靈！ (哥林多後書 3:1-11)',
             'Scent of Christ (2 Corinthians 2:14-17)': '基督的香氣 (哥林多後書 2:14-17)',
-            'Look Forward to the Future (2 Corinthians 1:8-11)': '指望將來 (哥林多後書 1:8-11)',
+            '指望将来 (林后1:8-11)': '指望將來 (哥林多後書 1:8-11)',
 
             // English sermons
             'Send Us Ministers (Ezra 8)': '派我們部長 (以斯拉記 8)',
@@ -300,9 +300,9 @@ i18n
             'Bloom for You': '為祢綻放馨香',
             'Thank My Lord': '谢谢我主',
 
-            'Open the Sky': '將天敞開',
-            'Sing with Gladness': '高聲頌讚主',
-            'The Resurrected Lord': '復活的主',
+            '将天敞开': '將天敞開',
+            '高声颂讚主': '高聲頌讚主',
+            '复活的主': '復活的主',
           }
         },
         zf: {
@@ -347,7 +347,7 @@ i18n
             'Day New Day (2 Corinthians 4:16-18)': '一天新似一天 (哥林多後書 4:16-18)',
             'Not me, but the Holy Spirit! (2 Corinthians 3:1-11)': '不是我，是圣灵！ (哥林多后书 3:1-11)',
             'Scent of Christ (2 Corinthians 2:14-17)': '基督的香气 (哥林多后书 2:14-17)',
-            'Look Forward to the Future (2 Corinthians 1:8-11)': '指望将来 (哥林多后书 1:8-11)',
+            '指望将来 (林后1:8-11)': '指望将来 (哥林多后书 1:8-11)',
 
             // English sermons
             'Send Us Ministers (Ezra 8)': '派我们部长 (以斯拉记 8)',
@@ -444,9 +444,9 @@ i18n
             'Bloom for You': '为祢绽放馨香',
             'Thank My Lord': '谢谢我主',
 
-            'Open the Sky': '将天敞开',
-            'Sing with Gladness': '高声颂讚主',
-            'The Resurrected Lord': '复活的主',
+            '将天敞开': '将天敞开',
+            '高声颂讚主': '高声颂讚主',
+            '复活的主': '复活的主',
           }
         },
     },
