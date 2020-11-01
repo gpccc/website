@@ -211,7 +211,7 @@ i18n
             'Lay Me Down': '放下我',
             'King of My Heart': '我心中的王',
             'Speak, O Lord': '主請說',
-            'Jesus, Thank You': '感謝,耶穌',
+            'Jesus, Thank You': '感謝，耶穌',
 
             '10,000 Reasons': '我的靈讚美袮',
             'Great Things': '偉大的事情',
@@ -222,7 +222,7 @@ i18n
             'Blessed Be Your Name': '稱頌主聖名',
             'Your Love Never Fails': '你的愛永不止息',
             'Gracefully Broken': '優雅地打破',
-            'Lord, I Need You': '主啊,我需要祢',
+            'Lord, I Need You': '主啊，我需要祢',
 
             'O Come to the Altar': '來到祭壇前',
             'Rock of Ages (You will Stand)': '歷代搖滾 (您將站立)',
@@ -347,7 +347,7 @@ i18n
             'Lay Me Down': '放下我', 
             'King of My Heart': '我心中的王', // found Chinese version
             'Speak, O Lord': '主请说', // found Chinese version
-            'Jesus, Thank You': '感谢,耶稣', // found Chinese version
+            'Jesus, Thank You': '感谢，耶稣', // found Chinese version
 
             '10,000 Reasons': '我的灵赞美祢', // found Chinese version
             'Great Things': '伟大的事情',
@@ -358,7 +358,7 @@ i18n
             'Blessed Be Your Name': '称颂主圣名', // found Chinese version
             'Your Love Never Fails': '你的爱永不止息',
             'Gracefully Broken': '优雅地打破',
-            'Lord, I Need You': '主啊,我需要祢', // found Chinese version
+            'Lord, I Need You': '主啊，我需要祢', // found Chinese version
 
             'O Come to the Altar': '来到祭坛前', // found Chinese version
             'Rock of Ages (You will Stand)': '历代摇滚 (您将站立)',
