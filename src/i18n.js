@@ -58,7 +58,7 @@ i18n
             // Cantonese sermons
             'Day New Day (2 Corinthians 4:16-18)': 'Day New Day (2 Corinthians 4:16-18)',
             'Not me, but the Holy Spirit! (2 Corinthians 3:1-11)': 'Not me, but the Holy Spirit! (2 Cor 3:1-11)',
-            'Scent of Christ (2 Corinthians 2:14-17)': 'Scent of Christ (2 Corinthians 2:14-17)',
+            '基督的香气 (林后2:14-17)': 'Scent of Christ (2 Corinthians 2:14-17)',
             '指望将来 (林后1:8-11)': 'Look Forward to the Future (2 Cor 1:8-11)',
 
             // English sermons
@@ -152,9 +152,9 @@ i18n
             'Light and Salt': 'Light and Salt',
             'Determined to Spread Your Love': 'Determined to Spread Your Love',
 
-            'Raise Hands in Praise': 'Raise Hands in Praise',
-            'Bloom for You': 'Bloom for You',
-            'Thank My Lord': 'Thank My Lord',
+            '举手赞颂': 'Raise Hands in Praise',
+            '为祢绽放馨香': 'Bloom for You',
+            '谢谢我主': 'Thank My Lord',
 
             '将天敞开': 'Open the Sky',
             '高声颂讚主': 'Sing with Gladness',
@@ -202,7 +202,7 @@ i18n
             // Cantonese sermons
             'Day New Day (2 Corinthians 4:16-18)': '一天新似一天 (哥林多後書 4:16-18)',
             'Not me, but the Holy Spirit! (2 Corinthians 3:1-11)': '不是我，是聖靈！ (哥林多後書 3:1-11)',
-            'Scent of Christ (2 Corinthians 2:14-17)': '基督的香氣 (哥林多後書 2:14-17)',
+            '基督的香气 (林后2:14-17)': '基督的香氣 (哥林多後書 2:14-17)',
             '指望将来 (林后1:8-11)': '指望將來 (哥林多後書 1:8-11)',
 
             // English sermons
@@ -296,9 +296,9 @@ i18n
             'Light and Salt': '光和鹽',
             'Determined to Spread Your Love': '立志傳揚祢的愛',
 
-            'Raise Hands in Praise': '舉手讚頌',
-            'Bloom for You': '為祢綻放馨香',
-            'Thank My Lord': '谢谢我主',
+            '举手赞颂': '舉手讚頌',
+            '为祢绽放馨香': '為祢綻放馨香',
+            '谢谢我主': '谢谢我主',
 
             '将天敞开': '將天敞開',
             '高声颂讚主': '高聲頌讚主',
@@ -346,7 +346,7 @@ i18n
             // Cantonese sermons
             'Day New Day (2 Corinthians 4:16-18)': '一天新似一天 (哥林多後書 4:16-18)',
             'Not me, but the Holy Spirit! (2 Corinthians 3:1-11)': '不是我，是圣灵！ (哥林多后书 3:1-11)',
-            'Scent of Christ (2 Corinthians 2:14-17)': '基督的香气 (哥林多后书 2:14-17)',
+            '基督的香气 (林后2:14-17)': '基督的香气 (哥林多后书 2:14-17)',
             '指望将来 (林后1:8-11)': '指望将来 (哥林多后书 1:8-11)',
 
             // English sermons
@@ -440,9 +440,9 @@ i18n
             'Light and Salt': '光和盐',
             'Determined to Spread Your Love': '立志传扬祢的爱',
 
-            'Raise Hands in Praise': '举手赞颂',
-            'Bloom for You': '为祢绽放馨香',
-            'Thank My Lord': '谢谢我主',
+            '举手赞颂': '举手赞颂',
+            '为祢绽放馨香': '为祢绽放馨香',
+            '谢谢我主': '谢谢我主',
 
             '将天敞开': '将天敞开',
             '高声颂讚主': '高声颂讚主',
