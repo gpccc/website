@@ -76,7 +76,7 @@ const mandarinServices = [
         {time: "01:26:47", label: "Announcements", type: SeekPointType.ANNOUNCEMENTS},
         {time: "01:30:06", label: "Benediction", type: SeekPointType.BENEDICTION},
     ]},
-    { youtubeVideoID: "R0ikzK-juhI", message: "(blank message title)", pastor: "Rev. Peter Liu", date: "2020-09-20T18:10:00Z", duration: "01:40:39", seekPoints: [
+    { youtubeVideoID: "R0ikzK-juhI", message: "Wish You Peace (John 20:19-21)", pastor: "Rev. Peter Liu", date: "2020-09-20T18:10:00Z", duration: "01:40:39", seekPoints: [
         {time: "00:10:04", label: "Bible verse", type: SeekPointType.BIBLE_VERSE},
         {time: "00:11:33", label: "Opening prayer", type: SeekPointType.PRAYER},
         {time: "00:13:10", label: "Jesus, My Everything", type: SeekPointType.PRAISE_SONG},
