@@ -72,6 +72,7 @@ i18n
             'Truth Will Set Us Free (John 18:28-40)': 'Truth Will Set Us Free (John 18:28-40)',
             'King of Power and Grace (John 18:12-27)': 'King of Power and Grace (John 18:12-27)',
             'Prayer of Unity (John 17:20-26)': 'Prayer of Unity (John 17:20-26)',
+            'The Work of the Holy Spirit (John 16:1-15)': 'The Work of the Holy Spirit (John 16:1-15)',
 
             // English praise songs
             'Our God': 'Our God',
@@ -211,6 +212,7 @@ i18n
             'Truth Will Set Us Free (John 18:28-40)': '真理必叫我们得以自由 (约翰福音 18:28-40)',
             'King of Power and Grace (John 18:12-27)': '權能恩典的主 (约翰福音 18:12-27)',
             'Prayer of Unity (John 17:20-26)': '合一的祈禱 (约翰福音 17:20-26)',
+            'The Work of the Holy Spirit (John 16:1-15)': '圣灵的工作 (约翰福音 16:1-15)',
 
             // English praise songs
             'Our God': '我們的神',
@@ -350,6 +352,7 @@ i18n
             'Truth Will Set Us Free (John 18:28-40)': '真理必叫我們得以自由 (约翰福音 18:28-40)',
             'King of Power and Grace (John 18:12-27)': '权能恩典的主 (约翰福音 18:12-27)',
             'Prayer of Unity (John 17:20-26)': '合一的祈祷 (约翰福音 17:20-26)',
+            'The Work of the Holy Spirit (John 16:1-15)': '聖靈的工作 (约翰福音 16:1-15)',
 
             // English praise songs
             'Our God': '我们的神', // found Chinese version
