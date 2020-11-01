@@ -57,7 +57,7 @@ i18n
 
             // Cantonese sermons
             'Day New Day (2 Corinthians 4:16-18)': 'Day New Day (2 Corinthians 4:16-18)',
-            'Not me, but the Holy Spirit! (2 Corinthians 3:1-11)': 'Not me, but the Holy Spirit! (2 Cor 3:1-11)',
+            '不是我，是圣灵！(林后3:1-11)': 'Not me, but the Holy Spirit! (2 Cor 3:1-11)',
             '基督的香气 (林后2:14-17)': 'Scent of Christ (2 Corinthians 2:14-17)',
             '指望将来 (林后1:8-11)': 'Look Forward to the Future (2 Cor 1:8-11)',
 
@@ -147,10 +147,10 @@ i18n
             'Crown of Life': 'Crown of Life',
             'Thank God': 'Thank God',
 
-            'Shine Jesus Shine': 'Shine Jesus Shine',
-            'The Living Water of Life Fills Me': 'The Living Water of Life Fills Me',
-            'Light and Salt': 'Light and Salt',
-            'Determined to Spread Your Love': 'Determined to Spread Your Love',
+            '真光普照': 'Shine Jesus Shine',
+            '生命活水充满我': 'The Living Water of Life Fills Me',
+            '光和盐': 'Light and Salt',
+            '立志传扬祢的爱': 'Determined to Spread Your Love',
 
             '举手赞颂': 'Raise Hands in Praise',
             '为祢绽放馨香': 'Bloom for You',
@@ -201,7 +201,7 @@ i18n
 
             // Cantonese sermons
             'Day New Day (2 Corinthians 4:16-18)': '一天新似一天 (哥林多後書 4:16-18)',
-            'Not me, but the Holy Spirit! (2 Corinthians 3:1-11)': '不是我，是聖靈！ (哥林多後書 3:1-11)',
+            '不是我，是圣灵！(林后3:1-11)': '不是我，是聖靈！ (哥林多後書 3:1-11)',
             '基督的香气 (林后2:14-17)': '基督的香氣 (哥林多後書 2:14-17)',
             '指望将来 (林后1:8-11)': '指望將來 (哥林多後書 1:8-11)',
 
@@ -291,10 +291,10 @@ i18n
             'Crown of Life': '生命的冠冕',
             'Thank God': '感谢神',
 
-            'Shine Jesus Shine': '真光普照',
-            'The Living Water of Life Fills Me': '生命活水充满我',
-            'Light and Salt': '光和鹽',
-            'Determined to Spread Your Love': '立志傳揚祢的愛',
+            '真光普照': '真光普照',
+            '生命活水充满我': '生命活水充满我',
+            '光和盐': '光和鹽',
+            '立志传扬祢的爱': '立志傳揚祢的愛',
 
             '举手赞颂': '舉手讚頌',
             '为祢绽放馨香': '為祢綻放馨香',
@@ -345,7 +345,7 @@ i18n
 
             // Cantonese sermons
             'Day New Day (2 Corinthians 4:16-18)': '一天新似一天 (哥林多後書 4:16-18)',
-            'Not me, but the Holy Spirit! (2 Corinthians 3:1-11)': '不是我，是圣灵！ (哥林多后书 3:1-11)',
+            '不是我，是圣灵！(林后3:1-11)': '不是我，是圣灵！ (哥林多后书 3:1-11)',
             '基督的香气 (林后2:14-17)': '基督的香气 (哥林多后书 2:14-17)',
             '指望将来 (林后1:8-11)': '指望将来 (哥林多后书 1:8-11)',
 
@@ -435,10 +435,10 @@ i18n
             'Crown of Life': '生命的冠冕',
             'Thank God': '感谢神',
 
-            'Shine Jesus Shine': '真光普照',
-            'The Living Water of Life Fills Me': '生命活水充满我',
-            'Light and Salt': '光和盐',
-            'Determined to Spread Your Love': '立志传扬祢的爱',
+            '真光普照': '真光普照',
+            '生命活水充满我': '生命活水充满我',
+            '光和盐': '光和盐',
+            '立志传扬祢的爱': '立志传扬祢的爱',
 
             '举手赞颂': '举手赞颂',
             '为祢绽放馨香': '为祢绽放馨香',
