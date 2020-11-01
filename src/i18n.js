@@ -72,7 +72,7 @@ i18n
 
             // Mandarin sermons
             'Truth Will Set Us Free (John 18:28-40)': 'Truth Will Set Us Free (John 18:28-40)',
-            'King of Power and Grace (John 18:12-27)': 'King of Power and Grace (John 18:12-27)',
+            '权能恩典的主 (约18:12-27)': 'King of Power and Grace (John 18:12-27)',
             '合一的祈祷 (约17:20-26)': 'Prayer of Unity (John 17:20-26)',
             '圣灵的工作 (约16:1-15)': 'The Work of the Holy Spirit (John 16:1-15)',
             '我是真葡萄树 (约15:1-10)': 'I Am the Real Vine (John 15:1-10)',
@@ -109,16 +109,16 @@ i18n
             'Broken Vessels / Majesty': 'Broken Vessels / Majesty',
 
             // Mandarin praise songs
-            'Jesus Christ is Lord': 'Jesus Christ is Lord',
+            '耶稣基督是主': 'Jesus Christ is Lord',
             'Jesus, the Name Above All Names': 'Jesus, the Name Above All Names',
             'Recognize You': 'Recognize You',
             'Live Sacrifice': 'Live Sacrifice',
             'Your Words': 'Your Words',
 
-            'You Are Worthy of Glory/You Are Great': 'You Are Worthy of Glory/You Are Great',
-            "Worker's Prayer": "Worker's Prayer",
-            'Praise the Lord, O My Soul': 'Praise the Lord, O My Soul',
-            'He Hides My Spirit': 'He Hides My Spirit',
+            '你真配得荣耀/你真伟大': 'You Are Worthy of Glory/You Are Great',
+            "工人的祷告": "Worker's Prayer",
+            '我的心，你要称颂耶和华': 'Praise the Lord, O My Soul',
+            '祂藏我灵': 'He Hides My Spirit',
 
             '敬拜主': 'Worship the Lord',
             '来高声唱': 'Come Sing Loudly',
@@ -216,7 +216,7 @@ i18n
 
             // Mandarin sermons
             'Truth Will Set Us Free (John 18:28-40)': '真理必叫我们得以自由 (约翰福音 18:28-40)',
-            'King of Power and Grace (John 18:12-27)': '權能恩典的主 (约翰福音 18:12-27)',
+            '权能恩典的主 (约18:12-27)': '權能恩典的主 (约翰福音 18:12-27)',
             '合一的祈祷 (约17:20-26)': '合一的祈禱 (约翰福音 17:20-26)',
             '圣灵的工作 (约16:1-15)': '圣灵的工作 (约翰福音 16:1-15)',
             '我是真葡萄树 (约15:1-10)': '我是真葡萄樹 (约翰福音 15:1-10)',
@@ -253,16 +253,16 @@ i18n
             'Broken Vessels / Majesty': '破碎器皿 / 威嚴',
 
             // Mandarin praise songs
-            'Jesus Christ is Lord': '耶穌基督是主',
+            '耶稣基督是主': '耶穌基督是主',
             'Jesus, the Name Above All Names': '耶穌，萬名之上的名',
             'Recognize You': '認定祢',
             'Live Sacrifice': '獻上活祭',
             'Your Words': '祢的話',
 
-            'You Are Worthy of Glory/You Are Great': '你真配得榮耀/你真偉大',
-            "Worker's Prayer": "工人的禱告",
-            'Praise the Lord, O My Soul': '我的心，你要稱頌耶和華',
-            'He Hides My Spirit': '祂藏我靈',
+            '你真配得荣耀/你真伟大': '你真配得榮耀/你真偉大',
+            "工人的祷告": "工人的禱告",
+            '我的心，你要称颂耶和华': '我的心，你要稱頌耶和華',
+            '祂藏我灵': '祂藏我靈',
 
             '敬拜主': '敬拜主',
             '来高声唱': '來高聲唱',
@@ -360,7 +360,7 @@ i18n
 
             // Mandarin sermons
             'Truth Will Set Us Free (John 18:28-40)': '真理必叫我們得以自由 (约翰福音 18:28-40)',
-            'King of Power and Grace (John 18:12-27)': '权能恩典的主 (约翰福音 18:12-27)',
+            '权能恩典的主 (约18:12-27)': '权能恩典的主 (约翰福音 18:12-27)',
             '合一的祈祷 (约17:20-26)': '合一的祈祷 (约翰福音 17:20-26)',
             '圣灵的工作 (约16:1-15)': '聖靈的工作 (约翰福音 16:1-15)',
             '我是真葡萄树 (约15:1-10)': '我是真葡萄树 (约翰福音 15:1-10)',
@@ -397,16 +397,16 @@ i18n
             'Broken Vessels / Majesty': '破碎器皿 / 威严', // found Chinese version - Broken Vessels, but not Majesty
 
             // Mandarin praise songs
-            'Jesus Christ is Lord': '耶稣基督是主',
+            '耶稣基督是主': '耶稣基督是主',
             'Jesus, the Name Above All Names': '耶稣，万名之上的名',
             'Recognize You': '认定祢',
             'Live Sacrifice': '献上活祭',
             'Your Words': '祢的话',
 
-            'You Are Worthy of Glory/You Are Great': '你真配得荣耀/你真伟大',
-            "Worker's Prayer": "工人的祷告",
-            'Praise the Lord, O My Soul': '我的心，你要称颂耶和华',
-            'He Hides My Spirit': '祂藏我灵',
+            '你真配得荣耀/你真伟大': '你真配得荣耀/你真伟大',
+            "工人的祷告": "工人的祷告",
+            '我的心，你要称颂耶和华': '我的心，你要称颂耶和华',
+            '祂藏我灵': '祂藏我灵',
 
             '敬拜主': '敬拜主',
             '来高声唱': '来高声唱',
