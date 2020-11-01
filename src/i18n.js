@@ -352,10 +352,10 @@ i18n
             // English sermons
             'Send Us Ministers (Ezra 8)': '派我们部长 (以斯拉记 8)',
             'The Sovereignty of God (Ezra 7)': '上帝的主权 (以斯拉记 7)',
-            'Temple Filled with Joy (Ezra 6)': '充满喜悦的神殿 (以斯拉記 6)',
-            'Rebuilding Resumes (Ezra 5)': '重建简历 (以斯拉記 5)',
-            'Rebuilding Opposed (Ezra 4)': '反对重建 (以斯拉記 4)',
-            'First Comes Sacrifice (Ezra 3)': '先来献祭 (以斯拉記 3)',
+            'Temple Filled with Joy (Ezra 6)': '充满喜悦的神殿 (以斯拉记 6)',
+            'Rebuilding Resumes (Ezra 5)': '重建简历 (以斯拉记 5)',
+            'Rebuilding Opposed (Ezra 4)': '反对重建 (以斯拉记 4)',
+            'First Comes Sacrifice (Ezra 3)': '先来献祭 (以斯拉记 3)',
             'Talent (Exodus 4:10-17)': '天赋 (出埃及记 4:10-17)',
 
             // Mandarin sermons
