@@ -76,7 +76,7 @@ i18n
             'Prayer of Unity (John 17:20-26)': 'Prayer of Unity (John 17:20-26)',
             'The Work of the Holy Spirit (John 16:1-15)': 'The Work of the Holy Spirit (John 16:1-15)',
             'I Am the Real Vine (John 15:1-10)': 'I Am the Real Vine (John 15:1-10)',
-            'Wish You Peace (John 20:19-21)': 'Wish You Peace (John 20:19-21)',
+            '愿你们平安 (约20:19-21)': 'Wish You Peace (John 20:19-21)',
 
             // English praise songs
             'Our God': 'Our God',
@@ -136,10 +136,10 @@ i18n
             'Love Each Other': 'Love Each Other',
             "I'd Go for You": "I'd Go for You",
 
-            'Jesus, My Everything': 'Jesus, My Everything',
-            'Let the Love of Jesus Surround You': 'Let the Love of Jesus Surround You',
-            'Make Me a Blesssing': 'Make Me a Blesssing',
-            'Send Me': 'Send Me',
+            '你是何等荣美': 'Jesus, My Everything',
+            '让神儿子的爱围绕你': 'Let the Love of Jesus Surround You',
+            '藉我赐恩福': 'Make Me a Blesssing',
+            '差遣我': 'Send Me',
 
             // Cantonese praise songs
             'Great is Your Faithfulness': 'Great is Your Faithfulness',
@@ -220,7 +220,7 @@ i18n
             'Prayer of Unity (John 17:20-26)': '合一的祈禱 (约翰福音 17:20-26)',
             'The Work of the Holy Spirit (John 16:1-15)': '圣灵的工作 (约翰福音 16:1-15)',
             'I Am the Real Vine (John 15:1-10)': '我是真葡萄樹 (约翰福音 15:1-10)',
-            'Wish You Peace (John 20:19-21)': '願你們平安 (约翰福音 20:19-21)',
+            '愿你们平安 (约20:19-21)': '願你們平安 (约翰福音 20:19-21)',
 
             // English praise songs
             'Our God': '我們的神',
@@ -280,10 +280,10 @@ i18n
             'Love Each Other': '彼此相愛',
             "I'd Go for You": "我願為祢去",
 
-            'Jesus, My Everything': '你是何等榮美',
-            'Let the Love of Jesus Surround You': '讓神兒子的愛圍繞你',
-            'Make Me a Blesssing': '藉我赐恩福',
-            'Send Me': '差遣我',
+            '你是何等荣美': '你是何等榮美',
+            '让神儿子的爱围绕你': '讓神兒子的愛圍繞你',
+            '藉我赐恩福': '藉我赐恩福',
+            '差遣我': '差遣我',
 
             // Cantonese praise songs
             'Great is Your Faithfulness': '祢信實何廣大',
@@ -364,7 +364,7 @@ i18n
             'Prayer of Unity (John 17:20-26)': '合一的祈祷 (约翰福音 17:20-26)',
             'The Work of the Holy Spirit (John 16:1-15)': '聖靈的工作 (约翰福音 16:1-15)',
             'I Am the Real Vine (John 15:1-10)': '我是真葡萄树 (约翰福音 15:1-10)',
-            'Wish You Peace (John 20:19-21)': '愿你们平安 (约翰福音 20:19-21)',
+            '愿你们平安 (约20:19-21)': '愿你们平安 (约翰福音 20:19-21)',
 
             // English praise songs
             'Our God': '我们的神', // found Chinese version
@@ -424,10 +424,10 @@ i18n
             'Love Each Other': '彼此相爱',
             "I'd Go for You": "我愿为祢去",
 
-            'Jesus, My Everything': '你是何等荣美',
-            'Let the Love of Jesus Surround You': '让神儿子的爱围绕你',
-            'Make Me a Blesssing': '借我赐恩福',
-            'Send Me': '差遣我',
+            '你是何等荣美': '你是何等荣美',
+            '让神儿子的爱围绕你': '让神儿子的爱围绕你',
+            '藉我赐恩福': '借我赐恩福',
+            '差遣我': '差遣我',
 
             // Cantonese praise songs
             'Great is Your Faithfulness': '祢信实何广大',

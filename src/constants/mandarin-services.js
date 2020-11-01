@@ -78,13 +78,13 @@ const mandarinServices = [
         {time: "01:26:47", label: "Announcements", type: SeekPointType.ANNOUNCEMENTS},
         {time: "01:30:06", label: "Benediction", type: SeekPointType.BENEDICTION},
     ]},
-    { youtubeVideoID: "R0ikzK-juhI", message: "Wish You Peace (John 20:19-21)", pastor: "Rev. Peter Liu", date: "2020-09-20T18:10:00Z", duration: "01:40:39", seekPoints: [
+    { youtubeVideoID: "R0ikzK-juhI", message: "愿你们平安 (约20:19-21)", pastor: "Rev. Peter Liu", date: "2020-09-20T18:10:00Z", duration: "01:40:39", seekPoints: [
         {time: "00:10:04", label: "Bible verse", type: SeekPointType.BIBLE_VERSE},
         {time: "00:11:33", label: "Opening prayer", type: SeekPointType.PRAYER},
-        {time: "00:13:10", label: "Jesus, My Everything", type: SeekPointType.PRAISE_SONG},
-        {time: "00:17:50", label: "Let the Love of Jesus Surround You", type: SeekPointType.PRAISE_SONG},
-        {time: "00:22:02", label: "Make Me a Blesssing", type: SeekPointType.PRAISE_SONG},
-        {time: "00:27:50", label: "Send Me", type: SeekPointType.PRAISE_SONG},
+        {time: "00:13:10", label: "你是何等荣美", type: SeekPointType.PRAISE_SONG},
+        {time: "00:17:50", label: "让神儿子的爱围绕你", type: SeekPointType.PRAISE_SONG},
+        {time: "00:22:02", label: "藉我赐恩福", type: SeekPointType.PRAISE_SONG},
+        {time: "00:27:50", label: "差遣我", type: SeekPointType.PRAISE_SONG},
         {time: "00:32:18", label: "Congregational prayer?", type: SeekPointType.PRAYER},
         {time: "00:34:30", label: "Sermon", type: SeekPointType.MESSAGE},
         {time: "01:24:06", label: "Missions at GPCCC?", type: SeekPointType.ANNOUNCEMENTS},
