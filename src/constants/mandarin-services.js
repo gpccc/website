@@ -2,7 +2,19 @@ import SeekPointType from './seek-point-type';
 
 // 7RsjtD3EdeI 1280x720
 const mandarinServices = [
-    { youtubeVideoID: "m9YoDp3xFSQ", message: "(blank sermon title)", pastor: "Rev. Semson Nip", date: "2020-11-01T18:10:00Z", duration: "00:00:00", seekPoints: [
+    { youtubeVideoID: "m9YoDp3xFSQ", message: "犹太人的王 (约19:14-19)", pastor: "Rev. Semson Nip", date: "2020-11-01T18:10:00Z", duration: "01:17:30", seekPoints: [
+        // {time: "00:00:00", label: "让赞美飞扬", type: SeekPointType.PRAISE_SONG},
+        {time: "00:00:00", label: "神羔羊配得", type: SeekPointType.PRAISE_SONG},
+        {time: "00:04:45", label: "宝贵十架", type: SeekPointType.PRAISE_SONG},
+        {time: "00:09:08", label: "Congregational prayer", type: SeekPointType.PRAYER},
+        {time: "00:11:36", label: "Sermon", type: SeekPointType.MESSAGE},
+        {time: "00:58:39", label: "Closing prayer", type: SeekPointType.PRAYER},
+        {time: "00:59:27", label: "Communion", type: SeekPointType.COMMUNION},
+        {time: "01:04:10", label: "宝贵十架", type: SeekPointType.PRAISE_SONG},
+        {time: "01:08:04", label: "Prayer", type: SeekPointType.PRAYER},
+        {time: "01:08:43", label: "Skit", type: SeekPointType.UNKNOWN},
+        {time: "01:11:44", label: "Announcements", type: SeekPointType.ANNOUNCEMENTS},
+        {time: "01:16:45", label: "Benediction", type: SeekPointType.BENEDICTION},
     ]},
     { youtubeVideoID: "4nUAo8aJNZU", message: "真理必叫我们得以自由 (约18:28-40)", pastor: "Rev. Peter Liu", date: "2020-10-25T18:10:00Z", duration: "01:24:35", seekPoints: [
         {time: "00:09:53", label: "Opening prayer", type: SeekPointType.PRAYER},
