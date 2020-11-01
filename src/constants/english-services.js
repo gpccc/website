@@ -2,7 +2,7 @@ import SeekPointType from './seek-point-type';
 
 // MjQnqIH8qmM 1280x720
 const englishServices = [
-    { youtubeVideoID: "uVZjMkJC_dk", message: "Send Us Ministers (Ezra 8)", pastor: "Rev. Larry Lee", date: "2020-11-01T16:30:00Z", duration: "00:00:00", seekPoints: [
+    { youtubeVideoID: "uVZjMkJC_dk", message: "Send Us Ministers (Ezra 8)", pastor: "Rev. Larry Lee", date: "2020-11-01T16:30:00Z", duration: "01:26:35", seekPoints: [
         {time: "00:09:30", label: "Beginning", type: SeekPointType.BEGINNING},
         {time: "00:09:49", label: "1 Chronicles 16:23-31", type: SeekPointType.BIBLE_VERSE},
         {time: "00:11:17", label: "How Great is Our God", type: SeekPointType.PRAISE_SONG},
