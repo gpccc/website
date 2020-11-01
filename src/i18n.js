@@ -74,7 +74,7 @@ i18n
             'Truth Will Set Us Free (John 18:28-40)': 'Truth Will Set Us Free (John 18:28-40)',
             'King of Power and Grace (John 18:12-27)': 'King of Power and Grace (John 18:12-27)',
             'Prayer of Unity (John 17:20-26)': 'Prayer of Unity (John 17:20-26)',
-            'The Work of the Holy Spirit (John 16:1-15)': 'The Work of the Holy Spirit (John 16:1-15)',
+            '圣灵的工作 (约16:1-15)': 'The Work of the Holy Spirit (John 16:1-15)',
             '我是真葡萄树 (约15:1-10)': 'I Am the Real Vine (John 15:1-10)',
             '愿你们平安 (约20:19-21)': 'Wish You Peace (John 20:19-21)',
 
@@ -126,10 +126,10 @@ i18n
             'Amazing Grace': 'Amazing Grace',
             'Unity From the Heart': 'Unity From the Heart',
 
-            'My God, My Father, My Rock': 'My God, My Father, My Rock',
-            'Jesus Loves You': 'Jesus Loves You',
-            'Rivers of the Holy Spirit': 'Rivers of the Holy Spirit',
-            'Precious Cross': 'Precious Cross',
+            '我的神，我的父，我的磐石': 'My God, My Father, My Rock',
+            '耶稣爱你': 'Jesus Loves You',
+            '圣灵的江河': 'Rivers of the Holy Spirit',
+            '宝贵十架': 'Precious Cross',
 
             '来拥戴主为王': 'Crown Him with Many Crowns',
             '成为我异象': 'Be My Vision',
@@ -218,7 +218,7 @@ i18n
             'Truth Will Set Us Free (John 18:28-40)': '真理必叫我们得以自由 (约翰福音 18:28-40)',
             'King of Power and Grace (John 18:12-27)': '權能恩典的主 (约翰福音 18:12-27)',
             'Prayer of Unity (John 17:20-26)': '合一的祈禱 (约翰福音 17:20-26)',
-            'The Work of the Holy Spirit (John 16:1-15)': '圣灵的工作 (约翰福音 16:1-15)',
+            '圣灵的工作 (约16:1-15)': '圣灵的工作 (约翰福音 16:1-15)',
             '我是真葡萄树 (约15:1-10)': '我是真葡萄樹 (约翰福音 15:1-10)',
             '愿你们平安 (约20:19-21)': '願你們平安 (约翰福音 20:19-21)',
 
@@ -270,10 +270,10 @@ i18n
             'Amazing Grace': '奇異恩典',
             'Unity From the Heart': '從心合一',
 
-            'My God, My Father, My Rock': '我的神，我的父，我的磐石',
-            'Jesus Loves You': '耶穌愛你',
-            'Rivers of the Holy Spirit': '聖靈的江河',
-            'Precious Cross': '寶貴十架',
+            '我的神，我的父，我的磐石': '我的神，我的父，我的磐石',
+            '耶稣爱你': '耶穌愛你',
+            '圣灵的江河': '聖靈的江河',
+            '宝贵十架': '寶貴十架',
 
             '来拥戴主为王': '來擁戴主為王',
             '成为我异象': '成為我異象',
@@ -362,7 +362,7 @@ i18n
             'Truth Will Set Us Free (John 18:28-40)': '真理必叫我們得以自由 (约翰福音 18:28-40)',
             'King of Power and Grace (John 18:12-27)': '权能恩典的主 (约翰福音 18:12-27)',
             'Prayer of Unity (John 17:20-26)': '合一的祈祷 (约翰福音 17:20-26)',
-            'The Work of the Holy Spirit (John 16:1-15)': '聖靈的工作 (约翰福音 16:1-15)',
+            '圣灵的工作 (约16:1-15)': '聖靈的工作 (约翰福音 16:1-15)',
             '我是真葡萄树 (约15:1-10)': '我是真葡萄树 (约翰福音 15:1-10)',
             '愿你们平安 (约20:19-21)': '愿你们平安 (约翰福音 20:19-21)',
 
@@ -414,10 +414,10 @@ i18n
             'Amazing Grace': '奇异恩典',
             'Unity From the Heart': '从心合一',
 
-            'My God, My Father, My Rock': '我的神，我的父，我的磐石',
-            'Jesus Loves You': '耶稣爱你',
-            'Rivers of the Holy Spirit': '圣灵的江河',
-            'Precious Cross': '宝贵十架',
+            '我的神，我的父，我的磐石': '我的神，我的父，我的磐石',
+            '耶稣爱你': '耶稣爱你',
+            '圣灵的江河': '圣灵的江河',
+            '宝贵十架': '宝贵十架',
 
             '来拥戴主为王': '来拥戴主为王',
             '成为我异象': '成为我异象',
