@@ -42,7 +42,7 @@ const cantoneseServices = [
         {time: "01:25:00", label: "Benediction", type: SeekPointType.BENEDICTION},
     ]},
     { youtubeVideoID: "Li5Pd6IXhE4", message: JOINT_SERVICE, pastor: "", date: "2020-10-04", duration: "", seekPoints: [] },
-    { youtubeVideoID: "AlrtccfApe8", message: "(blank message title)", pastor: "Rev. Semson Nip", date: "2020-09-27T18:10:00Z", duration: "01:22:19", seekPoints: [
+    { youtubeVideoID: "AlrtccfApe8", message: "Look Forward to the Future (2 Corinthians 1:8-11)", pastor: "Rev. Semson Nip", date: "2020-09-27T18:10:00Z", duration: "01:22:19", seekPoints: [
         {time: "00:08:00", label: "Opening prayer?", type: SeekPointType.PRAYER},
         {time: "00:08:41", label: "Open the Sky", type: SeekPointType.PRAISE_SONG},
         {time: "00:12:51", label: "Sing with Gladness", type: SeekPointType.PRAISE_SONG},
