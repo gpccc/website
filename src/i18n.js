@@ -57,7 +57,7 @@ i18n
 
             // Cantonese sermons
             'Day New Day (2 Corinthians 4:16-18)': 'Day New Day (2 Corinthians 4:16-18)',
-            'Not me, but the Holy Spirit! (2 Corinthians 3:1-11)': 'Not me, but the Holy Spirit! (2 Corinthians 3:1-11)',
+            'Not me, but the Holy Spirit! (2 Corinthians 3:1-11)': 'Not me, but the Holy Spirit! (2 Cor 3:1-11)',
 
             // English sermons
             'The Sovereignty of God (Ezra 7)': 'The Sovereignty of God (Ezra 7)',
