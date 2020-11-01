@@ -73,7 +73,7 @@ i18n
             // Mandarin sermons
             'Truth Will Set Us Free (John 18:28-40)': 'Truth Will Set Us Free (John 18:28-40)',
             'King of Power and Grace (John 18:12-27)': 'King of Power and Grace (John 18:12-27)',
-            'Prayer of Unity (John 17:20-26)': 'Prayer of Unity (John 17:20-26)',
+            '合一的祈祷 (约17:20-26)': 'Prayer of Unity (John 17:20-26)',
             '圣灵的工作 (约16:1-15)': 'The Work of the Holy Spirit (John 16:1-15)',
             '我是真葡萄树 (约15:1-10)': 'I Am the Real Vine (John 15:1-10)',
             '愿你们平安 (约20:19-21)': 'Wish You Peace (John 20:19-21)',
@@ -120,11 +120,11 @@ i18n
             'Praise the Lord, O My Soul': 'Praise the Lord, O My Soul',
             'He Hides My Spirit': 'He Hides My Spirit',
 
-            'Worship the Lord': 'Worship the Lord',
-            'Come Sing Loudly': 'Come Sing Loudly',
-            'Fill Me': 'Fill Me',
-            'Amazing Grace': 'Amazing Grace',
-            'Unity From the Heart': 'Unity From the Heart',
+            '敬拜主': 'Worship the Lord',
+            '来高声唱': 'Come Sing Loudly',
+            '充满我': 'Fill Me',
+            '奇异恩典': 'Amazing Grace',
+            '从心合一': 'Unity From the Heart',
 
             '我的神，我的父，我的磐石': 'My God, My Father, My Rock',
             '耶稣爱你': 'Jesus Loves You',
@@ -217,7 +217,7 @@ i18n
             // Mandarin sermons
             'Truth Will Set Us Free (John 18:28-40)': '真理必叫我们得以自由 (约翰福音 18:28-40)',
             'King of Power and Grace (John 18:12-27)': '權能恩典的主 (约翰福音 18:12-27)',
-            'Prayer of Unity (John 17:20-26)': '合一的祈禱 (约翰福音 17:20-26)',
+            '合一的祈祷 (约17:20-26)': '合一的祈禱 (约翰福音 17:20-26)',
             '圣灵的工作 (约16:1-15)': '圣灵的工作 (约翰福音 16:1-15)',
             '我是真葡萄树 (约15:1-10)': '我是真葡萄樹 (约翰福音 15:1-10)',
             '愿你们平安 (约20:19-21)': '願你們平安 (约翰福音 20:19-21)',
@@ -264,11 +264,11 @@ i18n
             'Praise the Lord, O My Soul': '我的心，你要稱頌耶和華',
             'He Hides My Spirit': '祂藏我靈',
 
-            'Worship the Lord': '敬拜主',
-            'Come Sing Loudly': '來高聲唱',
-            'Fill Me': '充满我',
-            'Amazing Grace': '奇異恩典',
-            'Unity From the Heart': '從心合一',
+            '敬拜主': '敬拜主',
+            '来高声唱': '來高聲唱',
+            '充满我': '充满我',
+            '奇异恩典': '奇異恩典',
+            '从心合一': '從心合一',
 
             '我的神，我的父，我的磐石': '我的神，我的父，我的磐石',
             '耶稣爱你': '耶穌愛你',
@@ -361,7 +361,7 @@ i18n
             // Mandarin sermons
             'Truth Will Set Us Free (John 18:28-40)': '真理必叫我們得以自由 (约翰福音 18:28-40)',
             'King of Power and Grace (John 18:12-27)': '权能恩典的主 (约翰福音 18:12-27)',
-            'Prayer of Unity (John 17:20-26)': '合一的祈祷 (约翰福音 17:20-26)',
+            '合一的祈祷 (约17:20-26)': '合一的祈祷 (约翰福音 17:20-26)',
             '圣灵的工作 (约16:1-15)': '聖靈的工作 (约翰福音 16:1-15)',
             '我是真葡萄树 (约15:1-10)': '我是真葡萄树 (约翰福音 15:1-10)',
             '愿你们平安 (约20:19-21)': '愿你们平安 (约翰福音 20:19-21)',
@@ -408,11 +408,11 @@ i18n
             'Praise the Lord, O My Soul': '我的心，你要称颂耶和华',
             'He Hides My Spirit': '祂藏我灵',
 
-            'Worship the Lord': '敬拜主',
-            'Come Sing Loudly': '来高声唱',
-            'Fill Me': '充满我',
-            'Amazing Grace': '奇异恩典',
-            'Unity From the Heart': '从心合一',
+            '敬拜主': '敬拜主',
+            '来高声唱': '来高声唱',
+            '充满我': '充满我',
+            '奇异恩典': '奇异恩典',
+            '从心合一': '从心合一',
 
             '我的神，我的父，我的磐石': '我的神，我的父，我的磐石',
             '耶稣爱你': '耶稣爱你',
