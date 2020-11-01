@@ -71,7 +71,7 @@ i18n
             'Talent (Exodus 4:10-17)': 'Talent (Exodus 4:10-17)',
 
             // Mandarin sermons
-            'Truth Will Set Us Free (John 18:28-40)': 'Truth Will Set Us Free (John 18:28-40)',
+            '真理必叫我们得以自由 (约18:28-40)': 'Truth Will Set Us Free (John 18:28-40)',
             '权能恩典的主 (约18:12-27)': 'King of Power and Grace (John 18:12-27)',
             '合一的祈祷 (约17:20-26)': 'Prayer of Unity (John 17:20-26)',
             '圣灵的工作 (约16:1-15)': 'The Work of the Holy Spirit (John 16:1-15)',
@@ -110,10 +110,10 @@ i18n
 
             // Mandarin praise songs
             '耶稣基督是主': 'Jesus Christ is Lord',
-            'Jesus, the Name Above All Names': 'Jesus, the Name Above All Names',
-            'Recognize You': 'Recognize You',
-            'Live Sacrifice': 'Live Sacrifice',
-            'Your Words': 'Your Words',
+            '耶稣，万名之上的名': 'Jesus, the Name Above All Names',
+            '认定祢': 'Recognize You',
+            '献上活祭': 'Live Sacrifice',
+            '祢的话': 'Your Words',
 
             '你真配得荣耀/你真伟大': 'You Are Worthy of Glory/You Are Great',
             "工人的祷告": "Worker's Prayer",
@@ -215,7 +215,7 @@ i18n
             'Talent (Exodus 4:10-17)': '天賦 (出埃及记 4:10-17)',
 
             // Mandarin sermons
-            'Truth Will Set Us Free (John 18:28-40)': '真理必叫我们得以自由 (约翰福音 18:28-40)',
+            '真理必叫我们得以自由 (约18:28-40)': '真理必叫我们得以自由 (约翰福音 18:28-40)',
             '权能恩典的主 (约18:12-27)': '權能恩典的主 (约翰福音 18:12-27)',
             '合一的祈祷 (约17:20-26)': '合一的祈禱 (约翰福音 17:20-26)',
             '圣灵的工作 (约16:1-15)': '圣灵的工作 (约翰福音 16:1-15)',
@@ -254,10 +254,10 @@ i18n
 
             // Mandarin praise songs
             '耶稣基督是主': '耶穌基督是主',
-            'Jesus, the Name Above All Names': '耶穌，萬名之上的名',
-            'Recognize You': '認定祢',
-            'Live Sacrifice': '獻上活祭',
-            'Your Words': '祢的話',
+            '耶稣，万名之上的名': '耶穌，萬名之上的名',
+            '认定祢': '認定祢',
+            '献上活祭': '獻上活祭',
+            '祢的话': '祢的話',
 
             '你真配得荣耀/你真伟大': '你真配得榮耀/你真偉大',
             "工人的祷告": "工人的禱告",
@@ -359,7 +359,7 @@ i18n
             'Talent (Exodus 4:10-17)': '天赋 (出埃及记 4:10-17)',
 
             // Mandarin sermons
-            'Truth Will Set Us Free (John 18:28-40)': '真理必叫我們得以自由 (约翰福音 18:28-40)',
+            '真理必叫我们得以自由 (约18:28-40)': '真理必叫我們得以自由 (约翰福音 18:28-40)',
             '权能恩典的主 (约18:12-27)': '权能恩典的主 (约翰福音 18:12-27)',
             '合一的祈祷 (约17:20-26)': '合一的祈祷 (约翰福音 17:20-26)',
             '圣灵的工作 (约16:1-15)': '聖靈的工作 (约翰福音 16:1-15)',
@@ -398,10 +398,10 @@ i18n
 
             // Mandarin praise songs
             '耶稣基督是主': '耶稣基督是主',
-            'Jesus, the Name Above All Names': '耶稣，万名之上的名',
-            'Recognize You': '认定祢',
-            'Live Sacrifice': '献上活祭',
-            'Your Words': '祢的话',
+            '耶稣，万名之上的名': '耶稣，万名之上的名',
+            '认定祢': '认定祢',
+            '献上活祭': '献上活祭',
+            '祢的话': '祢的话',
 
             '你真配得荣耀/你真伟大': '你真配得荣耀/你真伟大',
             "工人的祷告": "工人的祷告",

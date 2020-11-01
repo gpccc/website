@@ -4,14 +4,14 @@ import SeekPointType from './seek-point-type';
 const mandarinServices = [
     { youtubeVideoID: "m9YoDp3xFSQ", message: "(blank sermon title)", pastor: "Rev. Semson Nip", date: "2020-11-01T18:10:00Z", duration: "00:00:00", seekPoints: [
     ]},
-    { youtubeVideoID: "4nUAo8aJNZU", message: "Truth Will Set Us Free (John 18:28-40)", pastor: "Rev. Peter Liu", date: "2020-10-25T18:10:00Z", duration: "01:24:35", seekPoints: [
+    { youtubeVideoID: "4nUAo8aJNZU", message: "真理必叫我们得以自由 (约18:28-40)", pastor: "Rev. Peter Liu", date: "2020-10-25T18:10:00Z", duration: "01:24:35", seekPoints: [
         {time: "00:09:53", label: "Opening prayer", type: SeekPointType.PRAYER},
         {time: "00:10:45", label: "Bible verse", type: SeekPointType.BIBLE_VERSE},
         {time: "00:11:28", label: "耶稣基督是主", type: SeekPointType.PRAISE_SONG},
-        {time: "00:14:22", label: "Jesus, the Name Above All Names", type: SeekPointType.PRAISE_SONG},
-        {time: "00:17:48", label: "Recognize You", type: SeekPointType.PRAISE_SONG},
-        {time: "00:20:35", label: "Live Sacrifice", type: SeekPointType.PRAISE_SONG},
-        {time: "00:25:05", label: "Your Words", type: SeekPointType.PRAYER},
+        {time: "00:14:22", label: "耶稣，万名之上的名", type: SeekPointType.PRAISE_SONG},
+        {time: "00:17:48", label: "认定祢", type: SeekPointType.PRAISE_SONG},
+        {time: "00:20:35", label: "献上活祭", type: SeekPointType.PRAISE_SONG},
+        {time: "00:25:05", label: "祢的话", type: SeekPointType.PRAYER},
         {time: "00:29:33", label: "Opening prayer", type: SeekPointType.PRAYER},
         {time: "00:30:36", label: "Sermon", type: SeekPointType.MESSAGE},
         {time: "01:23:45", label: "Closing prayer", type: SeekPointType.BENEDICTION},
