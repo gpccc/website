@@ -199,9 +199,9 @@ i18n
             'Sermon': '講道',
 
             // Cantonese sermons
-            'Day New Day (2 Corinthians 4:16-18)': '一天新似一天 (哥林多后书 4:16-18)',
-            'Not me, but the Holy Spirit! (2 Corinthians 3:1-11)': '不是我，是聖靈！ (哥林多后书 3:1-11)',
-            'Scent of Christ (2 Corinthians 2:14-17)': '基督的香氣 (哥林多后书 2:14-17)',
+            'Day New Day (2 Corinthians 4:16-18)': '一天新似一天 (哥林多後書 4:16-18)',
+            'Not me, but the Holy Spirit! (2 Corinthians 3:1-11)': '不是我，是聖靈！ (哥林多後書 3:1-11)',
+            'Scent of Christ (2 Corinthians 2:14-17)': '基督的香氣 (哥林多後書 2:14-17)',
             'Look Forward to the Future (2 Corinthians 1:8-11)': '指望將來 (哥林多後書 1:8-11)',
 
             // English sermons
