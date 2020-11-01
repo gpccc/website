@@ -56,7 +56,7 @@ i18n
             'Sermon': 'Sermon',
 
             // Cantonese sermons
-            'Day New Day (2 Corinthians 4:16-18)': 'Day New Day (2 Corinthians 4:16-18)',
+            '一天新似一天 (林后4:16-18)': 'Day New Day (2 Corinthians 4:16-18)',
             '不是我，是圣灵！(林后3:1-11)': 'Not me, but the Holy Spirit! (2 Cor 3:1-11)',
             '基督的香气 (林后2:14-17)': 'Scent of Christ (2 Corinthians 2:14-17)',
             '指望将来 (林后1:8-11)': 'Look Forward to the Future (2 Cor 1:8-11)',
@@ -142,10 +142,10 @@ i18n
             '差遣我': 'Send Me',
 
             // Cantonese praise songs
-            'Great is Your Faithfulness': 'Great is Your Faithfulness',
-            'Everlasting God': 'Everlasting God',
-            'Crown of Life': 'Crown of Life',
-            'Thank God': 'Thank God',
+            '祢信实何广大': 'Great is Your Faithfulness',
+            '永恆的主': 'Everlasting God',
+            '生命的冠冕': 'Crown of Life',
+            '感谢神': 'Thank God',
 
             '真光普照': 'Shine Jesus Shine',
             '生命活水充满我': 'The Living Water of Life Fills Me',
@@ -200,7 +200,7 @@ i18n
             'Sermon': '講道',
 
             // Cantonese sermons
-            'Day New Day (2 Corinthians 4:16-18)': '一天新似一天 (哥林多後書 4:16-18)',
+            '一天新似一天 (林后4:16-18)': '一天新似一天 (哥林多後書 4:16-18)',
             '不是我，是圣灵！(林后3:1-11)': '不是我，是聖靈！ (哥林多後書 3:1-11)',
             '基督的香气 (林后2:14-17)': '基督的香氣 (哥林多後書 2:14-17)',
             '指望将来 (林后1:8-11)': '指望將來 (哥林多後書 1:8-11)',
@@ -286,10 +286,10 @@ i18n
             '差遣我': '差遣我',
 
             // Cantonese praise songs
-            'Great is Your Faithfulness': '祢信實何廣大',
-            'Everlasting God': '永恆的主',
-            'Crown of Life': '生命的冠冕',
-            'Thank God': '感谢神',
+            '祢信实何广大': '祢信實何廣大',
+            '永恆的主': '永恆的主',
+            '生命的冠冕': '生命的冠冕',
+            '感谢神': '感谢神',
 
             '真光普照': '真光普照',
             '生命活水充满我': '生命活水充满我',
@@ -344,7 +344,7 @@ i18n
             'Sermon': '讲道',
 
             // Cantonese sermons
-            'Day New Day (2 Corinthians 4:16-18)': '一天新似一天 (哥林多後書 4:16-18)',
+            '一天新似一天 (林后4:16-18)': '一天新似一天 (哥林多後書 4:16-18)',
             '不是我，是圣灵！(林后3:1-11)': '不是我，是圣灵！ (哥林多后书 3:1-11)',
             '基督的香气 (林后2:14-17)': '基督的香气 (哥林多后书 2:14-17)',
             '指望将来 (林后1:8-11)': '指望将来 (哥林多后书 1:8-11)',
@@ -430,10 +430,10 @@ i18n
             '差遣我': '差遣我',
 
             // Cantonese praise songs
-            'Great is Your Faithfulness': '祢信实何广大',
-            'Everlasting God': '永恒的主',
-            'Crown of Life': '生命的冠冕',
-            'Thank God': '感谢神',
+            '祢信实何广大': '祢信实何广大',
+            '永恆的主': '永恒的主',
+            '生命的冠冕': '生命的冠冕',
+            '感谢神': '感谢神',
 
             '真光普照': '真光普照',
             '生命活水充满我': '生命活水充满我',
