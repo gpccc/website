@@ -3,6 +3,17 @@ import SeekPointType from './seek-point-type';
 // MjQnqIH8qmM 1280x720
 const englishServices = [
     { youtubeVideoID: "uVZjMkJC_dk", message: "Send Us Ministers (Ezra 8)", pastor: "Rev. Larry Lee", date: "2020-11-01T16:30:00Z", duration: "00:00:00", seekPoints: [
+        {time: "00:09:30", label: "Beginning", type: SeekPointType.BEGINNING},
+        {time: "00:09:49", label: "1 Chronicles 16:23-31", type: SeekPointType.BIBLE_VERSE},
+        {time: "00:11:17", label: "How Great is Our God", type: SeekPointType.PRAISE_SONG},
+        {time: "00:15:57", label: "Son of God", type: SeekPointType.PRAISE_SONG},
+        {time: "00:21:02", label: "Lord I Need You", type: SeekPointType.PRAISE_SONG},
+        {time: "00:24:50", label: "Prayer", type: SeekPointType.PRAYER},
+        {time: "00:26:02", label: "Give Us Clean Hands", type: SeekPointType.PRAISE_SONG},
+        {time: "00:30:07", label: "Communion", type: SeekPointType.COMMUNION},
+        {time: "00:44:50", label: "Sermon", type: SeekPointType.MESSAGE},
+        {time: "01:24:40", label: "Closing prayer", type: SeekPointType.PRAYER},
+        {time: "01:25:36", label: "Benediction", type: SeekPointType.BENEDICTION},
     ]},
     { youtubeVideoID: "dkLZnTDGVWw", message: "The Sovereignty of God (Ezra 7)", pastor: "Rev. Jerry Lin", date: "2020-10-25T16:30:00Z", duration: "01:19:16", seekPoints: [
         {time: "00:00:58", label: "Opening prayer", type: SeekPointType.PRAYER},
