@@ -163,7 +163,7 @@ i18n
         zh: {
           translation: {
             'GP full name': '鳳凰城華人基督教會',
-            'GP short name': '鳳凰城華人基督教會',
+            'GP short name': '華人教會',
             'Cantonese service': '粵語崇拜',
             'English service': '英語崇拜',
             'Mandarin service': '華語崇拜',
@@ -306,7 +306,7 @@ i18n
         zf: {
           translation: {
             'GP full name': '凤凰城华人基督教会',
-            'GP short name': '凤凰城华人基督教会',
+            'GP short name': '华人教会',
             'Cantonese service': '粤语崇拜',
             'English service': '英语崇拜',
             'Mandarin service': '华语崇拜',
