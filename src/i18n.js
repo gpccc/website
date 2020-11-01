@@ -75,7 +75,7 @@ i18n
             'King of Power and Grace (John 18:12-27)': 'King of Power and Grace (John 18:12-27)',
             'Prayer of Unity (John 17:20-26)': 'Prayer of Unity (John 17:20-26)',
             'The Work of the Holy Spirit (John 16:1-15)': 'The Work of the Holy Spirit (John 16:1-15)',
-            'I Am the Real Vine (John 15:1-10)': 'I Am the Real Vine (John 15:1-10)',
+            '我是真葡萄树 (约15:1-10)': 'I Am the Real Vine (John 15:1-10)',
             '愿你们平安 (约20:19-21)': 'Wish You Peace (John 20:19-21)',
 
             // English praise songs
@@ -131,10 +131,10 @@ i18n
             'Rivers of the Holy Spirit': 'Rivers of the Holy Spirit',
             'Precious Cross': 'Precious Cross',
 
-            'Crown Him with Many Crowns': 'Crown Him with Many Crowns',
-            'Be My Vision': 'Be My Vision',
-            'Love Each Other': 'Love Each Other',
-            "I'd Go for You": "I'd Go for You",
+            '来拥戴主为王': 'Crown Him with Many Crowns',
+            '成为我异象': 'Be My Vision',
+            '彼此相爱': 'Love Each Other',
+            "我愿为祢去": "I'd Go for You",
 
             '你是何等荣美': 'Jesus, My Everything',
             '让神儿子的爱围绕你': 'Let the Love of Jesus Surround You',
@@ -219,7 +219,7 @@ i18n
             'King of Power and Grace (John 18:12-27)': '權能恩典的主 (约翰福音 18:12-27)',
             'Prayer of Unity (John 17:20-26)': '合一的祈禱 (约翰福音 17:20-26)',
             'The Work of the Holy Spirit (John 16:1-15)': '圣灵的工作 (约翰福音 16:1-15)',
-            'I Am the Real Vine (John 15:1-10)': '我是真葡萄樹 (约翰福音 15:1-10)',
+            '我是真葡萄树 (约15:1-10)': '我是真葡萄樹 (约翰福音 15:1-10)',
             '愿你们平安 (约20:19-21)': '願你們平安 (约翰福音 20:19-21)',
 
             // English praise songs
@@ -275,10 +275,10 @@ i18n
             'Rivers of the Holy Spirit': '聖靈的江河',
             'Precious Cross': '寶貴十架',
 
-            'Crown Him with Many Crowns': '來擁戴主為王',
-            'Be My Vision': '成為我異象',
-            'Love Each Other': '彼此相愛',
-            "I'd Go for You": "我願為祢去",
+            '来拥戴主为王': '來擁戴主為王',
+            '成为我异象': '成為我異象',
+            '彼此相爱': '彼此相愛',
+            "我愿为祢去": "我願為祢去",
 
             '你是何等荣美': '你是何等榮美',
             '让神儿子的爱围绕你': '讓神兒子的愛圍繞你',
@@ -363,7 +363,7 @@ i18n
             'King of Power and Grace (John 18:12-27)': '权能恩典的主 (约翰福音 18:12-27)',
             'Prayer of Unity (John 17:20-26)': '合一的祈祷 (约翰福音 17:20-26)',
             'The Work of the Holy Spirit (John 16:1-15)': '聖靈的工作 (约翰福音 16:1-15)',
-            'I Am the Real Vine (John 15:1-10)': '我是真葡萄树 (约翰福音 15:1-10)',
+            '我是真葡萄树 (约15:1-10)': '我是真葡萄树 (约翰福音 15:1-10)',
             '愿你们平安 (约20:19-21)': '愿你们平安 (约翰福音 20:19-21)',
 
             // English praise songs
@@ -419,10 +419,10 @@ i18n
             'Rivers of the Holy Spirit': '圣灵的江河',
             'Precious Cross': '宝贵十架',
 
-            'Crown Him with Many Crowns': '来拥戴主为王',
-            'Be My Vision': '成为我异象',
-            'Love Each Other': '彼此相爱',
-            "I'd Go for You": "我愿为祢去",
+            '来拥戴主为王': '来拥戴主为王',
+            '成为我异象': '成为我异象',
+            '彼此相爱': '彼此相爱',
+            "我愿为祢去": "我愿为祢去",
 
             '你是何等荣美': '你是何等荣美',
             '让神儿子的爱围绕你': '让神儿子的爱围绕你',
