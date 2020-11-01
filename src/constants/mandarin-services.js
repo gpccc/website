@@ -32,7 +32,7 @@ const mandarinServices = [
         {time: "01:33:15", label: "Announcements", type: SeekPointType.ANNOUNCEMENTS},
         {time: "01:40:42", label: "Benediction", type: SeekPointType.BENEDICTION},
     ]},
-    { youtubeVideoID: "wFXd4V9iNFw", message: "(blank message title)", pastor: "Rev. Weizhong Sun", date: "2020-10-11T18:10:00Z", duration: "01:41:35", seekPoints: [
+    { youtubeVideoID: "wFXd4V9iNFw", message: "Prayer of Unity (John 17:20-26)", pastor: "Rev. Weizhong Sun", date: "2020-10-11T18:10:00Z", duration: "01:41:35", seekPoints: [
         {time: "00:10:25", label: "Opening prayer", type: SeekPointType.PRAYER},
         {time: "00:12:33", label: "Worship the Lord", type: SeekPointType.PRAISE_SONG},
         {time: "00:16:18", label: "Come Sing Loudly", type: SeekPointType.PRAISE_SONG},
