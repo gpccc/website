@@ -11,6 +11,7 @@ const SeekPointType = {
     BIRTHDAY: 'Birthday',
     BAPTISM: 'Baptism',
     NEW_MEMBERS: 'New members',
+    UNKNOWN: 'UNKNOWN',
 };
 
 export default SeekPointType;

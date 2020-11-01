@@ -20,6 +20,7 @@ import CardGiftcardIcon from '@material-ui/icons/CardGiftcard';
 import CakeIcon from '@material-ui/icons/Cake';
 import PoolIcon from '@material-ui/icons/Pool'
 import GroupAddIcon from '@material-ui/icons/GroupAdd'
+import UnknownIcon from '@material-ui/icons/DeviceUnknown'
 
 import { useTranslation } from 'react-i18next';
 
@@ -74,6 +75,7 @@ export default function SeekToMenu({seekPoints, onSeekTo, youTubePlayerReady}) {
                             {seekPoint.type===SeekPointType.BIRTHDAY && <CakeIcon fontSize="small" />}
                             {seekPoint.type===SeekPointType.BAPTISM && <PoolIcon fontSize="small" />}
                             {seekPoint.type===SeekPointType.NEW_MEMBERS && <GroupAddIcon fontSize="small" />}
+                            {seekPoint.type===SeekPointType.UNKNOWN && <UnknownIcon fontSize="small" />}
                         </ListItemIcon>
                         <ListItemText primary={t(seekPoint.label)} />
                     </MenuItem>
