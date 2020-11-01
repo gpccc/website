@@ -17,7 +17,7 @@ const cantoneseServices = [
         {time: "01:14:22", label: "Announcements", type: SeekPointType.ANNOUNCEMENTS},
         {time: "01:20:02", label: "Benediction", type: SeekPointType.BENEDICTION},
     ]},
-    { youtubeVideoID: "ntyMUdXntLU", message: "(blank message title)", pastor: "Elder Albert Wong", date: "2020-10-18T18:10:00Z", duration: "01:29:14", seekPoints: [
+    { youtubeVideoID: "ntyMUdXntLU", message: "Not me, but the Holy Spirit! (2 Corinthians 3:1-11)", pastor: "Elder Albert Wong", date: "2020-10-18T18:10:00Z", duration: "01:29:14", seekPoints: [
         {time: "00:08:00", label: "Beginning", type: SeekPointType.BEGINNING},
         {time: "00:08:11", label: "Shine Jesus Shine", type: SeekPointType.PRAISE_SONG},
         {time: "00:12:26", label: "The Living Water of Life Fills Me", type: SeekPointType.PRAISE_SONG},
