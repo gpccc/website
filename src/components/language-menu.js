@@ -57,36 +57,36 @@ export default function LanguageMenu() {
     );
 
     return (
-    <div>
-    <Button
-        aria-label="Change language"
-        aria-controls="language-menu"
-        aria-haspopup="true"
-        color="inherit"
-        variant="text"
-        onClick={handleOpen}>
-        <LanguageIcon />
-        <Box ml={1} mr={0.5}>{getLanguageDesc(activeLanguage)}</Box>
-        <ExpandMoreIcon />
-    </Button>
-    <Menu
-        id="language-menu"
-        anchorEl={anchorEl}
-        anchorOrigin={{
-            vertical: 'top',
-            horizontal: 'right',
-        }}
-        keepMounted
-        transformOrigin={{
-            vertical: 'top',
-            horizontal: 'right',
-        }}
-        open={open}
-        onClose={handleClose}>
-        {languages.map((language, index) => (
-            <MenuItem key={index} selected={activeLanguage===language.code} onClick={() => handleLanguageClick(language.code)}>{language.desc}</MenuItem>
-        ))}
-    </Menu>
-    </div>
-  );
+        <div>
+        <Button
+            aria-label="Change language"
+            aria-controls="language-menu"
+            aria-haspopup="true"
+            color="inherit"
+            variant="text"
+            onClick={handleOpen}>
+            <LanguageIcon />
+            <Box ml={1} mr={0.5}>{getLanguageDesc(activeLanguage)}</Box>
+            <ExpandMoreIcon />
+        </Button>
+        <Menu
+            id="language-menu"
+            anchorEl={anchorEl}
+            anchorOrigin={{
+                vertical: 'top',
+                horizontal: 'right',
+            }}
+            keepMounted
+            transformOrigin={{
+                vertical: 'top',
+                horizontal: 'right',
+            }}
+            open={open}
+            onClose={handleClose}>
+            {languages.map((language, index) => (
+                <MenuItem key={index} selected={activeLanguage===language.code} onClick={() => handleLanguageClick(language.code)}>{language.desc}</MenuItem>
+            ))}
+        </Menu>
+        </div>
+    );
 }

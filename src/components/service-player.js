@@ -28,149 +28,149 @@ import DateTimeUtils from '../modules/datetime-utils';
 import { SERVICE_CARD_MAX_WIDTH, SERVICE_VIDEO_WIDTH, SERVICE_VIDEO_HEIGHT } from '../constants/service-constants';
 
 const calcYouTubePlayerHeight = (playerWidth) => (
-  playerWidth * SERVICE_VIDEO_HEIGHT / SERVICE_VIDEO_WIDTH
+    playerWidth * SERVICE_VIDEO_HEIGHT / SERVICE_VIDEO_WIDTH
 );
 
 export default function ServicePlayer({playerID, services, isServiceCombinedWithMandarin, showSnackbar, youTubeIframeAPIReady, onPlayPause, cardWidth}) {
-  if (!youTubeIframeAPIReady) {
-    return (
-      <Box display="flex" justifyContent="center" my={4}>
-        <CircularProgress />
-      </Box>
+    if (!youTubeIframeAPIReady) {
+        return (
+            <Box display="flex" justifyContent="center" my={4}>
+                <CircularProgress />
+            </Box>
+        );
+    }
+
+    const { t } = useTranslation();
+
+    const [serviceToShow, setServiceToShow] = React.useState(services[0]);
+    const [youTubePlayerReady, setYouTubePlayerReady] = React.useState(false);
+
+    const youTubePlayerRef = React.useRef(null);
+
+    const youtubeVideoID = serviceToShow.youtubeVideoID;
+    const message = serviceToShow.message;
+    const pastor = t(serviceToShow.pastor);
+    const date = serviceToShow.date;
+    const seekPoints = serviceToShow.seekPoints;
+
+    const isCantoneseService = (playerID === "cantonese");
+    const isCombinedService = isServiceCombinedWithMandarin(youtubeVideoID);
+    const showCombinedServiceTooltip = (isCombinedService && (isCantoneseService || playerID === "english"));
+
+    React.useEffect(
+        () => {
+            const width = cardWidth || SERVICE_CARD_MAX_WIDTH;
+            const height = calcYouTubePlayerHeight(width);
+
+            if (!youTubePlayerRef.current) {
+                const youtubePlayer = new window.YT.Player(playerID, {
+                    width,
+                    height,
+                    videoId: youtubeVideoID,
+                    playerVars: { origin: window.location.origin },
+                    events: {
+                        'onStateChange': onPlayerStateChange,
+                        'onReady': onPlayerReady,
+                    },
+                });
+                youTubePlayerRef.current = youtubePlayer;
+            } else {
+                youTubePlayerRef.current.setSize(width, height);
+            }
+        }, [youTubePlayerRef, cardWidth]
     );
-  }
 
-  const { t } = useTranslation();
+    const onPlayerStateChange = event => {
+        const playing = event.data === window.YT.PlayerState.PLAYING;
+        onPlayPause(playerID, playing);
+    };
 
-  const [serviceToShow, setServiceToShow] = React.useState(services[0]);
-  const [youTubePlayerReady, setYouTubePlayerReady] = React.useState(false);
+    const onPlayerReady = () => {
+        setYouTubePlayerReady(true);
+    };
 
-  const youTubePlayerRef = React.useRef(null);
+    const onSeekTo = (seekPoint) => {
+        const time = DateTimeUtils.parse(seekPoint.time);
+        if (time.valid && youTubePlayerRef.current) {
+            const playerState = youTubePlayerRef.current.getPlayerState();
 
-  const youtubeVideoID = serviceToShow.youtubeVideoID;
-  const message = serviceToShow.message;
-  const pastor = t(serviceToShow.pastor);
-  const date = serviceToShow.date;
-  const seekPoints = serviceToShow.seekPoints;
+            const seconds = ((60 * time.hour) + time.minute) * 60 + time.second;
+            youTubePlayerRef.current.seekTo(seconds, true /* allowSeekAhead */);
 
-  const isCantoneseService = (playerID === "cantonese");
-  const isCombinedService = isServiceCombinedWithMandarin(youtubeVideoID);
-  const showCombinedServiceTooltip = (isCombinedService && (isCantoneseService || playerID === "english"));
+            // If a video is cued, then the first seekTo call starts the video
+            // playing from the beginning. Wait one second and call seekTo again
+            // to go to the time point.
+            if (playerState === window.YT.PlayerState.CUED) {
+                const timer = setTimeout(() => {
+                    window.clearTimeout(timer);
+                    youTubePlayerRef.current.seekTo(seconds, true);
+                }, 1000);
+            }
+        } else {
+            showSnackbar(t('Unable to seek to') + ' ' + t(seekPoint.label));
+        }
+    };
 
-  React.useEffect(
-    () => {
-      const width = cardWidth || SERVICE_CARD_MAX_WIDTH;
-      const height = calcYouTubePlayerHeight(width);
+    const onServiceSelect = (service) => {
+        if (youTubePlayerRef.current) {
+            setServiceToShow(service);
+            youTubePlayerRef.current.cueVideoById(service.youtubeVideoID);
+        } else {
+            showSnackbar(t('Unable to load service') + ' ' + t(service.message));
+        }
+    };
 
-      if (!youTubePlayerRef.current) {
-        const youtubePlayer = new window.YT.Player(playerID, {
-          width,
-          height,
-          videoId: youtubeVideoID,
-          playerVars: { origin: window.location.origin },
-          events: {
-            'onStateChange': onPlayerStateChange,
-            'onReady': onPlayerReady,
-          },
-        });
-        youTubePlayerRef.current = youtubePlayer;
-      } else {
-        youTubePlayerRef.current.setSize(width, height);
-      }
-    }, [youTubePlayerRef, cardWidth]
-  );
-
-  const onPlayerStateChange = event => {
-    const playing = event.data === window.YT.PlayerState.PLAYING;
-    onPlayPause(playerID, playing);
-  };
-
-  const onPlayerReady = () => {
-    setYouTubePlayerReady(true);
-  };
-
-  const onSeekTo = (seekPoint) => {
-    const time = DateTimeUtils.parse(seekPoint.time);
-    if (time.valid && youTubePlayerRef.current) {
-      const playerState = youTubePlayerRef.current.getPlayerState();
-
-      const seconds = ((60 * time.hour) + time.minute) * 60 + time.second;
-      youTubePlayerRef.current.seekTo(seconds, true /* allowSeekAhead */);
-
-      // If a video is cued, then the first seekTo call starts the video
-      // playing from the beginning. Wait one second and call seekTo again
-      // to go to the time point.
-      if (playerState === window.YT.PlayerState.CUED) {
-        const timer = setTimeout(() => {
-          window.clearTimeout(timer);
-          youTubePlayerRef.current.seekTo(seconds, true);
-        }, 1000);
-      }
-    } else {
-      showSnackbar(t('Unable to seek to') + ' ' + t(seekPoint.label));
-    }
-  };
-
-  const onServiceSelect = (service) => {
-    if (youTubePlayerRef.current) {
-      setServiceToShow(service);
-      youTubePlayerRef.current.cueVideoById(service.youtubeVideoID);
-    } else {
-      showSnackbar(t('Unable to load service') + ' ' + t(service.message));
-    }
-  };
-
-  return (
-    <div>
-      <CardActionArea>
-        <YouTubePlayer playerID={playerID} />
-      </CardActionArea>
-      <CardContent>
-        <Typography gutterBottom variant="body1" component="p">
-          {t(message)}
-          {showCombinedServiceTooltip &&
-          <span>
-          &nbsp;
-          <Tooltip title={t((isCantoneseService ? "Cantonese" : "English") + " service combined with Mandarin service")} arrow enterTouchDelay={25}>
-            <IconButton aria-label="info" size="small">
-              <InfoOutlinedIcon />
-            </IconButton>
-          </Tooltip>
-          </span>
-          }
-        </Typography>
-        <Typography variant="body2" color="textSecondary" component="p">
-          {pastor} &middot; <ServiceDateDisplay serviceStartDateTime={date} />
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <SeekToMenu seekPoints={seekPoints} onSeekTo={onSeekTo} youTubePlayerReady={youTubePlayerReady} />
-        <RecentServicesMenu
-          services={services}
-          onServiceSelect={onServiceSelect}
-          onOlderServicesSelect={() => showSnackbar(t('TODO: Go to a page listing all worship services'))}
-          youTubePlayerReady={youTubePlayerReady}
-        />
-      </CardActions>
-    </div>
-  );
+    return (
+        <div>
+        <CardActionArea>
+            <YouTubePlayer playerID={playerID} />
+        </CardActionArea>
+        <CardContent>
+            <Typography gutterBottom variant="body1" component="p">
+                {t(message)}
+                {showCombinedServiceTooltip &&
+                <span>
+                &nbsp;
+                <Tooltip title={t((isCantoneseService ? "Cantonese" : "English") + " service combined with Mandarin service")} arrow enterTouchDelay={25}>
+                    <IconButton aria-label="info" size="small">
+                    <InfoOutlinedIcon />
+                    </IconButton>
+                </Tooltip>
+                </span>
+                }
+            </Typography>
+            <Typography variant="body2" color="textSecondary" component="p">
+                {pastor} &middot; <ServiceDateDisplay serviceStartDateTime={date} />
+            </Typography>
+        </CardContent>
+        <CardActions>
+            <SeekToMenu seekPoints={seekPoints} onSeekTo={onSeekTo} youTubePlayerReady={youTubePlayerReady} />
+            <RecentServicesMenu
+                services={services}
+                onServiceSelect={onServiceSelect}
+                onOlderServicesSelect={() => showSnackbar(t('TODO: Go to a page listing all worship services'))}
+                youTubePlayerReady={youTubePlayerReady}
+            />
+        </CardActions>
+        </div>
+    );
 }
 
 ServicePlayer.propTypes = {
-  playerID: PropTypes.string.isRequired,
-  services: PropTypes.arrayOf(PropTypes.shape({
-    youtubeVideoID: PropTypes.string.isRequired,
-    message: PropTypes.string.isRequired,
-    pastor: PropTypes.string.isRequired,
-    date: PropTypes.string.isRequired,
-    seekPoints: PropTypes.arrayOf(PropTypes.shape({
-      time: PropTypes.string.isRequired,
-      label: PropTypes.string.isRequired,
+    playerID: PropTypes.string.isRequired,
+    services: PropTypes.arrayOf(PropTypes.shape({
+        youtubeVideoID: PropTypes.string.isRequired,
+        message: PropTypes.string.isRequired,
+        pastor: PropTypes.string.isRequired,
+        date: PropTypes.string.isRequired,
+        seekPoints: PropTypes.arrayOf(PropTypes.shape({
+            time: PropTypes.string.isRequired,
+            label: PropTypes.string.isRequired,
+        })).isRequired,
     })).isRequired,
-  })).isRequired,
-  isServiceCombinedWithMandarin: PropTypes.func.isRequired,
-  showSnackbar: PropTypes.func.isRequired,
-  youTubeIframeAPIReady: PropTypes.bool.isRequired,
-  onPlayPause: PropTypes.func.isRequired,
-  cardWidth: PropTypes.number,
+    isServiceCombinedWithMandarin: PropTypes.func.isRequired,
+    showSnackbar: PropTypes.func.isRequired,
+    youTubeIframeAPIReady: PropTypes.bool.isRequired,
+    onPlayPause: PropTypes.func.isRequired,
+    cardWidth: PropTypes.number,
 };

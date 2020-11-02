@@ -92,7 +92,7 @@ RecentServicesMenu.propTypes = {
         message: PropTypes.string.isRequired,
         pastor: PropTypes.string.isRequired,
         date: PropTypes.string.isRequired,
-      })).isRequired,
+    })).isRequired,
     onServiceSelect: PropTypes.func.isRequired,
     onOlderServicesSelect: PropTypes.func.isRequired,
     youTubePlayerReady: PropTypes.bool.isRequired,
