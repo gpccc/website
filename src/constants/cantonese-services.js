@@ -1,8 +1,7 @@
 import SeekPointType from './seek-point-type';
 
-import { JOINT_SERVICE } from './service-constants'
+import { JOINT_SERVICE } from './service-constants';
 
-// ntyMUdXntLU 1280x720
 const cantoneseServices = [
     { youtubeVideoID: "m9YoDp3xFSQ", message: JOINT_SERVICE, pastor: "", date: "2020-11-01", duration: "", seekPoints: [] },
     { youtubeVideoID: "ILegX4omHvc", message: "一天新似一天 (林后4:16-18)", pastor: "Rev. Semson Nip", date: "2020-10-25T18:10:00Z", duration: "01:21:15", seekPoints: [

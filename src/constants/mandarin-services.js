@@ -1,6 +1,5 @@
 import SeekPointType from './seek-point-type';
 
-// 7RsjtD3EdeI 1280x720
 const mandarinServices = [
     { youtubeVideoID: "m9YoDp3xFSQ", message: "犹太人的王 (约19:14-19)", pastor: "Rev. Semson Nip", date: "2020-11-01T18:10:00Z", duration: "01:17:30", seekPoints: [
         // {time: "00:00:00", label: "让赞美飞扬", type: SeekPointType.PRAISE_SONG},

@@ -25,7 +25,7 @@ import RecentServicesMenu from './recent-services-menu';
 
 import DateTimeUtils from '../modules/datetime-utils';
 
-import { SERVICE_CARD_MAX_WIDTH, SERVICE_VIDEO_WIDTH, SERVICE_VIDEO_HEIGHT } from '../constants/service-constants'
+import { SERVICE_CARD_MAX_WIDTH, SERVICE_VIDEO_WIDTH, SERVICE_VIDEO_HEIGHT } from '../constants/service-constants';
 
 const calcYouTubePlayerHeight = (playerWidth) => (
   playerWidth * SERVICE_VIDEO_HEIGHT / SERVICE_VIDEO_WIDTH
@@ -83,11 +83,11 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
   const onPlayerStateChange = event => {
     const playing = event.data === window.YT.PlayerState.PLAYING;
     onPlayPause(playerID, playing);
-  }
+  };
 
   const onPlayerReady = () => {
     setYouTubePlayerReady(true);
-  }
+  };
 
   const onSeekTo = (seekPoint) => {
     const time = DateTimeUtils.parse(seekPoint.time);

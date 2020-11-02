@@ -17,7 +17,7 @@ export default function AppSnackbar({msg}) {
       return;
     }
     setOpen(false);
-  }
+  };
 
   return (
     <Snackbar
@@ -42,4 +42,4 @@ export default function AppSnackbar({msg}) {
 
 AppSnackbar.propTypes = {
   msg: PropTypes.string.isRequired,
-}
+};

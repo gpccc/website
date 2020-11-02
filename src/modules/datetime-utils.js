@@ -14,8 +14,7 @@ function getSecondsElapsedSince(sinceDateTime) {
 
     const secondsElapsed = (nowTime - sinceTime) / 1000;
     return Math.round(secondsElapsed);
-  }
-
+}
 
 function parse(hhmmss) {
     const invalidTime = {valid: false, hour: 0, minute: 0, second: 0};

@@ -15,7 +15,7 @@ import ServicePlayer  from './service-player';
 
 import { makeStyles } from '@material-ui/core/styles';
 
-import { JOINT_SERVICE, SERVICE_CARD_MAX_WIDTH } from '../constants/service-constants'
+import { JOINT_SERVICE, SERVICE_CARD_MAX_WIDTH } from '../constants/service-constants';
 
 import cantoneseServices from '../constants/cantonese-services';
 import englishServices from '../constants/english-services';

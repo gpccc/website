@@ -18,9 +18,9 @@ import MovieIcon from '@material-ui/icons/Movie';
 import AnnouncementIcon from '@material-ui/icons/Announcement';
 import CardGiftcardIcon from '@material-ui/icons/CardGiftcard';
 import CakeIcon from '@material-ui/icons/Cake';
-import PoolIcon from '@material-ui/icons/Pool'
-import GroupAddIcon from '@material-ui/icons/GroupAdd'
-import UnknownIcon from '@material-ui/icons/DeviceUnknown'
+import PoolIcon from '@material-ui/icons/Pool';
+import GroupAddIcon from '@material-ui/icons/GroupAdd';
+import UnknownIcon from '@material-ui/icons/DeviceUnknown';
 
 import { useTranslation } from 'react-i18next';
 
@@ -92,4 +92,4 @@ SeekToMenu.propTypes = {
     })).isRequired,
     onSeekTo: PropTypes.func.isRequired,
     youTubePlayerReady: PropTypes.bool.isRequired,
-}
+};

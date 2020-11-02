@@ -96,4 +96,4 @@ RecentServicesMenu.propTypes = {
     onServiceSelect: PropTypes.func.isRequired,
     onOlderServicesSelect: PropTypes.func.isRequired,
     youTubePlayerReady: PropTypes.bool.isRequired,
-}
+};

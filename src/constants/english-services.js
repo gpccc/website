@@ -1,6 +1,5 @@
 import SeekPointType from './seek-point-type';
 
-// MjQnqIH8qmM 1280x720
 const englishServices = [
     { youtubeVideoID: "uVZjMkJC_dk", message: "Send Us Ministers (Ezra 8)", pastor: "Rev. Larry Lee", date: "2020-11-01T16:30:00Z", duration: "01:26:35", seekPoints: [
         {time: "00:09:30", label: "Beginning", type: SeekPointType.BEGINNING},

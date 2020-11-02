@@ -16,4 +16,4 @@ export default function YouTubePlayer({playerID}) {
 
 YouTubePlayer.propTypes = {
   playerID: PropTypes.string.isRequired,
-}
+};
