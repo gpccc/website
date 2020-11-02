@@ -1,3 +1,5 @@
+import i18n from '../i18n';
+
 const DateTimeUtils = {
     getSecondsElapsedSince: getSecondsElapsedSince,
     parse: parse,
@@ -76,13 +78,50 @@ function dateDisplay(datetime, longOrShort) {
     }
 
     const date = new Date(datetime);
-    const notSunday = date.getDay() !== 0;
+    const weekday = date.getDay();
+    const notSunday = weekday !== 0;
+
+    if (i18n.language === 'zh' || i18n.language === 'zf') {
+        const year = date.getFullYear();
+        const month = date.getMonth() + 1;
+        const day = date.getDate();
+
+        let dateDisplay = year + '年' + month + '月' + day + '日';
+        if (notSunday) {
+            dateDisplay += ' (';
+            dateDisplay += getWeekdayZhZf(weekday);
+            dateDisplay += ')';
+        }
+        return dateDisplay;
+    }
 
     const dateDisplay = notSunday
         ? date.toLocaleDateString('en-us', {weekday: longOrShort, year: 'numeric', month: longOrShort, day: 'numeric'})
-        : date.toLocaleDateString('en-us', {year: 'numeric', month: longOrShort, day: 'numeric'})
+        : date.toLocaleDateString('en-us', {year: 'numeric', month: longOrShort, day: 'numeric'});
 
     return dateDisplay;
+}
+
+function getWeekdayZhZf(weekday) {
+    switch (weekday) {
+        case 0:
+            return '星期天';
+        case 1:
+            return '星期一';
+        case 2:
+            return '星期二';
+        case 3:
+            return '星期三';
+        case 4:
+            return '星期四';
+        case 5:
+            return '星期五';
+        case 6:
+            return '星期六';
+        default:
+            console.error('Invalid weekday', weekday);
+            return '';
+    }
 }
 
 export default DateTimeUtils;
