@@ -3,7 +3,7 @@ import i18n from '../i18n';
 const DateTimeUtils = {
     getSecondsElapsedSince: getSecondsElapsedSince,
     parse: parse,
-    humanMMDDHHMMDisplay: humanMMDDHHMMDisplay,
+    liveStreamDateTimeDisplay: liveStreamDateTimeDisplay,
     shortServiceDateDisplay: shortServiceDateDisplay,
     longServiceDateDisplay: longServiceDateDisplay,
 };
@@ -36,7 +36,7 @@ function parse(hhmmss) {
     return { valid: true, hour, minute, second };
 }
 
-function humanMMDDHHMMDisplay(datetime) {
+function liveStreamDateTimeDisplay(datetime) {
     // datetime format: yyyy-mm-ddThh:mm:ssZ
     const date = new Date(datetime);
 
@@ -47,10 +47,10 @@ function humanMMDDHHMMDisplay(datetime) {
     const isToday = isSameDay(date, today);
     const isTomorrow = isSameDay(date, tomorrow);
 
-    const dateDisplay =
-        (isToday || isTomorrow)
+    const dateDisplay = "Live " +
+        ((isToday || isTomorrow)
         ? (isToday ? "today" : "tomorrow") + ", " + date.toLocaleTimeString('en-us', {hour: 'numeric', minute: '2-digit'})
-        : date.toLocaleDateString('en-us', {month: 'long', day: 'numeric', hour: 'numeric', minute: '2-digit'});
+        : date.toLocaleDateString('en-us', {month: 'long', day: 'numeric', hour: 'numeric', minute: '2-digit'}));
     return dateDisplay;
 }
 
