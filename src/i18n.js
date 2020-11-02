@@ -29,6 +29,7 @@ i18n
             'Communion': 'Communion',
             'Congregational prayer': 'Congregational prayer',
             'Baptism of Yong Wang': 'Baptism of Yong Wang',
+            'Induction of new members': 'Induction of new members',
             'Missions at GPCCC': 'Missions at GPCCC',
             'Youth Praise Night': 'Youth Praise Night',
             'Closing prayer': 'Closing prayer',
@@ -56,6 +57,7 @@ i18n
             'Sermon': 'Sermon',
             'Beginning': 'Beginning',
             'Prayer': 'Prayer',
+            'Bible verse': 'Bible verse',
 
             // Cantonese sermons
             '一天新似一天 (林后4:16-18)': 'Day New Day (2 Corinthians 4:16-18)',
@@ -193,6 +195,7 @@ i18n
             'Communion': '聖餐',
             'Congregational prayer': '公禱',
             'Baptism of Yong Wang': '王勇的洗禮',
+            'Induction of new members': '招募新成員',
             'Missions at GPCCC': 'GPCCC的任務',
             'Youth Praise Night': '青年讚美之夜',
             'Closing prayer': '閉幕祈禱',
@@ -220,6 +223,7 @@ i18n
             'Sermon': '講道',
             'Beginning': '開始',
             'Prayer': '禱告',
+            'Bible verse': '聖經經文',
 
             // Cantonese sermons
             '一天新似一天 (林后4:16-18)': '一天新似一天 (哥林多後書 4:16-18)',
@@ -358,6 +362,7 @@ i18n
             'Congregational prayer': '公祷',
             'Missions at GPCCC': 'GPCCC的任务',
             'Baptism of Yong Wang': '王勇的洗礼',
+            'Induction of new members': '招募新成员',
             'Youth Praise Night': '青年赞美之夜',
             'Closing prayer': '闭幕祈祷',
             'Announcements': '报告',
@@ -384,6 +389,7 @@ i18n
             'Sermon': '讲道',
             'Beginning': '开始',
             'Prayer': '祷告',
+            'Bible verse': '圣经经文',
 
             // Cantonese sermons
             '一天新似一天 (林后4:16-18)': '一天新似一天 (哥林多後書 4:16-18)',
