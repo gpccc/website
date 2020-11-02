@@ -73,6 +73,7 @@ i18n
             'Talent (Exodus 4:10-17)': 'Talent (Exodus 4:10-17)',
 
             // Mandarin sermons
+            '犹太人的王 (约19:14-19)': 'King of the Jews (John 19:14-19)',
             '真理必叫我们得以自由 (约18:28-40)': 'Truth Will Set Us Free (John 18:28-40)',
             '权能恩典的主 (约18:12-27)': 'King of Power and Grace (John 18:12-27)',
             '合一的祈祷 (约17:20-26)': 'Prayer of Unity (John 17:20-26)',
@@ -118,6 +119,9 @@ i18n
             'Broken Vessels / Majesty': 'Broken Vessels / Majesty',
 
             // Mandarin praise songs
+            '神羔羊配得': 'Worthy is the Lamb', // found English translation on YouTube
+            '宝贵十架': 'Precious Cross', // on slide
+
             '耶稣基督是主': 'Jesus Christ is Lord',
             '耶稣，万名之上的名': 'Jesus, the Name Above All Names',
             '认定祢': 'Recognize You',
@@ -226,6 +230,7 @@ i18n
             'Talent (Exodus 4:10-17)': '天賦 (出埃及记 4:10-17)',
 
             // Mandarin sermons
+            '犹太人的王 (约19:14-19)': '猶太人的王 (约翰福音 19:14-19)',
             '真理必叫我们得以自由 (约18:28-40)': '真理必叫我们得以自由 (约翰福音 18:28-40)',
             '权能恩典的主 (约18:12-27)': '權能恩典的主 (约翰福音 18:12-27)',
             '合一的祈祷 (约17:20-26)': '合一的祈禱 (约翰福音 17:20-26)',
@@ -271,6 +276,9 @@ i18n
             'Broken Vessels / Majesty': '破碎器皿 / 威嚴',
 
             // Mandarin praise songs
+            '神羔羊配得': '神羔羊配得',
+            '宝贵十架': '寶貴十架',
+
             '耶稣基督是主': '耶穌基督是主',
             '耶稣，万名之上的名': '耶穌，萬名之上的名',
             '认定祢': '認定祢',
@@ -379,6 +387,7 @@ i18n
             'Talent (Exodus 4:10-17)': '天赋 (出埃及记 4:10-17)',
 
             // Mandarin sermons
+            '犹太人的王 (约19:14-19)': '犹太人的王 (约翰福音 19:14-19)',
             '真理必叫我们得以自由 (约18:28-40)': '真理必叫我們得以自由 (约翰福音 18:28-40)',
             '权能恩典的主 (约18:12-27)': '权能恩典的主 (约翰福音 18:12-27)',
             '合一的祈祷 (约17:20-26)': '合一的祈祷 (约翰福音 17:20-26)',
@@ -424,6 +433,9 @@ i18n
             'Broken Vessels / Majesty': '破碎器皿 / 威严', // found Chinese version - Broken Vessels, but not Majesty
 
             // Mandarin praise songs
+            '神羔羊配得': '神羔羊配得',
+            '宝贵十架': '宝贵十架',
+
             '耶稣基督是主': '耶稣基督是主',
             '耶稣，万名之上的名': '耶稣，万名之上的名',
             '认定祢': '认定祢',
