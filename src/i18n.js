@@ -81,8 +81,15 @@ i18n
             '我是真葡萄树 (约15:1-10)': 'I Am the Real Vine (John 15:1-10)',
             '愿你们平安 (约20:19-21)': 'Wish You Peace (John 20:19-21)',
 
-            // English sermons
+            // English Bible verses
             '1 Chronicles 16:23-31': '1 Chronicles 16:23-31',
+            'John 15:9-13': 'John 15:9-13',
+            'Psalm 103:1-5, 8, 14-17, 22': 'Psalm 103:1-5, 8, 14-17, 22',
+            'Job 1:20-21': 'Job 1:20-21',
+            'Job 42:1-5; Psalm 30:4-5': 'Job 42:1-5; Psalm 30:4-5',
+            'Psalm 18:2-6, 16-17, 46, 49': 'Psalm 18:2-6, 16-17, 46, 49',
+            '1 Samuel 2:1-10': '1 Samuel 2:1-10',
+            'Luke 23:32-43': 'Luke 23:32-43',
 
             // English praise songs
             'How Great is Our God': 'How Great is Our God',
@@ -240,6 +247,13 @@ i18n
 
             // English Bible verses
             '1 Chronicles 16:23-31': '歷代誌上 16:23-31',
+            'John 15:9-13': '约翰福音 15:9-13',
+            'Psalm 103:1-5, 8, 14-17, 22': '詩篇 103:1-5, 8, 14-17, 22',
+            'Job 1:20-21': '約伯記 1:20-21',
+            'Job 42:1-5; Psalm 30:4-5': '約伯記 42:1-5; 詩篇 30:4-5',
+            'Psalm 18:2-6, 16-17, 46, 49': '詩篇 18:2-6, 16-17, 46, 49',
+            '1 Samuel 2:1-10': '撒母耳記上 2:1-10',
+            'Luke 23:32-43': '路加福音 23:32-43',
 
             // English praise songs
             'How Great is Our God': '我神真偉大',
@@ -397,6 +411,13 @@ i18n
 
             // English Bible verses
             '1 Chronicles 16:23-31': '历代志上 16:23-31',
+            'John 15:9-13': '约翰福音 15:9-13',
+            'Psalm 103:1-5, 8, 14-17, 22': '诗篇 103:1-5, 8, 14-17, 22',
+            'Job 1:20-21': '约伯记 1:20-21',
+            'Job 42:1-5; Psalm 30:4-5': '约伯记 42:1-5; 诗篇 30:4-5',
+            'Psalm 18:2-6, 16-17, 46, 49': '诗篇 18:2-6, 16-17, 46, 49',
+            '1 Samuel 2:1-10': '撒母耳记上 2:1-10',
+            'Luke 23:32-43': '路加福音 23:32-43',
 
             // English praise songs
             'How Great is Our God': '我神真伟大', // found Chinese version
