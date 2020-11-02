@@ -129,7 +129,6 @@ i18n
 
             // Mandarin praise songs
             '神羔羊配得': 'Worthy is the Lamb', // found English translation on YouTube
-            '宝贵十架': 'Precious Cross', // on slide
 
             '耶稣基督是主': 'Jesus Christ is Lord',
             '耶稣，万名之上的名': 'Jesus, the Name Above All Names',
@@ -151,7 +150,7 @@ i18n
             '我的神，我的父，我的磐石': 'My God, My Father, My Rock',
             '耶稣爱你': 'Jesus Loves You',
             '圣灵的江河': 'Rivers of the Holy Spirit',
-            '宝贵十架': 'Precious Cross',
+            '宝贵十架': 'Precious Cross', // on slide
 
             '来拥戴主为王': 'Crown Him with Many Crowns',
             '成为我异象': 'Be My Vision',
@@ -295,7 +294,6 @@ i18n
 
             // Mandarin praise songs
             '神羔羊配得': '神羔羊配得',
-            '宝贵十架': '寶貴十架',
 
             '耶稣基督是主': '耶穌基督是主',
             '耶稣，万名之上的名': '耶穌，萬名之上的名',
@@ -461,7 +459,6 @@ i18n
 
             // Mandarin praise songs
             '神羔羊配得': '神羔羊配得',
-            '宝贵十架': '宝贵十架',
 
             '耶稣基督是主': '耶稣基督是主',
             '耶稣，万名之上的名': '耶稣，万名之上的名',
