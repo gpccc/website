@@ -81,7 +81,7 @@ function dateDisplay(datetime, longOrShort) {
     const weekday = date.getDay();
     const notSunday = weekday !== 0;
 
-    if (i18n.language === 'zh' || i18n.language === 'zf') {
+    if (isLanguageChinese()) {
         const year = date.getFullYear();
         const month = date.getMonth() + 1;
         const day = date.getDate();
@@ -101,6 +101,8 @@ function dateDisplay(datetime, longOrShort) {
 
     return dateDisplay;
 }
+
+const isLanguageChinese = () => (i18n.language === 'zh' || i18n.language === 'zf');
 
 function getWeekdayZhZf(weekday) {
     switch (weekday) {
