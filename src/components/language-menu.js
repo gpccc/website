@@ -10,6 +10,10 @@ import MenuItem from '@material-ui/core/MenuItem';
 
 import i18n from '../i18n';
 
+import Cookies from 'js-cookie';
+
+import { LANG_COOKIE_KEY } from '../constants/service-constants';
+
 const languages = [
     { code: 'zf', desc: '中文 (正体字/繁体字)' },
     { code: 'zh', desc: '中文 (正體字/繁體字)' },
@@ -44,6 +48,8 @@ export default function LanguageMenu() {
     const handleLanguageClick = (lngCode) => {
         setActiveLanguage(lngCode);
         setAnchorEl(null);
+
+        Cookies.set(LANG_COOKIE_KEY, lngCode);
     };
 
     const handleClose = () => {
