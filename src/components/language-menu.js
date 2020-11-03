@@ -32,7 +32,7 @@ const getLanguageDesc = (code) => {
 };
 
 export default function LanguageMenu() {
-    const [activeLanguage, setActiveLanguage] = React.useState('en');
+    const [activeLanguage, setActiveLanguage] = React.useState(i18n.language);
 
     const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);
