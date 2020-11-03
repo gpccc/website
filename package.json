@@ -35,6 +35,7 @@
     "@material-ui/icons": "4.9.1",
     "connected-react-router": "6.5.2",
     "i18next": "19.8.3",
+    "js-cookie": "2.2.1",
     "object-assign": "4.1.1",
     "react": "16.11.0",
     "react-dom": "16.11.0",
