@@ -8,3 +8,5 @@ export const SERVICE_CARD_MAX_WIDTH = 345;
 
 export const SERVICE_VIDEO_WIDTH = 1280;
 export const SERVICE_VIDEO_HEIGHT = 720;
+
+export const LANG_COOKIE_KEY = 'gp-language';
