@@ -1,8 +1,17 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
+import Cookies from 'js-cookie';
+
 // import Backend from 'i18next-http-backend';
 // import LanguageDetector from 'i18next-browser-languagedetector';
+
+import { LANG_COOKIE_KEY } from './constants/service-constants';
+
+let lngCode = Cookies.get(LANG_COOKIE_KEY);
+if (typeof lngCode === 'undefined') {
+    lngCode = 'en';
+}
 
 i18n
     // load translation using http -> see /public/locales (i.e. https://github.com/i18next/react-i18next/tree/master/example/react/public/locales)
@@ -513,7 +522,7 @@ i18n
             }
             },
         },
-        lng: 'en',
+        lng: lngCode,
         fallbackLng: 'en',
         debug: true,
         keySeparator: false,
