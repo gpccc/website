@@ -15,8 +15,8 @@ import Cookies from 'js-cookie';
 import { LANG_COOKIE_KEY } from '../constants/service-constants';
 
 const languages = [
-    { code: 'zf', desc: '中文 (正体字/繁体字)' },
-    { code: 'zh', desc: '中文 (正體字/繁體字)' },
+    { code: 'zf', desc: '简体中文' },
+    { code: 'zh', desc: '繁體中文' },
     { code: 'en', desc: 'English' },
 ];
 
