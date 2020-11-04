@@ -79,7 +79,7 @@ function isServiceCombinedWithMandarin(youtubeVideoID) {
     return mandarinServices.some((service) => service.youtubeVideoID === youtubeVideoID);
 }
 
-export default function ServiceCard({showSnackbar}) {
+export default function ServiceCard({showSnackbar, browserWidth}) {
     const classes = useStyles();
 
     const [youTubeIframeAPIReady, setYouTubeIframeAPIReady] = React.useState(false);
@@ -168,4 +168,5 @@ TabPanel.propTypes = {
 
 ServiceCard.propTypes = {
     showSnackbar: PropTypes.func.isRequired,
+    browserWidth: PropTypes.number,
 };
