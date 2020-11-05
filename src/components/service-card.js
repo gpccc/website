@@ -23,7 +23,7 @@ import mandarinServices from '../constants/mandarin-services';
 
 const useStyles = makeStyles(theme => ({
     root: {
-        maxWidth: SERVICE_CARD_MAX_WIDTH,
+        maxWidth: 16384, // SERVICE_CARD_MAX_WIDTH,
     },
     tab: {
         lineHeight: 'normal',
