@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Box from '@material-ui/core/Box';
-
 import './i18n';
 
 import './styles/site.css';
@@ -18,9 +16,7 @@ function App() {
     return (
         <React.StrictMode>
         <ElevateAppBar>
-            <Box display="flex" justifyContent="center">
-                <ServiceCard showSnackbar={showSnackbar} />
-            </Box>
+            <ServiceCard showSnackbar={showSnackbar} />
             {snackbarData && <AppSnackbar msg={snackbarData.msg} key={snackbarData.date} />}
         </ElevateAppBar>
         </React.StrictMode>
