@@ -57,8 +57,8 @@ export default function ElevateAppBar(props) {
         <ElevationScroll {...props}>
             <AppBar>
                 <Toolbar variant="dense">
-                    <Typography variant="h6" className={`${classes.title} ${classes.sectionDesktop}`}>{t("GP full name")}</Typography>
-                    <Typography variant="h6" className={`${classes.title} ${classes.sectionMobile}`}>{t("GP short name")}</Typography>
+                    <Typography variant="h6" className={`${classes.title} ${classes.sectionDesktop}`} noWrap>{t("GP full name")}</Typography>
+                    <Typography variant="h6" className={`${classes.title} ${classes.sectionMobile}`} noWrap>{t("GP short name")}</Typography>
                     <LanguageMenu />
                 </Toolbar>
             </AppBar>
