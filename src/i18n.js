@@ -75,6 +75,7 @@ i18n
                 '指望将来 (林后1:8-11)': 'Look Forward to the Future (2 Cor 1:8-11)',
 
                 // English sermons
+                'Kingdom Peace (Philippians 3:17-4:9)': 'Kingdom Peace (Philippians 3:17-4:9)',
                 'Send Us Ministers (Ezra 8)': 'Send Us Ministers (Ezra 8)',
                 'The Sovereignty of God (Ezra 7)': 'The Sovereignty of God (Ezra 7)',
                 'Temple Filled with Joy (Ezra 6)': 'Temple Filled with Joy (Ezra 6)',
@@ -240,6 +241,7 @@ i18n
                 '指望将来 (林后1:8-11)': '指望將來 (哥林多後書 1:8-11)',
 
                 // English sermons
+                'Kingdom Peace (Philippians 3:17-4:9)': '王國和平 (腓立比書 3:17-4:9)',
                 'Send Us Ministers (Ezra 8)': '派我們部長 (以斯拉記 8)',
                 'The Sovereignty of God (Ezra 7)': '上帝的主權 (以斯拉記 7)',
                 'Temple Filled with Joy (Ezra 6)': '充滿喜悅的神殿 (以斯拉記 6)',
@@ -405,6 +407,7 @@ i18n
                 '指望将来 (林后1:8-11)': '指望将来 (哥林多后书 1:8-11)',
 
                 // English sermons
+                'Kingdom Peace (Philippians 3:17-4:9)': '王国和平 (腓立比书 3:17-4:9)',
                 'Send Us Ministers (Ezra 8)': '派我们部长 (以斯拉记 8)',
                 'The Sovereignty of God (Ezra 7)': '上帝的主权 (以斯拉记 7)',
                 'Temple Filled with Joy (Ezra 6)': '充满喜悦的神殿 (以斯拉记 6)',
