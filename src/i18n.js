@@ -54,6 +54,7 @@ i18n
                 'Rev. Weizhong Sun': 'Rev. Weizhong Sun',
                 'Rev. Semson Nip': 'Rev. Semson Nip',
                 'Elder Albert Wong': 'Elder Albert Wong',
+                'Pastor Feng Zhongqiang': 'Pastor Feng Zhongqiang',
 
                 'Recent services': 'Recent services',
                 'Older services': 'Older services',
@@ -62,6 +63,7 @@ i18n
                 'TODO: Go to a page listing all worship services': 'TODO: Go to a page listing all worship services',
                 'Cantonese service combined with Mandarin service': 'Cantonese service combined with Mandarin service',
                 'English service combined with Mandarin service': 'English service combined with Mandarin service',
+                '(to be determined)': '(to be determined)',
 
                 'Sermon': 'Sermon',
                 'Beginning': 'Beginning',
@@ -220,6 +222,7 @@ i18n
                 'Rev. Weizhong Sun': '孫偉中牧師',
                 'Rev. Semson Nip': '聶深信牧師',
                 'Elder Albert Wong': '王Albert長老',
+                'Pastor Feng Zhongqiang': '馮忠強牧師',
 
                 'Recent services': '最近講道',
                 'Older services': '較舊講道',
@@ -228,6 +231,7 @@ i18n
                 'TODO: Go to a page listing all worship services': '待辦事項：轉到列出所有敬拜服務的頁面',
                 'Cantonese service combined with Mandarin service': '粵語服務與普通話服務相結合',
                 'English service combined with Mandarin service': '英語服務結合普通話服務',
+                '(to be determined)': '(有待確定)',
 
                 'Sermon': '講道',
                 'Beginning': '開始',
@@ -386,6 +390,7 @@ i18n
                 'Rev. Weizhong Sun': '孙伟中牧师',
                 'Rev. Semson Nip': '聂深信牧师',
                 'Elder Albert Wong': '王Albert长老',
+                'Pastor Feng Zhongqiang': '冯忠强牧师',
 
                 'Recent services': '最近讲道',
                 'Older services': '较旧讲道',
@@ -394,6 +399,7 @@ i18n
                 'TODO: Go to a page listing all worship services': '待办事项：转到列出所有敬拜服务的页面',
                 'Cantonese service combined with Mandarin service': '粤语服务与国语服务相结合',
                 'English service combined with Mandarin service': '英语服务结合普通话服务',
+                '(to be determined)': '(有待确定)',
 
                 'Sermon': '讲道',
                 'Beginning': '开始',
