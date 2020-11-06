@@ -1,6 +1,8 @@
 import SeekPointType from './seek-point-type';
 
 const englishServices = [
+    { youtubeVideoID: "zFcB3aNJwSk", message: "Kingdom Peace (Philippians 3:17-4:9)", pastor: "Rev. Jerry Lin", date: "2020-11-08T16:30:00Z", duration: "00:00:00", seekPoints: [
+    ]},
     { youtubeVideoID: "uVZjMkJC_dk", message: "Send Us Ministers (Ezra 8)", pastor: "Rev. Larry Lee", date: "2020-11-01T16:30:00Z", duration: "01:26:35", seekPoints: [
         {time: "00:09:30", label: "Beginning", type: SeekPointType.BEGINNING},
         {time: "00:09:49", label: "1 Chronicles 16:23-31", type: SeekPointType.BIBLE_VERSE},
