@@ -60,7 +60,7 @@ function liveStreamDateTimeDisplay(datetime) {
         const dateDisplay =
             (isToday || isTomorrow)
             ? (isToday ? "今天住" : "明天住") + ', ' + hourDisplay + ':' + minuteDisplay
-            : '住 ' + monthDayDisplay + ', ' + hourDisplay + ':' + minuteDisplay;
+            : '住 ' + monthDayDisplay + '，' + hourDisplay + ':' + minuteDisplay;
 
         return dateDisplay;
     }
