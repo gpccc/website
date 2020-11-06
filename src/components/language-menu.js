@@ -50,7 +50,7 @@ export default function LanguageMenu() {
         setActiveLanguage(lngCode);
         setAnchorEl(null);
 
-        Cookies.set(LANG_COOKIE_KEY, lngCode);
+        Cookies.set(LANG_COOKIE_KEY, lngCode, { expires: 3650 });
     };
 
     const handleClose = () => {
