@@ -97,6 +97,8 @@ i18n
                 '愿你们平安 (约20:19-21)': 'Wish You Peace (John 20:19-21)',
 
                 // English Bible verses
+                'Matthew 21:9': 'Matthew 21:9',
+                'Zechariah 9:9-10': 'Zechariah 9:9-10',
                 '1 Chronicles 16:23-31': '1 Chronicles 16:23-31',
                 'John 15:9-13': 'John 15:9-13',
                 'Psalm 103:1-5, 8, 14-17, 22': 'Psalm 103:1-5, 8, 14-17, 22',
@@ -107,6 +109,12 @@ i18n
                 'Luke 23:32-43': 'Luke 23:32-43',
 
                 // English praise songs
+                'Sing Sing Sing': 'Sing Sing Sing',
+                'Hosanna': 'Hosanna',
+                'Came to My Rescue': 'Came to My Rescue',
+                'Christ is Enough': 'Christ is Enough',
+                'Heart of Worship': 'Heart of Worship',
+
                 'How Great is Our God': 'How Great is Our God',
                 'Son of God': 'Son of God',
                 'Give Us Clean Hands': 'Give Us Clean Hands',
@@ -266,6 +274,8 @@ i18n
                 '愿你们平安 (约20:19-21)': '願你們平安 (约翰福音 20:19-21)',
 
                 // English Bible verses
+                'Matthew 21:9': '馬太福音 21:9',
+                'Zechariah 9:9-10': '撒迦利亞書 9:9-10',
                 '1 Chronicles 16:23-31': '歷代誌上 16:23-31',
                 'John 15:9-13': '约翰福音 15:9-13',
                 'Psalm 103:1-5, 8, 14-17, 22': '詩篇 103:1-5, 8, 14-17, 22',
@@ -276,6 +286,12 @@ i18n
                 'Luke 23:32-43': '路加福音 23:32-43',
 
                 // English praise songs
+                'Hosanna': '和撒那',
+                'Sing Sing Sing': '戴誌中',
+                'Came to My Rescue': '來我的救援',
+                'Christ is Enough': '基督是我滿足',
+                'Heart of Worship': '敬拜的心',
+
                 'How Great is Our God': '我神真偉大',
                 'Son of God': '神之子',
                 'Give Us Clean Hands': '給我們乾淨的手',
@@ -435,6 +451,8 @@ i18n
                 '愿你们平安 (约20:19-21)': '愿你们平安 (约翰福音 20:19-21)',
 
                 // English Bible verses
+                'Matthew 21:9': '马太福音 21:9',
+                'Zechariah 9:9-10': '撒迦利亚书 9:9-10',
                 '1 Chronicles 16:23-31': '历代志上 16:23-31',
                 'John 15:9-13': '约翰福音 15:9-13',
                 'Psalm 103:1-5, 8, 14-17, 22': '诗篇 103:1-5, 8, 14-17, 22',
@@ -445,6 +463,12 @@ i18n
                 'Luke 23:32-43': '路加福音 23:32-43',
 
                 // English praise songs
+                'Sing Sing Sing': '戴志中',
+                'Hosanna': '和撒那', // found Chinese version
+                'Came to My Rescue': '來我的救援',
+                'Christ is Enough': '基督是我滿足', // found Chinese version
+                'Heart of Worship': '敬拜的心', // found Chinese version
+
                 'How Great is Our God': '我神真伟大', // found Chinese version
                 'Son of God': '神之子',
                 'Give Us Clean Hands': '给我们干净的手',
