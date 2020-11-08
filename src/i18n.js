@@ -55,6 +55,7 @@ i18n
                 'Rev. Semson Nip': 'Rev. Semson Nip',
                 'Elder Albert Wong': 'Elder Albert Wong',
                 'Pastor Feng Zhongqiang': 'Pastor Feng Zhongqiang',
+                'Brother Dai Zhizhong': 'Brother Dai Zhizhong',
 
                 'Recent services': 'Recent services',
                 'Older services': 'Older services',
@@ -223,6 +224,7 @@ i18n
                 'Rev. Semson Nip': '聶深信牧師',
                 'Elder Albert Wong': '王Albert長老',
                 'Pastor Feng Zhongqiang': '馮忠強牧師',
+                'Brother Dai Zhizhong': '戴志忠弟兄',
 
                 'Recent services': '最近講道',
                 'Older services': '較舊講道',
@@ -391,6 +393,7 @@ i18n
                 'Rev. Semson Nip': '聂深信牧师',
                 'Elder Albert Wong': '王Albert长老',
                 'Pastor Feng Zhongqiang': '冯忠强牧师',
+                'Brother Dai Zhizhong': '戴志忠弟兄',
 
                 'Recent services': '最近讲道',
                 'Older services': '较旧讲道',

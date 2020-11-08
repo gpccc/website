@@ -3,6 +3,8 @@ import SeekPointType from './seek-point-type';
 import { JOINT_SERVICE } from './service-constants';
 
 const cantoneseServices = [
+    { youtubeVideoID: "H_kfkwDCeHU", message: "(to be determined)", pastor: "Brother Dai Zhizhong", date: "2020-11-08T18:10:00Z", duration: "00:00:00", seekPoints: [
+    ]},
     { youtubeVideoID: "m9YoDp3xFSQ", message: JOINT_SERVICE, pastor: "", date: "2020-11-01", duration: "", seekPoints: [] },
     { youtubeVideoID: "ILegX4omHvc", message: "一天新似一天 (林后4:16-18)", pastor: "Rev. Semson Nip", date: "2020-10-25T18:10:00Z", duration: "01:21:15", seekPoints: [
         {time: "00:10:00", label: "Opening prayer", type: SeekPointType.PRAYER},
