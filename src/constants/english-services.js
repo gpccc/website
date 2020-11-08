@@ -1,7 +1,20 @@
 import SeekPointType from './seek-point-type';
 
 const englishServices = [
-    { youtubeVideoID: "zFcB3aNJwSk", message: "Kingdom Peace (Philippians 3:17-4:9)", pastor: "Rev. Jerry Lin", date: "2020-11-08T16:30:00Z", duration: "00:00:00", seekPoints: [
+    { youtubeVideoID: "zFcB3aNJwSk", message: "Kingdom Peace (Philippians 3:17-4:9)", pastor: "Rev. Jerry Lin", date: "2020-11-08T16:30:00Z", duration: "01:23:28", seekPoints: [
+        {time: "00:10:07", label: "Opening prayer", type: SeekPointType.PRAYER},
+        {time: "00:11:41", label: "Sing Sing Sing", type: SeekPointType.PRAISE_SONG},
+        {time: "00:15:23", label: "Zechariah 9:9-10", type: SeekPointType.BIBLE_VERSE},
+        {time: "00:17:07", label: "Matthew 21:9", type: SeekPointType.BIBLE_VERSE},
+        {time: "00:17:21", label: "Hosanna", type: SeekPointType.PRAISE_SONG},
+        {time: "00:22:42", label: "Came to My Rescue", type: SeekPointType.PRAISE_SONG},
+        {time: "00:27:40", label: "Christ is Enough", type: SeekPointType.PRAISE_SONG},
+        {time: "00:32:46", label: "Congregational prayer", type: SeekPointType.PRAYER},
+        {time: "00:36:50", label: "Sermon", type: SeekPointType.MESSAGE},
+        {time: "01:15:17", label: "Closing prayer", type: SeekPointType.PRAYER},
+        {time: "01:15:55", label: "Heart of Worship", type: SeekPointType.PRAISE_SONG},
+        {time: "01:20:32", label: "Announcements", type: SeekPointType.ANNOUNCEMENTS},
+        {time: "01:22:31", label: "Benediction", type: SeekPointType.BENEDICTION},
     ]},
     { youtubeVideoID: "uVZjMkJC_dk", message: "Send Us Ministers (Ezra 8)", pastor: "Rev. Larry Lee", date: "2020-11-01T16:30:00Z", duration: "01:26:35", seekPoints: [
         {time: "00:09:30", label: "Beginning", type: SeekPointType.BEGINNING},
