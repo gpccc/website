@@ -9,11 +9,22 @@ import Typography from '@material-ui/core/Typography';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 
+import { makeStyles } from '@material-ui/core/styles';
+
 import i18n from '../i18n';
 
 import Cookies from 'js-cookie';
 
 import { SERVICE_COOKIE_KEY } from '../constants/service-constants';
+
+const useStyles = makeStyles((theme) => ({
+    sectionPhone: {
+        display: 'none',
+        [theme.breakpoints.up('sm')]: {
+            display: 'flex',
+        },
+    },
+}));
 
 const services = [
     { code: 'cantonese', shortDesc: 'Cantonese service', desc: 'I attend the Cantonese service.' },
@@ -51,6 +62,8 @@ const guessServiceFromLanguage = (langCode) => {
 const getDefaultServiceCode = () => Cookies.get(SERVICE_COOKIE_KEY) || guessServiceFromLanguage(i18n.language);
 
 export default function DefaultServiceMenu() {
+    const classes = useStyles();
+
     const [defaultService, setDefaultService] = React.useState(getDefaultServiceCode());
 
     const [anchorEl, setAnchorEl] = React.useState(null);
@@ -81,7 +94,7 @@ export default function DefaultServiceMenu() {
             variant="text"
             onClick={handleOpen}>
             <HomeIcon />
-            <Box ml={1} mr={0.5}><Typography noWrap>{getServiceDesc(defaultService)}</Typography></Box>
+            <Box ml={1} mr={0.5} className={classes.sectionPhone}><Typography noWrap>{getServiceDesc(defaultService)}</Typography></Box>
             <ExpandMoreIcon />
         </Button>
         <Menu
