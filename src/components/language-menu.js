@@ -9,11 +9,22 @@ import Typography from '@material-ui/core/Typography';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 
+import { makeStyles } from '@material-ui/core/styles';
+
 import i18n from '../i18n';
 
 import Cookies from 'js-cookie';
 
 import { LANG_COOKIE_KEY } from '../constants/service-constants';
+
+const useStyles = makeStyles((theme) => ({
+    sectionPhone: {
+        display: 'none',
+        [theme.breakpoints.up('sm')]: {
+            display: 'flex',
+        },
+    },
+}));
 
 const languages = [
     { code: 'zf', desc: '简体中文' },
@@ -37,6 +48,8 @@ const getLanguageDesc = (code) => {
 };
 
 export default function LanguageMenu() {
+    const classes = useStyles();
+
     const [activeLanguage, setActiveLanguage] = React.useState(i18n.language);
 
     const [anchorEl, setAnchorEl] = React.useState(null);
@@ -73,7 +86,7 @@ export default function LanguageMenu() {
             variant="text"
             onClick={handleOpen}>
             <LanguageIcon />
-            <Box ml={1} mr={0.5}><Typography noWrap>{getLanguageDesc(activeLanguage)}</Typography></Box>
+            <Box ml={1} mr={0.5} className={classes.sectionPhone}><Typography noWrap>{getLanguageDesc(activeLanguage)}</Typography></Box>
             <ExpandMoreIcon />
         </Button>
         <Menu
