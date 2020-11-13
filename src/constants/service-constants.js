@@ -11,3 +11,5 @@ export const SERVICE_VIDEO_HEIGHT = 720;
 
 export const LANG_COOKIE_KEY = 'gp-language';
 export const SERVICE_COOKIE_KEY = 'gp-service';
+
+export const COOKIE_EXPIRATION_DAYS = 3650;

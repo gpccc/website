@@ -15,7 +15,7 @@ import i18n from '../i18n';
 
 import Cookies from 'js-cookie';
 
-import { SERVICE_COOKIE_KEY } from '../constants/service-constants';
+import { SERVICE_COOKIE_KEY, COOKIE_EXPIRATION_DAYS } from '../constants/service-constants';
 
 const useStyles = makeStyles((theme) => ({
     sectionPhone: {
@@ -77,7 +77,7 @@ export default function DefaultServiceMenu() {
         setDefaultService(serviceCode);
         setAnchorEl(null);
 
-        Cookies.set(SERVICE_COOKIE_KEY, serviceCode, { expires: 3650 });
+        Cookies.set(SERVICE_COOKIE_KEY, serviceCode, { expires: COOKIE_EXPIRATION_DAYS });
     };
 
     const handleClose = () => {

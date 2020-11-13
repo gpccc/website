@@ -15,7 +15,7 @@ import i18n from '../i18n';
 
 import Cookies from 'js-cookie';
 
-import { LANG_COOKIE_KEY } from '../constants/service-constants';
+import { LANG_COOKIE_KEY, COOKIE_EXPIRATION_DAYS } from '../constants/service-constants';
 
 const useStyles = makeStyles((theme) => ({
     sectionPhone: {
@@ -63,7 +63,7 @@ export default function LanguageMenu() {
         setActiveLanguage(lngCode);
         setAnchorEl(null);
 
-        Cookies.set(LANG_COOKIE_KEY, lngCode, { expires: 3650 });
+        Cookies.set(LANG_COOKIE_KEY, lngCode, { expires: COOKIE_EXPIRATION_DAYS });
     };
 
     const handleClose = () => {
