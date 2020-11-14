@@ -1,5 +1,11 @@
 import React from 'react';
 
+import Radio from '@material-ui/core/Radio';
+import RadioGroup from '@material-ui/core/RadioGroup';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import FormControl from '@material-ui/core/FormControl';
+import FormLabel from '@material-ui/core/FormLabel';
+
 import Button from '@material-ui/core/Button';
 import HomeIcon from '@material-ui/icons/Home';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
@@ -27,9 +33,9 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const services = [
-    { code: 'cantonese', shortDesc: 'Cantonese service', desc: 'I attend the Cantonese service.' },
-    { code: 'english', shortDesc: 'English service', desc: 'I attend the English service.' },
-    { code: 'mandarin', shortDesc: 'Mandarin service', desc: 'I attend the Mandarin service.' },
+    { code: 'cantonese', shortDesc: 'Cantonese service', desc: 'Cantonese' },
+    { code: 'english', shortDesc: 'English service', desc: 'English' },
+    { code: 'mandarin', shortDesc: 'Mandarin service', desc: 'Mandarin' },
 ];
 
 const getServiceDesc = (code) => {
@@ -73,9 +79,9 @@ export default function DefaultServiceMenu() {
         setAnchorEl(event.currentTarget);
     };
     
-    const handleServiceSelect = (serviceCode) => {
+    const handleServiceSelect = (event) => {
+        const serviceCode = event.target.value;
         setDefaultService(serviceCode);
-        setAnchorEl(null);
 
         Cookies.set(SERVICE_COOKIE_KEY, serviceCode, { expires: COOKIE_EXPIRATION_DAYS });
     };
@@ -111,9 +117,17 @@ export default function DefaultServiceMenu() {
             }}
             open={open}
             onClose={handleClose}>
-            {services.map((service, index) => (
-                <MenuItem key={index} selected={defaultService===service.code} onClick={() => handleServiceSelect(service.code)}>{service.desc}</MenuItem>
-            ))}
+
+            <MenuItem disableFocusRipple disableRipple>
+            <FormControl component="fieldset">
+            <FormLabel component="legend">Worship service I attend:</FormLabel>
+            <RadioGroup row aria-label="default service" name="defaultService" value={defaultService} onChange={handleServiceSelect}>
+                {services.map((service, index) => (
+                    <FormControlLabel value={service.code} control={<Radio />} label={service.desc} />
+                ))}
+            </RadioGroup>
+            </FormControl>
+            </MenuItem>
         </Menu>
         </div>
     );
