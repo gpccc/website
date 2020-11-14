@@ -32,37 +32,41 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
+const CANTONESE_SERVICE = 'Cantonese';
+const ENGLISH_SERVICE = 'English';
+const MANDARIN_SERVICE = 'Mandarin';
+
 const services = [
-    { code: 'cantonese', shortDesc: 'Cantonese service', desc: 'Cantonese' },
-    { code: 'english', shortDesc: 'English service', desc: 'English' },
-    { code: 'mandarin', shortDesc: 'Mandarin service', desc: 'Mandarin' },
+    { name: CANTONESE_SERVICE, desc: 'Cantonese service' },
+    { name: ENGLISH_SERVICE, desc: 'English service' },
+    { name: MANDARIN_SERVICE, desc: 'Mandarin service' },
 ];
 
-const getServiceDesc = (code) => {
-    let service = services.find(l => l.code === code);
+const getServiceDesc = (serviceName) => {
+    let service = services.find(l => l.name === serviceName);
     if (service) {
-        return service.shortDesc;
+        return service.desc;
     }
 
-    service = services.find(l => l.code === 'english');
+    service = services.find(l => l.code === ENGLISH_SERVICE);
     if (service) {
-        return service.shortDesc;
+        return service.desc;
     }
 
     service = services[0];
-    return service.shortDesc;
+    return service.desc;
 };
 
 const guessServiceFromLanguage = (langCode) => {
     if (langCode === 'zf') {
-        return 'mandarin';
+        return MANDARIN_SERVICE;
     }
 
     if (langCode === 'zh') {
-        return 'cantonese';
+        return CANTONESE_SERVICE;
     }
 
-    return 'english';
+    return ENGLISH_SERVICE;
 }
 
 const getDefaultServiceCode = () => Cookies.get(SERVICE_COOKIE_KEY) || guessServiceFromLanguage(i18n.language);
@@ -123,7 +127,7 @@ export default function DefaultServiceMenu() {
             <FormLabel component="legend">Worship service I attend:</FormLabel>
             <RadioGroup row aria-label="default service" name="defaultService" value={defaultService} onChange={handleServiceSelect}>
                 {services.map((service, index) => (
-                    <FormControlLabel value={service.code} control={<Radio />} label={service.desc} />
+                    <FormControlLabel value={service.name} control={<Radio />} label={service.name} />
                 ))}
             </RadioGroup>
             </FormControl>
