@@ -122,12 +122,12 @@ export default function DefaultServiceMenu() {
             open={open}
             onClose={handleClose}>
 
-            <MenuItem disableFocusRipple disableRipple>
+            <MenuItem disableRipple>
             <FormControl component="fieldset">
             <FormLabel component="legend">Worship service I attend:</FormLabel>
             <RadioGroup row aria-label="default service" name="defaultService" value={defaultService} onChange={handleServiceSelect}>
-                {services.map((service, index) => (
-                    <FormControlLabel value={service.name} control={<Radio />} label={service.name} />
+                {services.map((service) => (
+                    <FormControlLabel key={service.name} value={service.name} control={<Radio />} label={service.name} />
                 ))}
             </RadioGroup>
             </FormControl>
