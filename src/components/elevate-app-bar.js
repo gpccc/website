@@ -12,7 +12,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { useTranslation } from 'react-i18next';
 
 import LanguageMenu from './language-menu';
-import DefaultServiceMenu from './default-service-menu';
+import AppBarMenu from './app-bar-menu';
 
 const useStyles = makeStyles((theme) => ({
     title: {
@@ -61,7 +61,7 @@ export default function ElevateAppBar(props) {
                     <Typography variant="h6" className={`${classes.title} ${classes.sectionDesktop}`} noWrap>{t("GP full name")}</Typography>
                     <Typography variant="h6" className={`${classes.title} ${classes.sectionMobile}`} noWrap>{t("GP short name")}</Typography>
                     <LanguageMenu />
-                    <DefaultServiceMenu />
+                    <AppBarMenu />
                 </Toolbar>
             </AppBar>
         </ElevationScroll>

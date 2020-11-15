@@ -7,7 +7,7 @@ import Menu from '@material-ui/core/Menu';
 
 import DefaultServiceMenuItem from './default-service-menu-item';
 
-export default function DefaultServiceMenu() {
+export default function AppBarMenu() {
     const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);
 
@@ -22,8 +22,8 @@ export default function DefaultServiceMenu() {
     return (
         <div>
         <Button
-            aria-label="Change default worship service"
-            aria-controls="default-service-menu"
+            aria-label="main menu"
+            aria-controls="app-bar-menu"
             aria-haspopup="true"
             color="inherit"
             variant="text"
@@ -31,7 +31,7 @@ export default function DefaultServiceMenu() {
             <MenuIcon />
         </Button>
         <Menu
-            id="default-service-menu"
+            id="app-bar-menu"
             anchorEl={anchorEl}
             getContentAnchorEl={null}
             anchorOrigin={{
