@@ -94,12 +94,12 @@ export default function LanguageMenu() {
             anchorEl={anchorEl}
             anchorOrigin={{
                 vertical: 'top',
-                horizontal: 'right',
+                horizontal: 'center',
             }}
             keepMounted
             transformOrigin={{
                 vertical: 'top',
-                horizontal: 'right',
+                horizontal: 'center',
             }}
             open={open}
             onClose={handleClose}>
