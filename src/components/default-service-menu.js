@@ -46,7 +46,9 @@ export default function DefaultServiceMenu() {
             open={open}
             onClose={handleClose}>
 
+            <div>
             <DefaultServiceMenuItem />
+            </div>
         </Menu>
         </div>
     );
