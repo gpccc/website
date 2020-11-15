@@ -7,15 +7,10 @@ import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
 
 import Button from '@material-ui/core/Button';
-import HomeIcon from '@material-ui/icons/Home';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import Box from '@material-ui/core/Box';
-import Typography from '@material-ui/core/Typography';
+import MenuIcon from '@material-ui/icons/Menu';
 
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
-
-import { makeStyles } from '@material-ui/core/styles';
 
 import i18n from '../i18n';
 
@@ -23,39 +18,15 @@ import Cookies from 'js-cookie';
 
 import { SERVICE_COOKIE_KEY, COOKIE_EXPIRATION_DAYS } from '../constants/service-constants';
 
-const useStyles = makeStyles((theme) => ({
-    sectionPhone: {
-        display: 'none',
-        [theme.breakpoints.up('sm')]: {
-            display: 'flex',
-        },
-    },
-}));
-
 const CANTONESE_SERVICE = 'Cantonese';
 const ENGLISH_SERVICE = 'English';
 const MANDARIN_SERVICE = 'Mandarin';
 
 const services = [
-    { name: CANTONESE_SERVICE, desc: 'Cantonese service' },
-    { name: ENGLISH_SERVICE, desc: 'English service' },
-    { name: MANDARIN_SERVICE, desc: 'Mandarin service' },
+    CANTONESE_SERVICE,
+    ENGLISH_SERVICE,
+    MANDARIN_SERVICE,
 ];
-
-const getServiceDesc = (serviceName) => {
-    let service = services.find(l => l.name === serviceName);
-    if (service) {
-        return service.desc;
-    }
-
-    service = services.find(l => l.code === ENGLISH_SERVICE);
-    if (service) {
-        return service.desc;
-    }
-
-    service = services[0];
-    return service.desc;
-};
 
 const guessServiceFromLanguage = (langCode) => {
     if (langCode === 'zf') {
@@ -72,8 +43,6 @@ const guessServiceFromLanguage = (langCode) => {
 const getDefaultServiceCode = () => Cookies.get(SERVICE_COOKIE_KEY) || guessServiceFromLanguage(i18n.language);
 
 export default function DefaultServiceMenu() {
-    const classes = useStyles();
-
     const [defaultService, setDefaultService] = React.useState(getDefaultServiceCode());
 
     const [anchorEl, setAnchorEl] = React.useState(null);
@@ -103,9 +72,7 @@ export default function DefaultServiceMenu() {
             color="inherit"
             variant="text"
             onClick={handleOpen}>
-            <HomeIcon />
-            <Box ml={1} mr={0.5} className={classes.sectionPhone}><Typography noWrap>{getServiceDesc(defaultService)}</Typography></Box>
-            <ExpandMoreIcon />
+            <MenuIcon />
         </Button>
         <Menu
             id="default-service-menu"
@@ -128,7 +95,7 @@ export default function DefaultServiceMenu() {
             <FormLabel component="legend">Worship service I attend:</FormLabel>
             <RadioGroup row aria-label="default service" name="defaultService" value={defaultService} onChange={handleServiceSelect}>
                 {services.map((service) => (
-                    <FormControlLabel key={service.name} value={service.name} control={<Radio />} label={service.name} />
+                    <FormControlLabel key={service} value={service} control={<Radio />} label={service} />
                 ))}
             </RadioGroup>
             </FormControl>
