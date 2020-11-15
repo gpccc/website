@@ -110,8 +110,9 @@ export default function DefaultServiceMenu() {
         <Menu
             id="default-service-menu"
             anchorEl={anchorEl}
+            getContentAnchorEl={null}
             anchorOrigin={{
-                vertical: 'top',
+                vertical: 'bottom',
                 horizontal: 'right',
             }}
             keepMounted
