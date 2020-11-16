@@ -6,7 +6,7 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
 
-import ListItem from '@material-ui/core/ListItem';
+import MenuItem from '@material-ui/core/MenuItem';
 
 import i18n from '../i18n';
 
@@ -49,7 +49,7 @@ export default function DefaultServiceMenuItem() {
     };
 
     return (
-        <ListItem>
+        <MenuItem disableRipple>
             <FormControl component="fieldset">
             <FormLabel component="legend">Worship service I attend:</FormLabel>
             <RadioGroup row aria-label="default service" name="defaultService" value={defaultService} onChange={handleServiceSelect}>
@@ -58,6 +58,6 @@ export default function DefaultServiceMenuItem() {
                 ))}
             </RadioGroup>
             </FormControl>
-        </ListItem>
+        </MenuItem>
     );
 }

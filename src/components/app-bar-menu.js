@@ -3,55 +3,53 @@ import React from 'react';
 import Button from '@material-ui/core/Button';
 import MenuIcon from '@material-ui/icons/Menu';
 
-import Drawer from '@material-ui/core/Drawer';
-import Divider from '@material-ui/core/Divider';
-import List from '@material-ui/core/List';
+import Menu from '@material-ui/core/Menu';
 
 import DefaultServiceMenuItem from './default-service-menu-item';
 
 export default function AppBarMenu() {
-    const [openState, setOpenState] = React.useState(false);
+    const [anchorEl, setAnchorEl] = React.useState(null);
+    const open = Boolean(anchorEl);
 
-    const toggleDrawer = (open) => (event) => {
-        if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
-            return;
-        }
+    const handleOpen = (event) => {
+        setAnchorEl(event.currentTarget);
+    };
     
-        setOpenState(open);
+    const handleClose = () => {
+        setAnchorEl(null);
     };
 
-    const list = () => (
-        <div
-            role="presentation"
-            onClick={toggleDrawer(false)}
-            onKeyDown={toggleDrawer(false)}
-        >
-            <List>
-            <DefaultServiceMenuItem />
-            </List>
-
-            <Divider />
-        </div>
-    );
-
     return (
-        <React.Fragment>
+        <div>
         <Button
             aria-label="main menu"
             aria-controls="app-bar-menu"
             aria-haspopup="true"
             color="inherit"
             variant="text"
-            onClick={toggleDrawer(true)}>
+            onClick={handleOpen}>
             <MenuIcon />
         </Button>
-        <Drawer
+        <Menu
             id="app-bar-menu"
-            anchor="left"
-            open={openState}
-            onClose={toggleDrawer(false)}>
-            {list()}
-        </Drawer>
-        </React.Fragment>
+            anchorEl={anchorEl}
+            getContentAnchorEl={null}
+            anchorOrigin={{
+                vertical: 'bottom',
+                horizontal: 'right',
+            }}
+            keepMounted
+            transformOrigin={{
+                vertical: 'top',
+                horizontal: 'right',
+            }}
+            open={open}
+            onClose={handleClose}>
+
+            <div>
+            <DefaultServiceMenuItem />
+            </div>
+        </Menu>
+        </div>
     );
 }
