@@ -14,14 +14,14 @@ import Cookies from 'js-cookie';
 
 import { SERVICE_COOKIE_KEY, COOKIE_EXPIRATION_DAYS } from '../constants/service-constants';
 
+const MANDARIN_SERVICE = 'Mandarin';
 const CANTONESE_SERVICE = 'Cantonese';
 const ENGLISH_SERVICE = 'English';
-const MANDARIN_SERVICE = 'Mandarin';
 
 const services = [
+    MANDARIN_SERVICE,
     CANTONESE_SERVICE,
     ENGLISH_SERVICE,
-    MANDARIN_SERVICE,
 ];
 
 const guessServiceFromLanguage = (langCode) => {
