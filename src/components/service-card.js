@@ -110,9 +110,9 @@ export default function ServiceCard({showSnackbar}) {
 
         return (
             <Tabs value={activeTabValue} onChange={handleChange} variant="fullWidth" aria-label="Worship services">
+            <Tab className={classes.tab} label={t("Mandarin service")  + (isPlayingMandarinVideo ? " ▶" : "")} value="mandarin" id="mandarin-tab" aria-controls="mandarin-tabpanel" />
             <Tab className={classes.tab} label={t("Cantonese service") + (isPlayingCantoneseVideo ? " ▶" : "")} value="cantonese" id="cantonese-tab" aria-controls="cantonese-tabpanel" />
             <Tab className={classes.tab} label={t("English service") + (isPlayingEnglishVideo ? " ▶" : "")} value="english" id="english-tab" aria-controls="english-tabpanel" />
-            <Tab className={classes.tab} label={t("Mandarin service")  + (isPlayingMandarinVideo ? " ▶" : "")} value="mandarin" id="mandarin-tab" aria-controls="mandarin-tabpanel" />
             </Tabs>
         );
     };
