@@ -10,6 +10,8 @@ import MenuItem from '@material-ui/core/MenuItem';
 
 import i18n from '../i18n';
 
+import { useTranslation } from 'react-i18next';
+
 import Cookies from 'js-cookie';
 
 import { LANG_COOKIE_KEY, COOKIE_EXPIRATION_DAYS } from '../constants/service-constants';
@@ -22,6 +24,7 @@ const languages = [
 
 export default function PreferredLanguageMenuItem() {
     const [preferredLanguage, setPreferredLanguage] = React.useState(i18n.language);
+    const { t } = useTranslation();
 
     const handleLanguageSelect = (event) => {
         const lngCode = event.target.value;
@@ -33,6 +36,8 @@ export default function PreferredLanguageMenuItem() {
     React.useEffect(
         () => {
             i18n.changeLanguage(preferredLanguage);
+
+            document.title = t('GP full name');
         }, [preferredLanguage]
     );
 
