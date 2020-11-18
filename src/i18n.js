@@ -8,21 +8,6 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 
 import { LANG_COOKIE_KEY, COOKIE_EXPIRATION_DAYS } from './constants/service-constants';
 
-let lngCode = Cookies.get(LANG_COOKIE_KEY);
-if (typeof lngCode === 'undefined') {
-    lngCode = 'en';
-}
-
-// Chrome
-// Chinese - zh
-// Chinese (HK SAR China) - zh-HK
-// Chinese (Simplified) - zh-CN
-// Chinese (Traditional) - zh-TW
-
-// Safari
-// Chinese (Simplified) - zh-cn
-// Chinese (Traditional) - zh-tw
-
 const detectionOptions = {
     // ?lng=LANGUAGE
     // cookie i18next=LANGUAGE
@@ -575,7 +560,6 @@ i18n
             }
             },
         },
-        // lng: lngCode, // remove to use detection
         detection: detectionOptions,
         fallbackLng: 'en',
         debug: true,
