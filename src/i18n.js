@@ -4,7 +4,7 @@ import { initReactI18next } from 'react-i18next';
 import Cookies from 'js-cookie';
 
 // import Backend from 'i18next-http-backend';
-// import LanguageDetector from 'i18next-browser-languagedetector';
+import LanguageDetector from 'i18next-browser-languagedetector';
 
 import { LANG_COOKIE_KEY } from './constants/service-constants';
 
@@ -13,13 +13,30 @@ if (typeof lngCode === 'undefined') {
     lngCode = 'en';
 }
 
+// Chrome
+// Chinese - zh
+// Chinese (HK SAR China) - zh-HK
+// Chinese (Simplified) - zh-CN
+// Chinese (Traditional) - zh-TW
+
+// Safari
+// Chinese (Simplified) - zh-cn
+// Chinese (Traditional) - zh-tw
+
+const detectionOptions = {
+    // ?lng=LANGUAGE
+    // cookie i18next=LANGUAGE
+    // navigator.language
+    order: ['querystring', 'cookie', 'navigator'],
+}
+
 i18n
     // load translation using http -> see /public/locales (i.e. https://github.com/i18next/react-i18next/tree/master/example/react/public/locales)
     // learn more: https://github.com/i18next/i18next-http-backend
     // .use(Backend)
     // detect user language
     // learn more: https://github.com/i18next/i18next-browser-languageDetector
-    // .use(LanguageDetector)
+    .use(LanguageDetector)
     // pass the i18n instance to react-i18next.
     .use(initReactI18next)
     // init i18next
@@ -558,7 +575,8 @@ i18n
             }
             },
         },
-        lng: lngCode,
+        // lng: lngCode, // remove to use detection
+        detection: detectionOptions,
         fallbackLng: 'en',
         debug: true,
         keySeparator: false,
