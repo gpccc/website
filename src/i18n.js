@@ -6,7 +6,7 @@ import Cookies from 'js-cookie';
 // import Backend from 'i18next-http-backend';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
-import { LANG_COOKIE_KEY } from './constants/service-constants';
+import { LANG_COOKIE_KEY, COOKIE_EXPIRATION_DAYS } from './constants/service-constants';
 
 let lngCode = Cookies.get(LANG_COOKIE_KEY);
 if (typeof lngCode === 'undefined') {
@@ -596,5 +596,6 @@ if (lng === 'zh-CN') {
     lng = 'en';
 }
 i18n.changeLanguage(lng);
+Cookies.set(LANG_COOKIE_KEY, lng, { expires: COOKIE_EXPIRATION_DAYS });
 
 export default i18n;
