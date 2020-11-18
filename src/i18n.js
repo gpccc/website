@@ -588,7 +588,7 @@ i18n
     });
 
 let lng = i18n.language;
-if (lng === 'zh-CN') {
+if (lng === 'zf' || lng === 'zh-CN') {
     lng = 'zf';
 } else if (lng === 'zh' || lng.startsWith('zh-')) {
     lng = 'zh';
