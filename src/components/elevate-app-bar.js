@@ -11,7 +11,6 @@ import { makeStyles } from '@material-ui/core/styles';
 
 import { useTranslation } from 'react-i18next';
 
-import LanguageMenu from './language-menu';
 import AppBarMenu from './app-bar-menu';
 
 const useStyles = makeStyles((theme) => ({
@@ -60,7 +59,6 @@ export default function ElevateAppBar(props) {
                 <Toolbar variant="dense">
                     <Typography variant="h6" className={`${classes.title} ${classes.sectionDesktop}`} noWrap>{t("GP full name")}</Typography>
                     <Typography variant="h6" className={`${classes.title} ${classes.sectionMobile}`} noWrap>{t("GP short name")}</Typography>
-                    <LanguageMenu />
                     <AppBarMenu />
                 </Toolbar>
             </AppBar>
