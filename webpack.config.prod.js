@@ -139,10 +139,11 @@ export default {
           }, {
             loader: 'postcss-loader',
             options: {
-              plugins: () => [
-                require('cssnano'),
-                require('autoprefixer'),
-              ],
+              postcssOptions: {
+                plugins: [
+                  [ 'autoprefixer' ],
+                ],
+              },
               sourceMap: true
             }
           }, {
