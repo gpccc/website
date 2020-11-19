@@ -111,7 +111,7 @@ export default {
             options: {
               postcssOptions: {
                 plugins: [
-                  [ 'autoprefixer' ],
+                  [ 'autoprefixer' ], // can't upgrade to autoprefixer 10.0.x because of https://github.com/vercel/next.js/issues/17236
                 ],
               },
               sourceMap: true
