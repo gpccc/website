@@ -4,6 +4,22 @@ import path from 'path';
 import HardSourceWebpackPlugin from 'hard-source-webpack-plugin';
 
 export default {
+  devServer: {
+    // These settings suppress noisy webpack output so only errors are displayed to the console.
+    noInfo: true,
+    quiet: false,
+    stats: {
+      assets: false,
+      colors: true,
+      version: false,
+      hash: false,
+      timings: false,
+      chunks: false,
+      chunkModules: false
+    },
+    // for other settings see
+    // https://webpack.js.org/guides/development/#using-webpack-dev-middleware
+  },
   resolve: {
     extensions: ['*', '.js', '.jsx', '.json'],
     // To support react-hot-loader
