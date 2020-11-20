@@ -51,7 +51,7 @@ export default function DefaultServiceMenuItem() {
     return (
         <MenuItem disableRipple>
             <FormControl component="fieldset">
-            <FormLabel component="legend">Worship service I attend:</FormLabel>
+            <FormLabel component="legend">Preferred worship service:</FormLabel>
             <RadioGroup row aria-label="default service" name="defaultService" value={defaultService} onChange={handleServiceSelect}>
                 {services.map((service) => (
                     <FormControlLabel key={service} value={service} control={<Radio />} label={service} />
