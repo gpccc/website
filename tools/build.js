@@ -17,8 +17,10 @@ webpack(config).run((error, stats) => {
 
   const jsonStats = stats.toJson();
 
-  if (stats.hasErrors && jsonStats.errors.length > 0) {
-    return jsonStats.errors.map(error => console.log(chalkError(error)));
+  if (stats.hasErrors && jsonStats.errorsCount > 0) {
+    console.log(chalkError('Webpack generated the following errors:'));
+    console.log(`${stats}`);
+    return 1;
   }
 
   if (stats.hasWarnings && jsonStats.warningsCount > 0) {
