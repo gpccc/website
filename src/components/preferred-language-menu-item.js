@@ -44,7 +44,7 @@ export default function PreferredLanguageMenuItem() {
     return (
         <MenuItem disableRipple>
             <FormControl component="fieldset">
-            <FormLabel component="legend">Preferred language:</FormLabel>
+            <FormLabel component="legend">{t("Preferred language")}:</FormLabel>
             <RadioGroup row aria-label="preferred language" name="preferredLanguage" value={preferredLanguage} onChange={handleLanguageSelect}>
                 {languages.map((language) => (
                     <FormControlLabel key={language.code} value={language.code} control={<Radio />} label={language.desc} />
