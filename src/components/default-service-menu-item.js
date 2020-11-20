@@ -9,6 +9,7 @@ import FormLabel from '@material-ui/core/FormLabel';
 import MenuItem from '@material-ui/core/MenuItem';
 
 import i18n from '../i18n';
+import { useTranslation } from 'react-i18next';
 
 import Cookies from 'js-cookie';
 
@@ -39,6 +40,8 @@ const guessServiceFromLanguage = (langCode) => {
 const getDefaultServiceCode = () => Cookies.get(SERVICE_COOKIE_KEY) || guessServiceFromLanguage(i18n.language);
 
 export default function DefaultServiceMenuItem() {
+    const { t } = useTranslation();
+
     const [defaultService, setDefaultService] = React.useState(getDefaultServiceCode());
 
     const handleServiceSelect = (event) => {
@@ -51,10 +54,10 @@ export default function DefaultServiceMenuItem() {
     return (
         <MenuItem disableRipple>
             <FormControl component="fieldset">
-            <FormLabel component="legend">Preferred worship service:</FormLabel>
+            <FormLabel component="legend">{t("Preferred worship service")}:</FormLabel>
             <RadioGroup row aria-label="default service" name="defaultService" value={defaultService} onChange={handleServiceSelect}>
                 {services.map((service) => (
-                    <FormControlLabel key={service} value={service} control={<Radio />} label={service} />
+                    <FormControlLabel key={service} value={service} control={<Radio />} label={t(service)} />
                 ))}
             </RadioGroup>
             </FormControl>
