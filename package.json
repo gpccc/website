@@ -78,7 +78,6 @@
     "eslint-plugin-react": "7.21.5",
     "eslint-watch": "7.0.0",
     "file-loader": "6.2.0",
-    "hard-source-webpack-plugin": "0.13.1",
     "history": "5.0.0",
     "html-webpack-plugin": "5.0.0-alpha.14",
     "identity-obj-proxy": "3.0.0",
