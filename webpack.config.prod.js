@@ -18,7 +18,8 @@ export default {
       'react-dom': '@hot-loader/react-dom'
     }
   },
-  devtool: 'source-map', // more info:https://webpack.js.org/guides/production/#source-mapping and https://webpack.js.org/configuration/devtool/
+  // don't generate source maps
+  // devtool: 'source-map', // more info:https://webpack.js.org/guides/production/#source-mapping and https://webpack.js.org/configuration/devtool/
   entry: path.resolve(__dirname, 'src/index'),
   target: 'web',
   mode: 'production',
