@@ -63,6 +63,11 @@ export default {
   module: {
     rules: [
       {
+        // Needed so production can be built: https://github.com/webpack/webpack/issues/11467
+        test: /\.m?js/,
+        resolve: { fullySpecified: false }
+      },
+      {
         test: /\.jsx?$/,
         exclude: /node_modules/,
         use: ['babel-loader']
