@@ -48,6 +48,11 @@ i18n
                 'Benediction': 'Benediction',
                 'Happy birthday, Pastor Larry': 'Happy birthday, Pastor Larry',
 
+                'Preferred worship service': 'Preferred worship service',
+                'Cantonese': 'Cantonese',
+                'English': 'English',
+                'Mandarin': 'Mandarin',
+
                 'Rev. Jerry Lin': 'Rev. Jerry Lin',
                 'Rev. Larry Lee': 'Rev. Larry Lee',
                 'Rev. Steven Chin': 'Rev. Steven Chin',
@@ -225,6 +230,11 @@ i18n
                 'Benediction': '祝禱',
                 'Happy birthday, Pastor Larry': '李長橋牧師，生日快樂',
 
+                'Preferred worship service': '首選禮拜服務',
+                'Cantonese': '粵語',
+                'English': '英語',
+                'Mandarin': '華語',
+
                 'Rev. Jerry Lin': '林聖智牧師',
                 'Rev. Larry Lee': '李長橋牧師',
                 'Rev. Steven Chin': '陳卓明牧師',
@@ -401,6 +411,11 @@ i18n
                 'Announcements': '报告',
                 'Benediction': '祝祷',
                 'Happy birthday, Pastor Larry': '李長橋牧师，生日快乐',
+
+                'Preferred worship service': '首选礼拜服务',
+                'Cantonese': '粤语',
+                'English': '英语',
+                'Mandarin': '华语',
 
                 'Rev. Jerry Lin': '林圣智牧师',
                 'Rev. Larry Lee': '李长桥牧师',
