@@ -21,6 +21,8 @@ import cantoneseServices from '../constants/cantonese-services';
 import englishServices from '../constants/english-services';
 import mandarinServices from '../constants/mandarin-services';
 
+import PreferredServiceEnum from '../constants/preferred-service-enum';
+
 const useStyles = makeStyles(theme => ({
     root: {
         maxWidth: 640 + SERVICE_CARD_MAX_WIDTH - SERVICE_CARD_MAX_WIDTH, // SERVICE_CARD_MAX_WIDTH,
@@ -84,7 +86,7 @@ export default function ServiceCard({showSnackbar, preferredWorshipService}) {
 
     const [youTubeIframeAPIReady, setYouTubeIframeAPIReady] = React.useState(false);
 
-    const [activeTabValue, setActiveTabValue] = React.useState(preferredWorshipService.toLowerCase());
+    const [activeTabValue, setActiveTabValue] = React.useState(preferredWorshipService);
     const [isPlayingCantoneseVideo, setPlayingCantoneseVideo] = React.useState(false);
     const [isPlayingEnglishVideo, setPlayingEnglishVideo] = React.useState(false);
     const [isPlayingMandarinVideo, setPlayingMandarinVideo] = React.useState(false);
@@ -95,18 +97,18 @@ export default function ServiceCard({showSnackbar, preferredWorshipService}) {
     
     React.useEffect(
         () => {
-            setActiveTabValue(preferredWorshipService.toLowerCase());
+            setActiveTabValue(preferredWorshipService);
         }, [preferredWorshipService]
     );
 
     const handlePlayPauseChange = (service, isPlaying) => {
-        if (service === "cantonese") {
+        if (service === PreferredServiceEnum.CANTONESE) {
             setPlayingCantoneseVideo(isPlaying);
         }
-        else if (service === "english") {
+        else if (service === PreferredServiceEnum.ENGLISH) {
             setPlayingEnglishVideo(isPlaying);
         }
-        else if (service === "mandarin") {
+        else if (service === PreferredServiceEnum.MANDARIN) {
             setPlayingMandarinVideo(isPlaying);
         }
     };
@@ -116,9 +118,9 @@ export default function ServiceCard({showSnackbar, preferredWorshipService}) {
 
         return (
             <Tabs value={activeTabValue} onChange={handleChange} variant="fullWidth" aria-label="Worship services">
-            <Tab className={classes.tab} label={t("Mandarin service")  + (isPlayingMandarinVideo ? " ▶" : "")} value="mandarin" id="mandarin-tab" aria-controls="mandarin-tabpanel" />
-            <Tab className={classes.tab} label={t("Cantonese service") + (isPlayingCantoneseVideo ? " ▶" : "")} value="cantonese" id="cantonese-tab" aria-controls="cantonese-tabpanel" />
-            <Tab className={classes.tab} label={t("English service") + (isPlayingEnglishVideo ? " ▶" : "")} value="english" id="english-tab" aria-controls="english-tabpanel" />
+            <Tab className={classes.tab} label={t("Mandarin service")  + (isPlayingMandarinVideo ? " ▶" : "")} value={PreferredServiceEnum.MANDARIN} id="Mandarin-tab" aria-controls="Mandarin-tabpanel" />
+            <Tab className={classes.tab} label={t("Cantonese service") + (isPlayingCantoneseVideo ? " ▶" : "")} value={PreferredServiceEnum.CANTONESE} id="Cantonese-tab" aria-controls="Cantonese-tabpanel" />
+            <Tab className={classes.tab} label={t("English service") + (isPlayingEnglishVideo ? " ▶" : "")} value={PreferredServiceEnum.ENGLISH} id="English-tab" aria-controls="English-tabpanel" />l
             </Tabs>
         );
     };
@@ -145,9 +147,9 @@ export default function ServiceCard({showSnackbar, preferredWorshipService}) {
         {({width, targetRef}) =>
         <Card className={classes.root} ref={targetRef}>
             <CardHeader component={tabs} />
-            <TabPanel activeTabValue={activeTabValue} tabValue="cantonese" services={cantoneseServices} showSnackbar={showSnackbar} youTubeIframeAPIReady={youTubeIframeAPIReady} onPlayPause={handlePlayPauseChange} cardWidth={width} />
-            <TabPanel activeTabValue={activeTabValue} tabValue="english" services={englishServices} showSnackbar={showSnackbar} youTubeIframeAPIReady={youTubeIframeAPIReady} onPlayPause={handlePlayPauseChange} cardWidth={width} />
-            <TabPanel activeTabValue={activeTabValue} tabValue="mandarin" services={mandarinServices} showSnackbar={showSnackbar} youTubeIframeAPIReady={youTubeIframeAPIReady} onPlayPause={handlePlayPauseChange} cardWidth={width} />
+            <TabPanel activeTabValue={activeTabValue} tabValue={PreferredServiceEnum.CANTONESE} services={cantoneseServices} showSnackbar={showSnackbar} youTubeIframeAPIReady={youTubeIframeAPIReady} onPlayPause={handlePlayPauseChange} cardWidth={width} />
+            <TabPanel activeTabValue={activeTabValue} tabValue={PreferredServiceEnum.ENGLISH} services={englishServices} showSnackbar={showSnackbar} youTubeIframeAPIReady={youTubeIframeAPIReady} onPlayPause={handlePlayPauseChange} cardWidth={width} />
+            <TabPanel activeTabValue={activeTabValue} tabValue={PreferredServiceEnum.MANDARIN} services={mandarinServices} showSnackbar={showSnackbar} youTubeIframeAPIReady={youTubeIframeAPIReady} onPlayPause={handlePlayPauseChange} cardWidth={width} />
         </Card>}
         </ReactResizeDetector>
     );
