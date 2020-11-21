@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
@@ -8,7 +9,6 @@ import FormLabel from '@material-ui/core/FormLabel';
 
 import MenuItem from '@material-ui/core/MenuItem';
 
-import i18n from '../i18n';
 import { useTranslation } from 'react-i18next';
 
 import Cookies from 'js-cookie';
@@ -25,29 +25,12 @@ const services = [
     ENGLISH_SERVICE,
 ];
 
-const guessServiceFromLanguage = (langCode) => {
-    if (langCode === 'zf') {
-        return MANDARIN_SERVICE;
-    }
-
-    if (langCode === 'zh') {
-        return CANTONESE_SERVICE;
-    }
-
-    return ENGLISH_SERVICE;
-};
-
-const getDefaultServiceCode = () => Cookies.get(SERVICE_COOKIE_KEY) || guessServiceFromLanguage(i18n.language);
-
-export default function DefaultServiceMenuItem() {
+export default function DefaultServiceMenuItem({preferredWorshipService, setPreferredWorshipService}) {
     const { t } = useTranslation();
-
-    const [defaultService, setDefaultService] = React.useState(getDefaultServiceCode());
 
     const handleServiceSelect = (event) => {
         const serviceCode = event.target.value;
-        setDefaultService(serviceCode);
-
+        setPreferredWorshipService(serviceCode);
         Cookies.set(SERVICE_COOKIE_KEY, serviceCode, { expires: COOKIE_EXPIRATION_DAYS });
     };
 
@@ -55,7 +38,7 @@ export default function DefaultServiceMenuItem() {
         <MenuItem disableRipple>
             <FormControl component="fieldset">
             <FormLabel component="legend">{t("Preferred worship service")}:</FormLabel>
-            <RadioGroup row aria-label="default service" name="defaultService" value={defaultService} onChange={handleServiceSelect}>
+            <RadioGroup row aria-label="default service" name="defaultService" value={preferredWorshipService} onChange={handleServiceSelect}>
                 {services.map((service) => (
                     <FormControlLabel key={service} value={service} control={<Radio />} label={t(service)} />
                 ))}
@@ -64,3 +47,8 @@ export default function DefaultServiceMenuItem() {
         </MenuItem>
     );
 }
+
+DefaultServiceMenuItem.propTypes = {
+    preferredWorshipService: PropTypes.string.isRequired,
+    setPreferredWorshipService: PropTypes.func.isRequired,
+};

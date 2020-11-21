@@ -5,7 +5,7 @@ import SettingsIcon from '@material-ui/icons/Settings';
 
 import Menu from '@material-ui/core/Menu';
 
-import DefaultServiceMenuItem from './default-service-menu-item';
+import DefaultServiceMenuItemContainer from './default-service-menu-item-container';
 import PreferredLanguageMenuItem from './preferred-language-menu-item';
 
 export default function AppBarMenu() {
@@ -49,7 +49,7 @@ export default function AppBarMenu() {
 
             <div>
             <PreferredLanguageMenuItem />
-            <DefaultServiceMenuItem />
+            <DefaultServiceMenuItemContainer />
             </div>
         </Menu>
         </div>
