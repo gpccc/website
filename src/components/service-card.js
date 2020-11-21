@@ -79,12 +79,12 @@ function isServiceCombinedWithMandarin(youtubeVideoID) {
     return mandarinServices.some((service) => service.youtubeVideoID === youtubeVideoID);
 }
 
-export default function ServiceCard({showSnackbar}) {
+export default function ServiceCard({showSnackbar, preferredWorshipService}) {
     const classes = useStyles();
 
     const [youTubeIframeAPIReady, setYouTubeIframeAPIReady] = React.useState(false);
 
-    const [activeTabValue, setActiveTabValue] = React.useState("english");
+    const [activeTabValue, setActiveTabValue] = React.useState(preferredWorshipService.toLowerCase());
     const [isPlayingCantoneseVideo, setPlayingCantoneseVideo] = React.useState(false);
     const [isPlayingEnglishVideo, setPlayingEnglishVideo] = React.useState(false);
     const [isPlayingMandarinVideo, setPlayingMandarinVideo] = React.useState(false);
@@ -93,6 +93,12 @@ export default function ServiceCard({showSnackbar}) {
         setActiveTabValue(newValue);
     };
     
+    React.useEffect(
+        () => {
+            setActiveTabValue(preferredWorshipService.toLowerCase());
+        }, [preferredWorshipService]
+    );
+
     const handlePlayPauseChange = (service, isPlaying) => {
         if (service === "cantonese") {
             setPlayingCantoneseVideo(isPlaying);
@@ -168,4 +174,5 @@ TabPanel.propTypes = {
 
 ServiceCard.propTypes = {
     showSnackbar: PropTypes.func.isRequired,
+    preferredWorshipService: PropTypes.string.isRequired,
 };

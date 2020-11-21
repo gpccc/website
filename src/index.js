@@ -10,7 +10,7 @@ import './styles/site.css';
 
 import ElevateAppBar from './components/elevate-app-bar.js';
 import AppSnackbar from './components/app-snack-bar';
-import ServiceCard from './components/service-card';
+import ServiceCardContainer from './components/service-card-container';
 
 const initialState = {};
 const store = configureStore(initialState);
@@ -23,7 +23,7 @@ function App() {
         <React.StrictMode>
         <Provider store={store}>
         <ElevateAppBar>
-            <ServiceCard showSnackbar={showSnackbar} />
+            <ServiceCardContainer showSnackbar={showSnackbar} />
             {snackbarData && <AppSnackbar msg={snackbarData.msg} key={snackbarData.date} />}
         </ElevateAppBar>
         </Provider>
