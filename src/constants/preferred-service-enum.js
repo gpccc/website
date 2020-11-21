@@ -1,7 +1,7 @@
-const PreferredServiceType = {
+const PreferredServiceEnum = {
     MANDARIN: 'Mandarin',
     CANTONESE: 'Cantonese',
     ENGLISH: 'English',
 };
 
-export default PreferredServiceType;
+export default PreferredServiceEnum;

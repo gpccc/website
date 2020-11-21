@@ -15,12 +15,12 @@ import Cookies from 'js-cookie';
 
 import { SERVICE_COOKIE_KEY, COOKIE_EXPIRATION_DAYS } from '../constants/service-constants';
 
-import PreferredServiceType from '../constants/preferred-service-type';
+import PreferredServiceEnum from '../constants/preferred-service-enum';
 
 const services = [
-    PreferredServiceType.MANDARIN,
-    PreferredServiceType.CANTONESE,
-    PreferredServiceType.ENGLISH,
+    PreferredServiceEnum.MANDARIN,
+    PreferredServiceEnum.CANTONESE,
+    PreferredServiceEnum.ENGLISH,
 ];
 
 export default function DefaultServiceMenuItem({preferredWorshipService, setPreferredWorshipService}) {
