@@ -4,20 +4,18 @@ import Cookies from 'js-cookie';
 import { settingsConstants } from '../constants/action-settings-constants';
 import { SERVICE_COOKIE_KEY } from '../constants/service-constants';
 
-const MANDARIN_SERVICE = 'Mandarin';
-const CANTONESE_SERVICE = 'Cantonese';
-const ENGLISH_SERVICE = 'English';
+import PreferredServiceType from '../constants/preferred-service-type';
 
 const guessServiceFromLanguage = (langCode) => {
     if (langCode === 'zf') {
-        return MANDARIN_SERVICE;
+        return PreferredServiceType.MANDARIN;
     }
 
     if (langCode === 'zh') {
-        return CANTONESE_SERVICE;
+        return PreferredServiceType.CANTONESE;
     }
 
-    return ENGLISH_SERVICE;
+    return PreferredServiceType.ENGLISH;
 };
 
 const initialState = {
