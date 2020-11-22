@@ -17,7 +17,7 @@ import ServiceVideoShape from '../constants/service-video-shape';
 
 import { makeStyles } from '@material-ui/core/styles';
 
-import { JOINT_SERVICE, SERVICE_CARD_MAX_WIDTH } from '../constants/service-constants';
+import { SERVICE_CARD_MAX_WIDTH } from '../constants/service-constants';
 
 import PreferredServiceEnum from '../constants/preferred-service-enum';
 
@@ -52,27 +52,6 @@ function TabPanel(props) {
         />
         </div>
     );
-}
-
-function findService(youtubeVideoID, services) {
-    const service = services.find(s => s.youtubeVideoID === youtubeVideoID && s.message !== JOINT_SERVICE);
-    return service;
-}
-
-function replaceJointServices(targetServices, sourceServices) {
-    targetServices.forEach((target, i) => {
-        if (target.message !== JOINT_SERVICE) {
-            return;
-        }
-
-        const jointService = findService(target.youtubeVideoID, sourceServices);
-        if (jointService === undefined) {
-            console.error('Cannot find YouTube video ID', target.youtubeVideoID, 'in', sourceServices);
-            return;
-        }
-
-        targetServices[i] = jointService;
-    });
 }
 
 export default function ServiceCard({showSnackbar, preferredWorshipService, cantoneseServices, mandarinServices, englishServices}) {
@@ -134,9 +113,6 @@ export default function ServiceCard({showSnackbar, preferredWorshipService, cant
             firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
         }
     }
-
-    replaceJointServices(cantoneseServices, mandarinServices);
-    replaceJointServices(englishServices, mandarinServices);
 
     return (
         <ReactResizeDetector handleHeight={false}>
