@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
@@ -22,8 +23,7 @@ const languages = [
     { code: 'en', desc: 'English' },
 ];
 
-export default function PreferredLanguageMenuItem() {
-    const [preferredLanguage, setPreferredLanguage] = React.useState(i18n.language);
+export default function PreferredLanguageMenuItem({preferredLanguage, setPreferredLanguage}) {
     const { t } = useTranslation();
 
     const handleLanguageSelect = (event) => {
@@ -54,3 +54,8 @@ export default function PreferredLanguageMenuItem() {
         </MenuItem>
     );
 }
+
+PreferredLanguageMenuItem.propTypes = {
+    preferredLanguage: PropTypes.string.isRequired,
+    setPreferredLanguage: PropTypes.func.isRequired,
+};

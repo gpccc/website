@@ -6,7 +6,7 @@ import SettingsIcon from '@material-ui/icons/Settings';
 import Menu from '@material-ui/core/Menu';
 
 import DefaultServiceMenuItemContainer from './default-service-menu-item-container';
-import PreferredLanguageMenuItem from './preferred-language-menu-item';
+import PreferredLanguageMenuItemContainer from './preferred-language-menu-item-container';
 
 export default function AppBarMenu() {
     const [anchorEl, setAnchorEl] = React.useState(null);
@@ -48,7 +48,7 @@ export default function AppBarMenu() {
             onClose={handleClose}>
 
             <div>
-            <PreferredLanguageMenuItem />
+            <PreferredLanguageMenuItemContainer />
             <DefaultServiceMenuItemContainer />
             </div>
         </Menu>
