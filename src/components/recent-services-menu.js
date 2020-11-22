@@ -8,6 +8,8 @@ import Divider from '@material-ui/core/Divider';
 
 import ListItemText from '@material-ui/core/ListItemText';
 
+import ServiceVideoShape from '../constants/service-video-shape';
+
 import { useTranslation } from 'react-i18next';
 
 import DateTimeUtils from '../modules/datetime-utils';
@@ -87,12 +89,7 @@ export default function RecentServicesMenu({services, onServiceSelect, onOlderSe
 }
 
 RecentServicesMenu.propTypes = {
-    services: PropTypes.arrayOf(PropTypes.shape({
-        youtubeVideoID: PropTypes.string.isRequired,
-        message: PropTypes.string.isRequired,
-        pastor: PropTypes.string.isRequired,
-        date: PropTypes.string.isRequired,
-    })).isRequired,
+    services: PropTypes.arrayOf(ServiceVideoShape).isRequired,
     onServiceSelect: PropTypes.func.isRequired,
     onOlderServicesSelect: PropTypes.func.isRequired,
     youTubePlayerReady: PropTypes.bool.isRequired,

@@ -13,6 +13,8 @@ import { useTranslation } from 'react-i18next';
 
 import ServicePlayer  from './service-player';
 
+import ServiceVideoShape from '../constants/service-video-shape';
+
 import { makeStyles } from '@material-ui/core/styles';
 
 import { JOINT_SERVICE, SERVICE_CARD_MAX_WIDTH } from '../constants/service-constants';
@@ -157,16 +159,7 @@ export default function ServiceCard({showSnackbar, preferredWorshipService, engl
 TabPanel.propTypes = {
     activeTabValue: PropTypes.string.isRequired,
     tabValue: PropTypes.string.isRequired,
-    services: PropTypes.arrayOf(PropTypes.shape({
-        youtubeVideoID: PropTypes.string.isRequired,
-        message: PropTypes.string.isRequired,
-        pastor: PropTypes.string.isRequired,
-        date: PropTypes.string.isRequired,
-        seekPoints: PropTypes.arrayOf(PropTypes.shape({
-            time: PropTypes.string.isRequired,
-            label: PropTypes.string.isRequired,
-        })).isRequired,
-    })).isRequired,
+    services: PropTypes.arrayOf(ServiceVideoShape).isRequired,
     showSnackbar: PropTypes.func.isRequired,
     youTubeIframeAPIReady: PropTypes.bool.isRequired,
     onPlayPause: PropTypes.func.isRequired,
@@ -176,14 +169,5 @@ TabPanel.propTypes = {
 ServiceCard.propTypes = {
     showSnackbar: PropTypes.func.isRequired,
     preferredWorshipService: PropTypes.string.isRequired,
-    englishServices: PropTypes.arrayOf(PropTypes.shape({
-        youtubeVideoID: PropTypes.string.isRequired,
-        message: PropTypes.string.isRequired,
-        pastor: PropTypes.string.isRequired,
-        date: PropTypes.string.isRequired,
-        seekPoints: PropTypes.arrayOf(PropTypes.shape({
-            time: PropTypes.string.isRequired,
-            label: PropTypes.string.isRequired,
-        })).isRequired,
-    })).isRequired,
+    englishServices: PropTypes.arrayOf(ServiceVideoShape).isRequired,
 };

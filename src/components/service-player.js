@@ -16,6 +16,8 @@ import InfoOutlinedIcon from '@material-ui/icons/InfoOutlined';
 
 import { useTranslation } from 'react-i18next';
 
+import ServiceVideoShape from '../constants/service-video-shape';
+
 import YouTubePlayer from './youtube-player';
 
 import ServiceDateDisplay from './service-date-display';
@@ -158,16 +160,7 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
 
 ServicePlayer.propTypes = {
     playerID: PropTypes.string.isRequired,
-    services: PropTypes.arrayOf(PropTypes.shape({
-        youtubeVideoID: PropTypes.string.isRequired,
-        message: PropTypes.string.isRequired,
-        pastor: PropTypes.string.isRequired,
-        date: PropTypes.string.isRequired,
-        seekPoints: PropTypes.arrayOf(PropTypes.shape({
-            time: PropTypes.string.isRequired,
-            label: PropTypes.string.isRequired,
-        })).isRequired,
-    })).isRequired,
+    services: PropTypes.arrayOf(ServiceVideoShape).isRequired,
     isServiceCombinedWithMandarin: PropTypes.func.isRequired,
     showSnackbar: PropTypes.func.isRequired,
     youTubeIframeAPIReady: PropTypes.bool.isRequired,
