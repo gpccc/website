@@ -19,11 +19,14 @@ const guessServiceFromLanguage = (langCode) => {
 };
 
 const initialState = {
+    preferredLanguage: i18n.language,
     preferredWorshipService: Cookies.get(SERVICE_COOKIE_KEY) || guessServiceFromLanguage(i18n.language),
 }
 
 export default function settingsReducer(state = initialState, action) {
     switch (action.type) {
+        case settingsConstants.SET_PREFERRED_LANGUAGE:
+            return { ...state, preferredLanguage: action.preferredLanguage };
         case settingsConstants.SET_PREFERRED_SERVICE:
             return { ...state, preferredWorshipService: action.preferredWorshipService };
         default:
