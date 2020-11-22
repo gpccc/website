@@ -28,6 +28,7 @@ import RecentServicesMenu from './recent-services-menu';
 import DateTimeUtils from '../modules/datetime-utils';
 
 import { SERVICE_CARD_MAX_WIDTH, SERVICE_VIDEO_WIDTH, SERVICE_VIDEO_HEIGHT } from '../constants/service-constants';
+import PreferredServiceEnum from '../constants/preferred-service-enum';
 
 const calcYouTubePlayerHeight = (playerWidth) => (
     playerWidth * SERVICE_VIDEO_HEIGHT / SERVICE_VIDEO_WIDTH
@@ -55,9 +56,10 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
     const date = serviceToShow.date;
     const seekPoints = serviceToShow.seekPoints;
 
-    const isCantoneseService = (playerID === "cantonese");
+    const isCantoneseService = (playerID === PreferredServiceEnum.CANTONESE);
+    const isEnglishService = (playerID === PreferredServiceEnum.ENGLISH);
     const isCombinedService = isServiceCombinedWithMandarin(youtubeVideoID);
-    const showCombinedServiceTooltip = (isCombinedService && (isCantoneseService || playerID === "english"));
+    const showCombinedServiceTooltip = (isCombinedService && (isCantoneseService || isEnglishService));
 
     React.useEffect(
         () => {
