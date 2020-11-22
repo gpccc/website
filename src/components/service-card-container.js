@@ -4,6 +4,7 @@ import ServiceCard from './service-card';
 
 const mapStateToProps = state => {
     return {
+        cantoneseServices: state.cantoneseVideos.list,
         englishServices: state.englishVideos.list,
         preferredWorshipService: state.settings.preferredWorshipService,
     }

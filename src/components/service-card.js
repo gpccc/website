@@ -19,7 +19,6 @@ import { makeStyles } from '@material-ui/core/styles';
 
 import { JOINT_SERVICE, SERVICE_CARD_MAX_WIDTH } from '../constants/service-constants';
 
-import cantoneseServices from '../constants/cantonese-services';
 import mandarinServices from '../constants/mandarin-services';
 
 import PreferredServiceEnum from '../constants/preferred-service-enum';
@@ -82,7 +81,7 @@ function isServiceCombinedWithMandarin(youtubeVideoID) {
     return mandarinServices.some((service) => service.youtubeVideoID === youtubeVideoID);
 }
 
-export default function ServiceCard({showSnackbar, preferredWorshipService, englishServices}) {
+export default function ServiceCard({showSnackbar, preferredWorshipService, cantoneseServices, englishServices}) {
     const classes = useStyles();
 
     const [youTubeIframeAPIReady, setYouTubeIframeAPIReady] = React.useState(false);
@@ -169,5 +168,6 @@ TabPanel.propTypes = {
 ServiceCard.propTypes = {
     showSnackbar: PropTypes.func.isRequired,
     preferredWorshipService: PropTypes.string.isRequired,
+    cantoneseServices: PropTypes.arrayOf(ServiceVideoShape).isRequired,
     englishServices: PropTypes.arrayOf(ServiceVideoShape).isRequired,
 };
