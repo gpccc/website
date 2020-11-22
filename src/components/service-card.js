@@ -19,8 +19,6 @@ import { makeStyles } from '@material-ui/core/styles';
 
 import { JOINT_SERVICE, SERVICE_CARD_MAX_WIDTH } from '../constants/service-constants';
 
-import mandarinServices from '../constants/mandarin-services';
-
 import PreferredServiceEnum from '../constants/preferred-service-enum';
 
 const useStyles = makeStyles(theme => ({
@@ -36,7 +34,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 function TabPanel(props) {
-    const { activeTabValue, tabValue, services, showSnackbar, youTubeIframeAPIReady, onPlayPause, cardWidth, ...other } = props;
+    const { activeTabValue, tabValue, services, showSnackbar, youTubeIframeAPIReady, onPlayPause, cardWidth, isServiceCombinedWithMandarin, ...other } = props;
 
     return (
         <div
@@ -77,11 +75,7 @@ function replaceJointServices(targetServices, sourceServices) {
     });
 }
 
-function isServiceCombinedWithMandarin(youtubeVideoID) {
-    return mandarinServices.some((service) => service.youtubeVideoID === youtubeVideoID);
-}
-
-export default function ServiceCard({showSnackbar, preferredWorshipService, cantoneseServices, englishServices}) {
+export default function ServiceCard({showSnackbar, preferredWorshipService, cantoneseServices, mandarinServices, englishServices}) {
     const classes = useStyles();
 
     const [youTubeIframeAPIReady, setYouTubeIframeAPIReady] = React.useState(false);
@@ -125,6 +119,8 @@ export default function ServiceCard({showSnackbar, preferredWorshipService, cant
         );
     };
 
+    const isServiceCombinedWithMandarin = (youtubeVideoID) => mandarinServices.some((service) => service.youtubeVideoID === youtubeVideoID);
+    
     if (!youTubeIframeAPIReady) {
         if (window.YT) {
             setYouTubeIframeAPIReady(true);
@@ -147,9 +143,9 @@ export default function ServiceCard({showSnackbar, preferredWorshipService, cant
         {({width, targetRef}) =>
         <Card className={classes.root} ref={targetRef}>
             <CardHeader component={tabs} />
-            <TabPanel activeTabValue={activeTabValue} tabValue={PreferredServiceEnum.CANTONESE} services={cantoneseServices} showSnackbar={showSnackbar} youTubeIframeAPIReady={youTubeIframeAPIReady} onPlayPause={handlePlayPauseChange} cardWidth={width} />
-            <TabPanel activeTabValue={activeTabValue} tabValue={PreferredServiceEnum.ENGLISH} services={englishServices} showSnackbar={showSnackbar} youTubeIframeAPIReady={youTubeIframeAPIReady} onPlayPause={handlePlayPauseChange} cardWidth={width} />
-            <TabPanel activeTabValue={activeTabValue} tabValue={PreferredServiceEnum.MANDARIN} services={mandarinServices} showSnackbar={showSnackbar} youTubeIframeAPIReady={youTubeIframeAPIReady} onPlayPause={handlePlayPauseChange} cardWidth={width} />
+            <TabPanel activeTabValue={activeTabValue} tabValue={PreferredServiceEnum.CANTONESE} services={cantoneseServices} showSnackbar={showSnackbar} youTubeIframeAPIReady={youTubeIframeAPIReady} onPlayPause={handlePlayPauseChange} cardWidth={width} isServiceCombinedWithMandarin={isServiceCombinedWithMandarin} />
+            <TabPanel activeTabValue={activeTabValue} tabValue={PreferredServiceEnum.ENGLISH} services={englishServices} showSnackbar={showSnackbar} youTubeIframeAPIReady={youTubeIframeAPIReady} onPlayPause={handlePlayPauseChange} cardWidth={width} isServiceCombinedWithMandarin={isServiceCombinedWithMandarin} />
+            <TabPanel activeTabValue={activeTabValue} tabValue={PreferredServiceEnum.MANDARIN} services={mandarinServices} showSnackbar={showSnackbar} youTubeIframeAPIReady={youTubeIframeAPIReady} onPlayPause={handlePlayPauseChange} cardWidth={width} isServiceCombinedWithMandarin={isServiceCombinedWithMandarin} />
         </Card>}
         </ReactResizeDetector>
     );
@@ -163,11 +159,13 @@ TabPanel.propTypes = {
     youTubeIframeAPIReady: PropTypes.bool.isRequired,
     onPlayPause: PropTypes.func.isRequired,
     cardWidth: PropTypes.number,
+    isServiceCombinedWithMandarin: PropTypes.func.isRequired,
 };
 
 ServiceCard.propTypes = {
     showSnackbar: PropTypes.func.isRequired,
     preferredWorshipService: PropTypes.string.isRequired,
+    mandarinServices: PropTypes.arrayOf(ServiceVideoShape).isRequired,
     cantoneseServices: PropTypes.arrayOf(ServiceVideoShape).isRequired,
     englishServices: PropTypes.arrayOf(ServiceVideoShape).isRequired,
 };
