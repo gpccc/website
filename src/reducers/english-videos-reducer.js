@@ -1,7 +1,10 @@
 import englishServices from '../constants/english-services';
+import mandarinServices from '../constants/mandarin-services';
+
+import ServiceVideoUtils from '../modules/service-videos-utils';
 
 const initialState = {
-    list: englishServices,
+    list: ServiceVideoUtils.replaceJointServices(englishServices, mandarinServices),
 }
 
 export default function englishVideosReducer(state = initialState, action) {

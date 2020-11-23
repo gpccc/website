@@ -1,7 +1,10 @@
 import cantoneseServices from '../constants/cantonese-services';
+import mandarinServices from '../constants/mandarin-services';
+
+import ServiceVideoUtils from '../modules/service-videos-utils';
 
 const initialState = {
-    list: cantoneseServices,
+    list: ServiceVideoUtils.replaceJointServices(cantoneseServices, mandarinServices),
 }
 
 export default function cantoneseVideosReducer(state = initialState, action) {
