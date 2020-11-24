@@ -12,6 +12,8 @@ import ElevateAppBar from './components/elevate-app-bar.js';
 import AppSnackbar from './components/app-snack-bar';
 import ServiceCardContainer from './components/service-card-container';
 
+import ChurchMap from './components/church-map';
+
 const initialState = {};
 const store = configureStore(initialState);
 
@@ -24,6 +26,7 @@ function App() {
         <Provider store={store}>
         <ElevateAppBar>
             <ServiceCardContainer showSnackbar={showSnackbar} />
+            <ChurchMap />
             {snackbarData && <AppSnackbar msg={snackbarData.msg} key={snackbarData.date} />}
         </ElevateAppBar>
         </Provider>
