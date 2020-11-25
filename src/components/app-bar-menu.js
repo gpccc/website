@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Button from '@material-ui/core/Button';
+import IconButton from '@material-ui/core/IconButton';
 import SettingsIcon from '@material-ui/icons/Settings';
 
 import Menu from '@material-ui/core/Menu';
@@ -22,7 +22,7 @@ export default function AppBarMenu() {
 
     return (
         <div>
-        <Button
+        <IconButton
             aria-label="settings menu"
             aria-controls="app-bar-settings"
             aria-haspopup="true"
@@ -30,7 +30,7 @@ export default function AppBarMenu() {
             variant="text"
             onClick={handleOpen}>
             <SettingsIcon />
-        </Button>
+        </IconButton>
         <Menu
             id="app-bar-settings"
             anchorEl={anchorEl}
