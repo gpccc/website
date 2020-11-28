@@ -86,6 +86,9 @@ i18n
                 '指望将来 (林后1:8-11)': 'Look Forward to the Future (2 Cor 1:8-11)',
 
                 // English sermons
+                'Battle of Brothers (Obadiah)': 'Battle of Brothers (Obadiah)',
+                'What Repentance Requires (Ezra 10)': 'What Repentance Requires (Ezra 10)',
+                'Repair Our Ruins (Ezra 9:1-15)': 'Repair Our Ruins (Ezra 9:1-15)',
                 'Kingdom Peace (Philippians 3:17-4:9)': 'Kingdom Peace (Philippians 3:17-4:9)',
                 'Send Us Ministers (Ezra 8)': 'Send Us Ministers (Ezra 8)',
                 'The Sovereignty of God (Ezra 7)': 'The Sovereignty of God (Ezra 7)',
@@ -269,6 +272,9 @@ i18n
                 '指望将来 (林后1:8-11)': '指望將來 (哥林多後書 1:8-11)',
 
                 // English sermons
+                'Battle of Brothers (Obadiah)': '兄弟之戰 (俄巴底亞書)',
+                'What Repentance Requires (Ezra 10)': '悔需要什麼 (以斯拉記 10)',
+                'Repair Our Ruins (Ezra 9:1-15)': '修復我們的廢墟 (以斯拉記 9:1-15)',
                 'Kingdom Peace (Philippians 3:17-4:9)': '王國和平 (腓立比書 3:17-4:9)',
                 'Send Us Ministers (Ezra 8)': '派我們部長 (以斯拉記 8)',
                 'The Sovereignty of God (Ezra 7)': '上帝的主權 (以斯拉記 7)',
@@ -452,6 +458,9 @@ i18n
                 '指望将来 (林后1:8-11)': '指望将来 (哥林多后书 1:8-11)',
 
                 // English sermons
+                'Battle of Brothers (Obadiah)': '兄弟之战 (俄巴底亚书)',
+                'What Repentance Requires (Ezra 10)': '悔需要什么 (以斯拉记 10)',
+                'Repair Our Ruins (Ezra 9:1-15)': '修复我们的废墟 (以斯拉记 9:1-15)',
                 'Kingdom Peace (Philippians 3:17-4:9)': '王国和平 (腓立比书 3:17-4:9)',
                 'Send Us Ministers (Ezra 8)': '派我们部长 (以斯拉记 8)',
                 'The Sovereignty of God (Ezra 7)': '上帝的主权 (以斯拉记 7)',
