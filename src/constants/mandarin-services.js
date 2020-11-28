@@ -1,7 +1,7 @@
 import SeekPointType from './seek-point-type';
 
 const mandarinServices = [
-    { youtubeVideoID: "", message: "(to be determined)", pastor: "(to be determined)", date: "2020-11-29T18:10:00Z", duration: "00:00:00", seekPoints: [
+    { youtubeVideoID: "wRV-laDRNuA", message: "(to be determined)", pastor: "(to be determined)", date: "2020-11-29T18:10:00Z", duration: "00:00:00", seekPoints: [
     ]},
     { youtubeVideoID: "P732ZSayTqA", message: "(to be determined)", pastor: "(to be determined)", date: "2020-11-22T18:10:00Z", duration: "01:31:28", seekPoints: [
     ]},
