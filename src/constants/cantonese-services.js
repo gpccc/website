@@ -3,6 +3,13 @@ import SeekPointType from './seek-point-type';
 import { JOINT_SERVICE } from './service-constants';
 
 const cantoneseServices = [
+    // https://www.youtube.com/channel/UCwwYzQ3Av9dfyk3mhi-hxuw
+    { youtubeVideoID: "", message: "(to be determined)", pastor: "(to be determined)", date: "2020-11-29T18:10:00Z", duration: "00:00:00", seekPoints: [
+    ]},
+    { youtubeVideoID: "_TXMPIThAZg", message: "(to be determined)", pastor: "(to be determined)", date: "2020-11-22T18:10:00Z", duration: "01:21:05", seekPoints: [
+    ]},
+    { youtubeVideoID: "Fsxj8rAovwg", message: "(to be determined)", pastor: "(to be determined)", date: "2020-11-15T18:10:00Z", duration: "01:37:30", seekPoints: [
+    ]},
     { youtubeVideoID: "H_kfkwDCeHU", message: "(to be determined)", pastor: "Brother Dai Zhizhong", date: "2020-11-08T18:10:00Z", duration: "00:00:00", seekPoints: [
     ]},
     { youtubeVideoID: "m9YoDp3xFSQ", message: JOINT_SERVICE, pastor: "", date: "2020-11-01", duration: "", seekPoints: [] },
