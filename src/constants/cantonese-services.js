@@ -4,7 +4,7 @@ import { JOINT_SERVICE } from './service-constants';
 
 const cantoneseServices = [
     // https://www.youtube.com/channel/UCwwYzQ3Av9dfyk3mhi-hxuw
-    { youtubeVideoID: "", message: "(to be determined)", pastor: "(to be determined)", date: "2020-11-29T18:10:00Z", duration: "00:00:00", seekPoints: [
+    { youtubeVideoID: "u6n3L0z8uAw", message: "恩典中服事 (林後8:1-15)", pastor: "王啟偉長老", date: "2020-11-29T18:10:00Z", duration: "00:00:00", seekPoints: [
     ]},
     { youtubeVideoID: "_TXMPIThAZg", message: "(to be determined)", pastor: "(to be determined)", date: "2020-11-22T18:10:00Z", duration: "01:21:05", seekPoints: [
     ]},
