@@ -64,6 +64,7 @@ i18n
                 'Elder Albert Wong': 'Elder Albert Wong',
                 'Pastor Feng Zhongqiang': 'Pastor Feng Zhongqiang',
                 'Brother Dai Zhizhong': 'Brother Dai Zhizhong',
+                '王啟偉長老': 'Elder Qiwei Wang',
 
                 'Recent services': 'Recent services',
                 'Older services': 'Older services',
@@ -80,6 +81,7 @@ i18n
                 'Bible verse': 'Bible verse',
 
                 // Cantonese sermons
+                '恩典中服事 (林後8:1-15)': 'Serving in Grace (2 Corinthians 8:1-15)',
                 '一天新似一天 (林后4:16-18)': 'Day New Day (2 Corinthians 4:16-18)',
                 '不是我，是圣灵！(林后3:1-11)': 'Not me, but the Holy Spirit! (2 Cor 3:1-11)',
                 '基督的香气 (林后2:14-17)': 'Scent of Christ (2 Corinthians 2:14-17)',
@@ -250,6 +252,7 @@ i18n
                 'Elder Albert Wong': '王Albert長老',
                 'Pastor Feng Zhongqiang': '馮忠強牧師',
                 'Brother Dai Zhizhong': '戴志忠弟兄',
+                '王啟偉長老': '王啟偉長老',
 
                 'Recent services': '最近講道',
                 'Older services': '較舊講道',
@@ -266,6 +269,7 @@ i18n
                 'Bible verse': '聖經經文',
 
                 // Cantonese sermons
+                '恩典中服事 (林後8:1-15)': '恩典中服事 (林後8:1-15)',
                 '一天新似一天 (林后4:16-18)': '一天新似一天 (哥林多後書 4:16-18)',
                 '不是我，是圣灵！(林后3:1-11)': '不是我，是聖靈！ (哥林多後書 3:1-11)',
                 '基督的香气 (林后2:14-17)': '基督的香氣 (哥林多後書 2:14-17)',
@@ -436,6 +440,7 @@ i18n
                 'Elder Albert Wong': '王Albert长老',
                 'Pastor Feng Zhongqiang': '冯忠强牧师',
                 'Brother Dai Zhizhong': '戴志忠弟兄',
+                '王啟偉長老': '王启伟长老',
 
                 'Recent services': '最近讲道',
                 'Older services': '较旧讲道',
@@ -452,6 +457,7 @@ i18n
                 'Bible verse': '圣经经文',
 
                 // Cantonese sermons
+                '恩典中服事 (林後8:1-15)': '恩典中服事 (林后8:1-15)',
                 '一天新似一天 (林后4:16-18)': '一天新似一天 (哥林多後書 4:16-18)',
                 '不是我，是圣灵！(林后3:1-11)': '不是我，是圣灵！ (哥林多后书 3:1-11)',
                 '基督的香气 (林后2:14-17)': '基督的香气 (哥林多后书 2:14-17)',
