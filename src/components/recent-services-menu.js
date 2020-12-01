@@ -74,7 +74,22 @@ export default function RecentServicesMenu({services, onServiceSelect, onOlderSe
             >
                 {servicesToShow.map((service, index) => (
                     <MenuItem key={"YT" + service.youtubeVideoID} selected={index === selectedIndex} onClick={() => handleServiceMenuItemClick(index)}>
+                        {
+                        service.message !== "" && service.pastor !== "" &&
                         <ListItemText primary={t(service.message)} secondary={t(service.pastor) + " · " + DateTimeUtils.shortServiceDateDisplay(service.date)} />
+                        }
+                        {
+                        service.message !== "" && service.pastor === "" &&
+                        <ListItemText primary={t(service.message)} secondary={DateTimeUtils.shortServiceDateDisplay(service.date)} />
+                        }
+                        {
+                        service.message === "" && service.pastor !== "" &&
+                        <ListItemText primary={DateTimeUtils.shortServiceDateDisplay(service.date) + " service"} secondary={t(service.pastor)} />
+                        }
+                        {
+                        service.message === "" && service.pastor === "" &&
+                        <ListItemText primary={DateTimeUtils.shortServiceDateDisplay(service.date) + " service"} />
+                        }
                     </MenuItem>
                 ))}
 

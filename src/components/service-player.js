@@ -27,7 +27,7 @@ import RecentServicesMenu from './recent-services-menu';
 
 import DateTimeUtils from '../modules/datetime-utils';
 
-import { SERVICE_CARD_MAX_WIDTH, SERVICE_VIDEO_WIDTH, SERVICE_VIDEO_HEIGHT } from '../constants/service-constants';
+import { SERVICE_CARD_MAX_WIDTH, SERVICE_VIDEO_WIDTH, SERVICE_VIDEO_HEIGHT, SERVICE_DURATION_IN_SECONDS } from '../constants/service-constants';
 import PreferredServiceEnum from '../constants/preferred-service-enum';
 
 const calcYouTubePlayerHeight = (playerWidth) => (
@@ -124,12 +124,16 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
         }
     };
 
+    let secondsElapsedSinceService = DateTimeUtils.getSecondsElapsedSince(date);
+
     return (
         <div>
         <CardActionArea>
             <YouTubePlayer playerID={playerID} />
         </CardActionArea>
         <CardContent>
+            {message !== ""
+            ?
             <Typography gutterBottom variant="body1" component="p">
                 {t(message)}
                 {showCombinedServiceTooltip &&
@@ -143,9 +147,41 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
                 </span>
                 }
             </Typography>
+            :
+            <Typography gutterBottom variant="body1" component="p">
+                {DateTimeUtils.longServiceDateDisplay(date)} worship service
+            </Typography>
+            }
+            {
+            message !== "" && pastor !== "" &&
             <Typography variant="body2" color="textSecondary" component="p">
                 {pastor} &middot; <ServiceDateDisplay serviceStartDateTime={date} />
             </Typography>
+            }
+            {
+            message !== "" && pastor === "" && 
+            <Typography variant="body2" color="textSecondary" component="p">
+                <ServiceDateDisplay serviceStartDateTime={date} />
+            </Typography>
+            }
+            {
+            message === "" && pastor !== "" && secondsElapsedSinceService > SERVICE_DURATION_IN_SECONDS &&
+            <Typography variant="body2" color="textSecondary" component="p">
+                {pastor}
+            </Typography>
+            }
+            {
+            message === "" && pastor !== "" && secondsElapsedSinceService <= SERVICE_DURATION_IN_SECONDS &&
+            <Typography variant="body2" color="textSecondary" component="p">
+                {pastor} &middot; <ServiceDateDisplay serviceStartDateTime={date} />
+            </Typography>
+            }
+            {
+            message === "" && pastor === "" && secondsElapsedSinceService <= SERVICE_DURATION_IN_SECONDS &&
+            <Typography variant="body2" color="textSecondary" component="p">
+                <ServiceDateDisplay serviceStartDateTime={date} />
+            </Typography>
+            }
         </CardContent>
         <CardActions>
             <SeekToMenu seekPoints={seekPoints} onSeekTo={onSeekTo} youTubePlayerReady={youTubePlayerReady} />
