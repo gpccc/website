@@ -1,7 +1,12 @@
-import { JOINT_SERVICE } from '../constants/service-constants';
+import DateTimeUtils from '../modules/datetime-utils';
+
+import { JOINT_SERVICE, SERVICE_DURATION_IN_SECONDS } from '../constants/service-constants';
 
 const ServiceVideoUtils = {
     replaceJointServices: replaceJointServices,
+    willBeLive: willBeLive,
+    liveNow: liveNow,
+    liveOver: liveOver,
 };
 
 function replaceJointServices(targetServices, sourceServices) {
@@ -19,6 +24,24 @@ function replaceJointServices(targetServices, sourceServices) {
     });
 
     return targetServices;
+}
+
+function willBeLive(serviceStartDateTime) {
+    const secondsElapsedSinceService = DateTimeUtils.getSecondsElapsedSince(serviceStartDateTime);
+    const willBeLive = (secondsElapsedSinceService < 0);
+    return willBeLive;
+}
+
+function liveNow(serviceStartDateTime) {
+    const secondsElapsedSinceService = DateTimeUtils.getSecondsElapsedSince(serviceStartDateTime);
+    const liveNow = (0 <= secondsElapsedSinceService && secondsElapsedSinceService <= SERVICE_DURATION_IN_SECONDS);
+    return liveNow;
+}
+
+function liveOver(serviceStartDateTime) {
+    const secondsElapsedSinceService = DateTimeUtils.getSecondsElapsedSince(serviceStartDateTime);
+    const liveOver = (secondsElapsedSinceService > SERVICE_DURATION_IN_SECONDS);
+    return liveOver;
 }
 
 export default ServiceVideoUtils;
