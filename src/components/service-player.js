@@ -26,8 +26,9 @@ import SeekToMenu from './seek-to-menu';
 import RecentServicesMenu from './recent-services-menu';
 
 import DateTimeUtils from '../modules/datetime-utils';
+import ServiceVideoUtils from '../modules/service-videos-utils';
 
-import { SERVICE_CARD_MAX_WIDTH, SERVICE_VIDEO_WIDTH, SERVICE_VIDEO_HEIGHT, SERVICE_DURATION_IN_SECONDS } from '../constants/service-constants';
+import { SERVICE_CARD_MAX_WIDTH, SERVICE_VIDEO_WIDTH, SERVICE_VIDEO_HEIGHT } from '../constants/service-constants';
 import PreferredServiceEnum from '../constants/preferred-service-enum';
 
 const calcYouTubePlayerHeight = (playerWidth) => (
@@ -124,7 +125,7 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
         }
     };
 
-    let secondsElapsedSinceService = DateTimeUtils.getSecondsElapsedSince(date);
+    const liveStream = (ServiceVideoUtils.liveNow(date) || ServiceVideoUtils.willBeLive(date));
 
     return (
         <div>
@@ -165,19 +166,19 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
             </Typography>
             }
             {
-            message === "" && pastor !== "" && secondsElapsedSinceService > SERVICE_DURATION_IN_SECONDS &&
+            message === "" && pastor !== "" && !liveStream &&
             <Typography variant="body2" color="textSecondary" component="p">
                 {pastor}
             </Typography>
             }
             {
-            message === "" && pastor !== "" && secondsElapsedSinceService <= SERVICE_DURATION_IN_SECONDS &&
+            message === "" && pastor !== "" && liveStream &&
             <Typography variant="body2" color="textSecondary" component="p">
                 {pastor} &middot; <ServiceDateDisplay serviceStartDateTime={date} />
             </Typography>
             }
             {
-            message === "" && pastor === "" && secondsElapsedSinceService <= SERVICE_DURATION_IN_SECONDS &&
+            message === "" && pastor === "" && liveStream &&
             <Typography variant="body2" color="textSecondary" component="p">
                 <ServiceDateDisplay serviceStartDateTime={date} />
             </Typography>
