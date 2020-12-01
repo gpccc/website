@@ -73,7 +73,6 @@ i18n
                 'TODO: Go to a page listing all worship services': 'TODO: Go to a page listing all worship services',
                 'Cantonese service combined with Mandarin service': 'Cantonese service combined with Mandarin service',
                 'English service combined with Mandarin service': 'English service combined with Mandarin service',
-                '(to be determined)': '(to be determined)',
 
                 'Sermon': 'Sermon',
                 'Beginning': 'Beginning',
@@ -261,7 +260,6 @@ i18n
                 'TODO: Go to a page listing all worship services': '待辦事項：轉到列出所有敬拜服務的頁面',
                 'Cantonese service combined with Mandarin service': '粵語服務與普通話服務相結合',
                 'English service combined with Mandarin service': '英語服務結合普通話服務',
-                '(to be determined)': '(有待確定)',
 
                 'Sermon': '講道',
                 'Beginning': '開始',
@@ -449,7 +447,6 @@ i18n
                 'TODO: Go to a page listing all worship services': '待办事项：转到列出所有敬拜服务的页面',
                 'Cantonese service combined with Mandarin service': '粤语服务与国语服务相结合',
                 'English service combined with Mandarin service': '英语服务结合普通话服务',
-                '(to be determined)': '(有待确定)',
 
                 'Sermon': '讲道',
                 'Beginning': '开始',
