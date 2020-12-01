@@ -4,6 +4,7 @@ import { JOINT_SERVICE, SERVICE_DURATION_IN_SECONDS } from '../constants/service
 
 const ServiceVideoUtils = {
     replaceJointServices: replaceJointServices,
+    isLiveStream: isLiveStream,
     willBeLive: willBeLive,
     liveNow: liveNow,
     liveOver: liveOver,
@@ -24,6 +25,11 @@ function replaceJointServices(targetServices, sourceServices) {
     });
 
     return targetServices;
+}
+
+function isLiveStream(secondsElapsedSinceServiceStart) {
+    const isLiveStream = (secondsElapsedSinceServiceStart <= SERVICE_DURATION_IN_SECONDS);
+    return isLiveStream;
 }
 
 function willBeLive(serviceStartDateTime) {

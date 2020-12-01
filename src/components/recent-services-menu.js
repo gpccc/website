@@ -13,8 +13,9 @@ import ServiceVideoShape from '../constants/service-video-shape';
 import { useTranslation } from 'react-i18next';
 
 import DateTimeUtils from '../modules/datetime-utils';
+import ServiceVideoUtils from '../modules/service-videos-utils';
 
-import { NUM_RECENT_SERVICES_TO_SHOW, SERVICE_DURATION_IN_SECONDS } from '../constants/service-constants';
+import { NUM_RECENT_SERVICES_TO_SHOW } from '../constants/service-constants';
 
 function getServicesToShow(services) {
     let numPastServices = 0;
@@ -22,7 +23,7 @@ function getServicesToShow(services) {
 
     services.forEach((service) => {
         let secondsElapsedSince = DateTimeUtils.getSecondsElapsedSince(service.date);
-        if (secondsElapsedSince <= SERVICE_DURATION_IN_SECONDS) {
+        if (ServiceVideoUtils.isLiveStream(secondsElapsedSince)) {
             numStreamingServices += 1;
         } else {
             numPastServices += 1;

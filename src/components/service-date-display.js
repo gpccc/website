@@ -24,7 +24,7 @@ export default function ServiceDateDisplay({serviceStartDateTime}) {
                 setTimerID(noTimerID);
             }
         
-            if (secondsElapsedSince <= SERVICE_DURATION_IN_SECONDS) {
+            if (ServiceVideoUtils.isLiveStream(secondsElapsedSince)) {
                 if (secondsElapsedSince < 0) {
                     secondsElapsedSince = Math.abs(secondsElapsedSince);
                 } else {
