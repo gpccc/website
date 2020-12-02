@@ -34,6 +34,24 @@ function getServicesToShow(services) {
     return services.slice(0, numServicesToShow);
 }
 
+function getServicesWithSeekPointsForDemo(services) {
+    const videoIDsWithSeekPointsToDemo = [
+        'Li5Pd6IXhE4', 'AYadEf1YjVk', // 9/27/20 and 10/4/2020 Mandarin
+        'AlrtccfApe8', // 9/27/20 (combined with Mandarin) and 10/4/2020 Cantonese
+        'EWQ__H_85bE', 'uqmaE9JKGtc', // 9/27/20 and 10/4/2020 English
+    ];
+
+    let servicesToDemo = [];
+    videoIDsWithSeekPointsToDemo.forEach(videoID => {
+        const serviceToDemo = services.find(s => s.youtubeVideoID === videoID);
+        if (typeof serviceToDemo !== 'undefined')
+            servicesToDemo.push(serviceToDemo);
+    });
+
+    return servicesToDemo;
+
+}
+
 export default function RecentServicesMenu({services, onServiceSelect, onOlderServicesSelect, youTubePlayerReady}) {
     const { t } = useTranslation();
 
@@ -64,6 +82,7 @@ export default function RecentServicesMenu({services, onServiceSelect, onOlderSe
     };
 
     const servicesToShow = getServicesToShow(services);
+    const servicesWithSeekPoints = getServicesWithSeekPointsForDemo(services);
 
     return (
         <div>
@@ -99,6 +118,19 @@ export default function RecentServicesMenu({services, onServiceSelect, onOlderSe
                 ))}
 
                 <Divider />
+
+                {servicesWithSeekPoints.map((service, index) => {
+                    index = index + servicesToShow.length;
+                    return (
+                        <MenuItem key={"YT" + service.youtubeVideoID} selected={index === selectedIndex} onClick={() => handleServiceMenuItemClick(index, service.youtubeVideoID)}>
+                            <ListItemText primary={t(service.message)} secondary={t(service.pastor) + " · " + DateTimeUtils.shortServiceDateDisplay(service.date)} />
+                        </MenuItem>
+                    );
+                })}
+
+                {servicesWithSeekPoints.length > 0 &&
+                    <Divider />
+                }
 
                 <MenuItem key="OlderServices" onClick={() => handleOlderServicesItemClick()}>
                     {t('Older services')}
