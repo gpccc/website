@@ -44,10 +44,14 @@ export default function RecentServicesMenu({services, onServiceSelect, onOlderSe
         setAnchorEl(event.currentTarget);
     };
 
-    const handleServiceMenuItemClick = (index) => {
+    const handleServiceMenuItemClick = (index, youtubeVideoID) => {
         setSelectedIndex(index);
         setAnchorEl(null);
-        onServiceSelect(services[index]);
+
+        const service = services.find(s => s.youtubeVideoID === youtubeVideoID);
+        if (typeof service !== 'undefined') {
+            onServiceSelect(service);
+        }
     };
 
     const handleOlderServicesItemClick = () => {
@@ -74,7 +78,7 @@ export default function RecentServicesMenu({services, onServiceSelect, onOlderSe
                 onClose={handleClose}
             >
                 {servicesToShow.map((service, index) => (
-                    <MenuItem key={"YT" + service.youtubeVideoID} selected={index === selectedIndex} onClick={() => handleServiceMenuItemClick(index)}>
+                    <MenuItem key={"YT" + service.youtubeVideoID} selected={index === selectedIndex} onClick={() => handleServiceMenuItemClick(index, service.youtubeVideoID)}>
                         {
                         service.message !== "" && service.pastor !== "" &&
                         <ListItemText primary={t(service.message)} secondary={t(service.pastor) + " · " + DateTimeUtils.shortServiceDateDisplay(service.date)} />
