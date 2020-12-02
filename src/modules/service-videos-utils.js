@@ -16,7 +16,7 @@ function replaceJointServices(targetServices, sourceServices) {
             return;
 
         const jointService = sourceServices.find(s => s.youtubeVideoID === target.youtubeVideoID && s.message !== JOINT_SERVICE);
-        if (jointService === undefined) {
+        if (typeof jointService === 'undefined') {
             console.error('Cannot find YouTube video ID', target.youtubeVideoID, 'in', sourceServices);
             return;
         }

@@ -29,7 +29,7 @@ export default function ServiceDateDisplay({serviceStartDateTime}) {
                     secondsElapsedSince = Math.abs(secondsElapsedSince);
                 } else {
                     secondsElapsedSince = SERVICE_DURATION_IN_SECONDS - secondsElapsedSince;
-                    if (secondsElapsedSince == 0) {
+                    if (secondsElapsedSince === 0) {
                         secondsElapsedSince += 1;
                     }
                 }
