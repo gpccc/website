@@ -13,8 +13,9 @@ import ServiceVideoShape from '../constants/service-video-shape';
 import { useTranslation } from 'react-i18next';
 
 import DateTimeUtils from '../modules/datetime-utils';
+import ServiceVideoUtils from '../modules/service-videos-utils';
 
-import { NUM_RECENT_SERVICES_TO_SHOW, SERVICE_DURATION_IN_SECONDS } from '../constants/service-constants';
+import { NUM_RECENT_SERVICES_TO_SHOW } from '../constants/service-constants';
 
 function getServicesToShow(services) {
     let numPastServices = 0;
@@ -22,7 +23,7 @@ function getServicesToShow(services) {
 
     services.forEach((service) => {
         let secondsElapsedSince = DateTimeUtils.getSecondsElapsedSince(service.date);
-        if (secondsElapsedSince <= SERVICE_DURATION_IN_SECONDS) {
+        if (ServiceVideoUtils.isLiveStream(secondsElapsedSince)) {
             numStreamingServices += 1;
         } else {
             numPastServices += 1;
@@ -31,6 +32,24 @@ function getServicesToShow(services) {
 
     const numServicesToShow = numStreamingServices + Math.min(numPastServices, NUM_RECENT_SERVICES_TO_SHOW);
     return services.slice(0, numServicesToShow);
+}
+
+function getServicesWithSeekPointsForDemo(services) {
+    const videoIDsWithSeekPointsToDemo = [
+        'Li5Pd6IXhE4', 'AYadEf1YjVk', // 9/27/20 and 10/4/2020 Mandarin
+        'AlrtccfApe8', // 9/27/20 (combined with Mandarin) and 10/4/2020 Cantonese
+        'EWQ__H_85bE', 'uqmaE9JKGtc', // 9/27/20 and 10/4/2020 English
+    ];
+
+    let servicesToDemo = [];
+    videoIDsWithSeekPointsToDemo.forEach(videoID => {
+        const serviceToDemo = services.find(s => s.youtubeVideoID === videoID);
+        if (typeof serviceToDemo !== 'undefined')
+            servicesToDemo.push(serviceToDemo);
+    });
+
+    return servicesToDemo;
+
 }
 
 export default function RecentServicesMenu({services, onServiceSelect, onOlderServicesSelect, youTubePlayerReady}) {
@@ -43,10 +62,14 @@ export default function RecentServicesMenu({services, onServiceSelect, onOlderSe
         setAnchorEl(event.currentTarget);
     };
 
-    const handleServiceMenuItemClick = (index) => {
+    const handleServiceMenuItemClick = (index, youtubeVideoID) => {
         setSelectedIndex(index);
         setAnchorEl(null);
-        onServiceSelect(services[index]);
+
+        const service = services.find(s => s.youtubeVideoID === youtubeVideoID);
+        if (typeof service !== 'undefined') {
+            onServiceSelect(service);
+        }
     };
 
     const handleOlderServicesItemClick = () => {
@@ -59,6 +82,7 @@ export default function RecentServicesMenu({services, onServiceSelect, onOlderSe
     };
 
     const servicesToShow = getServicesToShow(services);
+    const servicesWithSeekPoints = getServicesWithSeekPointsForDemo(services);
 
     return (
         <div>
@@ -73,12 +97,40 @@ export default function RecentServicesMenu({services, onServiceSelect, onOlderSe
                 onClose={handleClose}
             >
                 {servicesToShow.map((service, index) => (
-                    <MenuItem key={"YT" + service.youtubeVideoID} selected={index === selectedIndex} onClick={() => handleServiceMenuItemClick(index)}>
+                    <MenuItem key={"YT" + service.youtubeVideoID} selected={index === selectedIndex} onClick={() => handleServiceMenuItemClick(index, service.youtubeVideoID)}>
+                        {
+                        service.message !== "" && service.pastor !== "" &&
                         <ListItemText primary={t(service.message)} secondary={t(service.pastor) + " · " + DateTimeUtils.shortServiceDateDisplay(service.date)} />
+                        }
+                        {
+                        service.message !== "" && service.pastor === "" &&
+                        <ListItemText primary={t(service.message)} secondary={DateTimeUtils.shortServiceDateDisplay(service.date)} />
+                        }
+                        {
+                        service.message === "" && service.pastor !== "" &&
+                        <ListItemText primary={DateTimeUtils.shortServiceDateDisplay(service.date) + " service"} secondary={t(service.pastor)} />
+                        }
+                        {
+                        service.message === "" && service.pastor === "" &&
+                        <ListItemText primary={DateTimeUtils.shortServiceDateDisplay(service.date) + " service"} />
+                        }
                     </MenuItem>
                 ))}
 
                 <Divider />
+
+                {servicesWithSeekPoints.map((service, index) => {
+                    index = index + servicesToShow.length;
+                    return (
+                        <MenuItem key={"YT" + service.youtubeVideoID} selected={index === selectedIndex} onClick={() => handleServiceMenuItemClick(index, service.youtubeVideoID)}>
+                            <ListItemText primary={t(service.message)} secondary={t(service.pastor) + " · " + DateTimeUtils.shortServiceDateDisplay(service.date)} />
+                        </MenuItem>
+                    );
+                })}
+
+                {servicesWithSeekPoints.length > 0 &&
+                    <Divider />
+                }
 
                 <MenuItem key="OlderServices" onClick={() => handleOlderServicesItemClick()}>
                     {t('Older services')}

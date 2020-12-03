@@ -1,7 +1,14 @@
 import SeekPointType from './seek-point-type';
 
 const mandarinServices = [
-    { youtubeVideoID: "hAG0ird_VQk", message: "(to be determined)", pastor: "Pastor Feng Zhongqiang", date: "2020-11-08T18:10:00Z", duration: "00:00:00", seekPoints: [
+    { youtubeVideoID: "wRV-laDRNuA", message: "", pastor: "", date: "2020-11-29T18:10:00Z", duration: "00:00:00", seekPoints: [
+    ]},
+    { youtubeVideoID: "P732ZSayTqA", message: "", pastor: "", date: "2020-11-22T18:10:00Z", duration: "01:31:28", seekPoints: [
+    ]},
+    { youtubeVideoID: "p-l80rZvjgg", message: "", pastor: "", date: "2020-11-15T18:10:00Z", duration: "01:16:20", seekPoints: [
+    ]},
+
+    { youtubeVideoID: "hAG0ird_VQk", message: "", pastor: "Pastor Feng Zhongqiang", date: "2020-11-08T18:10:00Z", duration: "00:00:00", seekPoints: [
     ]},
     { youtubeVideoID: "m9YoDp3xFSQ", message: "犹太人的王 (约19:14-19)", pastor: "Rev. Semson Nip", date: "2020-11-01T18:10:00Z", duration: "01:17:30", seekPoints: [
         // {time: "00:00:00", label: "让赞美飞扬", type: SeekPointType.PRAISE_SONG},

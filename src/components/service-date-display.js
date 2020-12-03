@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import Box from '@material-ui/core/Box';
 
 import DateTimeUtils from '../modules/datetime-utils';
+import ServiceVideoUtils from '../modules/service-videos-utils';
 
 import { SERVICE_DURATION_IN_SECONDS } from '../constants/service-constants'
 
@@ -23,12 +24,12 @@ export default function ServiceDateDisplay({serviceStartDateTime}) {
                 setTimerID(noTimerID);
             }
         
-            if (secondsElapsedSince <= SERVICE_DURATION_IN_SECONDS) {
+            if (ServiceVideoUtils.isLiveStream(secondsElapsedSince)) {
                 if (secondsElapsedSince < 0) {
                     secondsElapsedSince = Math.abs(secondsElapsedSince);
                 } else {
                     secondsElapsedSince = SERVICE_DURATION_IN_SECONDS - secondsElapsedSince;
-                    if (secondsElapsedSince == 0) {
+                    if (secondsElapsedSince === 0) {
                         secondsElapsedSince += 1;
                     }
                 }
@@ -48,9 +49,9 @@ export default function ServiceDateDisplay({serviceStartDateTime}) {
     
     let secondsElapsedSince = DateTimeUtils.getSecondsElapsedSince(serviceStartDateTime);
     return (
-        secondsElapsedSince < 0
+        ServiceVideoUtils.willBeLive(serviceStartDateTime)
         ? <Box color="secondary.main" component="span">{DateTimeUtils.liveStreamDateTimeDisplay(serviceStartDateTime)}</Box>
-        : secondsElapsedSince <= SERVICE_DURATION_IN_SECONDS
+        : ServiceVideoUtils.liveNow(serviceStartDateTime)
             ? <Box color="secondary.main" component="span">Live now</Box>
             : DateTimeUtils.longServiceDateDisplay(serviceStartDateTime)
     );

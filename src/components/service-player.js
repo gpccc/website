@@ -26,6 +26,7 @@ import SeekToMenu from './seek-to-menu';
 import RecentServicesMenu from './recent-services-menu';
 
 import DateTimeUtils from '../modules/datetime-utils';
+import ServiceVideoUtils from '../modules/service-videos-utils';
 
 import { SERVICE_CARD_MAX_WIDTH, SERVICE_VIDEO_WIDTH, SERVICE_VIDEO_HEIGHT } from '../constants/service-constants';
 import PreferredServiceEnum from '../constants/preferred-service-enum';
@@ -124,12 +125,16 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
         }
     };
 
+    const liveStream = (ServiceVideoUtils.liveNow(date) || ServiceVideoUtils.willBeLive(date));
+
     return (
         <div>
         <CardActionArea>
             <YouTubePlayer playerID={playerID} />
         </CardActionArea>
         <CardContent>
+            {message !== ""
+            ?
             <Typography gutterBottom variant="body1" component="p">
                 {t(message)}
                 {showCombinedServiceTooltip &&
@@ -143,9 +148,41 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
                 </span>
                 }
             </Typography>
+            :
+            <Typography gutterBottom variant="body1" component="p">
+                {DateTimeUtils.longServiceDateDisplay(date)} worship service
+            </Typography>
+            }
+            {
+            message !== "" && pastor !== "" &&
             <Typography variant="body2" color="textSecondary" component="p">
                 {pastor} &middot; <ServiceDateDisplay serviceStartDateTime={date} />
             </Typography>
+            }
+            {
+            message !== "" && pastor === "" && 
+            <Typography variant="body2" color="textSecondary" component="p">
+                <ServiceDateDisplay serviceStartDateTime={date} />
+            </Typography>
+            }
+            {
+            message === "" && pastor !== "" && !liveStream &&
+            <Typography variant="body2" color="textSecondary" component="p">
+                {pastor}
+            </Typography>
+            }
+            {
+            message === "" && pastor !== "" && liveStream &&
+            <Typography variant="body2" color="textSecondary" component="p">
+                {pastor} &middot; <ServiceDateDisplay serviceStartDateTime={date} />
+            </Typography>
+            }
+            {
+            message === "" && pastor === "" && liveStream &&
+            <Typography variant="body2" color="textSecondary" component="p">
+                <ServiceDateDisplay serviceStartDateTime={date} />
+            </Typography>
+            }
         </CardContent>
         <CardActions>
             <SeekToMenu seekPoints={seekPoints} onSeekTo={onSeekTo} youTubePlayerReady={youTubePlayerReady} />

@@ -64,6 +64,7 @@ i18n
                 'Elder Albert Wong': 'Elder Albert Wong',
                 'Pastor Feng Zhongqiang': 'Pastor Feng Zhongqiang',
                 'Brother Dai Zhizhong': 'Brother Dai Zhizhong',
+                '王啟偉長老': 'Elder Qiwei Wang',
 
                 'Recent services': 'Recent services',
                 'Older services': 'Older services',
@@ -72,7 +73,6 @@ i18n
                 'TODO: Go to a page listing all worship services': 'TODO: Go to a page listing all worship services',
                 'Cantonese service combined with Mandarin service': 'Cantonese service combined with Mandarin service',
                 'English service combined with Mandarin service': 'English service combined with Mandarin service',
-                '(to be determined)': '(to be determined)',
 
                 'Sermon': 'Sermon',
                 'Beginning': 'Beginning',
@@ -80,12 +80,16 @@ i18n
                 'Bible verse': 'Bible verse',
 
                 // Cantonese sermons
+                '恩典中服事 (林後8:1-15)': 'Serving in Grace (2 Corinthians 8:1-15)',
                 '一天新似一天 (林后4:16-18)': 'Day New Day (2 Corinthians 4:16-18)',
                 '不是我，是圣灵！(林后3:1-11)': 'Not me, but the Holy Spirit! (2 Cor 3:1-11)',
                 '基督的香气 (林后2:14-17)': 'Scent of Christ (2 Corinthians 2:14-17)',
                 '指望将来 (林后1:8-11)': 'Look Forward to the Future (2 Cor 1:8-11)',
 
                 // English sermons
+                'Battle of Brothers (Obadiah)': 'Battle of Brothers (Obadiah)',
+                'What Repentance Requires (Ezra 10)': 'What Repentance Requires (Ezra 10)',
+                'Repair Our Ruins (Ezra 9:1-15)': 'Repair Our Ruins (Ezra 9:1-15)',
                 'Kingdom Peace (Philippians 3:17-4:9)': 'Kingdom Peace (Philippians 3:17-4:9)',
                 'Send Us Ministers (Ezra 8)': 'Send Us Ministers (Ezra 8)',
                 'The Sovereignty of God (Ezra 7)': 'The Sovereignty of God (Ezra 7)',
@@ -247,6 +251,7 @@ i18n
                 'Elder Albert Wong': '王Albert長老',
                 'Pastor Feng Zhongqiang': '馮忠強牧師',
                 'Brother Dai Zhizhong': '戴志忠弟兄',
+                '王啟偉長老': '王啟偉長老',
 
                 'Recent services': '最近講道',
                 'Older services': '較舊講道',
@@ -255,7 +260,6 @@ i18n
                 'TODO: Go to a page listing all worship services': '待辦事項：轉到列出所有敬拜服務的頁面',
                 'Cantonese service combined with Mandarin service': '粵語服務與普通話服務相結合',
                 'English service combined with Mandarin service': '英語服務結合普通話服務',
-                '(to be determined)': '(有待確定)',
 
                 'Sermon': '講道',
                 'Beginning': '開始',
@@ -263,12 +267,16 @@ i18n
                 'Bible verse': '聖經經文',
 
                 // Cantonese sermons
+                '恩典中服事 (林後8:1-15)': '恩典中服事 (林後8:1-15)',
                 '一天新似一天 (林后4:16-18)': '一天新似一天 (哥林多後書 4:16-18)',
                 '不是我，是圣灵！(林后3:1-11)': '不是我，是聖靈！ (哥林多後書 3:1-11)',
                 '基督的香气 (林后2:14-17)': '基督的香氣 (哥林多後書 2:14-17)',
                 '指望将来 (林后1:8-11)': '指望將來 (哥林多後書 1:8-11)',
 
                 // English sermons
+                'Battle of Brothers (Obadiah)': '兄弟之戰 (俄巴底亞書)',
+                'What Repentance Requires (Ezra 10)': '悔需要什麼 (以斯拉記 10)',
+                'Repair Our Ruins (Ezra 9:1-15)': '修復我們的廢墟 (以斯拉記 9:1-15)',
                 'Kingdom Peace (Philippians 3:17-4:9)': '王國和平 (腓立比書 3:17-4:9)',
                 'Send Us Ministers (Ezra 8)': '派我們部長 (以斯拉記 8)',
                 'The Sovereignty of God (Ezra 7)': '上帝的主權 (以斯拉記 7)',
@@ -430,6 +438,7 @@ i18n
                 'Elder Albert Wong': '王Albert长老',
                 'Pastor Feng Zhongqiang': '冯忠强牧师',
                 'Brother Dai Zhizhong': '戴志忠弟兄',
+                '王啟偉長老': '王启伟长老',
 
                 'Recent services': '最近讲道',
                 'Older services': '较旧讲道',
@@ -438,7 +447,6 @@ i18n
                 'TODO: Go to a page listing all worship services': '待办事项：转到列出所有敬拜服务的页面',
                 'Cantonese service combined with Mandarin service': '粤语服务与国语服务相结合',
                 'English service combined with Mandarin service': '英语服务结合普通话服务',
-                '(to be determined)': '(有待确定)',
 
                 'Sermon': '讲道',
                 'Beginning': '开始',
@@ -446,12 +454,16 @@ i18n
                 'Bible verse': '圣经经文',
 
                 // Cantonese sermons
+                '恩典中服事 (林後8:1-15)': '恩典中服事 (林后8:1-15)',
                 '一天新似一天 (林后4:16-18)': '一天新似一天 (哥林多後書 4:16-18)',
                 '不是我，是圣灵！(林后3:1-11)': '不是我，是圣灵！ (哥林多后书 3:1-11)',
                 '基督的香气 (林后2:14-17)': '基督的香气 (哥林多后书 2:14-17)',
                 '指望将来 (林后1:8-11)': '指望将来 (哥林多后书 1:8-11)',
 
                 // English sermons
+                'Battle of Brothers (Obadiah)': '兄弟之战 (俄巴底亚书)',
+                'What Repentance Requires (Ezra 10)': '悔需要什么 (以斯拉记 10)',
+                'Repair Our Ruins (Ezra 9:1-15)': '修复我们的废墟 (以斯拉记 9:1-15)',
                 'Kingdom Peace (Philippians 3:17-4:9)': '王国和平 (腓立比书 3:17-4:9)',
                 'Send Us Ministers (Ezra 8)': '派我们部长 (以斯拉记 8)',
                 'The Sovereignty of God (Ezra 7)': '上帝的主权 (以斯拉记 7)',
