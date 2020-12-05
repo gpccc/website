@@ -151,6 +151,16 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
             :
             <Typography gutterBottom variant="body1" component="p">
                 {DateTimeUtils.longServiceDateDisplay(date)} worship service
+                {showCombinedServiceTooltip &&
+                <span>
+                &nbsp;
+                <Tooltip title={t((isCantoneseService ? "Cantonese" : "English") + " service combined with Mandarin service")} arrow enterTouchDelay={25}>
+                    <IconButton aria-label="info" size="small">
+                    <InfoOutlinedIcon />
+                    </IconButton>
+                </Tooltip>
+                </span>
+                }
             </Typography>
             }
             {
