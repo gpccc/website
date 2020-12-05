@@ -33,11 +33,11 @@ export default function ChurchMapCard() {
 
     return (
         <ReactResizeDetector handleHeight={false}>
-        {({targetRef}) =>
+        {({width, targetRef}) =>
         <Card className={classes.root} ref={targetRef}>
             <CardHeader title="Location" titleTypographyProps={{variant: 'button'}} />
             <CardActionArea>
-                <ChurchMap />
+                <ChurchMap mapWidth={width} />
             </CardActionArea>
             <CardContent>
                 <Link target="_blank" rel="noreferrer" href="https://maps.google.com/?q=Greater Phoenix Chinese Christian Church, West Ray Road, Chandler, AZ">
