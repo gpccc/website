@@ -65,6 +65,7 @@ i18n
                 'Pastor Feng Zhongqiang': 'Pastor Feng Zhongqiang',
                 'Brother Dai Zhizhong': 'Brother Dai Zhizhong',
                 '王啟偉長老': 'Elder Qiwei Wang',
+                'Pastor Luke Elie': 'Pastor Luke Elie',
 
                 'Recent services': 'Recent services',
                 'Older services': 'Older services',
@@ -87,6 +88,7 @@ i18n
                 '指望将来 (林后1:8-11)': 'Look Forward to the Future (2 Cor 1:8-11)',
 
                 // English sermons
+                'The Creator vs. the Critic': 'The Creator vs. the Critic',
                 'Battle of Brothers (Obadiah)': 'Battle of Brothers (Obadiah)',
                 'What Repentance Requires (Ezra 10)': 'What Repentance Requires (Ezra 10)',
                 'Repair Our Ruins (Ezra 9:1-15)': 'Repair Our Ruins (Ezra 9:1-15)',
@@ -252,6 +254,7 @@ i18n
                 'Pastor Feng Zhongqiang': '馮忠強牧師',
                 'Brother Dai Zhizhong': '戴志忠弟兄',
                 '王啟偉長老': '王啟偉長老',
+                'Pastor Luke Elie': 'Luke Elie傳道',
 
                 'Recent services': '最近講道',
                 'Older services': '較舊講道',
@@ -274,6 +277,7 @@ i18n
                 '指望将来 (林后1:8-11)': '指望將來 (哥林多後書 1:8-11)',
 
                 // English sermons
+                'The Creator vs. the Critic': '創造者與評論家',
                 'Battle of Brothers (Obadiah)': '兄弟之戰 (俄巴底亞書)',
                 'What Repentance Requires (Ezra 10)': '悔需要什麼 (以斯拉記 10)',
                 'Repair Our Ruins (Ezra 9:1-15)': '修復我們的廢墟 (以斯拉記 9:1-15)',
@@ -439,6 +443,7 @@ i18n
                 'Pastor Feng Zhongqiang': '冯忠强牧师',
                 'Brother Dai Zhizhong': '戴志忠弟兄',
                 '王啟偉長老': '王启伟长老',
+                'Pastor Luke Elie': 'Luke Elie传道',
 
                 'Recent services': '最近讲道',
                 'Older services': '较旧讲道',
@@ -461,6 +466,7 @@ i18n
                 '指望将来 (林后1:8-11)': '指望将来 (哥林多后书 1:8-11)',
 
                 // English sermons
+                'The Creator vs. the Critic': '创造者与评论家',
                 'Battle of Brothers (Obadiah)': '兄弟之战 (俄巴底亚书)',
                 'What Repentance Requires (Ezra 10)': '悔需要什么 (以斯拉记 10)',
                 'Repair Our Ruins (Ezra 9:1-15)': '修复我们的废墟 (以斯拉记 9:1-15)',
