@@ -1,9 +1,10 @@
 import SeekPointType from './seek-point-type';
 
 const englishServices = [
-    { youtubeVideoID: "d2cg_a2PXZY", message: "Battle of Brothers (Obadiah)", pastor: "Rev. Larry Lee", date: "2020-11-29T16:30:00Z", duration: "00:00:00", seekPoints: []},
-    { youtubeVideoID: "xeqqbiH1ImI", message: "What Repentance Requires (Ezra 10)", pastor: "Rev. Jerry Lin", date: "2020-11-22T16:30:00Z", duration: "01:24:24", seekPoints: []},
-    { youtubeVideoID: "Z-EIRYYepmg", message: "Repair Our Ruins (Ezra 9:1-15)", pastor: "Rev. Larry Lee", date: "2020-11-15T16:30:00Z", duration: "01:29:50", seekPoints: []},
+    { youtubeVideoID: "gM73NJoHBDg", message: "The Creator vs. the Critic", pastor: "Pastor Luke Elie", date: "2020-12-06T16:30:00Z", duration: "00:00:00", seekPoints: [] },
+    { youtubeVideoID: "d2cg_a2PXZY", message: "Battle of Brothers (Obadiah)", pastor: "Rev. Larry Lee", date: "2020-11-29T16:30:00Z", duration: "00:00:00", seekPoints: [] },
+    { youtubeVideoID: "xeqqbiH1ImI", message: "What Repentance Requires (Ezra 10)", pastor: "Rev. Jerry Lin", date: "2020-11-22T16:30:00Z", duration: "01:24:24", seekPoints: [] },
+    { youtubeVideoID: "Z-EIRYYepmg", message: "Repair Our Ruins (Ezra 9:1-15)", pastor: "Rev. Larry Lee", date: "2020-11-15T16:30:00Z", duration: "01:29:50", seekPoints: [] },
     { youtubeVideoID: "zFcB3aNJwSk", message: "Kingdom Peace (Philippians 3:17-4:9)", pastor: "Rev. Jerry Lin", date: "2020-11-08T16:30:00Z", duration: "01:23:28", seekPoints: [
         {time: "00:10:07", label: "Opening prayer", type: SeekPointType.PRAYER},
         {time: "00:11:41", label: "Sing Sing Sing", type: SeekPointType.PRAISE_SONG},

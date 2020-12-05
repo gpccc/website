@@ -4,14 +4,11 @@ import { JOINT_SERVICE } from './service-constants';
 
 const cantoneseServices = [
     // https://www.youtube.com/channel/UCwwYzQ3Av9dfyk3mhi-hxuw
-    { youtubeVideoID: "u6n3L0z8uAw", message: "恩典中服事 (林後8:1-15)", pastor: "王啟偉長老", date: "2020-11-29T18:10:00Z", duration: "00:00:00", seekPoints: [
-    ]},
-    { youtubeVideoID: "_TXMPIThAZg", message: "", pastor: "", date: "2020-11-22T18:10:00Z", duration: "01:21:05", seekPoints: [
-    ]},
-    { youtubeVideoID: "Fsxj8rAovwg", message: "", pastor: "", date: "2020-11-15T18:10:00Z", duration: "01:37:30", seekPoints: [
-    ]},
-    { youtubeVideoID: "H_kfkwDCeHU", message: "", pastor: "Brother Dai Zhizhong", date: "2020-11-08T18:10:00Z", duration: "00:00:00", seekPoints: [
-    ]},
+    { youtubeVideoID: "JWyYvfSYXcU", message: JOINT_SERVICE, pastor: "", date: "2020-12-06", duration: "00:00:00", seekPoints: [] },
+    { youtubeVideoID: "u6n3L0z8uAw", message: "恩典中服事 (林後8:1-15)", pastor: "王啟偉長老", date: "2020-11-29T18:10:00Z", duration: "00:00:00", seekPoints: [] },
+    { youtubeVideoID: "_TXMPIThAZg", message: "", pastor: "", date: "2020-11-22T18:10:00Z", duration: "01:21:05", seekPoints: [] },
+    { youtubeVideoID: "Fsxj8rAovwg", message: "", pastor: "", date: "2020-11-15T18:10:00Z", duration: "01:37:30", seekPoints: [] },
+    { youtubeVideoID: "H_kfkwDCeHU", message: "", pastor: "Brother Dai Zhizhong", date: "2020-11-08T18:10:00Z", duration: "00:00:00", seekPoints: [] },
     { youtubeVideoID: "m9YoDp3xFSQ", message: JOINT_SERVICE, pastor: "", date: "2020-11-01", duration: "", seekPoints: [] },
     { youtubeVideoID: "ILegX4omHvc", message: "一天新似一天 (林后4:16-18)", pastor: "Rev. Semson Nip", date: "2020-10-25T18:10:00Z", duration: "01:21:15", seekPoints: [
         {time: "00:10:00", label: "Opening prayer", type: SeekPointType.PRAYER},
