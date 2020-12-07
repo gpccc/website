@@ -16,7 +16,7 @@ import Link from '@material-ui/core/Link';
 
 import ReactResizeDetector from 'react-resize-detector';
 
-import ChurchMap  from './church-map';
+import ChurchMapContainer  from './church-map-container';
 
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -37,7 +37,7 @@ export default function ChurchMapCard() {
         <Card className={classes.root} ref={targetRef}>
             <CardHeader title="Location" titleTypographyProps={{variant: 'button'}} />
             <CardActionArea>
-                <ChurchMap mapWidth={width} preferredLanguage="zh" />
+                <ChurchMapContainer mapWidth={width} />
             </CardActionArea>
             <CardContent>
                 <Link target="_blank" rel="noreferrer" href="https://maps.google.com/?q=Greater Phoenix Chinese Christian Church, West Ray Road, Chandler, AZ">
