@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function ChurchMap({mapWidth}) {
     if (typeof mapWidth === 'undefined')  {
-        mapWidth = 320;
+        mapWidth = 512;
     }
     const mapHeight = (window.innerWidth >= 768) ? mapWidth / 1.618 : mapWidth;
 
