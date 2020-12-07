@@ -14,6 +14,8 @@ import EmailIcon from '@material-ui/icons/Email';
 
 import Link from '@material-ui/core/Link';
 
+import { useTranslation } from 'react-i18next';
+
 import ReactResizeDetector from 'react-resize-detector';
 
 import ChurchMapContainer  from './church-map-container';
@@ -30,12 +32,13 @@ const useStyles = makeStyles(() => ({
 
 export default function ChurchMapCard() {
     const classes = useStyles();
+    const { t } = useTranslation();
 
     return (
         <ReactResizeDetector handleHeight={false}>
         {({width, targetRef}) =>
         <Card className={classes.root} ref={targetRef}>
-            <CardHeader title="Location" titleTypographyProps={{variant: 'button'}} />
+            <CardHeader title={t("Location")} titleTypographyProps={{variant: 'button'}} />
             <CardActionArea>
                 <ChurchMapContainer mapWidth={width} />
             </CardActionArea>
@@ -43,7 +46,7 @@ export default function ChurchMapCard() {
                 <Link target="_blank" rel="noreferrer" href="https://maps.google.com/?q=Greater Phoenix Chinese Christian Church, West Ray Road, Chandler, AZ">
                     <Box display="flex">
                         <Box mr={1}><MapIcon fontSize="small" /></Box>
-                        Greater Phoenix Chinese Christian Church<br/>
+                        {t("GP full name")}<br/>
                         890 West Ray Road<br/>
                         Chandler, AZ 85225
                     </Box>
@@ -65,12 +68,12 @@ export default function ChurchMapCard() {
             <CardActions>
                 <Box pl={1}>
                 <Link href="tel:+1-480-786-4977">
-                    <Typography variant="button">Call us</Typography>
+                    <Typography variant="button">{t("Call us")}</Typography>
                 </Link>
                 </Box>
                 <Box pl={1}>
                 <Link href="mailto:contact@gpccc.org">
-                    <Typography variant="button">Email us</Typography>
+                    <Typography variant="button">{t("Email us")}</Typography>
                 </Link>
                 </Box>
             </CardActions>

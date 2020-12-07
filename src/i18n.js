@@ -48,6 +48,10 @@ i18n
                 'Benediction': 'Benediction',
                 'Happy birthday, Pastor Larry': 'Happy birthday, Pastor Larry',
 
+                'Location': 'Location',
+                'Call us': 'Call us',
+                'Email us': 'Email us',
+
                 'Preferred language': 'Preferred language',
                 'Preferred worship service': 'Preferred worship service',
                 'Cantonese': 'Cantonese',
@@ -237,6 +241,10 @@ i18n
                 'Benediction': '祝禱',
                 'Happy birthday, Pastor Larry': '李長橋牧師，生日快樂',
 
+                'Location': '位置',
+                'Call us': '給我們打電話',
+                'Email us': '給我們發電子郵件',
+
                 'Preferred language': '首選語言',
                 'Preferred worship service': '首選禮拜服務',
                 'Cantonese': '粵語',
@@ -425,6 +433,10 @@ i18n
                 'Announcements': '报告',
                 'Benediction': '祝祷',
                 'Happy birthday, Pastor Larry': '李長橋牧师，生日快乐',
+
+                'Location': '位置',
+                'Call us': '给我们打电话',
+                'Email us': '给我们发电子邮件',
 
                 'Preferred language': '首选语言',
                 'Preferred worship service': '首选礼拜服务',
