@@ -37,7 +37,7 @@ export default function ChurchMapCard() {
         <Card className={classes.root} ref={targetRef}>
             <CardHeader title="Location" titleTypographyProps={{variant: 'button'}} />
             <CardActionArea>
-                <ChurchMap mapWidth={width} />
+                <ChurchMap mapWidth={width} preferredLanguage="zh" />
             </CardActionArea>
             <CardContent>
                 <Link target="_blank" rel="noreferrer" href="https://maps.google.com/?q=Greater Phoenix Chinese Christian Church, West Ray Road, Chandler, AZ">
