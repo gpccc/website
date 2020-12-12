@@ -52,6 +52,8 @@ i18n
                 'Call us': 'Call us',
                 'Email us': 'Email us',
 
+                'Christmas Sunday Joint Service': 'Christmas Sunday Joint Service',
+
                 'Preferred language': 'Preferred language',
                 'Preferred worship service': 'Preferred worship service',
                 'Cantonese': 'Cantonese',
@@ -245,6 +247,8 @@ i18n
                 'Call us': '給我們打電話',
                 'Email us': '給我們發電子郵件',
 
+                'Christmas Sunday Joint Service': '聖誕節主日聯合崇拜',
+
                 'Preferred language': '首選語言',
                 'Preferred worship service': '首選禮拜服務',
                 'Cantonese': '粵語',
@@ -437,6 +441,8 @@ i18n
                 'Location': '位置',
                 'Call us': '给我们打电话',
                 'Email us': '给我们发电子邮件',
+
+                'Christmas Sunday Joint Service': '圣诞节主日联合崇拜',
 
                 'Preferred language': '首选语言',
                 'Preferred worship service': '首选礼拜服务',
