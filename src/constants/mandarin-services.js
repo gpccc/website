@@ -1,6 +1,8 @@
 import SeekPointType from './seek-point-type';
 
 const mandarinServices = [
+    { youtubeVideoID: "a_FAfMjNJbE", message: "Christmas Sunday Joint Service", pastor: "", date: "2020-12-13T18:10:00Z", duration: "00:00:00", seekPoints: [] },
+    { youtubeVideoID: "KJs_onhvk8A", message: "Christmas Sunday Joint Service", pastor: "", date: "2020-12-13T16:30:00Z", duration: "00:00:00", seekPoints: [] },
     { youtubeVideoID: "JWyYvfSYXcU", message: "", pastor: "Pastor Luke Elie", date: "2020-12-06T18:10:00Z", duration: "00:00:00", seekPoints: [] },
     { youtubeVideoID: "wRV-laDRNuA", message: "", pastor: "", date: "2020-11-29T18:10:00Z", duration: "00:00:00", seekPoints: [] },
     { youtubeVideoID: "P732ZSayTqA", message: "", pastor: "", date: "2020-11-22T18:10:00Z", duration: "01:31:28", seekPoints: [] },

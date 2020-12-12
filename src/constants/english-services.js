@@ -1,6 +1,10 @@
 import SeekPointType from './seek-point-type';
 
+import { JOINT_SERVICE } from './service-constants';
+
 const englishServices = [
+    { youtubeVideoID: "a_FAfMjNJbE", message: JOINT_SERVICE, pastor: "", date: "2020-12-13", duration: "00:00:00", seekPoints: [] },
+    { youtubeVideoID: "KJs_onhvk8A", message: JOINT_SERVICE, pastor: "", date: "2020-12-13", duration: "00:00:00", seekPoints: [] },
     { youtubeVideoID: "gM73NJoHBDg", message: "The Creator vs. the Critic", pastor: "Pastor Luke Elie", date: "2020-12-06T16:30:00Z", duration: "00:00:00", seekPoints: [] },
     { youtubeVideoID: "d2cg_a2PXZY", message: "Battle of Brothers (Obadiah)", pastor: "Rev. Larry Lee", date: "2020-11-29T16:30:00Z", duration: "00:00:00", seekPoints: [] },
     { youtubeVideoID: "xeqqbiH1ImI", message: "What Repentance Requires (Ezra 10)", pastor: "Rev. Jerry Lin", date: "2020-11-22T16:30:00Z", duration: "01:24:24", seekPoints: [] },
