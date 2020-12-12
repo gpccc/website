@@ -47,8 +47,8 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
     const { t } = useTranslation();
 
     let defaultServiceToShowIndex = 0;
-    const isJointService = ServiceVideoUtils.isJointService(defaultServiceToShowIndex, services);
-    if (isJointService) {
+    const isDefaultServiceJointService = ServiceVideoUtils.isJointService(defaultServiceToShowIndex, services);
+    if (isDefaultServiceJointService) {
         defaultServiceToShowIndex = 1;
         const defaultServiceStartDateTimeStr = services[defaultServiceToShowIndex].date;
         if (ServiceVideoUtils.liveOver(defaultServiceStartDateTimeStr)) {
@@ -58,6 +58,9 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
 
     const [serviceToShow, setServiceToShow] = React.useState(services[defaultServiceToShowIndex]);
     const [youTubePlayerReady, setYouTubePlayerReady] = React.useState(false);
+
+    const serviceToShowIndex = services.findIndex(s => s === serviceToShow);
+    const isJointService = serviceToShowIndex >= 0 && ServiceVideoUtils.isJointService(serviceToShowIndex, services);
 
     const youTubePlayerRef = React.useRef(null);
 
@@ -160,7 +163,7 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
             </Typography>
             :
             <Typography gutterBottom variant="body1" component="p">
-                {DateTimeUtils.longServiceDateDisplay({datetime: date, showTimeToo: false})} worship service
+                {DateTimeUtils.longServiceDateDisplay({datetime: date, showTimeToo: isJointService})} worship service
                 {showCombinedServiceTooltip &&
                 <span>
                 &nbsp;
