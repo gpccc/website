@@ -93,11 +93,13 @@ function isSameDay(day1, day2) {
 }
 
 function shortServiceDateTimeDisplay({datetime, showTimeToo}) {
+    let dateTimeDisplay = dateDisplay(datetime, 'short');
+
     if (showTimeToo) {
-        return dateDisplay(datetime, 'short');    
-    } else {
-        return dateDisplay(datetime, 'short');
+        dateTimeDisplay = dateTimeDisplay + ' ' + getHourMinuteDisplay(new Date(datetime));
     }
+
+    return dateTimeDisplay;
 }
 
 function longServiceDateDisplay(datetime) {
