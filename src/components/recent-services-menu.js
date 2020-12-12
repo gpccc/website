@@ -100,19 +100,19 @@ export default function RecentServicesMenu({services, onServiceSelect, onOlderSe
                     <MenuItem key={"YT" + service.youtubeVideoID} selected={index === selectedIndex} onClick={() => handleServiceMenuItemClick(index, service.youtubeVideoID)}>
                         {
                         service.message !== "" && service.pastor !== "" &&
-                        <ListItemText primary={t(service.message)} secondary={t(service.pastor) + " · " + DateTimeUtils.shortServiceDateTimeDisplay(service.date)} />
+                        <ListItemText primary={t(service.message)} secondary={t(service.pastor) + " · " + DateTimeUtils.shortServiceDateTimeDisplay({datetime: service.date, showTimeToo: false})} />
                         }
                         {
                         service.message !== "" && service.pastor === "" &&
-                        <ListItemText primary={t(service.message)} secondary={DateTimeUtils.shortServiceDateTimeDisplay(service.date)} />
+                        <ListItemText primary={t(service.message)} secondary={DateTimeUtils.shortServiceDateTimeDisplay({datetime: service.date, showTimeToo: false})} />
                         }
                         {
                         service.message === "" && service.pastor !== "" &&
-                        <ListItemText primary={DateTimeUtils.shortServiceDateTimeDisplay(service.date) + " service"} secondary={t(service.pastor)} />
+                        <ListItemText primary={DateTimeUtils.shortServiceDateTimeDisplay({datetime: service.date, showTimeToo: false}) + " service"} secondary={t(service.pastor)} />
                         }
                         {
                         service.message === "" && service.pastor === "" &&
-                        <ListItemText primary={DateTimeUtils.shortServiceDateTimeDisplay(service.date) + " service"} />
+                        <ListItemText primary={DateTimeUtils.shortServiceDateTimeDisplay({datetime: service.date, showTimeToo: false}) + " service"} />
                         }
                     </MenuItem>
                 ))}
@@ -123,7 +123,7 @@ export default function RecentServicesMenu({services, onServiceSelect, onOlderSe
                     index = index + servicesToShow.length;
                     return (
                         <MenuItem key={"YT" + service.youtubeVideoID} selected={index === selectedIndex} onClick={() => handleServiceMenuItemClick(index, service.youtubeVideoID)}>
-                            <ListItemText primary={t(service.message)} secondary={t(service.pastor) + " · " + DateTimeUtils.shortServiceDateTimeDisplay(service.date)} />
+                            <ListItemText primary={t(service.message)} secondary={t(service.pastor) + " · " + DateTimeUtils.shortServiceDateTimeDisplay({datetime: service.date, showTimeToo: false})} />
                         </MenuItem>
                     );
                 })}

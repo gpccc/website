@@ -79,8 +79,12 @@ function isSameDay(day1, day2) {
     return (date1.getTime() === date2.getTime());
 }
 
-function shortServiceDateTimeDisplay(datetime) {
-    return dateDisplay(datetime, 'short');
+function shortServiceDateTimeDisplay({datetime, showTimeToo}) {
+    if (showTimeToo) {
+        return dateDisplay(datetime, 'short');    
+    } else {
+        return dateDisplay(datetime, 'short');
+    }
 }
 
 function longServiceDateDisplay(datetime) {
