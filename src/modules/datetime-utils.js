@@ -108,7 +108,7 @@ function shortServiceDateTimeDisplay({datetime, showTimeToo}) {
     return dateTimeDisplay;
 }
 
-function longServiceDateDisplay(datetime) {
+function longServiceDateDisplay({datetime}) {
     return dateDisplay(datetime, 'long');
 }
 

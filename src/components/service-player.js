@@ -160,7 +160,7 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
             </Typography>
             :
             <Typography gutterBottom variant="body1" component="p">
-                {DateTimeUtils.longServiceDateDisplay(date)} worship service
+                {DateTimeUtils.longServiceDateDisplay({datetime: date})} worship service
                 {showCombinedServiceTooltip &&
                 <span>
                 &nbsp;

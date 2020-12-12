@@ -53,7 +53,7 @@ export default function ServiceDateDisplay({serviceStartDateTime}) {
         ? <Box color="secondary.main" component="span">{DateTimeUtils.liveStreamDateTimeDisplay(serviceStartDateTime)}</Box>
         : ServiceVideoUtils.liveNow(serviceStartDateTime)
             ? <Box color="secondary.main" component="span">Live now</Box>
-            : DateTimeUtils.longServiceDateDisplay(serviceStartDateTime)
+            : DateTimeUtils.longServiceDateDisplay({datetime: serviceStartDateTime})
     );
 }
 
