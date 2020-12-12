@@ -3,12 +3,36 @@ import DateTimeUtils from '../modules/datetime-utils';
 import { JOINT_SERVICE, SERVICE_DURATION_IN_SECONDS } from '../constants/service-constants';
 
 const ServiceVideoUtils = {
+    isJointService: isJointService,
     replaceJointServices: replaceJointServices,
     isLiveStream: isLiveStream,
     willBeLive: willBeLive,
     liveNow: liveNow,
     liveOver: liveOver,
 };
+
+function isJointService(serviceIndex, servicesToShow) {
+    if (servicesToShow.length <= 1) {
+        return false;
+    }
+
+    const serviceDate = DateTimeUtils.getDateComponent(servicesToShow[serviceIndex].date);
+    if (serviceIndex > 0) {
+        const prevServiceDate = DateTimeUtils.getDateComponent(servicesToShow[serviceIndex-1].date);
+        if (serviceDate.getTime() === prevServiceDate.getTime()) {
+            return true;
+        }
+    }
+
+    if (serviceIndex !== servicesToShow.length-1) {
+        const nextServiceDate = DateTimeUtils.getDateComponent(servicesToShow[serviceIndex+1].date);
+        if (serviceDate.getTime() === nextServiceDate.getTime()) {
+            return true;
+        }
+    }
+
+    return false;
+}
 
 function replaceJointServices(targetServices, sourceServices) {
     targetServices.forEach((target, index) => {
