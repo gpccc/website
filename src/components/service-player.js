@@ -208,6 +208,7 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
             <SeekToMenu seekPoints={seekPoints} onSeekTo={onSeekTo} youTubePlayerReady={youTubePlayerReady} />
             <RecentServicesMenu
                 services={services}
+                defaultServiceIndex={defaultServiceToShowIndex}
                 onServiceSelect={onServiceSelect}
                 onOlderServicesSelect={() => showSnackbar(t('TODO: Go to a page listing all worship services'))}
                 youTubePlayerReady={youTubePlayerReady}

@@ -52,11 +52,11 @@ function getServicesWithSeekPointsForDemo(services) {
 
 }
 
-export default function RecentServicesMenu({services, onServiceSelect, onOlderServicesSelect, youTubePlayerReady}) {
+export default function RecentServicesMenu({services, defaultServiceIndex, onServiceSelect, onOlderServicesSelect, youTubePlayerReady}) {
     const { t } = useTranslation();
 
     const [anchorEl, setAnchorEl] = React.useState(null);
-    const [selectedIndex, setSelectedIndex] = React.useState(0);
+    const [selectedIndex, setSelectedIndex] = React.useState(defaultServiceIndex);
 
     const handleClick = (event) => {
         setAnchorEl(event.currentTarget);
@@ -147,6 +147,7 @@ export default function RecentServicesMenu({services, onServiceSelect, onOlderSe
 
 RecentServicesMenu.propTypes = {
     services: PropTypes.arrayOf(ServiceVideoShape).isRequired,
+    defaultServiceIndex: PropTypes.number.isRequired,
     onServiceSelect: PropTypes.func.isRequired,
     onOlderServicesSelect: PropTypes.func.isRequired,
     youTubePlayerReady: PropTypes.bool.isRequired,
