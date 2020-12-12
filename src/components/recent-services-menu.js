@@ -84,6 +84,29 @@ export default function RecentServicesMenu({services, onServiceSelect, onOlderSe
     const servicesToShow = getServicesToShow(services);
     const servicesWithSeekPoints = getServicesWithSeekPointsForDemo(services);
 
+    function isJointService(serviceIndex, servicesToShow) {
+        if (servicesToShow.length <= 1) {
+            return false;
+        }
+
+        const serviceDate = DateTimeUtils.getDateComponent(servicesToShow[serviceIndex].date);
+        if (serviceIndex > 0) {
+            const prevServiceDate = DateTimeUtils.getDateComponent(servicesToShow[serviceIndex-1].date);
+            if (serviceDate.getTime() === prevServiceDate.getTime()) {
+                return true;
+            }
+        }
+
+        if (serviceIndex !== servicesToShow.length-1) {
+            const nextServiceDate = DateTimeUtils.getDateComponent(servicesToShow[serviceIndex+1].date);
+            if (serviceDate.getTime() === nextServiceDate.getTime()) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
     return (
         <div>
             <Button size="small" color="primary" aria-controls="recent-services-menu" aria-haspopup="true" onClick={handleClick} disabled={!youTubePlayerReady}>
