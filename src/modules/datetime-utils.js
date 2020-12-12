@@ -108,8 +108,14 @@ function shortServiceDateTimeDisplay({datetime, showTimeToo}) {
     return dateTimeDisplay;
 }
 
-function longServiceDateDisplay({datetime}) {
-    return dateDisplay(datetime, 'long');
+function longServiceDateDisplay({datetime, showTimeToo}) {
+    let dateTimeDisplay = dateDisplay(datetime, 'long');
+
+    if (showTimeToo) {
+        dateTimeDisplay = dateTimeDisplay + ' ' + getHourMinuteDisplay(new Date(datetime));
+    }
+
+    return dateTimeDisplay;
 }
 
 function dateDisplay(datetime, longOrShort) {
