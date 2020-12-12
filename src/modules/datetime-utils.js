@@ -4,7 +4,7 @@ const DateTimeUtils = {
     getSecondsElapsedSince: getSecondsElapsedSince,
     parse: parse,
     liveStreamDateTimeDisplay: liveStreamDateTimeDisplay,
-    shortServiceDateDisplay: shortServiceDateDisplay,
+    shortServiceDateTimeDisplay: shortServiceDateTimeDisplay,
     longServiceDateDisplay: longServiceDateDisplay,
 };
 
@@ -79,7 +79,7 @@ function isSameDay(day1, day2) {
     return (date1.getTime() === date2.getTime());
 }
 
-function shortServiceDateDisplay(datetime) {
+function shortServiceDateTimeDisplay(datetime) {
     return dateDisplay(datetime, 'short');
 }
 
