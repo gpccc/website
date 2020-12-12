@@ -6,7 +6,13 @@ const DateTimeUtils = {
     liveStreamDateTimeDisplay: liveStreamDateTimeDisplay,
     shortServiceDateTimeDisplay: shortServiceDateTimeDisplay,
     longServiceDateDisplay: longServiceDateDisplay,
+    getDateComponent: getDateComponent,
 };
+
+function getDateComponent(dateTimeStr) {
+    const dateTime = new Date(dateTimeStr);
+    return new Date(dateTime.getFullYear(), dateTime.getMonth(), dateTime.getDate());
+}
 
 function getSecondsElapsedSince(sinceDateTime) {
     const sinceTime = new Date(sinceDateTime).getTime();
