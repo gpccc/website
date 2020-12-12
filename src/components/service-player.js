@@ -46,7 +46,17 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
 
     const { t } = useTranslation();
 
-    const [serviceToShow, setServiceToShow] = React.useState(services[0]);
+    let defaultServiceToShowIndex = 0;
+    const isJointService = ServiceVideoUtils.isJointService(defaultServiceToShowIndex, services);
+    if (isJointService) {
+        defaultServiceToShowIndex = 1;
+        const defaultServiceStartDateTimeStr = services[defaultServiceToShowIndex].date;
+        if (ServiceVideoUtils.liveOver(defaultServiceStartDateTimeStr)) {
+            defaultServiceToShowIndex = 0;
+        }
+    }
+
+    const [serviceToShow, setServiceToShow] = React.useState(services[defaultServiceToShowIndex]);
     const [youTubePlayerReady, setYouTubePlayerReady] = React.useState(false);
 
     const youTubePlayerRef = React.useRef(null);
