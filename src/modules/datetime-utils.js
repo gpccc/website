@@ -46,30 +46,43 @@ function liveStreamDateTimeDisplay(datetime) {
     const isToday = isSameDay(date, today);
     const isTomorrow = isSameDay(date, tomorrow);
 
-    if (isLanguageChinese()) {
-        const hour = date.getHours();
-        const hourDisplay = (hour < 12 ? '上午' : '') + hour;
+    const hourMinuteDisplay = getHourMinuteDisplay(date);
 
-        const minute = date.getMinutes();
-        const minuteDisplay = (minute < 10 ? '0' : '') + minute;
+    if (isLanguageChinese()) {
+        if (isToday) {
+            return "今天住，" + hourMinuteDisplay;
+        }
+
+        if (isTomorrow) {
+            return "明天住，" + hourMinuteDisplay;
+        }
 
         const month = date.getMonth() + 1;
         const day = date.getDate();
         const monthDayDisplay = month + '月' + day + '日';
 
-        const dateDisplay =
-            (isToday || isTomorrow)
-            ? (isToday ? "今天住" : "明天住") + ', ' + hourDisplay + ':' + minuteDisplay
-            : '住 ' + monthDayDisplay + '，' + hourDisplay + ':' + minuteDisplay;
-
-        return dateDisplay;
+        return '住 ' + monthDayDisplay + '，' + hourMinuteDisplay;
     }
 
     const dateDisplay = "Live " +
         ((isToday || isTomorrow)
-        ? (isToday ? "today" : "tomorrow") + ", " + date.toLocaleTimeString('en-us', {hour: 'numeric', minute: '2-digit'})
+        ? (isToday ? "today" : "tomorrow") + ", " + hourMinuteDisplay
         : date.toLocaleDateString('en-us', {month: 'long', day: 'numeric', hour: 'numeric', minute: '2-digit'}));
     return dateDisplay;
+}
+
+function getHourMinuteDisplay(dateTime) {
+    if (isLanguageChinese()) {
+        const hour = dateTime.getHours();
+        const hourDisplay = (hour < 12 ? '上午' : '') + hour;
+
+        const minute = dateTime.getMinutes();
+        const minuteDisplay = (minute < 10 ? '0' : '') + minute;
+
+        return hourDisplay + ':' + minuteDisplay;
+    }
+
+    return dateTime.toLocaleTimeString('en-us', {hour: 'numeric', minute: '2-digit'});
 }
 
 function isSameDay(day1, day2) {
