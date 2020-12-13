@@ -328,8 +328,8 @@ i18n
                 'Luke 23:32-43': '路加福音 23:32-43',
 
                 // English praise songs
-                'Hosanna': '和撒那',
                 'Sing Sing Sing': '戴誌中',
+                'Hosanna': '和撒那',
                 'Came to My Rescue': '來我的救援',
                 'Christ is Enough': '基督是我滿足',
                 'Heart of Worship': '敬拜的心',
@@ -433,9 +433,9 @@ i18n
                 'Opening prayer': '宣召',
                 'Communion': '圣餐',
                 'Congregational prayer': '公祷',
-                'Missions at GPCCC': 'GPCCC的任务',
                 'Baptism of Yong Wang': '王勇的洗礼',
                 'Induction of new members': '招募新成员',
+                'Missions at GPCCC': 'GPCCC的任务',
                 'Youth Praise Night': '青年赞美之夜',
                 'Closing prayer': '闭幕祈祷',
                 'Announcements': '报告',
