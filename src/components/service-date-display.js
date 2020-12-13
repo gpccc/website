@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { useTranslation } from 'react-i18next';
+
 import Box from '@material-ui/core/Box';
 
 import DateTimeUtils from '../modules/datetime-utils';
@@ -48,11 +50,14 @@ export default function ServiceDateDisplay({serviceStartDateTime, showTimeToo}) 
     );
     
     let secondsElapsedSince = DateTimeUtils.getSecondsElapsedSince(serviceStartDateTime);
+
+    const { t } = useTranslation();
+
     return (
         ServiceVideoUtils.willBeLive(serviceStartDateTime)
         ? <Box color="secondary.main" component="span">{DateTimeUtils.liveStreamDateTimeDisplay(serviceStartDateTime)}</Box>
         : ServiceVideoUtils.liveNow(serviceStartDateTime)
-            ? <Box color="secondary.main" component="span">Live now</Box>
+            ? <Box color="secondary.main" component="span">{t("Live now")}</Box>
             : DateTimeUtils.longServiceDateDisplay({datetime: serviceStartDateTime, showTimeToo})
     );
 }

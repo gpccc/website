@@ -52,6 +52,8 @@ i18n
                 'Call us': 'Call us',
                 'Email us': 'Email us',
 
+                'Live now': 'Live now',
+
                 'Christmas Sunday Joint Service': 'Christmas Sunday Joint Service',
 
                 'Preferred language': 'Preferred language',
@@ -247,6 +249,8 @@ i18n
                 'Call us': '給我們打電話',
                 'Email us': '給我們發電子郵件',
 
+                'Live now': '現在住',
+
                 'Christmas Sunday Joint Service': '聖誕節主日聯合崇拜',
 
                 'Preferred language': '首選語言',
@@ -441,6 +445,8 @@ i18n
                 'Location': '位置',
                 'Call us': '给我们打电话',
                 'Email us': '给我们发电子邮件',
+
+                'Live now': '现在住',
 
                 'Christmas Sunday Joint Service': '圣诞节主日联合崇拜',
 
