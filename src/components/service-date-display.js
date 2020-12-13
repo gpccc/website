@@ -8,7 +8,7 @@ import ServiceVideoUtils from '../modules/service-videos-utils';
 
 import { SERVICE_DURATION_IN_SECONDS } from '../constants/service-constants'
 
-export default function ServiceDateDisplay({serviceStartDateTime}) {
+export default function ServiceDateDisplay({serviceStartDateTime, showTimeToo}) {
     const noTimerID = -1;
     const [serviceStart, setServiceStart] = React.useState("");
     const [timerID, setTimerID] = React.useState(noTimerID);
@@ -53,10 +53,11 @@ export default function ServiceDateDisplay({serviceStartDateTime}) {
         ? <Box color="secondary.main" component="span">{DateTimeUtils.liveStreamDateTimeDisplay(serviceStartDateTime)}</Box>
         : ServiceVideoUtils.liveNow(serviceStartDateTime)
             ? <Box color="secondary.main" component="span">Live now</Box>
-            : DateTimeUtils.longServiceDateDisplay({datetime: serviceStartDateTime, showTimeToo: false})
+            : DateTimeUtils.longServiceDateDisplay({datetime: serviceStartDateTime, showTimeToo})
     );
 }
 
 ServiceDateDisplay.propTypes = {
     serviceStartDateTime: PropTypes.string.isRequired,
+    showTimeToo: PropTypes.bool.isRequired,
 };

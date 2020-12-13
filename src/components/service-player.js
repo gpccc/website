@@ -179,13 +179,13 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
             {
             message !== "" && pastor !== "" &&
             <Typography variant="body2" color="textSecondary" component="p">
-                {pastor} &middot; <ServiceDateDisplay serviceStartDateTime={date} />
+                {pastor} &middot; <ServiceDateDisplay serviceStartDateTime={date} showTimeToo={isJointService} />
             </Typography>
             }
             {
             message !== "" && pastor === "" && 
             <Typography variant="body2" color="textSecondary" component="p">
-                <ServiceDateDisplay serviceStartDateTime={date} />
+                <ServiceDateDisplay serviceStartDateTime={date} showTimeToo={isJointService} />
             </Typography>
             }
             {
@@ -197,13 +197,13 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
             {
             message === "" && pastor !== "" && liveStream &&
             <Typography variant="body2" color="textSecondary" component="p">
-                {pastor} &middot; <ServiceDateDisplay serviceStartDateTime={date} />
+                {pastor} &middot; <ServiceDateDisplay serviceStartDateTime={date} showTimeToo={isJointService} />
             </Typography>
             }
             {
             message === "" && pastor === "" && liveStream &&
             <Typography variant="body2" color="textSecondary" component="p">
-                <ServiceDateDisplay serviceStartDateTime={date} />
+                <ServiceDateDisplay serviceStartDateTime={date} showTimeToo={isJointService} />
             </Typography>
             }
         </CardContent>
