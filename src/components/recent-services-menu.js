@@ -21,16 +21,28 @@ function getServicesToShow(services) {
     let numPastServices = 0;
     let numStreamingServices = 0;
 
-    services.forEach((service) => {
+    let maxServicesToShow = NUM_RECENT_SERVICES_TO_SHOW;
+    let repeatServiceDate = new Date(0);
+
+    services.forEach((service, index) => {
         let secondsElapsedSince = DateTimeUtils.getSecondsElapsedSince(service.date);
         if (ServiceVideoUtils.isLiveStream(secondsElapsedSince)) {
             numStreamingServices += 1;
         } else {
+            if (ServiceVideoUtils.isRepeatService(index, services)) {
+                const serviceDate = DateTimeUtils.getDateComponent(services[index].date);
+                if (serviceDate.getTime() === repeatServiceDate.getTime()) {
+                    maxServicesToShow += 1; // count repeat services on the same day as one
+                }
+
+                repeatServiceDate = serviceDate;
+            }
+
             numPastServices += 1;
         }
     });
 
-    const numServicesToShow = numStreamingServices + Math.min(numPastServices, NUM_RECENT_SERVICES_TO_SHOW);
+    const numServicesToShow = numStreamingServices + Math.min(numPastServices, maxServicesToShow);
     return services.slice(0, numServicesToShow);
 }
 
