@@ -16,6 +16,7 @@ import AppSnackbar from './components/app-snack-bar';
 import ServiceCardContainer from './components/service-card-container';
 
 import ChurchMapCard from './components/church-map-card';
+import StaffCard from './components/staff-card';
 
 const useStyles = makeStyles(() => ({
     root: {
@@ -43,6 +44,9 @@ function App() {
                 </Grid>
                 <Grid item xs={12} sm={6}>
                     <ChurchMapCard />
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                    <StaffCard />
                 </Grid>
             </Grid>
             </div>
