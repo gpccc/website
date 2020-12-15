@@ -47,7 +47,7 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
     const { t } = useTranslation();
 
     let defaultServiceToShowIndex = 0;
-    const isDefaultServiceJointService = ServiceVideoUtils.isJointService(defaultServiceToShowIndex, services);
+    const isDefaultServiceJointService = ServiceVideoUtils.isRepeatService(defaultServiceToShowIndex, services);
     if (isDefaultServiceJointService) {
         defaultServiceToShowIndex = 1;
         const defaultServiceStartDateTimeStr = services[defaultServiceToShowIndex].date;
@@ -60,7 +60,7 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
     const [youTubePlayerReady, setYouTubePlayerReady] = React.useState(false);
 
     const serviceToShowIndex = services.findIndex(s => s === serviceToShow);
-    const isJointService = serviceToShowIndex >= 0 && ServiceVideoUtils.isJointService(serviceToShowIndex, services);
+    const isRepeatService = serviceToShowIndex >= 0 && ServiceVideoUtils.isRepeatService(serviceToShowIndex, services);
 
     const youTubePlayerRef = React.useRef(null);
 
@@ -163,7 +163,7 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
             </Typography>
             :
             <Typography gutterBottom variant="body1" component="p">
-                {DateTimeUtils.longServiceDateDisplay({datetime: date, showTimeToo: isJointService})} worship service
+                {DateTimeUtils.longServiceDateDisplay({datetime: date, showTimeToo: isRepeatService})} worship service
                 {showCombinedServiceTooltip &&
                 <span>
                 &nbsp;
@@ -179,13 +179,13 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
             {
             message !== "" && pastor !== "" &&
             <Typography variant="body2" color="textSecondary" component="p">
-                {pastor} &middot; <ServiceDateDisplay serviceStartDateTime={date} showTimeToo={isJointService} />
+                {pastor} &middot; <ServiceDateDisplay serviceStartDateTime={date} showTimeToo={isRepeatService} />
             </Typography>
             }
             {
             message !== "" && pastor === "" && 
             <Typography variant="body2" color="textSecondary" component="p">
-                <ServiceDateDisplay serviceStartDateTime={date} showTimeToo={isJointService} />
+                <ServiceDateDisplay serviceStartDateTime={date} showTimeToo={isRepeatService} />
             </Typography>
             }
             {
@@ -197,13 +197,13 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
             {
             message === "" && pastor !== "" && liveStream &&
             <Typography variant="body2" color="textSecondary" component="p">
-                {pastor} &middot; <ServiceDateDisplay serviceStartDateTime={date} showTimeToo={isJointService} />
+                {pastor} &middot; <ServiceDateDisplay serviceStartDateTime={date} showTimeToo={isRepeatService} />
             </Typography>
             }
             {
             message === "" && pastor === "" && liveStream &&
             <Typography variant="body2" color="textSecondary" component="p">
-                <ServiceDateDisplay serviceStartDateTime={date} showTimeToo={isJointService} />
+                <ServiceDateDisplay serviceStartDateTime={date} showTimeToo={isRepeatService} />
             </Typography>
             }
         </CardContent>

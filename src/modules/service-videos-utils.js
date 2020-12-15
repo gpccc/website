@@ -3,7 +3,7 @@ import DateTimeUtils from '../modules/datetime-utils';
 import { JOINT_SERVICE, SERVICE_DURATION_IN_SECONDS } from '../constants/service-constants';
 
 const ServiceVideoUtils = {
-    isJointService: isJointService,
+    isRepeatService: isRepeatService,
     replaceJointServices: replaceJointServices,
     isLiveStream: isLiveStream,
     willBeLive: willBeLive,
@@ -11,7 +11,7 @@ const ServiceVideoUtils = {
     liveOver: liveOver,
 };
 
-function isJointService(serviceIndex, servicesToShow) {
+function isRepeatService(serviceIndex, servicesToShow) {
     if (servicesToShow.length <= 1) {
         return false;
     }

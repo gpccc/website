@@ -97,7 +97,7 @@ export default function RecentServicesMenu({services, defaultServiceIndex, onSer
                 onClose={handleClose}
             >
                 {servicesToShow.map((service, index) => {
-                    const jointService = ServiceVideoUtils.isJointService(index, servicesToShow);
+                    const jointService = ServiceVideoUtils.isRepeatService(index, servicesToShow);
                     
                     return (
                     <MenuItem key={"YT" + service.youtubeVideoID} selected={index === selectedIndex} onClick={() => handleServiceMenuItemClick(index, service.youtubeVideoID)}>
@@ -124,7 +124,7 @@ export default function RecentServicesMenu({services, defaultServiceIndex, onSer
                 <Divider />
 
                 {servicesWithSeekPoints.map((service, index) => {
-                    const jointService = ServiceVideoUtils.isJointService(index, servicesWithSeekPoints);
+                    const jointService = ServiceVideoUtils.isRepeatService(index, servicesWithSeekPoints);
                     index = index + servicesToShow.length;
                     return (
                         <MenuItem key={"YT" + service.youtubeVideoID} selected={index === selectedIndex} onClick={() => handleServiceMenuItemClick(index, service.youtubeVideoID)}>
