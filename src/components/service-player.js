@@ -66,7 +66,7 @@ export default function ServicePlayer({playerID, services, isServiceCombinedWith
 
     const youtubeVideoID = serviceToShow.youtubeVideoID;
     const message = serviceToShow.message;
-    const pastor = t(serviceToShow.pastor);
+    const pastor = serviceToShow.pastor === "" ? "" : t(serviceToShow.pastor);
     const date = serviceToShow.date;
     const seekPoints = serviceToShow.seekPoints;
 
