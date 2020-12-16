@@ -41,16 +41,12 @@ export default function StaffCard() {
                         Jerry Lin
                     </Box>
                 </Typography>
-                <Typography variant="subtitle1" color="textSecondary">
-                    Favorite verse is Genesis 2:18, as this verse played a key role in God&apos;s call on his life.
-                </Typography>
-                <Typography variant="subtitle1" color="textSecondary">
-                    Ministry Focus:
-                </Typography>
-                <Typography variant="subtitle1" color="textSecondary">
-                    English college & young adult
-                </Typography>
-                <Typography variant="subtitle1" color="textSecondary">
+                <Typography variant="body2">
+                    Favorite verse is Genesis 2:18, as this verse played a key role in God&apos;s call on his life.<br/>
+                    <br/>
+                    Ministry Focus:<br/>
+                    English college & young adult<br/>
+                    <br/>
                     Any questions, please contact jerrylin@gpccc.org
                 </Typography>
             </CardContent>
