@@ -22,7 +22,8 @@ const useStyles = makeStyles(() => ({
         flex: '1 0 auto',
     },
     photo: {
-        width: '100%',
+        objectFit: 'contain',
+        marginLeft: 16,
     },
 }));
 
@@ -33,6 +34,7 @@ export default function StaffCard() {
     <Card className={classes.root}>
         <CardMedia
             className={classes.photo}
+            component="img"
             image="/images/rev-jerry-lin.jpg"
             title="Pastor Jerry Lin"
         />
