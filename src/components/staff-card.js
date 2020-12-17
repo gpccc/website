@@ -54,8 +54,8 @@ export default function StaffCard() {
                     Ministry Focus:<br/>
                     English college & young adult<br/>
                     <br/>
-                    Any questions, please contact&nbsp;
-                    <Link href="mailto:jerrylin@gpccc.org">jerrylin@gpccc.org</Link>
+                    Any questions, please contact
+                    <Link href="mailto:jerrylin@gpccc.org"> jerrylin@gpccc.org</Link>
                 </Typography>
             </CardContent>
         </div>
