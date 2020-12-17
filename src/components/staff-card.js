@@ -12,8 +12,7 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles(() => ({
     root: {
         display: 'flex',
-        width: 480,
-        margin: 'auto',
+        maxWidth: 480,
     },
     details: {
         display: 'flex',
