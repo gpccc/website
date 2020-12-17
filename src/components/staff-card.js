@@ -13,6 +13,8 @@ const useStyles = makeStyles(() => ({
     root: {
         display: 'flex',
         maxWidth: 480,
+        borderStyle: 'solid',
+        borderWidth: 1,
     },
     details: {
         display: 'flex',
