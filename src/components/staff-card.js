@@ -15,6 +15,10 @@ const useStyles = makeStyles(() => ({
         maxWidth: 480,
         borderStyle: 'solid',
         borderWidth: 1,
+        backgroundImage: 'url("./images/city-background.png")',
+        backgroundSize: 'contain',
+        backgroundPosition: 'bottom',
+        backgroundRepeat: 'no-repeat',
     },
     details: {
         display: 'flex',
