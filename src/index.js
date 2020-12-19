@@ -19,6 +19,7 @@ import ChurchMapCard from './components/church-map-card';
 
 import StaffCardStandard from './components/staff-card-standard';
 import StaffCardSameAspectRatio from './components/staff-card-same-aspect-ratio';
+import StaffCardBorder from './components/staff-card-border';
 import StaffCard from './components/staff-card';
 
 const useStyles = makeStyles(() => ({
@@ -53,6 +54,9 @@ function App() {
                 </Grid>
                 <Grid item xs={12} sm={4}>
                     <StaffCardSameAspectRatio />
+                </Grid>
+                <Grid item xs={12} sm={4}>
+                    <StaffCardBorder />
                 </Grid>
                 <Grid item xs={12} sm={4}>
                     <StaffCard />
