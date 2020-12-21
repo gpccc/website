@@ -3,7 +3,7 @@ import SeekPointType from './seek-point-type';
 import { JOINT_SERVICE } from './service-constants';
 
 const englishServices = [
-    { youtubeVideoID: "i41WI1rmMqk", message: "", pastor: "", date: "2020-12-20T16:30:00Z", duration: "00:00:00", seekPoints: [] },
+    { youtubeVideoID: "K-ZS1oh5m8c", message: "", pastor: "", date: "2020-12-20T16:30:00Z", duration: "00:00:00", seekPoints: [] },
     { youtubeVideoID: "a_FAfMjNJbE", message: JOINT_SERVICE, pastor: "", date: "2020-12-13", duration: "00:00:00", seekPoints: [] },
     { youtubeVideoID: "KJs_onhvk8A", message: JOINT_SERVICE, pastor: "", date: "2020-12-13", duration: "00:00:00", seekPoints: [] },
     { youtubeVideoID: "gM73NJoHBDg", message: "The Creator vs. the Critic", pastor: "Pastor Luke Elie", date: "2020-12-06T16:30:00Z", duration: "00:00:00", seekPoints: [] },
