@@ -10,6 +10,7 @@ import Tooltip from '@material-ui/core/Tooltip';
 import Typography from '@material-ui/core/Typography';
 
 import PastorJerry from '../images/rev-jerry-lin.jpg';
+import CityBackground from '../images/city-background.png';
 
 const useStyles = makeStyles(() => ({
     root: {
@@ -17,7 +18,7 @@ const useStyles = makeStyles(() => ({
         maxWidth: 480,
         borderStyle: 'solid',
         borderWidth: 1,
-        backgroundImage: 'url("./images/city-background.png")',
+        backgroundImage: `url(${CityBackground})`,
         backgroundSize: 'contain',
         backgroundPosition: 'bottom',
         backgroundRepeat: 'no-repeat',
