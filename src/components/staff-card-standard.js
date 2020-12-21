@@ -9,6 +9,8 @@ import Link from '@material-ui/core/Link';
 import Tooltip from '@material-ui/core/Tooltip';
 import Typography from '@material-ui/core/Typography';
 
+import PastorJerry from '../images/rev-jerry-lin.jpg';
+
 const useStyles = makeStyles(() => ({
     root: {
         display: 'flex',
@@ -33,7 +35,7 @@ export default function StaffCardStandard() {
     <Card className={classes.root}>
         <CardMedia
             className={classes.photo}
-            image="/images/rev-jerry-lin.jpg"
+            image={PastorJerry}
             title="Pastor Jerry Lin"
         />
         <div className={classes.details}>
