@@ -27,7 +27,7 @@ const useStyles = makeStyles(() => ({
     },
     photo: {
         objectFit: 'contain',
-        marginLeft: 16,
+        paddingLeft: 16,
     },
 }));
 
