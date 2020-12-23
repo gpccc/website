@@ -31,8 +31,10 @@ const useStyles = makeStyles(() => ({
         flex: '1 0 auto',
     },
     photo: {
+        paddingTop: 24,
+        paddingLeft: 16,
         objectFit: 'contain',
-        marginLeft: 16,
+        height: 180+24,
     },
 }));
 
@@ -51,7 +53,7 @@ export default function StaffCard() {
             <CardContent className={classes.content}>
                 <Typography variant="h5">
                     <Box textAlign="center">
-                        Jerry Lin
+                        JERRY LIN
                     </Box>
                 </Typography>
                 <Typography variant="body2">
