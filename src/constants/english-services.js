@@ -3,6 +3,7 @@ import SeekPointType from './seek-point-type';
 import { JOINT_SERVICE } from './service-constants';
 
 const englishServices = [
+    { youtubeVideoID: "6Jn40sNKqgo", message: JOINT_SERVICE, pastor: "", date: "2020-12-24", duration: "00:00:00", seekPoints: [] },
     { youtubeVideoID: "K-ZS1oh5m8c", message: "", pastor: "", date: "2020-12-20T16:30:00Z", duration: "00:00:00", seekPoints: [] },
     { youtubeVideoID: "a_FAfMjNJbE", message: JOINT_SERVICE, pastor: "", date: "2020-12-13", duration: "00:00:00", seekPoints: [] },
     { youtubeVideoID: "KJs_onhvk8A", message: JOINT_SERVICE, pastor: "", date: "2020-12-13", duration: "00:00:00", seekPoints: [] },
