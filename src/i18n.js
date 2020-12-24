@@ -54,6 +54,7 @@ i18n
 
                 'Live now': 'Live now',
 
+                'Christmas Eve Candlelight Service': 'Christmas Eve Candlelight Service',
                 'Christmas Sunday Joint Service': 'Christmas Sunday Joint Service',
 
                 'Preferred language': 'Preferred language',
@@ -251,6 +252,7 @@ i18n
 
                 'Live now': '現在住',
 
+                'Christmas Eve Candlelight Service': '聖誕節燭光特會',
                 'Christmas Sunday Joint Service': '聖誕節主日聯合崇拜',
 
                 'Preferred language': '首選語言',
@@ -448,6 +450,7 @@ i18n
 
                 'Live now': '现在住',
 
+                'Christmas Eve Candlelight Service': '圣诞节烛光特会',
                 'Christmas Sunday Joint Service': '圣诞节主日联合崇拜',
 
                 'Preferred language': '首选语言',
