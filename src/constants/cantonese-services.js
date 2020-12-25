@@ -4,6 +4,7 @@ import { JOINT_SERVICE } from './service-constants';
 
 const cantoneseServices = [
     // https://www.youtube.com/channel/UCwwYzQ3Av9dfyk3mhi-hxuw
+    { youtubeVideoID: "GxaS4AMzzRw", message: "", pastor: "Rev. Semson Nip", date: "2020-12-27T18:10:00Z", duration: "00:00:00", seekPoints: [] },
     { youtubeVideoID: "6Jn40sNKqgo", message: JOINT_SERVICE, pastor: "", date: "2020-12-24", duration: "00:00:00", seekPoints: [] },
     { youtubeVideoID: "oK16JucroL0", message: "", pastor: "", date: "2020-12-20T18:10:00Z", duration: "00:00:00", seekPoints: [] },
     { youtubeVideoID: "a_FAfMjNJbE", message: JOINT_SERVICE, pastor: "", date: "2020-12-13", duration: "00:00:00", seekPoints: [] },
