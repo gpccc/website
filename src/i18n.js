@@ -97,6 +97,7 @@ i18n
                 '指望将来 (林后1:8-11)': 'Look Forward to the Future (2 Cor 1:8-11)',
 
                 // English sermons
+                'Our Confidence Is In Christ (Romans 8:28-29)': 'Our Confidence Is In Christ (Romans 8:28-29)',
                 'The Creator vs. the Critic': 'The Creator vs. the Critic',
                 'Battle of Brothers (Obadiah)': 'Battle of Brothers (Obadiah)',
                 'What Repentance Requires (Ezra 10)': 'What Repentance Requires (Ezra 10)',
@@ -295,6 +296,7 @@ i18n
                 '指望将来 (林后1:8-11)': '指望將來 (哥林多後書 1:8-11)',
 
                 // English sermons
+                'Our Confidence Is In Christ (Romans 8:28-29)': '我們的信心在於基督 (羅馬書 8:28-29)',
                 'The Creator vs. the Critic': '創造者與評論家',
                 'Battle of Brothers (Obadiah)': '兄弟之戰 (俄巴底亞書)',
                 'What Repentance Requires (Ezra 10)': '悔需要什麼 (以斯拉記 10)',
@@ -493,6 +495,7 @@ i18n
                 '指望将来 (林后1:8-11)': '指望将来 (哥林多后书 1:8-11)',
 
                 // English sermons
+                'Our Confidence Is In Christ (Romans 8:28-29)': '我们的信心在于基督 (罗马书 8:28-29)',
                 'The Creator vs. the Critic': '创造者与评论家',
                 'Battle of Brothers (Obadiah)': '兄弟之战 (俄巴底亚书)',
                 'What Repentance Requires (Ezra 10)': '悔需要什么 (以斯拉记 10)',
