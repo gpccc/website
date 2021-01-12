@@ -89,6 +89,8 @@ i18n
                 'Prayer': 'Prayer',
                 'Bible verse': 'Bible verse',
 
+                'worship service': 'worship service',
+
                 // Cantonese sermons
                 '恩典中服事 (林後8:1-15)': 'Serving in Grace (2 Corinthians 8:1-15)',
                 '一天新似一天 (林后4:16-18)': 'Day New Day (2 Corinthians 4:16-18)',
@@ -288,6 +290,8 @@ i18n
                 'Prayer': '禱告',
                 'Bible verse': '聖經經文',
 
+                'worship service': '禮拜',
+
                 // Cantonese sermons
                 '恩典中服事 (林後8:1-15)': '恩典中服事 (林後8:1-15)',
                 '一天新似一天 (林后4:16-18)': '一天新似一天 (哥林多後書 4:16-18)',
@@ -486,6 +490,8 @@ i18n
                 'Beginning': '开始',
                 'Prayer': '祷告',
                 'Bible verse': '圣经经文',
+
+                'worship service': '礼拜',
 
                 // Cantonese sermons
                 '恩典中服事 (林後8:1-15)': '恩典中服事 (林后8:1-15)',
