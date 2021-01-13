@@ -5,8 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Grid from  '@material-ui/core/Grid';
 
 import { Provider } from 'react-redux';
-import { history } from  './store/configureStore';
-import configureStore from  './store/configureStore';
+import configureStore, { history } from  './store/configureStore';
 
 import { ConnectedRouter } from 'connected-react-router';
 import { Switch, Route }  from 'react-router-dom';
