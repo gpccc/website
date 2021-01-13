@@ -44,40 +44,40 @@ function App() {
     return (
         <React.StrictMode>
         <Provider store={store}>
-        <ConnectedRouter history={history}>
-        <Switch>
-        <Route path="/">
-        <ElevateAppBar>
-            <div className={classes.root}>
-            <Grid container justify="space-evenly" spacing={2}>
-                <Grid item xs={12} sm={6}>
-                    <ServiceCardContainer showSnackbar={showSnackbar} />
-                </Grid>
-                <Grid item xs={12} sm={6}>
-                    <ChurchMapCard />
-                </Grid>
-                <Grid item xs={12} sm={4}>
-                    <StaffCardStandard />
-                </Grid>
-                <Grid item xs={12} sm={4}>
-                    <StaffCardSameAspectRatio />
-                </Grid>
-                <Grid item xs={12} sm={4}>
-                    <StaffCardBorder />
-                </Grid>
-                <Grid item xs={12} sm={4}>
-                    <StaffCardCity />
-                </Grid>
-                <Grid item xs={12} sm={4}>
-                    <StaffCard />
-                </Grid>
-            </Grid>
-            </div>
-            {snackbarData && <AppSnackbar msg={snackbarData.msg} key={snackbarData.date} />}
-        </ElevateAppBar>
-        </Route>
-        </Switch>
-        </ConnectedRouter>
+            <ConnectedRouter history={history}>
+                <Switch>
+                    <Route path="/">
+                        <ElevateAppBar>
+                            <div className={classes.root}>
+                            <Grid container justify="space-evenly" spacing={2}>
+                                <Grid item xs={12} sm={6}>
+                                    <ServiceCardContainer showSnackbar={showSnackbar} />
+                                </Grid>
+                                <Grid item xs={12} sm={6}>
+                                    <ChurchMapCard />
+                                </Grid>
+                                <Grid item xs={12} sm={4}>
+                                    <StaffCardStandard />
+                                </Grid>
+                                <Grid item xs={12} sm={4}>
+                                    <StaffCardSameAspectRatio />
+                                </Grid>
+                                <Grid item xs={12} sm={4}>
+                                    <StaffCardBorder />
+                                </Grid>
+                                <Grid item xs={12} sm={4}>
+                                    <StaffCardCity />
+                                </Grid>
+                                <Grid item xs={12} sm={4}>
+                                    <StaffCard />
+                                </Grid>
+                            </Grid>
+                            </div>
+                            {snackbarData && <AppSnackbar msg={snackbarData.msg} key={snackbarData.date} />}
+                        </ElevateAppBar>
+                    </Route>
+                </Switch>
+            </ConnectedRouter>
         </Provider>
         </React.StrictMode>
     );
