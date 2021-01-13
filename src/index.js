@@ -5,7 +5,11 @@ import { makeStyles } from '@material-ui/core/styles';
 import Grid from  '@material-ui/core/Grid';
 
 import { Provider } from 'react-redux';
+import { history } from  './store/configureStore';
 import configureStore from  './store/configureStore';
+
+import { ConnectedRouter } from 'connected-react-router';
+import { Switch, Route }  from 'react-router-dom';
 
 import './i18n';
 
@@ -28,7 +32,7 @@ const useStyles = makeStyles(() => ({
         flexGrow: 1,
     },
 }));
-  
+
 const initialState = {};
 const store = configureStore(initialState);
 
@@ -41,6 +45,9 @@ function App() {
     return (
         <React.StrictMode>
         <Provider store={store}>
+        <ConnectedRouter history={history}>
+        <Switch>
+        <Route path="/">
         <ElevateAppBar>
             <div className={classes.root}>
             <Grid container justify="space-evenly" spacing={2}>
@@ -69,6 +76,9 @@ function App() {
             </div>
             {snackbarData && <AppSnackbar msg={snackbarData.msg} key={snackbarData.date} />}
         </ElevateAppBar>
+        </Route>
+        </Switch>
+        </ConnectedRouter>
         </Provider>
         </React.StrictMode>
     );
