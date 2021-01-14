@@ -8,12 +8,6 @@ import ServiceCardContainer from './service-card-container';
 
 import ChurchMapCard from './church-map-card';
 
-import StaffCardStandard from './staff-card-standard';
-import StaffCardSameAspectRatio from './staff-card-same-aspect-ratio';
-import StaffCardBorder from './staff-card-border';
-import StaffCardCity from './staff-card-city';
-import StaffCard from './staff-card';
-
 import MainPageLayout from './main-page-layout';
 
 const useStyles = makeStyles(() => ({
@@ -35,21 +29,6 @@ export default function HomePage() {
                 </Grid>
                 <Grid item xs={12} sm={6}>
                     <ChurchMapCard />
-                </Grid>
-                <Grid item xs={12} sm={4}>
-                    <StaffCardStandard />
-                </Grid>
-                <Grid item xs={12} sm={4}>
-                    <StaffCardSameAspectRatio />
-                </Grid>
-                <Grid item xs={12} sm={4}>
-                    <StaffCardBorder />
-                </Grid>
-                <Grid item xs={12} sm={4}>
-                    <StaffCardCity />
-                </Grid>
-                <Grid item xs={12} sm={4}>
-                    <StaffCard />
                 </Grid>
             </Grid>
             </div>
