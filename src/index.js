@@ -8,6 +8,7 @@ import { ConnectedRouter } from 'connected-react-router';
 import { Switch, Route }  from 'react-router-dom';
 
 import HomePage from './components/home-page';
+import StaffPage from './components/staff-page';
 
 import './i18n';
 
@@ -22,6 +23,9 @@ function App() {
         <Provider store={store}>
             <ConnectedRouter history={history}>
                 <Switch>
+                    <Route path="/staff">
+                        <StaffPage />
+                    </Route>
                     <Route path="/">
                         <HomePage />
                     </Route>
